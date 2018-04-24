@@ -1,6 +1,12 @@
-# Sepsis-Omics Tutorials
+# BioDeVL-training Tutorials
 
-Tutorials on how to use the microGVL to do common bacterial bioinformatic tasks.
+Tutorials on how to use Galaxy-Au. 
+
+Forked from sepsis-omics and being updated for Galaxy-Au. 
+
+
+
+
 
 ## Deployment
 
