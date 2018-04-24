@@ -1,28 +1,31 @@
-site_name: ABRPI-Training
-site_description: Tutorials for analysing bacterial omics data
-site_author: Anna Syme, Torsten Seemann
+site_name: Galaxy Australia Training
+site_description: Tutorials for using Galaxy Australia
+site_author: Anna Syme, Gareth Price, Torsten Seemann
 site_favicon: favicon.ico
 
 site_url: 'http://sepsis-omics.github.io/tutorials/'
 
-repo_name: 'sepsis-omics/tutorials'
-repo_url: 'https://github.com/sepsis-omics/tutorials'
+repo_name: 'BioDeVL-training/tutorials'
+repo_url: 'https://github.com/BioDeVL-training/tutorials'
 +google_analytics: ['UA-21794901-5', 'www.melbournebioinformatics.org.au/tutorials/']
 
 copyright: '&copy; The authors; 2016-'
 
 #theme: yeti
 theme: material
+    palette:
+        primary: 'indigo'
+
 extra:
     feature:
         tabs: true
     social:
         - type: 'coffee'
-          link: 'https://omics.data.edu.au/'
+          link: ''
         - type: 'github'
-          link: 'https://github.com/sepsis-omics/tutorials'
+          link: 'https://github.com/BioDeVL-training/tutorials'
         - type: 'bug'
-          link: 'https://github.com/sepsis-omics/tutorials/issues'
+          link: 'https://github.com/BioDeVL-training/tutorials/issues'
 
 
 markdown_extensions:
@@ -38,46 +41,49 @@ extra_css:
 
 pages:
 - Home: index.md
-- Genomics:
-    - Genomics workshop overview: modules/workshop_overview/index.md
+- Tutorials:
+    #- Genomics workshop overview: modules/workshop_overview/index.md
     #- Using Galaxy: modules/galaxy/index.md
     - Starting with Galaxy: modules/galaxy/index.md
-    - Training dataset: modules/data-dna/index.md
-    - Quality control: modules/fastqc/index.md
-    - Merge reads with Pear: modules/pear/index.md
+    #- Training dataset: modules/data-dna/index.md
+
+    #- Merge reads with Pear: modules/pear/index.md
     # - Read trimming: modules/trimmomatic/index.md
     # - Workflow - merge and trim: modules/workflow-pear-trim/index.md
-    - Genome assembly with Velvet: modules/velvet/index.md
-    - Genome assembly with Spades: modules/spades/index.md
+    #- Genome assembly with Velvet: modules/velvet/index.md
+    - Quality control: modules/fastqc/index.md
+    - Genome assembly: modules/spades/index.md
     - Genome annotation: modules/prokka/index.md
+    - Galaxy workflows: modules/workflows/index.md
     - Variant finding: modules/snippy/index.md
     # Snippy core
     # Gubbins
-    - Public data &rarr; assembly, annotation: modules/access_data/index.md
-    - Finding antibiotic-resistant genes: modules/abricate/index.md
-    - Viral genome sequencing: modules/viral_genomes/index.md
-    - Galaxy workflows: modules/workflows/index.md
-    - Metagenomics with FROGS: modules/frogs/index.md
-    - Sample identification with Kraken: modules/kraken/index.md
-    - PacBio assembly with SMRT portal: modules/pacbio/index.md
-    - PacBio assembly with command line tools: modules/cmdline_assembly/index.md
-    - Spades assembly - commandline: modules/spades_cmdline/index.md
-    - Genome alignment with Mauve: modules/mauve/index.md
-    - Pangenomes with Roary/Phandango - command line: modules/roary/index.md
-    - Pangenomes with Roary/Phandango - Galaxy: modules/roary-galaxy/index.md
-    - Long read assembly workshop: modules/cmdline_assembly_v2/index.md
+    #- Public data &rarr; assembly, annotation: modules/access_data/index.md
+    #- Finding antibiotic-resistant genes: modules/abricate/index.md
+    #- Viral genome sequencing: modules/viral_genomes/index.md
+
+    #- Metagenomics with FROGS: modules/frogs/index.md
+    #- Sample identification with Kraken: modules/kraken/index.md
+    #- PacBio assembly with SMRT portal: modules/pacbio/index.md
+    #- PacBio assembly with command line tools: modules/cmdline_assembly/index.md
+    #- Spades assembly - commandline: modules/spades_cmdline/index.md
+    #- Genome alignment with Mauve: modules/mauve/index.md
+    #- Pangenomes with Roary/Phandango - command line: modules/roary/index.md
+    #- Pangenomes with Roary/Phandango - Galaxy: modules/roary-galaxy/index.md
+    #- Long read assembly workshop: modules/cmdline_assembly_v2/index.md
     #- Annotation using command line tools: modules/cmdline_prokka/index.md
     #- Bash scripts: modules/scripts/index.md
+    - Differential gene expression: modules/dge/index.md
 
 
-- Transcriptomics:
+#- Transcriptomics:
 #  - Overview: modules/transcriptomics.md
 #  - Dataset: modules/data-rna/index.md
 #  #- Quality control: modules/fastqc/index.md
 #  #- Read trimming: modules/trimmomatic/index.md
 #  - Transcriptome assembly: modules/stringtie/index.md
-    - Differential gene expression using Galaxy and Degust: modules/dge/index.md
-    - Differential gene expression using Kallisto and Degust: modules/kallisto/index.md
+    #- Differential gene expression using Galaxy and Degust: modules/dge/index.md
+    #- Differential gene expression using Kallisto and Degust: modules/kallisto/index.md
      #- Salmon: modules/salmon/index.md
 #- Advanced:
     #- Differential Gene Expression: intro/dge/index.md
@@ -85,12 +91,12 @@ pages:
     #- Artemis: modules/artemis/index.md
     #- JBrowse: modules/jbrowse/index.md
 
-- Proteomics:
-    - Protein Identification: modules/xtandem/index.md
-    - Pathway annotation and prediction: modules/pathway_tools/annotation/index.md
+#- Proteomics:
+    #- Protein Identification: modules/xtandem/index.md
+    #- Pathway annotation and prediction: modules/pathway_tools/annotation/index.md
 
-- Metabolomics:
-    - Metabolite identification: modules/xcms/index.md
+#- Metabolomics:
+    #- Metabolite identification: modules/xcms/index.md
     #- Draft: modules/xcms/metab_draft.md
 
 - About: about/index.md
