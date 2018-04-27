@@ -5,7 +5,9 @@ Tutorials on how to use Galaxy-Au.
 Forked from sepsis-omics and being updated for Galaxy-Au.
 
 
+## Deployment
 
+The tutorials have been deployed here: https://BioDeVL-training.github.io/tutorials/
 
 
 
@@ -15,9 +17,10 @@ Forked from sepsis-omics and being updated for Galaxy-Au.
 
 
 
-## Deployment
 
-The tutorials have been deployed here: http://sepsis-omics.github.io/tutorials/
+
+
+
 
 ## How to work on them locally
 
