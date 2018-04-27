@@ -13,8 +13,7 @@ copyright: '&copy; The authors; 2016-'
 
 #theme: yeti
 theme: material
-    palette:
-        primary: 'indigo'
+
 
 extra:
     feature:
