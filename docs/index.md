@@ -5,9 +5,9 @@
 
 This site contains tutorials for using Galaxy Australia.
 
-Click on the tutorial name in the left hand panel.
+Tutorials are listed in the left hand panel, or click the menu button in the top left of the page.
 
-For new users, we recommend starting at the top of the list.
+
 
 ![Galaxy Australia landing page](media/screenshots/galaxy-australia-landing.png)
 
