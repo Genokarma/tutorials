@@ -2,21 +2,39 @@
 
 ## What is Galaxy?
 
-Galaxy is a web-based analysis and workflow platform designed for biologists to analyse their own data. It can be used to run a variety of bioinformatics tools.
+Galaxy is a web-based analysis and workflow platform.
 
-In this set of tutorials, we are using Galaxy-Australia. However, there are many different Galaxy servers available. More information about the Galaxy project can be found [here](https://galaxyproject.org/).
+  * Designed for biologists
+  * Upload your data
+  * Access shared data
+  * Use common bioinformatics tools
+  * Develop workflows
+  * Access via a web page
+  * Free
 
-We access Galaxy-Australia by going to a web page with this address: [add address]
+In this set of tutorials, we are using Galaxy-Australia.
 
-The Galaxy page has a list of <ss>Tools</ss> on the left, a <ss>Viewing</ss> panel in the middle, and the analysis and data <ss>History</ss> on the right.
+* We access Galaxy-Australia by going to a web page with this address: [add address]
+* However, there are many different Galaxy servers available [add list].
+* More information about the Galaxy project can be found [here](https://galaxyproject.org/).
+
+
+The Galaxy-Australia page looks like this:
 
 [replace with Galaxy-Au screenshot]
 
 ![galaxy overview screenshot](images/image05.png)
 
+* <ss>Tools</ss> on the left
+* <ss>Viewing</ss> panel in the middle
+* <ss>History</ss> of analysis and files on the right
+
 ## Can I use Galaxy?
 
-Yes - Galaxy is free to use and available for everyone. Australian researchers may find Galaxy-Australia particularly suited to their analysis needs as it has been developed in consultation with researchers across the country.
+Yes!
+
+* Galaxy is free to use and available for everyone.
+* Australian researchers may find Galaxy-Australia particularly suited to their analysis needs as it has been developed in consultation with scientists across the country.
 
 ## How do I get started?
 
@@ -46,8 +64,6 @@ Click on <ss>User</ss> button on the right.
 - You have [amount of storage]
 - Your data will stay stored for [amount of time.]
 - If you are using a different Galaxy server, you would need to register/log in to that server.
-
-
 
 
 ## Upload a file
@@ -84,14 +100,10 @@ you can drag files between histories
 drag some files in
 back to main page with "Analyze data"
 
-
 ## What's next
 
 try:
 - MB Galaxy intro tutorial [needs updating for Galaxy-Au]
-
-
-
 
 ## Move this stuff:
 

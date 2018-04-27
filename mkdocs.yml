@@ -39,16 +39,18 @@ extra_css:
     - css/sepsis.css
 
 pages:
-- Home: index.md
-
+- Galaxy Australia: index.md
 - Starting with Galaxy: modules/galaxy/index.md
 - Quality control: modules/fastqc/index.md
 - Genome assembly: modules/spades/index.md
 - Genome annotation: modules/prokka/index.md
-- Galaxy workflows: modules/workflows/index.md
-- Variant finding: modules/snippy/index.md
+- Variant calling: modules/snippy/index.md
 - Differential gene expression: modules/dge/index.md
 - Metagenomics: modules/metagenomics/metagenomics.md
+- Workflows - Introduction: modules/workflows/index.md
+- Workflow - Assembly and annotation: modules/workflow-assembly-annotation/index.md
+- Workflow - Variant calling: modules/workflow-variant-calling/index.md
+- Workflow - Differential gene expression: modules/workflow-rna-seq/index.md
 - Galaxy Resources: galaxy-resources.md
     # Snippy core
     # Gubbins

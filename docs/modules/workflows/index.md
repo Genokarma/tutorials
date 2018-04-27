@@ -1,7 +1,16 @@
-<br>
 # Galaxy workflows
 
-This tutorial assumes you have used Galaxy before.
+## What are Galaxy workflows?
+
+
+
+
+
+
+
+
+
+## Move, change this stuff below
 
 Although we can use tools in Galaxy to analyse data and create a history, there is also a way to create a workflow of files, tools, settings and outputs. You can then input different datasets and run the workflow.
 

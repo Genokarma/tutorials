@@ -1,10 +1,17 @@
-# BioDeVL-training Tutorials
+# Galaxy-Australia training.
 
-Tutorials on how to use Galaxy-Au. 
+Tutorials on how to use Galaxy-Au.
 
-Forked from sepsis-omics and being updated for Galaxy-Au. 
+Forked from sepsis-omics and being updated for Galaxy-Au.
 
 
+
+
+
+
+
+
+## UPDATE this below
 
 
 
