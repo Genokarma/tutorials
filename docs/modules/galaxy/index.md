@@ -1,29 +1,38 @@
-<br>
 # Starting with Galaxy
 
-Keywords: Galaxy, Microbial Genomics Virtual Lab
+## What is Galaxy?
 
-## Background
+Galaxy is a web-based analysis and workflow platform designed for biologists to analyse their own data. It can be used to run a variety of bioinformatics tools.
 
-Galaxy is a web-based analysis and workflow platform designed for biologists to analyse their own data. It can be used to run a variety of bioinformatics tools. The selection of bioinformatics tools installed on the Galaxy instance we are using today caters for the analysis of bacterial genomics data sets.
+In this set of tutorials, we are using Galaxy-Australia. However, there are many different Galaxy servers available. More information about the Galaxy project can be found [here](https://galaxyproject.org/).
 
-Galaxy is an open, web-based platform. Details about the project can be found [here](https://galaxyproject.org/).
+We access Galaxy-Australia by going to a web page with this address: [add address]
 
-The Galaxy interface is separated into three parts. The <ss>Tools</ss> list on the left, the <ss>Viewing</ss> panel in the middle and the analysis and data <ss>History</ss> on the right.
+The Galaxy page has a list of <ss>Tools</ss> on the left, a <ss>Viewing</ss> panel in the middle, and the analysis and data <ss>History</ss> on the right.
+
+[replace with Galaxy-Au screenshot]
 
 ![galaxy overview screenshot](images/image05.png)
 
-## Register
+## Can I use Galaxy?
 
-* Use Firefox, Chrome or Safari as your browser (not Internet Explorer).
-* Open a new tab. 
-* In the address bar, type in the address of your galaxy server.
-    * e.g. <http://galaxy-mel.genome.edu.au/galaxy> or <https://galaxy-qld.genome.edu.au/galaxy>
+Yes - Galaxy is free to use and available for everyone. Australian researchers may find Galaxy-Australia particularly suited to their analysis needs as it has been developed in consultation with researchers across the country.
 
+## How do I get started?
+
+To use Galaxy-Australia, follow these steps:
+
+* Open your internet browser. Use Firefox, Chrome or Safari (not Internet Explorer).
+* Open a new tab.
+* In the address bar, type in the address of Galaxy-Australia [add address].
+
+[update image]
 
 ![Galaxy URL](images/image09.png)
 
 Click on <ss>User</ss> button on the right.
+
+[update image]
 
 ![Register or Login screenshot](images/image04.png)
 
@@ -33,63 +42,116 @@ Click on <ss>User</ss> button on the right.
 
 - Login, and refresh the page.
 
+- Each time you use this Galaxy server, log in to see your data and histories.
+- You have [amount of storage]
+- Your data will stay stored for [amount of time.]
+- If you are using a different Galaxy server, you would need to register/log in to that server.
+
+
+
+
+## Upload a file
+
+from Zenodo
+
+
+## Use a tool
+
+
+## View results
+
+## Import some data
+
+change the file name
+change the file type
+Use a tool
+View results
+
+
+## Import a history
+
+add a simple history to Galaxy Au
+import
+
+Use a tool
+
+View results
+
+## Look at all your histories
+
+create a new history
+you can drag files between histories
+drag some files in
+back to main page with "Analyze data"
+
+
+## What's next
+
+try:
+- MB Galaxy intro tutorial [needs updating for Galaxy-Au]
+
+
+
+
+## Move this stuff:
+
+[move this stuff below into the relevant individual workshops, to import a history for each of them: ]
+
+
+
 ## Import a shared history
 
-For Galaxy-mel/Galaxy-qld users, import the following history: 
+For Galaxy-Australia users, import the following history:
+
+[add this history to Galaxy-Au]
 
 * In Galaxy, go to the top menu bar
-* Click on <ss>Shared Data</ss> 
+* Click on <ss>Shared Data</ss>
 
 * From the drop down menu, click on <ss>Histories</ss>
 
-
+[update image]
 
 <img src="images/shared_data.png" alt="Drawing" style="width: 500px;"/>
 
-* From the list of Published Histories, click <fn>Genomics-workshop</ss> 
+* From the list of Published Histories, click <fn>Genomics-workshop</ss>
 
+[update or re-name this history as appropriate]
+[update image]
 
 ![published histories](images/hist.png)
 
 
-
-
 * In the top right, click on <ss>Import history</ss>
-
-
 
 <img src="images/import.png" alt="Drawing" style="width: 400px;"/>
 
-
-
-* This history will now be in your "Current history" - the right hand pane in Galaxy. 
+* This history will now be in your "Current history" - the right hand pane in Galaxy.
 * There should be six files. (The number in front of the file name is not important.)
 
+[update image]
 
 <img src="images/currenthist.png" alt="Drawing" style="width: 300px;"/>
 
-
-
-* We will use these files for the Genomics Workshop. For additional ways to import histories, see below. 
-
+* We will use these files for the Genomics Workshop. For additional ways to import histories, see below.
 
 
 ## How to use Galaxy
 
 
-* Available tools are in the left hand panel. Find the tool you want or use the search bar at the top of the tools. 
+* Available tools are in the left hand panel. Find the tool you want or use the search bar at the top of the tools.
 
-* Click on the tool you want to use. 
+* Click on the tool you want to use.
 
-* The tool interface will appear in the centre Galaxy panel. Check the settings. 
+* The tool interface will appear in the centre Galaxy panel. Check the settings.
 
 * Click <ss>Execute</ss>.
 
-* When the tool has finished, output file(s) will appear at the top of your "Current History" in the right hand panel. 
+* When the tool has finished, output file(s) will appear at the top of your "Current History" in the right hand panel.
 
-* Click on the eye icon next to a file to view it. 
+* Click on the eye icon next to a file to view it.
 
-* To access older histories, use the button at the top right of the History panel. 
+* To access older histories, use the button at the top right of the History panel.
 
 
 

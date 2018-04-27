@@ -40,21 +40,16 @@ extra_css:
 
 pages:
 - Home: index.md
-- Tutorials:
-    #- Genomics workshop overview: modules/workshop_overview/index.md
-    #- Using Galaxy: modules/galaxy/index.md
-    - Starting with Galaxy: modules/galaxy/index.md
-    #- Training dataset: modules/data-dna/index.md
 
-    #- Merge reads with Pear: modules/pear/index.md
-    # - Read trimming: modules/trimmomatic/index.md
-    # - Workflow - merge and trim: modules/workflow-pear-trim/index.md
-    #- Genome assembly with Velvet: modules/velvet/index.md
-    - Quality control: modules/fastqc/index.md
-    - Genome assembly: modules/spades/index.md
-    - Genome annotation: modules/prokka/index.md
-    - Galaxy workflows: modules/workflows/index.md
-    - Variant finding: modules/snippy/index.md
+- Starting with Galaxy: modules/galaxy/index.md
+- Quality control: modules/fastqc/index.md
+- Genome assembly: modules/spades/index.md
+- Genome annotation: modules/prokka/index.md
+- Galaxy workflows: modules/workflows/index.md
+- Variant finding: modules/snippy/index.md
+- Differential gene expression: modules/dge/index.md
+- Metagenomics: modules/metagenomics/metagenomics.md
+- Galaxy Resources: galaxy-resources.md
     # Snippy core
     # Gubbins
     #- Public data &rarr; assembly, annotation: modules/access_data/index.md
@@ -72,7 +67,6 @@ pages:
     #- Long read assembly workshop: modules/cmdline_assembly_v2/index.md
     #- Annotation using command line tools: modules/cmdline_prokka/index.md
     #- Bash scripts: modules/scripts/index.md
-    - Differential gene expression: modules/dge/index.md
 
 
 #- Transcriptomics:
@@ -98,4 +92,4 @@ pages:
     #- Metabolite identification: modules/xcms/index.md
     #- Draft: modules/xcms/metab_draft.md
 
-- About: about/index.md
+# - About: about/index.md
