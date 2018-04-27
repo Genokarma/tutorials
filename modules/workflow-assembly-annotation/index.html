@@ -9,7 +9,7 @@
         <meta name="description" content="Tutorials for using Galaxy Australia">
       
       
-        <link rel="canonical" href="http://sepsis-omics.github.io/tutorials/modules/prokka/">
+        <link rel="canonical" href="http://sepsis-omics.github.io/tutorials/modules/workflow-assembly-annotation/">
       
       
         <meta name="author" content="Anna Syme, Gareth Price, Torsten Seemann">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Genome annotation - Galaxy Australia Training</title>
+        <title>Workflow - Assembly and annotation - Galaxy Australia Training</title>
       
     
     
@@ -82,7 +82,7 @@
             
               
             
-            Genome annotation
+            Workflow - Assembly and annotation
           
         </span>
       </div>
@@ -279,82 +279,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Genome annotation
-      </label>
-    
-    <a href="./" title="Genome annotation" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../prokka/" title="Genome annotation" class="md-nav__link">
       Genome annotation
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#background" title="Background" class="md-nav__link">
-    Background
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#learning-objectives" title="Learning objectives" class="md-nav__link">
-    Learning objectives
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input-data" title="Input data" class="md-nav__link">
-    Input data
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-prokka" title="Run Prokka" class="md-nav__link">
-    Run Prokka
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examine-the-output" title="Examine the output" class="md-nav__link">
-    Examine the output
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#view-annotated-features-in-jbrowse" title="View annotated features in JBrowse" class="md-nav__link">
-    View annotated features in JBrowse
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -410,11 +339,18 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../workflow-assembly-annotation/" title="Workflow - Assembly and annotation" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+    <a href="./" title="Workflow - Assembly and annotation" class="md-nav__link md-nav__link--active">
       Workflow - Assembly and annotation
     </a>
+    
   </li>
 
     
@@ -461,238 +397,17 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#background" title="Background" class="md-nav__link">
-    Background
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#learning-objectives" title="Learning objectives" class="md-nav__link">
-    Learning objectives
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input-data" title="Input data" class="md-nav__link">
-    Input data
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-prokka" title="Run Prokka" class="md-nav__link">
-    Run Prokka
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examine-the-output" title="Examine the output" class="md-nav__link">
-    Examine the output
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#view-annotated-features-in-jbrowse" title="View annotated features in JBrowse" class="md-nav__link">
-    View annotated features in JBrowse
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/BioDeVL-training/tutorials/edit/master/docs/modules/prokka/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/BioDeVL-training/tutorials/edit/master/docs/modules/workflow-assembly-annotation/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <p><br></p>
-<h1 id="genome-annotation-using-prokka">Genome annotation using Prokka</h1>
-<p>Keywords: annotation, Prokka, JBrowse, Galaxy, Microbial Genomics Virtual Lab</p>
-<h2 id="background">Background</h2>
-<p>In this section we will use a software tool called Prokka to annotate the draft genome sequence produced in the previous <a href="../spades/">tutorial</a>. Prokka is a “wrapper”; it collects together several pieces of software (from various authors), and so avoids “re-inventing the wheel”.</p>
-<p>Prokka finds and annotates features (both protein coding regions and RNA genes, i.e. tRNA, rRNA) present on on a sequence. Note, Prokka uses a two-step process for the annotation of protein coding regions: first, protein coding regions on the genome are identified using <a href="http://prodigal.ornl.gov/">Prodigal</a>; second, the <em>function</em> of the encoded protein is predicted by similarity to proteins in one of many protein or protein domain databases. Prokka is a software tool that can be used to annotate bacterial, archaeal and viral genomes quickly, generating standard output files in GenBank, EMBL and gff formats. More information about Prokka can be found <a href="https://github.com/tseemann/prokka">here</a>.</p>
-<h2 id="learning-objectives">Learning objectives</h2>
-<p>At the end of this tutorial you should be able to:</p>
-<ol>
-<li>load a genome assembly into Prokka</li>
-<li>annotate the assembly using Prokka</li>
-<li>examine the annotated genome using JBrowse</li>
-</ol>
-<h2 id="input-data">Input data</h2>
-<p>Prokka requires assembled contigs.</p>
-<ul>
-<li>
-<p>If you are continuing on from the previous workshop (<a href="../spades/">Assembly with Spades</a>), this file will be in your current history named something like <fn>SPAdes contigs(fasta)</fn>. </p>
-</li>
-<li>
-<p>Or, if you have uploaded the history of workshop files, there is also a copy in your history called <fn>SPAdes_contigs.fasta</fn>. Either copy is fine to use. </p>
-</li>
-<li>
-<p>Alternatively, get the file called &ldquo;assembled contigs&rdquo; from the <a href="../data-dna/index.md">Training dataset page.</a></p>
-</li>
-</ul>
-<!--
-We will import a history from Galaxy:
-
-- In the menu options across the top, go to <ss>Shared Data</ss>.
-- Click on <ss>Histories</ss>.
-- A list of published histories should appear. Click on <fn>GCC 2016 small genome annotation</fn>.
-- Click on <ss>Import history</ss>.
-- An option will appear to re-name the history. We don't need to rename it, so click <ss>Import</ss>.
-- The history will now appear in your Current History pane, and the <fn>SPAdes_contigs.fasta</fn> file is now ready to use in Galaxy analyses.
--->
-
-<h2 id="run-prokka">Run Prokka</h2>
-<ul>
-<li>In Galaxy, go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: Annotation &rarr; Prokka</ss>  </li>
-<li>Set the following parameters (leave everything else unchanged):<ul>
-<li><ss>Contigs to annotate</ss>: <fn>SPAdes contigs (fasta)</fn>  </li>
-<li><ss>Locus tag prefix (&ndash;locustag)</ss>: P</li>
-<li><ss>Force GenBank/ENA/DDJB compliance (&ndash;compliant)</ss>: <em>No</em></li>
-<li><ss>Sequencing Centre ID (&ndash;centre)</ss>: V</li>
-<li><ss>Genus Name</ss>: <em>Staphylococcus</em>  </li>
-<li><ss>Species Name</ss>: <em>aureus</em>  </li>
-<li><ss>Use genus-specific BLAST database</ss> <em>No</em>  </li>
-</ul>
-</li>
-</ul>
-<p>Your tool interface should look like this:</p>
-<p><img alt="prokka interface" src="./images/interface.png" /></p>
-<ul>
-<li>Click <ss>Execute</ss>  </li>
-</ul>
-<h2 id="examine-the-output">Examine the output</h2>
-<!-- First, enable *Scratchbook* in Galaxy - this allows you to view several windows simultaneously. Click on the 3&times;3 squares icon on the menu bar:
-
-![scratchbook icon](images/scratchbook.png)
--->
-
-<p>Once Prokka has finished, examine each of its output files.</p>
-<ul>
-<li>The <fn>GFF</fn> and <fn>GBK</fn> files contain all of the information about the features annotated (in different formats.)</li>
-<li>The <fn>.txt</fn> file contains a summary of the number of features annotated.</li>
-<li>The <fn>.faa</fn> file contains the protein sequences of the genes annotated.</li>
-<li>The <fn>.ffn</fn> file contains the nucleotide sequences of the genes annotated.</li>
-</ul>
-<h2 id="view-annotated-features-in-jbrowse">View annotated features in JBrowse</h2>
-<p>Now that we have annotated the draft genome sequence, we would like to view the sequence in the JBrowse genome viewer.</p>
-<ul>
-<li>
-<p>Go to the Galaxy tool panel, and use the top search box to search for &ldquo;JBrowse&rdquo;. </p>
-</li>
-<li>
-<p>Under <ss>Reference genome to display</ss> choose <em>Use a genome from history</em>.</p>
-</li>
-<li>
-<p>Under <ss>Select the reference genome</ss> choose <fn>Prokka on data XX:fna</fn>. This .fna sequence is the fasta nucleotide sequence, and will be the reference against which annotations are displayed.</p>
-</li>
-<li>
-<p>For <ss>Produce a Standalone Instance</ss> select <em>Yes</em>.</p>
-</li>
-<li>
-<p>For <ss>Genetic Code</ss> choose <em>11: The Bacterial, Archaeal and Plant Plastid Code</em>.</p>
-</li>
-<li>
-<p>Under <ss>JBrowse-in-Galaxy Action</ss> choose <em>New JBrowse Instance</em>.</p>
-</li>
-<li>
-<p>Click <ss>Insert Track Group</ss></p>
-</li>
-<li>
-<p>Under <ss>Track Category</ss> type in <em>gene annotations</em>.</p>
-</li>
-<li>
-<p>Click <ss>Insert Annotation Track</ss></p>
-</li>
-<li>
-<p>For <ss>Track Type</ss> choose <em>GFF/GFF3/BED/GBK Features</em></p>
-</li>
-<li>
-<p>For <ss>GFF/GFF3/BED Track Data</ss> select <fn>Prokka on data XX:gff</fn>  [Note: not wildtype.gff]</p>
-</li>
-<li>
-<p>Under <ss>JBrowse Track Type[Advanced]</ss> select <em>Canvas Features</em>.</p>
-</li>
-<li>
-<p>Click on <ss>JBrowse Styling Options <Advanced]</ss></p>
-</li>
-<li>
-<p>Under <ss>JBrowse style.label</ss> add in <em>product</em>.</p>
-</li>
-<li>
-<p>Under <ss>Track Visibility</ss> choose <em>On for new users</em>.</p>
-</li>
-</ul>
-<p>Your tool interface should look like this:</p>
-<p><img alt="JBrowse interface" src="./images/jbrowse_int.png" /></p>
-<!--
-![JBrowse interface](images/jbrowse_oldversion.png) -->
-
-<ul>
-<li>
-<p>Click <ss>Execute</ss></p>
-</li>
-<li>
-<p>A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.</p>
-</li>
-<li>
-<p>Under <ss>Available Tracks</ss> on the left, tick the box for <fn>Prokka on data XX:gff</fn>.</p>
-</li>
-<li>
-<p>Select contig 1 in the drop down box. You can only see one contig displayed at a time.</p>
-</li>
-</ul>
-<p><img alt="JBrowse" src="./images/jbrowse5.png" /></p>
-<ul>
-<li>
-<p>Use the plus and minus buttons to zoom in and out, and the arrows to move left or right (or click and drag within the window to move left or right).</p>
-</li>
-<li>
-<p>Zoom in to see the reference sequence at the top. JBrowse displays the sequence and a 6-frame amino acid translation.</p>
-</li>
-</ul>
-<p>Zoomed in view:</p>
-<p><img alt="JBrowse" src="./images/jbrowse6.png" /></p>
-<ul>
-<li>Right click on a gene/feature annotation (the bars on the annotation track), then select <ss>View Details</ss> to see more information.<ul>
-<li>gene name</li>
-<li>product name</li>
-<li>you can download the FASTA sequence by clicking on the disk icon.</li>
-</ul>
-</li>
-</ul>
-<!-- ## What next?
-
-- Identify genome variants (nucletotide changes) using [Snippy](/modules/snippy/index.md).
--->
+                  <h1>Workflow - Assembly and annotation</h1>
+                
+                
                 
                   
                 
@@ -711,7 +426,7 @@ We will import a history from Galaxy:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../spades/" title="Genome assembly" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../workflows/" title="Workflows - Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -720,19 +435,19 @@ We will import a history from Galaxy:
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Genome assembly
+                Workflows - Introduction
               </span>
             </div>
           </a>
         
         
-          <a href="../snippy/" title="Variant calling" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../workflow-variant-calling/" title="Workflow - Variant calling" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Variant calling
+                Workflow - Variant calling
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
