@@ -1,39 +1,10 @@
-<br>
 # Assembly using Spades
 
-Keywords: de novo assembly, Spades, Galaxy, Microbial Genomics Virtual Lab
-
-## Background
 Spades is one of a number of *de novo* assemblers that use short read sets as input (e.g. Illumina Reads), and the assembly method is based on de Bruijn graphs. For information about Spades see this [link](http://bioinf.spbau.ru/spades).
 
 
-## Learning objectives
-At the end of this tutorial you should be able to:
 
-1. assemble the reads using Spades, and
-2. examine the output assembly.
-
-
-## Import and view data
-
-<!-- If you have completed the previous tutorial on [Quality Control](/modules/fastqc/index.md), you should already have the required files in your current Galaxy history. If not, see how to get them [here](/modules/galaxy/index.md).
--->
-
-### Galaxy
-
-If you are using Galaxy-Mel or Galaxy-Qld, import the files:
-
-- In your browser, go to [Galaxy-Mel](http://galaxy-mel.genome.edu.au/galaxy/) or [Galaxy-Qld](https://galaxy-qld.genome.edu.au/galaxy) 
-- In the top Galaxy panel, go to <ss>User</ss> and log in (or register, and then log in)
-- In the top Galaxy panel, go to <ss>Shared Data</ss> and click on the drop down arrow
-- Click on <ss>Histories</fn>
-- Click on <fn>Genomics-workshop</fn> and then (over in the top right) <ss>Import history</ss>
-- The files will now be listed in the right hand panel (your current history).
-
-
-(Alternatively, see [here](/modules/galaxy/index.md) for information about how to start with Galaxy, and [here](/modules/data-dna/index.md) for the link to import the Galaxy history for this tutorial, if you don't already have them in your history.)
-
-### The data
+## The data
 
 The read set for today is from an imaginary *Staphylococcus aureus* bacterium with a miniature genome.
 
@@ -47,6 +18,45 @@ The read set for today is from an imaginary *Staphylococcus aureus* bacterium wi
 -   Each read is 150 bases long. <!--(before trimming)-->
 
 -   The number of bases sequenced is equivalent to 19x the genome sequence of the wildtype strain. (Read coverage 19x - rather low!).
+
+
+## Import the data
+
+
+Log in to Galaxy-Au
+
+Creat a new history for this analysis
+
+
+
+Go to Zenodo:
+http://doi.org/10.5281/zenodo.582600
+
+
+mutant_R1.fastq
+
+Right click on file name: select "copy link address"
+
+
+In Galaxy, Get Data -> Upload File
+Paste/Fetch data
+paste in link address
+Start
+Close
+
+Change name
+Check data type. should be fastqsanger
+
+repeat for mutant_R2
+
+
+
+
+
+
+
+
+
 
 <!--
 - <fn>wildtype.fna</fn>: the reference genome sequence of the wildtype strain in fasta format (a header line, then the nucleotide sequence of the genome)
@@ -95,7 +105,7 @@ Although we have warnings for two outputs (per base sequence content; Kmer conte
 
 -->
 
-## Assemble reads with Spades
+## Assemble the reads
 
 - We will perform a *de novo* assembly of the mutant FASTQ reads into long contiguous sequences (in FASTA format.)
 

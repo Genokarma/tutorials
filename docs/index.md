@@ -5,7 +5,7 @@
 
 This site contains tutorials for using Galaxy Australia.
 
-Tutorials are listed in the left hand panel, or click the menu button in the top left of the page.
+Tutorials are listed in the left hand panel, or click the menu button (three horizontal bars) in the top left of the page.
 
 
 
