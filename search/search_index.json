@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome!\n\n\nThis website is currently under construction. It is not yet ready for use. Please contact anna.syme@unimelb.edu.au with questions.\n\n\nThis site contains tutorials for using Galaxy Australia.\n\n\nClick on the tutorial name in the left hand panel.\n\n\nFor new users, we recommend starting at the top of the list.\n\n\n\n\nAbout\n\n\nGalaxy-Au information.\n\n\nAuthors\n\n\nSupport\n\n\n\n\nResearch Data Services\n\n\nBioplatforms Australia\n\n\nNectar", 
+            "text": "Welcome!\n\n\nThis website is currently under construction. It is not yet ready for use. Please contact anna.syme@unimelb.edu.au with questions.\n\n\nThis site contains tutorials for using Galaxy Australia.\n\n\nTutorials are listed in the left hand panel, or click the menu button (three horizontal bars) in the top left of the page.\n\n\n\n\nAbout\n\n\nGalaxy-Au information.\n\n\nAuthors\n\n\nSupport\n\n\n\n\nResearch Data Services\n\n\nBioplatforms Australia\n\n\nNectar", 
             "title": "Galaxy Australia"
         }, 
         {
             "location": "/#welcome", 
-            "text": "This website is currently under construction. It is not yet ready for use. Please contact anna.syme@unimelb.edu.au with questions.  This site contains tutorials for using Galaxy Australia.  Click on the tutorial name in the left hand panel.  For new users, we recommend starting at the top of the list.", 
+            "text": "This website is currently under construction. It is not yet ready for use. Please contact anna.syme@unimelb.edu.au with questions.  This site contains tutorials for using Galaxy Australia.  Tutorials are listed in the left hand panel, or click the menu button (three horizontal bars) in the top left of the page.", 
             "title": "Welcome!"
         }, 
         {
@@ -27,7 +27,7 @@
         }, 
         {
             "location": "/modules/galaxy/", 
-            "text": "Starting with Galaxy\n\n\nWhat is Galaxy?\n\n\nGalaxy is a web-based analysis and workflow platform.\n\n\n\n\nDesigned for biologists\n\n\nUpload your data\n\n\nAccess shared data\n\n\nUse common bioinformatics tools\n\n\nDevelop workflows\n\n\nAccess via a web page\n\n\nFree\n\n\n\n\nIn this set of tutorials, we are using Galaxy-Australia.\n\n\n\n\nWe access Galaxy-Australia by going to a web page with this address: [add address]\n\n\nHowever, there are many different Galaxy servers available [add list].\n\n\nMore information about the Galaxy project can be found \nhere\n.\n\n\n\n\nThe Galaxy-Australia page looks like this:\n\n\n[replace with Galaxy-Au screenshot]\n\n\n\n\n\n\nTools\n on the left\n\n\nViewing\n panel in the middle\n\n\nHistory\n of analysis and files on the right\n\n\n\n\nCan I use Galaxy?\n\n\nYes!\n\n\n\n\nGalaxy is free to use and available for everyone.\n\n\nAustralian researchers may find Galaxy-Australia particularly suited to their analysis needs as it has been developed in consultation with scientists across the country.\n\n\n\n\nHow do I get started?\n\n\nTo use Galaxy-Australia, follow these steps:\n\n\n\n\nOpen your internet browser. Use Firefox, Chrome or Safari (not Internet Explorer).\n\n\nOpen a new tab.\n\n\nIn the address bar, type in the address of Galaxy-Australia [add address].\n\n\n\n\n[update image]\n\n\n\n\nClick on \nUser\n button on the right.\n\n\n[update image]\n\n\n\n\n\n\nSelect: \nUser \n Register\n\n\nEnter your email, choose a password, and choose a user name.\n\n\n\n\nClick \nSubmit\n\n\n\n\n\n\nLogin, and refresh the page.\n\n\n\n\n\n\nEach time you use this Galaxy server, log in to see your data and histories.\n\n\n\n\nYou have [amount of storage]\n\n\nYour data will stay stored for [amount of time.]\n\n\nIf you are using a different Galaxy server, you would need to register/log in to that server.\n\n\n\n\nUpload a file\n\n\nfrom Zenodo\n\n\nUse a tool\n\n\nView results\n\n\nImport some data\n\n\nchange the file name\nchange the file type\nUse a tool\nView results\n\n\nImport a history\n\n\nadd a simple history to Galaxy Au\nimport\n\n\nUse a tool\n\n\nView results\n\n\nLook at all your histories\n\n\ncreate a new history\nyou can drag files between histories\ndrag some files in\nback to main page with \nAnalyze data\n\n\nWhat\ns next\n\n\ntry:\n- MB Galaxy intro tutorial [needs updating for Galaxy-Au]\n\n\nMove this stuff:\n\n\n[move this stuff below into the relevant individual workshops, to import a history for each of them: ]\n\n\nImport a shared history\n\n\nFor Galaxy-Australia users, import the following history:\n\n\n[add this history to Galaxy-Au]\n\n\n\n\nIn Galaxy, go to the top menu bar\n\n\n\n\nClick on \nShared Data\n\n\n\n\n\n\nFrom the drop down menu, click on \nHistories\n\n\n\n\n\n\n[update image]\n\n\n\n\n\n\nFrom the list of Published Histories, click \nGenomics-workshop\n\n\n\n\n[update or re-name this history as appropriate]\n[update image]\n\n\n\n\n\n\nIn the top right, click on \nImport history\n\n\n\n\n\n\n\n\nThis history will now be in your \nCurrent history\n - the right hand pane in Galaxy.\n\n\nThere should be six files. (The number in front of the file name is not important.)\n\n\n\n\n[update image]\n\n\n\n\n\n\nWe will use these files for the Genomics Workshop. For additional ways to import histories, see below.\n\n\n\n\nHow to use Galaxy\n\n\n\n\n\n\nAvailable tools are in the left hand panel. Find the tool you want or use the search bar at the top of the tools.\n\n\n\n\n\n\nClick on the tool you want to use.\n\n\n\n\n\n\nThe tool interface will appear in the centre Galaxy panel. Check the settings.\n\n\n\n\n\n\nClick \nExecute\n.\n\n\n\n\n\n\nWhen the tool has finished, output file(s) will appear at the top of your \nCurrent History\n in the right hand panel.\n\n\n\n\n\n\nClick on the eye icon next to a file to view it.\n\n\n\n\n\n\nTo access older histories, use the button at the top right of the History panel.\n\n\n\n\n\n\nAlternative file import information\n\n\n\n\n\nCopy this link:\n\n\nhttps://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Microbial_tutorials/Galaxy_history_input_files.tar.gz\n\n\n\n\nClick on the \nHistory\n cog \n\n\nSelect \nImport from File\n\n\n\n\n\n\n\n\nIn the box called \nArchived History URL\n, paste in the link address to the Galaxy history (that you copied above).\n\n\nClick \nSubmit\n\n\nWait a few seconds.\n\n\nClick on the \nview all histories\n button \n\n\nSee if the Galaxy history has been imported: it will be called \nimported from archive: Data\n\n\nAbove that pane, click on the \nSwitch to\n button.\n\n\nThen click \nDone\n (in the top left corner).\n\n\nYou should now have a list of five files in your current history. We will use these for the Genomics Workshop; or see below for additional files.\n\n\n\n\n\n\nOther ways to import data into Galaxy\n\n\n\n\nUpload a file from your computer\n\n\nImport a shared history\n\n\nSee the \nnext section\n for more detailed information.", 
+            "text": "Starting with Galaxy\n\n\nWhat is Galaxy?\n\n\nGalaxy is a web-based analysis and workflow platform.\n\n\n\n\nDesigned for biologists\n\n\nEasily accessible via a web page\n\n\nFree to use\n\n\nYou can upload your own data\n\n\nYou can access shared data\n\n\nUse common bioinformatics tools\n\n\nDevelop workflows\n\n\n\n\nIn this set of tutorials, we are using \nGalaxy-Australia\n.\n\n\n\n\nWe access Galaxy-Australia by going to a web page with this address: [add address]\n\n\nHowever, there are many different Galaxy servers available. Some of them have a set of general tools, and some have been developed for particular analyses. You can use more than one Galaxy server but you will need to register separately for each one, and they don\nt share data between them. A list of Galaxy servers is \nhere\n.\n\n\nMore information about the Galaxy project can be found \nhere\n.\n\n\n\n\nThe Galaxy-Australia page looks like this:\n\n\n[replace with Galaxy-Au screenshot]\n\n\n\n\n\n\nTools\n on the left\n\n\nViewing\n panel in the middle\n\n\nHistory\n of analysis and files on the right\n\n\n\n\nCan I use Galaxy?\n\n\nYes!\n\n\n\n\nGalaxy is free to use and available for everyone.\n\n\nAustralian researchers may find Galaxy-Australia particularly suited to their analysis needs as it has been developed in consultation with scientists across the country.\n\n\n\n\nHow do I get started?\n\n\nTo use Galaxy-Australia, follow these steps:\n\n\n\n\nOpen your internet browser. Use Firefox, Chrome or Safari (not Internet Explorer).\n\n\nOpen a new tab.\n\n\nIn the address bar, type in the address of Galaxy-Australia [add address].\n\n\n\n\n[update image]\n\n\n\n\nClick on \nUser\n button on the right.\n\n\n[update image]\n\n\n\n\n\n\nSelect: \nUser \n Register\n\n\nEnter your email, choose a password, and choose a user name.\n\n\n\n\nClick \nSubmit\n\n\n\n\n\n\nLogin, and refresh the page.\n\n\n\n\n\n\nEach time you use this Galaxy server, log in to see your data and histories.\n\n\n\n\nYou have [amount of storage]\n\n\nYour data will stay stored for [amount of time.]\n\n\nIf you are using a different Galaxy server, you would need to register/log in to that server.\n\n\n\n\nHow to use Galaxy\n\n\n\n\n\n\nAvailable tools are in the left hand panel. Find the tool you want or use the search bar at the top of the tools.\n\n\n\n\n\n\nClick on the tool you want to use.\n\n\n\n\n\n\nThe tool interface will appear in the centre Galaxy panel. Check the settings.\n\n\n\n\n\n\nClick \nExecute\n.\n\n\n\n\n\n\nWhen the tool has finished, output file(s) will appear at the top of your \nCurrent History\n in the right hand panel.\n\n\n\n\n\n\nClick on the eye icon next to a file to view it.\n\n\n\n\n\n\nTo access older histories, use the button at the top right of the History panel.\n\n\n\n\n\n\nExercise 1\n\n\nName your current history\n\n\nname\n\n\nenter\n\n\nUpload a file\n\n\nfrom Zenodo\n\n\ne.g. 1 x fastQ file - download to your computer\nGalaxy - get data - upload file - choose local file\n\n\nUse a tool\n\n\ne.g. FASTQC\n\n\nView results\n\n\nclick on file name\n\n\nExercise 2\n\n\nCreate a new history\n\n\nImport some data\n\n\nfrom Zenodo\n\n\ne.g. 2 x fastq files\n\n\nCopy this link:\n\n\nadd in zenodo link\n\n\nchange the file name\n\n\nchange the file type\n\n\nUse a tool - e.g. Pear\n\n\nView results\n\n\nExercise 3\n\n\nImport a history from Galaxy-Au\n\n\nadd a simple history to Galaxy Au\n\n\nimport\n\n\ne.g. 2 x fastq files and a reference genome\n\n\nFor Galaxy-Australia users, import the following history:\n\n\n[add this history to Galaxy-Au]\n\n\n\n\nIn Galaxy, go to the top menu bar\n\n\n\n\nClick on \nShared Data\n\n\n\n\n\n\nFrom the drop down menu, click on \nHistories\n\n\n\n\n\n\n[update image]\n\n\n\n\n\n\nFrom the list of Published Histories, click \nname of history\n\n\n\n\n[update image]\n\n\n\n\n\n\nIn the top right, click on \nImport history\n\n\n\n\n\n\n\n\nThis history will now be in your \nCurrent history\n - the right hand pane in Galaxy.\n\n\nThere should be XX files. (The number in front of the file name is not important.)\n\n\n\n\n[update image]\n\n\n\n\nUse a tool\n\n\nUse a tool - e.g. freebayes\n\n\nFilter results\n\n\nthen filter results\n\n\nView results\n\n\nView results\n\n\nExercise 4 - Import a shared history from a link\n\n\n\n\nClick on the \nHistory\n cog \n\n\nSelect \nImport from File\n\n\n\n\n\n\n\n\nIn the box called \nArchived History URL\n, paste in the link address to the Galaxy history (that you copied above).\n\n\nClick \nSubmit\n\n\nWait a few seconds.\n\n\nClick on the \nview all histories\n button \n\n\nSee if the Galaxy history has been imported: it will be called \nimported from archive: Data\n\n\nAbove that pane, click on the \nSwitch to\n button.\n\n\nThen click \nDone\n (in the top left corner).\n\n\nYou should now have a list of five files in your current history. We will use these for the Genomics Workshop; or see below for additional files.\n\n\n\n\n\n\nExercise 5\n\n\nRe-run a tool\n\n\nwith changed settings.\n\n\nExercise 6\n\n\nLook at all your histories\n\n\ncreate a new history\n\n\nyou can drag files between histories\n\n\ndrag some files in\n\n\nback to main page with \nAnalyze data\n\n\nSummary\n\n\nWhat have we learned?\n\n\n\n\nThe Galaxy interface has tools on the left, viewing pane in the middle, and a history of your data analysis on the right.\n\n\nYou can create a new history for each analysis. All your histories are saved.\n\n\nUpload data from your computer or from a web address.\n\n\nYou can also upload data (and analyses) by importing a history.\n\n\nChoose a tool and change any settings for your analysis.\n\n\nRun the tool. The output files will be saved at the top of your history.\n\n\nView the output files by clicking on the eye icon.\n\n\nLog out of Galaxy-Au. When you log back in, your histories will all be there.\n\n\n\n\nWhat\ns next\n\n\ntry:\n- MB Galaxy intro tutorial [needs updating for Galaxy-Au]\n\n\nMove this stuff:\n\n\n[move this stuff below into the relevant individual workshops, to import a history for each of them: ]", 
             "title": "Starting with Galaxy"
         }, 
         {
@@ -37,7 +37,7 @@
         }, 
         {
             "location": "/modules/galaxy/#what-is-galaxy", 
-            "text": "Galaxy is a web-based analysis and workflow platform.   Designed for biologists  Upload your data  Access shared data  Use common bioinformatics tools  Develop workflows  Access via a web page  Free   In this set of tutorials, we are using Galaxy-Australia.   We access Galaxy-Australia by going to a web page with this address: [add address]  However, there are many different Galaxy servers available [add list].  More information about the Galaxy project can be found  here .   The Galaxy-Australia page looks like this:  [replace with Galaxy-Au screenshot]    Tools  on the left  Viewing  panel in the middle  History  of analysis and files on the right", 
+            "text": "Galaxy is a web-based analysis and workflow platform.   Designed for biologists  Easily accessible via a web page  Free to use  You can upload your own data  You can access shared data  Use common bioinformatics tools  Develop workflows   In this set of tutorials, we are using  Galaxy-Australia .   We access Galaxy-Australia by going to a web page with this address: [add address]  However, there are many different Galaxy servers available. Some of them have a set of general tools, and some have been developed for particular analyses. You can use more than one Galaxy server but you will need to register separately for each one, and they don t share data between them. A list of Galaxy servers is  here .  More information about the Galaxy project can be found  here .   The Galaxy-Australia page looks like this:  [replace with Galaxy-Au screenshot]    Tools  on the left  Viewing  panel in the middle  History  of analysis and files on the right", 
             "title": "What is Galaxy?"
         }, 
         {
@@ -51,34 +51,104 @@
             "title": "How do I get started?"
         }, 
         {
+            "location": "/modules/galaxy/#how-to-use-galaxy", 
+            "text": "Available tools are in the left hand panel. Find the tool you want or use the search bar at the top of the tools.    Click on the tool you want to use.    The tool interface will appear in the centre Galaxy panel. Check the settings.    Click  Execute .    When the tool has finished, output file(s) will appear at the top of your  Current History  in the right hand panel.    Click on the eye icon next to a file to view it.    To access older histories, use the button at the top right of the History panel.", 
+            "title": "How to use Galaxy"
+        }, 
+        {
+            "location": "/modules/galaxy/#exercise-1", 
+            "text": "", 
+            "title": "Exercise 1"
+        }, 
+        {
+            "location": "/modules/galaxy/#name-your-current-history", 
+            "text": "name  enter", 
+            "title": "Name your current history"
+        }, 
+        {
             "location": "/modules/galaxy/#upload-a-file", 
-            "text": "from Zenodo", 
+            "text": "from Zenodo  e.g. 1 x fastQ file - download to your computer\nGalaxy - get data - upload file - choose local file", 
             "title": "Upload a file"
         }, 
         {
             "location": "/modules/galaxy/#use-a-tool", 
-            "text": "", 
+            "text": "e.g. FASTQC", 
             "title": "Use a tool"
         }, 
         {
             "location": "/modules/galaxy/#view-results", 
-            "text": "", 
+            "text": "click on file name", 
             "title": "View results"
         }, 
         {
+            "location": "/modules/galaxy/#exercise-2", 
+            "text": "", 
+            "title": "Exercise 2"
+        }, 
+        {
+            "location": "/modules/galaxy/#create-a-new-history", 
+            "text": "", 
+            "title": "Create a new history"
+        }, 
+        {
             "location": "/modules/galaxy/#import-some-data", 
-            "text": "change the file name\nchange the file type\nUse a tool\nView results", 
+            "text": "from Zenodo  e.g. 2 x fastq files  Copy this link:  add in zenodo link  change the file name  change the file type  Use a tool - e.g. Pear  View results", 
             "title": "Import some data"
         }, 
         {
-            "location": "/modules/galaxy/#import-a-history", 
-            "text": "add a simple history to Galaxy Au\nimport  Use a tool  View results", 
-            "title": "Import a history"
+            "location": "/modules/galaxy/#exercise-3", 
+            "text": "", 
+            "title": "Exercise 3"
+        }, 
+        {
+            "location": "/modules/galaxy/#import-a-history-from-galaxy-au", 
+            "text": "add a simple history to Galaxy Au  import  e.g. 2 x fastq files and a reference genome  For Galaxy-Australia users, import the following history:  [add this history to Galaxy-Au]   In Galaxy, go to the top menu bar   Click on  Shared Data    From the drop down menu, click on  Histories    [update image]    From the list of Published Histories, click  name of history   [update image]    In the top right, click on  Import history     This history will now be in your  Current history  - the right hand pane in Galaxy.  There should be XX files. (The number in front of the file name is not important.)   [update image]", 
+            "title": "Import a history from Galaxy-Au"
+        }, 
+        {
+            "location": "/modules/galaxy/#use-a-tool_1", 
+            "text": "Use a tool - e.g. freebayes", 
+            "title": "Use a tool"
+        }, 
+        {
+            "location": "/modules/galaxy/#filter-results", 
+            "text": "then filter results", 
+            "title": "Filter results"
+        }, 
+        {
+            "location": "/modules/galaxy/#view-results_1", 
+            "text": "View results", 
+            "title": "View results"
+        }, 
+        {
+            "location": "/modules/galaxy/#exercise-4-import-a-shared-history-from-a-link", 
+            "text": "Click on the  History  cog   Select  Import from File     In the box called  Archived History URL , paste in the link address to the Galaxy history (that you copied above).  Click  Submit  Wait a few seconds.  Click on the  view all histories  button   See if the Galaxy history has been imported: it will be called  imported from archive: Data  Above that pane, click on the  Switch to  button.  Then click  Done  (in the top left corner).  You should now have a list of five files in your current history. We will use these for the Genomics Workshop; or see below for additional files.", 
+            "title": "Exercise 4 - Import a shared history from a link"
+        }, 
+        {
+            "location": "/modules/galaxy/#exercise-5", 
+            "text": "", 
+            "title": "Exercise 5"
+        }, 
+        {
+            "location": "/modules/galaxy/#re-run-a-tool", 
+            "text": "with changed settings.", 
+            "title": "Re-run a tool"
+        }, 
+        {
+            "location": "/modules/galaxy/#exercise-6", 
+            "text": "", 
+            "title": "Exercise 6"
         }, 
         {
             "location": "/modules/galaxy/#look-at-all-your-histories", 
-            "text": "create a new history\nyou can drag files between histories\ndrag some files in\nback to main page with  Analyze data", 
+            "text": "create a new history  you can drag files between histories  drag some files in  back to main page with  Analyze data", 
             "title": "Look at all your histories"
+        }, 
+        {
+            "location": "/modules/galaxy/#summary", 
+            "text": "What have we learned?   The Galaxy interface has tools on the left, viewing pane in the middle, and a history of your data analysis on the right.  You can create a new history for each analysis. All your histories are saved.  Upload data from your computer or from a web address.  You can also upload data (and analyses) by importing a history.  Choose a tool and change any settings for your analysis.  Run the tool. The output files will be saved at the top of your history.  View the output files by clicking on the eye icon.  Log out of Galaxy-Au. When you log back in, your histories will all be there.", 
+            "title": "Summary"
         }, 
         {
             "location": "/modules/galaxy/#whats-next", 
@@ -89,26 +159,6 @@
             "location": "/modules/galaxy/#move-this-stuff", 
             "text": "[move this stuff below into the relevant individual workshops, to import a history for each of them: ]", 
             "title": "Move this stuff:"
-        }, 
-        {
-            "location": "/modules/galaxy/#import-a-shared-history", 
-            "text": "For Galaxy-Australia users, import the following history:  [add this history to Galaxy-Au]   In Galaxy, go to the top menu bar   Click on  Shared Data    From the drop down menu, click on  Histories    [update image]    From the list of Published Histories, click  Genomics-workshop   [update or re-name this history as appropriate]\n[update image]    In the top right, click on  Import history     This history will now be in your  Current history  - the right hand pane in Galaxy.  There should be six files. (The number in front of the file name is not important.)   [update image]    We will use these files for the Genomics Workshop. For additional ways to import histories, see below.", 
-            "title": "Import a shared history"
-        }, 
-        {
-            "location": "/modules/galaxy/#how-to-use-galaxy", 
-            "text": "Available tools are in the left hand panel. Find the tool you want or use the search bar at the top of the tools.    Click on the tool you want to use.    The tool interface will appear in the centre Galaxy panel. Check the settings.    Click  Execute .    When the tool has finished, output file(s) will appear at the top of your  Current History  in the right hand panel.    Click on the eye icon next to a file to view it.    To access older histories, use the button at the top right of the History panel.", 
-            "title": "How to use Galaxy"
-        }, 
-        {
-            "location": "/modules/galaxy/#alternative-file-import-information", 
-            "text": "Copy this link:  https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Microbial_tutorials/Galaxy_history_input_files.tar.gz   Click on the  History  cog   Select  Import from File     In the box called  Archived History URL , paste in the link address to the Galaxy history (that you copied above).  Click  Submit  Wait a few seconds.  Click on the  view all histories  button   See if the Galaxy history has been imported: it will be called  imported from archive: Data  Above that pane, click on the  Switch to  button.  Then click  Done  (in the top left corner).  You should now have a list of five files in your current history. We will use these for the Genomics Workshop; or see below for additional files.", 
-            "title": "Alternative file import information"
-        }, 
-        {
-            "location": "/modules/galaxy/#other-ways-to-import-data-into-galaxy", 
-            "text": "Upload a file from your computer  Import a shared history  See the  next section  for more detailed information.", 
-            "title": "Other ways to import data into Galaxy"
         }, 
         {
             "location": "/modules/fastqc/", 
@@ -147,43 +197,28 @@
         }, 
         {
             "location": "/modules/spades/", 
-            "text": "Assembly using Spades\n\n\nKeywords: de novo assembly, Spades, Galaxy, Microbial Genomics Virtual Lab\n\n\nBackground\n\n\nSpades is one of a number of \nde novo\n assemblers that use short read sets as input (e.g. Illumina Reads), and the assembly method is based on de Bruijn graphs. For information about Spades see this \nlink\n.\n\n\nLearning objectives\n\n\nAt the end of this tutorial you should be able to:\n\n\n\n\nassemble the reads using Spades, and\n\n\nexamine the output assembly.\n\n\n\n\nImport and view data\n\n\n\n\n\nGalaxy\n\n\nIf you are using Galaxy-Mel or Galaxy-Qld, import the files:\n\n\n\n\nIn your browser, go to \nGalaxy-Mel\n or \nGalaxy-Qld\n \n\n\nIn the top Galaxy panel, go to \nUser\n and log in (or register, and then log in)\n\n\nIn the top Galaxy panel, go to \nShared Data\n and click on the drop down arrow\n\n\nClick on \nHistories\n\n\nClick on \nGenomics-workshop\n and then (over in the top right) \nImport history\n\n\nThe files will now be listed in the right hand panel (your current history).\n\n\n\n\n(Alternatively, see \nhere\n for information about how to start with Galaxy, and \nhere\n for the link to import the Galaxy history for this tutorial, if you don\nt already have them in your history.)\n\n\nThe data\n\n\nThe read set for today is from an imaginary \nStaphylococcus aureus\n bacterium with a miniature genome.\n\n\n\n\n\n\nThe whole genome shotgun method used to sequence our mutant strain read set was produced on an Illumina DNA sequencing instrument.\n\n\n\n\n\n\nThe files we need for assembly are the \nmutant_R1.fastq\n and \nmutant_R2.fastq\n.\n\n\n\n\n\n\n(We don\nt need the reference genome sequences for this tutorial).\n\n\n\n\n\n\nThe reads are paired-end.\n\n\n\n\n\n\nEach read is 150 bases long. \n\n\n\n\n\n\nThe number of bases sequenced is equivalent to 19x the genome sequence of the wildtype strain. (Read coverage 19x - rather low!).\n\n\n\n\n\n\n\n\n\n\n\nClick on the View Data button (the \n) next to one of the FASTQ sequence files.\n\n\n\n\n\n\n\nAssemble reads with Spades\n\n\n\n\n\n\nWe will perform a \nde novo\n assembly of the mutant FASTQ reads into long contiguous sequences (in FASTA format.)\n\n\n\n\n\n\nGo to \nTools \n NGS Analysis \n NGS: Assembly \n spades\n\n\n\n\n\n\nSet the following parameters (leave other settings as they are):\n\n\n\n\nRun only Assembly\n: \nYes\n [the \nYes\n button should be darker grey]\n\n\nKmers to use separated by commas:\n \n33,55,91\n  [note: no spaces]  \n\n\nCoverage cutoff:\n \nauto\n  \n\n\nFiles \n Forward reads:\n \nmutant_R1.fastq\n  \n\n\nFiles \n Reverse reads:\n \nmutant_R2.fastq\n  \n\n\n\n\n\n\n\n\nYour tool interface should look like this:\n\n\n\n\n\n\n\n\n\n\nClick \nExecute\n\n\n\n\nExamine the output\n\n\n\n\nGalaxy is now running Spades on the reads for you.\n\n\n\n\nWhen it is finished, you will have five (or more) new files in your history, including:\n\n\n\n\ntwo FASTA files of the resulting contigs and scaffolds\n\n\ntwo files for statistics about these\n\n\nthe Spades logfile\n\n\n\n\n\n\n\n\n\n\n\n\nClick on the View Data button \n on each of the files.\n\n\nNote that the short reads have been assembled into much longer contigs.\n\n\n(However, in this case, the contigs have not been assembled into larger scaffolds.)\n\n\nThe stats files will give you the length of each of the contigs, and the file should look something like this:", 
+            "text": "Assembly using Spades\n\n\nSpades is one of a number of \nde novo\n assemblers that use short read sets as input (e.g. Illumina Reads), and the assembly method is based on de Bruijn graphs. For information about Spades see this \nlink\n.\n\n\nThe data\n\n\nThe read set for today is from an imaginary \nStaphylococcus aureus\n bacterium with a miniature genome.\n\n\n\n\n\n\nThe whole genome shotgun method used to sequence our mutant strain read set was produced on an Illumina DNA sequencing instrument.\n\n\n\n\n\n\nThe files we need for assembly are the \nmutant_R1.fastq\n and \nmutant_R2.fastq\n.\n\n\n\n\n\n\n(We don\nt need the reference genome sequences for this tutorial).\n\n\n\n\n\n\nThe reads are paired-end.\n\n\n\n\n\n\nEach read is 150 bases long. \n\n\n\n\n\n\nThe number of bases sequenced is equivalent to 19x the genome sequence of the wildtype strain. (Read coverage 19x - rather low!).\n\n\n\n\n\n\nImport the data\n\n\nLog in to Galaxy-Au\n\n\nCreat a new history for this analysis\n\n\nGo to Zenodo:\nhttp://doi.org/10.5281/zenodo.582600\n\n\nmutant_R1.fastq\n\n\nRight click on file name: select \ncopy link address\n\n\nIn Galaxy, Get Data -\n Upload File\nPaste/Fetch data\npaste in link address\nStart\nClose\n\n\nChange name\nCheck data type. should be fastqsanger\n\n\nrepeat for mutant_R2\n\n\n\n\n\n\n\nClick on the View Data button (the \n) next to one of the FASTQ sequence files.\n\n\n\n\n\n\n\nAssemble the reads\n\n\n\n\n\n\nWe will perform a \nde novo\n assembly of the mutant FASTQ reads into long contiguous sequences (in FASTA format.)\n\n\n\n\n\n\nGo to \nTools \n NGS Analysis \n NGS: Assembly \n spades\n\n\n\n\n\n\nSet the following parameters (leave other settings as they are):\n\n\n\n\nRun only Assembly\n: \nYes\n [the \nYes\n button should be darker grey]\n\n\nKmers to use separated by commas:\n \n33,55,91\n  [note: no spaces]  \n\n\nCoverage cutoff:\n \nauto\n  \n\n\nFiles \n Forward reads:\n \nmutant_R1.fastq\n  \n\n\nFiles \n Reverse reads:\n \nmutant_R2.fastq\n  \n\n\n\n\n\n\n\n\nYour tool interface should look like this:\n\n\n\n\n\n\n\n\n\n\nClick \nExecute\n\n\n\n\nExamine the output\n\n\n\n\nGalaxy is now running Spades on the reads for you.\n\n\n\n\nWhen it is finished, you will have five (or more) new files in your history, including:\n\n\n\n\ntwo FASTA files of the resulting contigs and scaffolds\n\n\ntwo files for statistics about these\n\n\nthe Spades logfile\n\n\n\n\n\n\n\n\n\n\n\n\nClick on the View Data button \n on each of the files.\n\n\nNote that the short reads have been assembled into much longer contigs.\n\n\n(However, in this case, the contigs have not been assembled into larger scaffolds.)\n\n\nThe stats files will give you the length of each of the contigs, and the file should look something like this:", 
             "title": "Genome assembly"
         }, 
         {
             "location": "/modules/spades/#assembly-using-spades", 
-            "text": "Keywords: de novo assembly, Spades, Galaxy, Microbial Genomics Virtual Lab", 
+            "text": "Spades is one of a number of  de novo  assemblers that use short read sets as input (e.g. Illumina Reads), and the assembly method is based on de Bruijn graphs. For information about Spades see this  link .", 
             "title": "Assembly using Spades"
         }, 
         {
-            "location": "/modules/spades/#background", 
-            "text": "Spades is one of a number of  de novo  assemblers that use short read sets as input (e.g. Illumina Reads), and the assembly method is based on de Bruijn graphs. For information about Spades see this  link .", 
-            "title": "Background"
-        }, 
-        {
-            "location": "/modules/spades/#learning-objectives", 
-            "text": "At the end of this tutorial you should be able to:   assemble the reads using Spades, and  examine the output assembly.", 
-            "title": "Learning objectives"
-        }, 
-        {
-            "location": "/modules/spades/#import-and-view-data", 
-            "text": "", 
-            "title": "Import and view data"
-        }, 
-        {
-            "location": "/modules/spades/#galaxy", 
-            "text": "If you are using Galaxy-Mel or Galaxy-Qld, import the files:   In your browser, go to  Galaxy-Mel  or  Galaxy-Qld    In the top Galaxy panel, go to  User  and log in (or register, and then log in)  In the top Galaxy panel, go to  Shared Data  and click on the drop down arrow  Click on  Histories  Click on  Genomics-workshop  and then (over in the top right)  Import history  The files will now be listed in the right hand panel (your current history).   (Alternatively, see  here  for information about how to start with Galaxy, and  here  for the link to import the Galaxy history for this tutorial, if you don t already have them in your history.)", 
-            "title": "Galaxy"
-        }, 
-        {
             "location": "/modules/spades/#the-data", 
-            "text": "The read set for today is from an imaginary  Staphylococcus aureus  bacterium with a miniature genome.    The whole genome shotgun method used to sequence our mutant strain read set was produced on an Illumina DNA sequencing instrument.    The files we need for assembly are the  mutant_R1.fastq  and  mutant_R2.fastq .    (We don t need the reference genome sequences for this tutorial).    The reads are paired-end.    Each read is 150 bases long.     The number of bases sequenced is equivalent to 19x the genome sequence of the wildtype strain. (Read coverage 19x - rather low!).      Click on the View Data button (the  ) next to one of the FASTQ sequence files.", 
+            "text": "The read set for today is from an imaginary  Staphylococcus aureus  bacterium with a miniature genome.    The whole genome shotgun method used to sequence our mutant strain read set was produced on an Illumina DNA sequencing instrument.    The files we need for assembly are the  mutant_R1.fastq  and  mutant_R2.fastq .    (We don t need the reference genome sequences for this tutorial).    The reads are paired-end.    Each read is 150 bases long.     The number of bases sequenced is equivalent to 19x the genome sequence of the wildtype strain. (Read coverage 19x - rather low!).", 
             "title": "The data"
         }, 
         {
-            "location": "/modules/spades/#assemble-reads-with-spades", 
+            "location": "/modules/spades/#import-the-data", 
+            "text": "Log in to Galaxy-Au  Creat a new history for this analysis  Go to Zenodo:\nhttp://doi.org/10.5281/zenodo.582600  mutant_R1.fastq  Right click on file name: select  copy link address  In Galaxy, Get Data -  Upload File\nPaste/Fetch data\npaste in link address\nStart\nClose  Change name\nCheck data type. should be fastqsanger  repeat for mutant_R2    Click on the View Data button (the  ) next to one of the FASTQ sequence files.", 
+            "title": "Import the data"
+        }, 
+        {
+            "location": "/modules/spades/#assemble-the-reads", 
             "text": "We will perform a  de novo  assembly of the mutant FASTQ reads into long contiguous sequences (in FASTA format.)    Go to  Tools   NGS Analysis   NGS: Assembly   spades    Set the following parameters (leave other settings as they are):   Run only Assembly :  Yes  [the  Yes  button should be darker grey]  Kmers to use separated by commas:   33,55,91   [note: no spaces]    Coverage cutoff:   auto     Files   Forward reads:   mutant_R1.fastq     Files   Reverse reads:   mutant_R2.fastq        Your tool interface should look like this:      Click  Execute", 
-            "title": "Assemble reads with Spades"
+            "title": "Assemble the reads"
         }, 
         {
             "location": "/modules/spades/#examine-the-output", 
@@ -362,7 +397,12 @@
         }, 
         {
             "location": "/modules/metagenomics/metagenomics/", 
-            "text": "", 
+            "text": "Metagenomics\n\n\nadd link to intro metagenomics material (RDC project)", 
+            "title": "Metagenomics"
+        }, 
+        {
+            "location": "/modules/metagenomics/metagenomics/#metagenomics", 
+            "text": "add link to intro metagenomics material (RDC project)", 
             "title": "Metagenomics"
         }, 
         {
