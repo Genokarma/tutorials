@@ -116,6 +116,10 @@ from Zenodo
 
 e.g. 2 x fastq files
 
+Copy this link:
+
+<tt>add in zenodo link</tt>
+
 change the file name
 
 change the file type
@@ -125,9 +129,16 @@ Use a tool - e.g. Pear
 View results
 
 
+
+
+
+
+
+
+
 ## Exercise 3
 
-### Import a history
+### Import a history from Galaxy-Au
 
 add a simple history to Galaxy Au
 
@@ -135,20 +146,87 @@ import
 
 e.g. 2 x fastq files and a reference genome
 
+
+
+
+
+
+
+For Galaxy-Australia users, import the following history:
+
+[add this history to Galaxy-Au]
+
+* In Galaxy, go to the top menu bar
+* Click on <ss>Shared Data</ss>
+
+* From the drop down menu, click on <ss>Histories</ss>
+
+[update image]
+
+<img src="images/shared_data.png" alt="Drawing" style="width: 500px;"/>
+
+* From the list of Published Histories, click <fn>name of history</ss>
+
+
+[update image]
+
+![published histories](images/hist.png)
+
+
+* In the top right, click on <ss>Import history</ss>
+
+<img src="images/import.png" alt="Drawing" style="width: 400px;"/>
+
+* This history will now be in your "Current history" - the right hand pane in Galaxy.
+* There should be XX files. (The number in front of the file name is not important.)
+
+[update image]
+
+<img src="images/currenthist.png" alt="Drawing" style="width: 300px;"/>
+
+
+
+
+### Use a tool
 Use a tool - e.g. freebayes
 
+
+### Filter results
 then filter results
+
+
+### View results
 
 View results
 
 
-## Exercise 4
+## Exercise 4 - Import a shared history from a link
+
+- Click on the <ss>History</ss> cog ![cog icon](images/image02.png)
+- Select <ss>Import from File</ss>
+
+![history options](images/import_from_file.png)
+
+- In the box called <ss>Archived History URL</ss>, paste in the link address to the Galaxy history (that you copied above).
+- Click <ss>Submit</ss>
+- Wait a few seconds.
+- Click on the <ss>view all histories</ss> button ![histories icon](images/view_all_hist.png)
+- See if the Galaxy history has been imported: it will be called <fn>imported from archive: Data</fn>
+- Above that pane, click on the <ss>Switch to</ss> button.
+- Then click <ss>Done</ss> (in the top left corner).
+- You should now have a list of five files in your current history. We will use these for the Genomics Workshop; or see below for additional files.
+
+![files in galaxy history](images/datafiles.png)
+
+
+
+## Exercise 5
 
 ### Re-run a tool
 
 with changed settings.
 
-## Exercise 5
+## Exercise 6
 
 ### Look at all your histories
 
@@ -172,7 +250,7 @@ What have we learned?
 * Choose a tool and change any settings for your analysis.
 * Run the tool. The output files will be saved at the top of your history.
 * View the output files by clicking on the eye icon.
-* Log 
+* Log out of Galaxy-Au. When you log back in, your histories will all be there.
 
 
 
@@ -188,74 +266,3 @@ try:
 ## Move this stuff:
 
 [move this stuff below into the relevant individual workshops, to import a history for each of them: ]
-
-
-
-## Import a shared history
-
-For Galaxy-Australia users, import the following history:
-
-[add this history to Galaxy-Au]
-
-* In Galaxy, go to the top menu bar
-* Click on <ss>Shared Data</ss>
-
-* From the drop down menu, click on <ss>Histories</ss>
-
-[update image]
-
-<img src="images/shared_data.png" alt="Drawing" style="width: 500px;"/>
-
-* From the list of Published Histories, click <fn>Genomics-workshop</ss>
-
-[update or re-name this history as appropriate]
-[update image]
-
-![published histories](images/hist.png)
-
-
-* In the top right, click on <ss>Import history</ss>
-
-<img src="images/import.png" alt="Drawing" style="width: 400px;"/>
-
-* This history will now be in your "Current history" - the right hand pane in Galaxy.
-* There should be six files. (The number in front of the file name is not important.)
-
-[update image]
-
-<img src="images/currenthist.png" alt="Drawing" style="width: 300px;"/>
-
-* We will use these files for the Genomics Workshop. For additional ways to import histories, see below.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Copy this link:
-
-<tt>https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Microbial_tutorials/Galaxy_history_input_files.tar.gz</tt>
-
-- Click on the <ss>History</ss> cog ![cog icon](images/image02.png)
-- Select <ss>Import from File</ss>
-
-![history options](images/import_from_file.png)
-
-- In the box called <ss>Archived History URL</ss>, paste in the link address to the Galaxy history (that you copied above).
-- Click <ss>Submit</ss>
-- Wait a few seconds.
-- Click on the <ss>view all histories</ss> button ![histories icon](images/view_all_hist.png)
-- See if the Galaxy history has been imported: it will be called <fn>imported from archive: Data</fn>
-- Above that pane, click on the <ss>Switch to</ss> button.
-- Then click <ss>Done</ss> (in the top left corner).
-- You should now have a list of five files in your current history. We will use these for the Genomics Workshop; or see below for additional files.
-
-![files in galaxy history](images/datafiles.png)
