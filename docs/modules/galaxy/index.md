@@ -5,17 +5,17 @@
 Galaxy is a web-based analysis and workflow platform.
 
   * Designed for biologists
-  * Upload your data
-  * Access shared data
+  * Easily accessible via a web page
+  * Free to use
+  * You can upload your own data
+  * You can access shared data
   * Use common bioinformatics tools
   * Develop workflows
-  * Access via a web page
-  * Free
 
-In this set of tutorials, we are using Galaxy-Australia.
+In this set of tutorials, we are using **Galaxy-Australia**.
 
 * We access Galaxy-Australia by going to a web page with this address: [add address]
-* However, there are many different Galaxy servers available [add list].
+* However, there are many different Galaxy servers available. Some of them have a set of general tools, and some have been developed for particular analyses. You can use more than one Galaxy server but you will need to register separately for each one, and they don't share data between them. A list of Galaxy servers is [here](https://galaxyproject.org/public-galaxy-servers/).
 * More information about the Galaxy project can be found [here](https://galaxyproject.org/).
 
 
@@ -65,45 +65,125 @@ Click on <ss>User</ss> button on the right.
 - Your data will stay stored for [amount of time.]
 - If you are using a different Galaxy server, you would need to register/log in to that server.
 
+## How to use Galaxy
 
-## Upload a file
+
+* Available tools are in the left hand panel. Find the tool you want or use the search bar at the top of the tools.
+
+* Click on the tool you want to use.
+
+* The tool interface will appear in the centre Galaxy panel. Check the settings.
+
+* Click <ss>Execute</ss>.
+
+* When the tool has finished, output file(s) will appear at the top of your "Current History" in the right hand panel.
+
+* Click on the eye icon next to a file to view it.
+
+* To access older histories, use the button at the top right of the History panel.
+
+## Exercise 1
+
+### Name your current history
+
+name
+
+enter
+
+### Upload a file
 
 from Zenodo
 
+e.g. 1 x fastQ file - download to your computer
+Galaxy - get data - upload file - choose local file
 
-## Use a tool
+### Use a tool
+
+e.g. FASTQC
+
+### View results
+
+click on file name
 
 
-## View results
+## Exercise 2
 
-## Import some data
+### Create a new history
+
+### Import some data
+
+from Zenodo
+
+e.g. 2 x fastq files
 
 change the file name
+
 change the file type
-Use a tool
+
+Use a tool - e.g. Pear
+
 View results
 
 
-## Import a history
+## Exercise 3
+
+### Import a history
 
 add a simple history to Galaxy Au
+
 import
 
-Use a tool
+e.g. 2 x fastq files and a reference genome
+
+Use a tool - e.g. freebayes
+
+then filter results
 
 View results
 
-## Look at all your histories
+
+## Exercise 4
+
+### Re-run a tool
+
+with changed settings.
+
+## Exercise 5
+
+### Look at all your histories
 
 create a new history
+
 you can drag files between histories
+
 drag some files in
+
 back to main page with "Analyze data"
+
+
+## Summary
+
+What have we learned?
+
+* The Galaxy interface has tools on the left, viewing pane in the middle, and a history of your data analysis on the right.
+* You can create a new history for each analysis. All your histories are saved.
+* Upload data from your computer or from a web address.
+* You can also upload data (and analyses) by importing a history.
+* Choose a tool and change any settings for your analysis.
+* Run the tool. The output files will be saved at the top of your history.
+* View the output files by clicking on the eye icon.
+* Log 
+
+
 
 ## What's next
 
 try:
 - MB Galaxy intro tutorial [needs updating for Galaxy-Au]
+
+
+
+
 
 ## Move this stuff:
 
@@ -148,22 +228,6 @@ For Galaxy-Australia users, import the following history:
 * We will use these files for the Genomics Workshop. For additional ways to import histories, see below.
 
 
-## How to use Galaxy
-
-
-* Available tools are in the left hand panel. Find the tool you want or use the search bar at the top of the tools.
-
-* Click on the tool you want to use.
-
-* The tool interface will appear in the centre Galaxy panel. Check the settings.
-
-* Click <ss>Execute</ss>.
-
-* When the tool has finished, output file(s) will appear at the top of your "Current History" in the right hand panel.
-
-* Click on the eye icon next to a file to view it.
-
-* To access older histories, use the button at the top right of the History panel.
 
 
 
@@ -173,29 +237,8 @@ For Galaxy-Australia users, import the following history:
 
 
 
-## Alternative file import information
-
-<!-- - In the menu options across the top, go to <ss>Shared Data</ss>.
-- Click on <ss>Histories</ss>.
-
-![Shared histories](images/image10.png)
-
-- A list of published histories should appear. Click on the history that you want to use.
-
-<!--For the Genomics Workshop, click on this one:
-
-![histories](images/pub_hist.png)
 
 
-- A useful starting history is a set of files containing sequencing reads and reference genomes.
-- Click on **Genomics-files**.
-
-- Then click on <ss>Import history</ss>.
-- An option will appear to re-name the history. We don't need to rename it, so click <ss>Import</ss>.
-- The history will now appear in your Current History pane, and the files are ready to use in Galaxy analyses.
-
-- *Note: if this history is not available in your version of Galaxy, please see the [following page](../data-dna/index.md) for links and information about uploading data.*
--->
 
 Copy this link:
 
@@ -216,9 +259,3 @@ Copy this link:
 - You should now have a list of five files in your current history. We will use these for the Genomics Workshop; or see below for additional files.
 
 ![files in galaxy history](images/datafiles.png)
-
-## Other ways to import data into Galaxy
-
-- Upload a file from your computer
-- Import a shared history
-- See the [next section](../data-dna/index.md) for more detailed information.
