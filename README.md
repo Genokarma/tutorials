@@ -1,4 +1,4 @@
-# Galaxy-Australia training.
+# Galaxy-Australia training
 
 Tutorials on how to use Galaxy-Au.
 
