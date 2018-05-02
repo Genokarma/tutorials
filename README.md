@@ -4,23 +4,9 @@ Tutorials on how to use Galaxy-Au.
 
 Forked from sepsis-omics and being updated for Galaxy-Au.
 
-
 ## Deployment
 
-The tutorials have been deployed here: https://BioDeVL-training.github.io/tutorials/
-
-
-
-
-
-## UPDATE this below
-
-
-
-
-
-
-
+The tutorials have been deployed here: [add link]
 
 ## How to work on them locally
 
@@ -31,8 +17,8 @@ The tutorials have been deployed here: https://BioDeVL-training.github.io/tutori
 
 ### Clone the repo
 ```
-% git clone https://github.com/sepsis-omics/tutorials.git sepsis-tutorials
-% cd sepsis-tutorials
+% git clone [repo name] [name of folder]
+% cd [name of folder]
 ```
 
 ### Browse the site locally without deploying to public internet
@@ -72,14 +58,5 @@ mkdocs gh-deploy --clean --message "Added minia"
 ```
 This first builds a web HTML version of our Markdown hierarchy into the `site/` folder, then pushes it to a special
 branch of the github repo called `gh-pages` which GitHub makes available at the public URL
-http://sepsis-omics.github.io/tutorials/
+[add linke]
 
-## Authors
-
-* Torsten Seemann
-* Anna Syme
-* Simon Gladman
-* Dieter Bulach
-* Dominique Gorse
-* Xin-Yi Chua
-* Mike Thang
