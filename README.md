@@ -6,7 +6,7 @@ Forked from sepsis-omics and being updated for Galaxy-Au.
 
 ## Deployment
 
-The tutorials have been deployed here: [add link]
+The tutorials have been deployed here: https://galaxy-au-training.github.io/tutorials/
 
 ## How to work on them locally
 
@@ -58,5 +58,5 @@ mkdocs gh-deploy --clean --message "Added minia"
 ```
 This first builds a web HTML version of our Markdown hierarchy into the `site/` folder, then pushes it to a special
 branch of the github repo called `gh-pages` which GitHub makes available at the public URL
-[add linke]
+[https://galaxy-au-training.github.io/tutorials/]
 
