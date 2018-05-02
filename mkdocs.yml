@@ -3,10 +3,10 @@ site_description: Tutorials for using Galaxy Australia
 site_author: Anna Syme, Gareth Price, Torsten Seemann
 site_favicon: favicon.ico
 
-site_url: 'http://sepsis-omics.github.io/tutorials/'
+site_url: 'https://galaxy-au-training.github.io/tutorials/
 
 repo_name: 'BioDeVL-training/tutorials'
-repo_url: 'https://github.com/BioDeVL-training/tutorials'
+repo_url: 'https://github.com/Galaxy-Au-training/tutorials'
 +google_analytics: ['UA-21794901-5', 'www.melbournebioinformatics.org.au/tutorials/']
 
 copyright: '&copy; The authors; 2016-'
@@ -26,9 +26,9 @@ extra:
         - type: 'coffee'
           link: ''
         - type: 'github'
-          link: 'https://github.com/BioDeVL-training/tutorials'
+          link: 'https://github.com/Galaxy-Au-training/tutorials'
         - type: 'bug'
-          link: 'https://github.com/BioDeVL-training/tutorials/issues'
+          link: 'https://github.com/Galaxy-Au-training/tutorials/issues'
 
 
 markdown_extensions:
