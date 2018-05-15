@@ -86,25 +86,76 @@ Click on <ss>User</ss> button on the right.
 
 ### Name your current history
 
+Your "History" is in the panel at the right.
 
+* Click on the history name ("Unnamed history")
 
-enter
+<img src="images/name_history.png" alt="namehist" style="width: 320px;"/>
+
+* Type in a new name, for example, "My-Analysis"
+* Press Enter
 
 ### Upload a file
 
-from Zenodo
+Your "Tools" are in the panel at the left.
 
-e.g. 1 x fastQ file - download to your computer
-Galaxy - get data - upload file - choose local file
+* Click <ss>Get Data</ss>
+* Click <ss>Upload File</ss>
+* This brings up a box:
+
+<img src="images/upload-box.png" alt="filebox" style="width: 620px;"/>
+
+
+Paste in the address of a file:
+<fn>https://zenodo.org/record/582600/files/mutant_R1.fastq</fn>
+
+Then click <ss>Start</ss>.
+Then click <ss>Close</ss>.
+
+Your uploaded file is now in your current history:
+
+<img src="images/file-hist.png" alt="filehist" style="width: 320px;"/>
+
+
+What is this file?
+
+* This file contains DNA sequencing reads from a bacteria, in FASTQ format.
+* Click on the eye icon next to the file name, to look at the file contents:
+
+<img src="images/fastq.png" alt="fastq" style="width: 620px;"/>
 
 ### Use a tool
 
-e.g. FASTQC
+Let's look at the quality of the reads in this file.
+
+* In the tools panel search box, type in FastQC.
+* Click on the tool "FastQC"
+* This brings up a window in the centre of the screen.
+* For <ss>Short read data from your current history</ss> select the FASTQ file that we uploaded.
+* Leave the other parameters as they are.
+* Your tool interface should look like this:
+
+<img src="images/fastqc.png" alt="fastqc" style="width: 620px;"/>
+
+* Click <ss>Execute</ss>.
+
+This tool will run and the two output files will appear at the top of your history panel.
 
 ### View results
 
-click on file name
+We will look at the output file called <fn>FastQC on data 1: Webpage</fn>.
 
+* Note that Galaxy has given this file a name according to the data it used ("data 1", or file number 1 in the history) and the tool (FastQC).
+
+* Galaxy numbers your files but these numbers are not important.
+
+* Click on the eye icon next to the output file. The information is displayed in the centre panel.
+
+<img src="images/fastqc-out.png" alt="fastqc-out" style="width: 620px;"/>
+
+* This tool has summarised information about all of the reads in our FASTQ file.
+* What was the length of the reads in the input FASTQ file?
+* Do these reads have higher quality scores in the centre or at the ends?
 
 ## Exercise 2
 
