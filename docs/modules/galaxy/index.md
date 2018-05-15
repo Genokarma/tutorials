@@ -86,7 +86,7 @@ Click on <ss>User</ss> button on the right.
 
 ### Name your current history
 
-name
+
 
 enter
 
