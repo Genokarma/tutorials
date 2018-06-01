@@ -1,27 +1,36 @@
 # Welcome!
 
-*This website is currently under construction. It is not yet ready for use. Please contact anna.syme@unimelb.edu.au with questions.*
+<ss>*This website is currently under construction.*</ss>
 
 
-This site contains tutorials for using Galaxy Australia.
+## Tutorials
 
-Tutorials are listed in the left hand panel, or click the menu button (three horizontal bars) in the top left of the page.
+This site contains tutorials for using **Galaxy-Australia**.
 
+To use the tutorials:
 
+* &#8592; see the list in the left hand panel
+* &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
 
-![Galaxy Australia landing page](media/screenshots/galaxy-australia-landing.png)
+Welcome to Galaxy-Australia! Web address: [www.usegalaxy.org.au](https://usegalaxy.org.au)
 
+![galaxy-aust](galaxy-aust.png)
 
-
-# About
-
-Galaxy-Au information.
 
 ## Authors
 
-
-
 ## Support
+
+* RCCC
+* QCIF
+* MB
+* BPA
+* EMBL-ABR
+* NCRIS
+* RDS
+* ANDS
+* Nectar
+
 
 * [Research Data Services](http://omics.data.edu.au/)
 * [Bioplatforms Australia](http://www.bioplatforms.com/antibiotic-resistant-pathogens/)

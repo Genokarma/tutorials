@@ -1,4 +1,4 @@
-# Getting started with Galaxy-Australia
+# What is Galaxy-Australia?
 
 ## What is Galaxy?
 
@@ -77,6 +77,6 @@ More information about the Galaxy project can be found [here](https://galaxyproj
 
 ## What's next?
 
-Get started in Galaxy-Australia!
+Learn to do key tasks in Galaxy-Australia!
 
 * Add link to tutorial (in prep at GTN).

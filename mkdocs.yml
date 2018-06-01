@@ -37,8 +37,9 @@ extra_css:
     - css/sepsis.css
 
 pages:
-- Galaxy Australia: index.md
-- Getting started: modules/intro/index.md
+- Welcome: index.md
+- Get started: modules/galaxy/index.md
+- Learn key tasks: modules/intro/index.md
 
 
 # - Starting with Galaxy: modules/galaxy/index.md
