@@ -3,21 +3,15 @@ site_description: Tutorials for using Galaxy Australia
 site_author: Anna Syme, Gareth Price, Torsten Seemann
 site_favicon: favicon.ico
 
-site_url: 'https://galaxy-au-training.github.io/tutorials/
+site_url: 'https://galaxy-au-training.github.io/tutorials/'
 
-repo_name: 'BioDeVL-training/tutorials'
+repo_name: 'Galaxy-Australia-training/tutorials'
 repo_url: 'https://github.com/Galaxy-Au-training/tutorials'
-+google_analytics: ['UA-21794901-5', 'www.melbournebioinformatics.org.au/tutorials/']
 
-copyright: '&copy; The authors; 2016-'
+copyright: '&copy; The authors; 2018-'
 
 #theme: yeti
-theme:
-    name: material
-    palette:
-      primary: 'amber'
-      accent: 'indigo'
-
+theme: material
 
 extra:
     feature:
@@ -44,18 +38,25 @@ extra_css:
 
 pages:
 - Galaxy Australia: index.md
-- Starting with Galaxy: modules/galaxy/index.md
-- Quality control: modules/fastqc/index.md
-- Genome assembly: modules/spades/index.md
-- Genome annotation: modules/prokka/index.md
-- Variant calling: modules/snippy/index.md
-- Differential gene expression: modules/dge/index.md
-- Metagenomics: modules/metagenomics/metagenomics.md
-- Workflows - Introduction: modules/workflows/index.md
-- Workflow - Assembly and annotation: modules/workflow-assembly-annotation/index.md
-- Workflow - Variant calling: modules/workflow-variant-calling/index.md
-- Workflow - Differential gene expression: modules/workflow-rna-seq/index.md
-- Galaxy Resources: galaxy-resources.md
+- Getting started: modules/intro/index.md
+
+
+# - Starting with Galaxy: modules/galaxy/index.md
+# - Quality control: modules/fastqc/index.md
+# - Genome assembly: modules/spades/index.md
+# - Genome annotation: modules/prokka/index.md
+# - Variant calling: modules/snippy/index.md
+# - Differential gene expression: modules/dge/index.md
+# - Metagenomics: modules/metagenomics/metagenomics.md
+# - Workflows - Introduction: modules/workflows/index.md
+# - Workflow - Assembly and annotation: modules/workflow-assembly-annotation/index.md
+# - Workflow - Variant calling: modules/workflow-variant-calling/index.md
+# - Workflow - Differential gene expression: modules/workflow-rna-seq/index.md
+# - Galaxy Resources: galaxy-resources.md
+
+
+
+
     # Snippy core
     # Gubbins
     #- Public data &rarr; assembly, annotation: modules/access_data/index.md
