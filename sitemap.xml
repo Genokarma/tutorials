@@ -3,104 +3,24 @@
 
     
     <url>
-     <loc>http://sepsis-omics.github.io/tutorials//</loc>
-     <lastmod>2018-05-02</lastmod>
+     <loc>https://galaxy-au-training.github.io/tutorials//</loc>
+     <lastmod>2018-06-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/galaxy/</loc>
-     <lastmod>2018-05-02</lastmod>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/galaxy/</loc>
+     <lastmod>2018-06-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/fastqc/</loc>
-     <lastmod>2018-05-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/spades/</loc>
-     <lastmod>2018-05-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/prokka/</loc>
-     <lastmod>2018-05-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/snippy/</loc>
-     <lastmod>2018-05-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/dge/</loc>
-     <lastmod>2018-05-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/metagenomics/metagenomics/</loc>
-     <lastmod>2018-05-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/workflows/</loc>
-     <lastmod>2018-05-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/workflow-assembly-annotation/</loc>
-     <lastmod>2018-05-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/workflow-variant-calling/</loc>
-     <lastmod>2018-05-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://sepsis-omics.github.io/tutorials//modules/workflow-rna-seq/</loc>
-     <lastmod>2018-05-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://sepsis-omics.github.io/tutorials//galaxy-resources/</loc>
-     <lastmod>2018-05-02</lastmod>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/intro/</loc>
+     <lastmod>2018-06-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
