@@ -44,9 +44,9 @@ pages:
 
 # - Starting with Galaxy: modules/galaxy/index.md
 # - Quality control: modules/fastqc/index.md
-# - Genome assembly: modules/spades/index.md
-# - Genome annotation: modules/prokka/index.md
-# - Variant calling: modules/snippy/index.md
+- Genome assembly: modules/spades/index.md
+- Genome annotation: modules/prokka/index.md
+- Variant calling: modules/snippy/index.md
 # - Differential gene expression: modules/dge/index.md
 # - Metagenomics: modules/metagenomics/metagenomics.md
 # - Workflows - Introduction: modules/workflows/index.md
@@ -61,10 +61,10 @@ pages:
     # Snippy core
     # Gubbins
     #- Public data &rarr; assembly, annotation: modules/access_data/index.md
-    #- Finding antibiotic-resistant genes: modules/abricate/index.md
+- Finding antibiotic-resistant genes: modules/abricate/index.md
     #- Viral genome sequencing: modules/viral_genomes/index.md
 
-    #- Metagenomics with FROGS: modules/frogs/index.md
+- Metagenomics with FROGS: modules/frogs/index.md
     #- Sample identification with Kraken: modules/kraken/index.md
     #- PacBio assembly with SMRT portal: modules/pacbio/index.md
     #- PacBio assembly with command line tools: modules/cmdline_assembly/index.md

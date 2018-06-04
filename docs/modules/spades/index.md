@@ -25,7 +25,7 @@ The read set for today is from an imaginary *Staphylococcus aureus* bacterium wi
 
 Log in to Galaxy-Au
 
-Creat a new history for this analysis
+Create a new history for this analysis
 
 
 
