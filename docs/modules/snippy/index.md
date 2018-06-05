@@ -7,6 +7,8 @@ Variant calling is the process of identifying differences between two genome sam
 * In this tutorial, we will use the tool "Snippy" (link to Snippy is [here](https://github.com/tseemann/snippy)).
 * Snippy uses a tool to align the reads to a reference genome, and another tool to decide ("call") if the discrepancies are real variants.
 
+<fn>**New to Galaxy?** First try the [introduction](../galaxy/index.md) and then learn some [key tasks](../intro/index.md)</fn>
+
 <!--
 ## Learning Objectives
 

@@ -14,6 +14,8 @@ To identify a sample from sequencing reads, we can use the tool "Kraken". This t
 
 In this tutorial we will use Kraken to confirm the identify of reads from a bacterial isolate.
 
+<fn>**New to Galaxy?** First try the [introduction](../galaxy/index.md) and then learn some [key tasks](../intro/index.md)</fn>
+
 ## Get data
 
 In Galaxy, go to <ss>Shared Data</ss> in the top panel, and click on the history named <fn>Kraken data</fn>. In the top right, click <ss>Switch to this history</ss>.

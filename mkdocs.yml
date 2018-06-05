@@ -61,12 +61,12 @@ pages:
     # Snippy core
     # Gubbins
     #- Public data &rarr; assembly, annotation: modules/access_data/index.md
-- Finding antibiotic-resistant genes: modules/abricate/index.md
+- Antibiotic-resistant genes: modules/abricate/index.md
 - Using MLST: modules/mlst/index.md
     #- Viral genome sequencing: modules/viral_genomes/index.md
 
 # - Metagenomics with FROGS: modules/frogs/index.md
-- Sample identification with Kraken: modules/kraken/index.md
+- Sample identification: modules/kraken/index.md
     #- PacBio assembly with SMRT portal: modules/pacbio/index.md
     #- PacBio assembly with command line tools: modules/cmdline_assembly/index.md
     #- Spades assembly - commandline: modules/spades_cmdline/index.md
