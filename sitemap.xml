@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials//</loc>
-     <lastmod>2018-06-01</lastmod>
+     <lastmod>2018-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials//modules/galaxy/</loc>
-     <lastmod>2018-06-01</lastmod>
+     <lastmod>2018-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +20,47 @@
     
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials//modules/intro/</loc>
-     <lastmod>2018-06-01</lastmod>
+     <lastmod>2018-06-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/spades/</loc>
+     <lastmod>2018-06-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/prokka/</loc>
+     <lastmod>2018-06-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/snippy/</loc>
+     <lastmod>2018-06-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/abricate/</loc>
+     <lastmod>2018-06-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/mlst/</loc>
+     <lastmod>2018-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
