@@ -2,7 +2,7 @@
 
 Spades is one of a number of *de novo* assemblers that use short read sets as input (e.g. Illumina Reads), and the assembly method is based on de Bruijn graphs. For information about Spades see this [link](http://bioinf.spbau.ru/spades).
 
-
+New to Galaxy? First try the [introduction](../galaxy/index.md) and then learn some [key tasks](../intro/index.md).
 
 ## The data
 
@@ -19,33 +19,34 @@ The read set for today is from an imaginary *Staphylococcus aureus* bacterium wi
 
 -   The number of bases sequenced is equivalent to 19x the genome sequence of the wildtype strain. (Read coverage 19x - rather low!).
 
-
 ## Import the data
 
+* Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
+* Create a new history for this analysis.
+* The file we need is located [here](http://doi.org/10.5281/zenodo.582600).
+* Find the file called <fn>mutant_R1.fastq</fn>
+* Right click on file name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
 
-Log in to Galaxy-Au
+The file name is quite long: let's change it:
 
-Create a new history for this analysis
-
-
-
-Go to Zenodo:
-http://doi.org/10.5281/zenodo.582600
+* Click on the pencil icon next to the file name.
+* In the centre Galaxy panel, click in the box under <ss>Name</ss>
+* Shorten the file name to <fn>mutant_R1.fastq</s>
+* Then click <ss>Save</ss>
 
 
-mutant_R1.fastq
-
-Right click on file name: select "copy link address"
-
-
-In Galaxy, Get Data -> Upload File
-Paste/Fetch data
-paste in link address
-Start
-Close
 
 Change name
-Check data type. should be fastqsanger
+
+![rename](images/rename.png)
+
+
 
 repeat for mutant_R2
 

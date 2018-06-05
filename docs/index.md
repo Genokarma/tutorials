@@ -1,8 +1,5 @@
 # Welcome!
 
-<ss>*This website is currently under construction.*</ss>
-
-
 ## Tutorials
 
 This site contains tutorials for using **Galaxy-Australia**.
@@ -15,9 +12,6 @@ To use the tutorials:
 Welcome to Galaxy-Australia! Web address: [www.usegalaxy.org.au](https://usegalaxy.org.au)
 
 ![galaxy-aust](galaxy-aust.png)
-
-
-## Authors
 
 ## Support
 

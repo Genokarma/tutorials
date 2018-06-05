@@ -77,6 +77,11 @@ More information about the Galaxy project can be found [here](https://galaxyproj
 
 ## What's next?
 
-Learn to do key tasks in Galaxy-Australia!
+There are lots of tutorials for using Galaxy.
 
-* Add link to tutorial (in prep at GTN).
+To use the tutorials on this website:
+
+* &#8592; see the list in the left hand panel
+* &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
+
+You can find more tutorials at the Galaxy Training Network: [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/).
