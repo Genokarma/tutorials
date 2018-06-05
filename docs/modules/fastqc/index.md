@@ -1,28 +1,39 @@
-<br>
 # FastQC in Galaxy
+<ss>Not yet updated for Galaxy-Australia</ss>
 
-<!---
-FIXME: include screenshots
-FIXME: include file location and/or choose different input.
---->
+After sequencing, the reads should be checked for their quality.
 
-After sequencing, the reads should be checked for their quality. This tutorial demonstrates how to use the tool called FastQC to examine bacterial paired-end Illumina sequence reads. The FastQC website is [here.](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+* This tutorial demonstrates how to use the tool called FastQC to examine bacterial paired-end Illumina sequence reads.
+* The FastQC website is [here.](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
-## Learning Objectives
+<fn>**New to Galaxy?** First try the [introduction](../galaxy/index.md) and then learn some [key tasks](../intro/index.md)</fn>
 
-At the end of this tutorial you should be able to:
+## Import the data
 
-1. run FastQC on input sequence reads, and
-2. examine the FastQC output.
+* Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
+* Create a new history for this analysis.
+* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
+* Find the file called <fn>mutant_R1.fastq</fn>
+* Right click on file name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
 
-## Input files
+The file name is quite long: let's change it:
 
-See [here](/modules/galaxy/index.md) for information about how to start with Galaxy, and [here](/modules/data-dna/index.md) for the link to import the "Galaxy history of input files" for this tutorial, if you don't already have them in your history.
+* Click on the pencil icon next to the file name.
+* In the centre Galaxy panel, click in the box under <ss>Name</ss>
+* Shorten the file name to <fn>mutant_R1.fastq</s>
+* Then click <ss>Save</ss>
 
-- We will use the paired-end read set from our Galaxy history.
-- These are the files <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>.
-- FASTQ is a file format for sequence reads that displays quality scores for each of the sequenced nucleotides. For more information about FASTQ format see this [link](https://en.wikipedia.org/wiki/FASTQ_format).
-- We will evaluate the <fn>mutant_R1.fastq</fn> reads using the FastQC tool.
+
+FASTQ is a file format for sequence reads that displays quality scores for each of the sequenced nucleotides.
+
+* For more information about FASTQ format see this [link](https://en.wikipedia.org/wiki/FASTQ_format).
+* We will evaluate the <fn>mutant_R1.fastq</fn> reads using the FastQC tool.
 
 ## Run FastQC
 
@@ -68,14 +79,17 @@ General questions you might ask about your input reads include:
 For a fuller discussion of FastQC outputs and warnings, see the [FastQC website link](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/), including the section on each of the output [reports](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/), and examples of ["good"](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html) and ["bad"](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html) Illumina data.
 
 
-## What Next?
-[Assemble the reads into a draft genome sequence](../spades/index.md).
+## What's next?
 
+To use the tutorials on this website:
 
+* &#8592; see the list in the left hand panel
+* &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
 
-<!--
-- Trim reads with [Trimmomatic.](../trimmomatic/index.md)
--->
+You can find more tutorials at the Galaxy Training Network:
+
+* [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/)
+
 
 <!---
 FIXME: include these?

@@ -23,9 +23,4 @@ Welcome to Galaxy-Australia! Web address: [www.usegalaxy.org.au](https://usegala
 * NCRIS
 * RDS
 * ANDS
-* Nectar
-
-
-* [Research Data Services](http://omics.data.edu.au/)
-* [Bioplatforms Australia](http://www.bioplatforms.com/antibiotic-resistant-pathogens/)
 * [Nectar](http://www.nectar.org.au/)

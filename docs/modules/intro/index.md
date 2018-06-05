@@ -3,6 +3,8 @@
 * This is a short introduction to the Galaxy user interface - the web page that you interact with.
 * We will cover key tasks in Galaxy: uploading files, using tools, and viewing histories.
 
+<fn>**New to Galaxy?** First try the [introduction](../galaxy/index.md)</fn>
+
 ## What does Galaxy look like?
 
 * Browse to your Galaxy instance and log in or register.
@@ -223,11 +225,11 @@ What have we learned?
 Well done! You have completed the short introduction to Galaxy, where you named the history, uploaded a file, used a tool, and viewed results. Additional tutorials are available for a more in-depth introduction to Galaxy's features.
 
 ## What's next?
-There are lots of tutorials for using Galaxy.
-
 To use the tutorials on this website:
 
 * &#8592; see the list in the left hand panel
 * &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
 
-You can find more tutorials at the Galaxy Training Network: [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/).  
+You can find more tutorials at the Galaxy Training Network:
+
+* [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/)  

@@ -1,29 +1,26 @@
 # Assembly using Spades
 
-Spades is one of a number of *de novo* assemblers that use short read sets as input (e.g. Illumina Reads), and the assembly method is based on de Bruijn graphs. For information about Spades see this [link](http://bioinf.spbau.ru/spades).
+Spades is one of a number of *de novo* assemblers that use short read sets as input (e.g. Illumina Reads), and the assembly method is based on de Bruijn graphs.
 
-New to Galaxy? First try the [introduction](../galaxy/index.md) and then learn some [key tasks](../intro/index.md).
+* For information about Spades see this [link](http://bioinf.spbau.ru/spades).
+
+<fn>**New to Galaxy?** First try the [introduction](../galaxy/index.md) and then learn some [key tasks](../intro/index.md)</fn>
 
 ## The data
 
 The read set for today is from an imaginary *Staphylococcus aureus* bacterium with a miniature genome.
 
 - The whole genome shotgun method used to sequence our mutant strain read set was produced on an Illumina DNA sequencing instrument.
-
-
 - The files we need for assembly are the <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>.
-- (We don't need the reference genome sequences for this tutorial).
-
--   The reads are paired-end.
--   Each read is 150 bases long. <!--(before trimming)-->
-
--   The number of bases sequenced is equivalent to 19x the genome sequence of the wildtype strain. (Read coverage 19x - rather low!).
+- The reads are paired-end.
+- Each read is 150 bases long. <!--(before trimming)-->
+- The number of bases sequenced is equivalent to 19x the genome sequence of the wildtype strain. (Read coverage 19x - rather low!).
 
 ## Import the data
 
 * Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
 * Create a new history for this analysis.
-* The file we need is located [here](http://doi.org/10.5281/zenodo.582600).
+* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
 * Find the file called <fn>mutant_R1.fastq</fn>
 * Right click on file name: select "copy link address"
 * In Galaxy, go to <ss>Get Data</ss> and then Upload File
@@ -40,23 +37,20 @@ The file name is quite long: let's change it:
 * Shorten the file name to <fn>mutant_R1.fastq</s>
 * Then click <ss>Save</ss>
 
-
-
-Change name
-
 ![rename](images/rename.png)
 
 
+Repeat these steps for the other set of reads (reverse reads) called <fn>mutant_R2.fq</fn>:
 
-repeat for mutant_R2
-
-
-
-
-
-
-
-
+* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
+* Find the file called <fn>mutant_R2.fastq</fn>
+* Right click on file name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
 
 
 <!--
@@ -67,7 +61,10 @@ repeat for mutant_R2
 - <fn>wildtype.gbk</fn>: the reference genome sequence in genbank format.
 -->
 
-- Click on the View Data button (the ![Eye icon](images/image04.png)) next to one of the FASTQ sequence files.
+We now have two FASTQ read files in our history.
+
+* Click on the eye icon next to one of the FASTQ sequence files.
+* View the file in the centre Galaxy panel.
 
 <!--
 - The gff file should look like this:
@@ -108,10 +105,13 @@ Although we have warnings for two outputs (per base sequence content; Kmer conte
 
 ## Assemble the reads
 
-- We will perform a *de novo* assembly of the mutant FASTQ reads into long contiguous sequences (in FASTA format.)
+We will perform a *de novo* assembly of the mutant FASTQ reads into long contiguous sequences (in FASTA format.)
 
-- Go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: Assembly &rarr; spades</ss>
-- Set the following parameters (leave other settings as they are):
+* Go to the Tool panel and search for "spades" in the search box.
+* Click on <ss>SPAdes</ss>
+
+* Set the following parameters (leave other settings as they are):
+
 
     - <ss>Run only Assembly</ss>: *Yes* [the *Yes* button should be darker grey]
     - <ss>Kmers to use separated by commas:</ss> *33,55,91*  [note: no spaces]  
@@ -136,14 +136,20 @@ Although we have warnings for two outputs (per base sequence content; Kmer conte
 
 ![spades output](images/output_files.png)
 
-- Click on the View Data button ![Eye icon](images/image04.png) on each of the files.
+- To view the output, click on the eye icon next to each of the files.
 - Note that the short reads have been assembled into much longer contigs.
 - (However, in this case, the contigs have not been assembled into larger scaffolds.)
 - The stats files will give you the length of each of the contigs, and the file should look something like this:
 
 ![spades output contigs](images/contig_stats.png)
 
-<!-- ## What next?
+## What's next?
 
-- [Annotate the genome using Prokka.](/modules/prokka/index.md)
--->
+To use the tutorials on this website:
+
+* &#8592; see the list in the left hand panel
+* &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
+
+You can find more tutorials at the Galaxy Training Network:
+
+* [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/)

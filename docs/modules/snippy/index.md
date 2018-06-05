@@ -1,46 +1,79 @@
-<br>
 # Variant calling with Snippy
 
-Keywords: variant calling, SNP, Snippy, JBrowse, Galaxy, Microbial Genomics Virtual Lab
-
-## Background
-
 Variant calling is the process of identifying differences between two genome samples.
-Usually differences are limited to single nucleotide polymorphisms (SNPs) and small insertions and deletions (indels). Larger structural variation such as inversions, duplications and large deletions are not typically covered by "variant calling".
 
-In this tutorial, we will use the tool "Snippy" (link to Snippy is [here](https://github.com/tseemann/snippy)). Snippy uses a tool to align the reads to a reference genome, and another tool to decide ("call") if the discrepancies are real variants.
+* Differences are usually limited to single nucleotide polymorphisms (SNPs) and small insertions and deletions (indels).
+* Larger structural variation such as inversions, duplications and large deletions are not typically covered by "variant calling".
+* In this tutorial, we will use the tool "Snippy" (link to Snippy is [here](https://github.com/tseemann/snippy)).
+* Snippy uses a tool to align the reads to a reference genome, and another tool to decide ("call") if the discrepancies are real variants.
 
+<!--
 ## Learning Objectives
 
 1. Find variants between a reference genome and a set of reads
 2. Visualise the SNP in context of the reads aligned to the genome
 3. Determine the effect of those variants on genomic features
 4. Understand if the SNP is potentially affecting the phenotype
-
-## Prepare reference
-
-<!-- We will import  history from Galaxy:
-
-- In the menu options across the top, go to <ss>Shared Data</ss>.
-- Click on <ss>Histories</ss>.
-- A list of published histories should appear. Click on <fn>GCC 2016 small genome variants</fn>.
-- Click on <ss>Import history</ss>.
-- An option will appear to re-name the history. We don't need to rename it, so click <ss>Import</ss>.
-- The history will now appear in your Current History pane, and the files are now ready to use in Galaxy analyses.
 -->
 
+## Get data
 
-<!-- We will use the same data that we used in the [Assembly with Spades tutorial.](../spades/index.md) This should still be in your current galaxy history. If not, re-import the data into a new history using the instructions in that tutorial.-->
+* Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
+* Create a new history for this analysis.
+
 
 For variant calling, we need a reference genome that is of the same strain as the input sequence reads.
 
-For this tutorial, our reference is the <fn>wildtype.gbk</fn> file and our reads are <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>. 
+* For this tutorial, our reference is the <fn>wildtype.gbk</fn> file and our reads are <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>.
 
-If these files are not presently in your Galaxy history, import them from the [Training dataset page.](../data-dna/index.md)
+Get data:
+
+* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
+* Find the file called <fn>mutant_R1.fastq</fn>
+* Right click on file name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
+* Shorten the file name if you wish. (Click the pencil icon).
+
+Repeat these steps for the other set of reads (reverse reads) called <fn>mutant_R2.fq</fn>:
+
+* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
+* Find the file called <fn>mutant_R2.fastq</fn>
+* Right click on file name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
+* Shorten the file name if you wish.
+
+Repeat these steps for the reference genome called <fn>wildtype.gbk</fn>.
+
+* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
+* Find the file called <fn>wildtype.gbk</fn> *Note: choose .gbk, not .gff or .fna*
+* Right click on file name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
+* Shorten the file name if you wish.
 
 ## Call variants with Snippy
 
-- Go to the Galaxy tools panel, and use the search box at the top to search for "snippy". 
+Go to the Tool panel and search for "snippy" in the search box.
+
+* Click on <ss>snippy</ss>
+
+
+Set the following parameters (leave other settings as they are):
+
 - For <ss>Reference type</ss> select *Genbank*.
 - Then for <ss>Reference Genbank</ss> choose the <fn>wildtype.gbk</fn> file.
 - For <ss>Single or Paired-end reads</ss> choose *Paired*.
@@ -60,16 +93,16 @@ Your tool interface should look like this:
 ![scratchbook icon](images/scratchbook.png)
 
 -->
-
 From Snippy, there are 10 output files in various formats.
 
-- Go to the file called <fn>snippy on data XX, data XX and data XX table</fn> and click on the eye icon.
+- Go to the **table** file called <fn>snippy on data XX, data XX and data XX table</fn> and click on the eye icon.
+* The XX refers to the number that Galaxy has given your files.
 - We can see a list of variants. Look in column 3 to see which types the variants are, such as a SNP or a deletion.
 - Look at the third variant called. This is a T&rarr;A mutation, causing a stop codon. Look at column 14: the product of this gene is a methicillin resistance protein. Methicillin is an antibiotic. What might be the result of such a mutation? <!--[add a hint/info box]-->
 
 ## View Snippy output in JBrowse
 
-- Go to the Galaxy tools panel, and use the search box at the top to search for "JBrowse". 
+- Go to the Galaxy tools panel, and use the search box at the top to search for "JBrowse".
 
 - Under <ss>Reference genome to display</ss> choose *Use a genome from history*.
 
@@ -135,3 +168,14 @@ From Snippy, there are 10 output files in various formats.
     - the mutation of T &rarr; A turns this triplet into TGA, a stop codon.
 
 ![JBrowse screenshot](images/jbrowse2.png)    
+
+## What's next?
+
+To use the tutorials on this website:
+
+* &#8592; see the list in the left hand panel
+* &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
+
+You can find more tutorials at the Galaxy Training Network:
+
+* [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/)

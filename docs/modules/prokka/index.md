@@ -1,32 +1,36 @@
-<br>
 # Genome annotation using Prokka
-
-Keywords: annotation, Prokka, JBrowse, Galaxy, Microbial Genomics Virtual Lab
 
 ## Background
 
-In this section we will use a software tool called Prokka to annotate the draft genome sequence produced in the previous [tutorial](/modules/spades/index.md). Prokka is a “wrapper”; it collects together several pieces of software (from various authors), and so avoids “re-inventing the wheel”.
+In this section we will use a software tool called Prokka to annotate the draft genome sequence produced in the previous [tutorial](/modules/spades/index.md).
 
-Prokka finds and annotates features (both protein coding regions and RNA genes, i.e. tRNA, rRNA) present on on a sequence. Note, Prokka uses a two-step process for the annotation of protein coding regions: first, protein coding regions on the genome are identified using [Prodigal](http://prodigal.ornl.gov/); second, the *function* of the encoded protein is predicted by similarity to proteins in one of many protein or protein domain databases. Prokka is a software tool that can be used to annotate bacterial, archaeal and viral genomes quickly, generating standard output files in GenBank, EMBL and gff formats. More information about Prokka can be found [here](https://github.com/tseemann/prokka).
+* Prokka is a “wrapper”; it collects together several pieces of software (from various authors), and so avoids “re-inventing the wheel”.
+* Prokka finds and annotates features (both protein coding regions and RNA genes, i.e. tRNA, rRNA) present on on a sequence.
+* Note, Prokka uses a two-step process for the annotation of protein coding regions: first, protein coding regions on the genome are identified using [Prodigal](http://prodigal.ornl.gov/); second, the *function* of the encoded protein is predicted by similarity to proteins in one of many protein or protein domain databases.
+* Prokka is a software tool that can be used to annotate bacterial, archaeal and viral genomes quickly, generating standard output files in GenBank, EMBL and gff formats.
+* More information about Prokka can be found [here](https://github.com/tseemann/prokka).
 
-## Learning objectives
-
-At the end of this tutorial you should be able to:
-
-1. load a genome assembly into Prokka
-2. annotate the assembly using Prokka
-3. examine the annotated genome using JBrowse
+<fn>**New to Galaxy?** First try the [introduction](../galaxy/index.md) and then learn some [key tasks](../intro/index.md)</fn>
 
 ## Input data
 
+* Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
+* Create a new history for this analysis.
+
 Prokka requires assembled contigs.
 
-- If you are continuing on from the previous workshop ([Assembly with Spades](/modules/spades/index.md)), this file will be in your current history named something like <fn>SPAdes contigs(fasta)</fn>. 
+- *If you are continuing on from the previous workshop ([Assembly with Spades](/modules/spades/index.md)), this file will be in your current history named something like <fn>SPAdes contigs(fasta)</fn>.*
 
-- Or, if you have uploaded the history of workshop files, there is also a copy in your history called <fn>SPAdes_contigs.fasta</fn>. Either copy is fine to use. 
-
-- Alternatively, get the file called "assembled contigs" from the [Training dataset page.](../data-dna/index.md)
-
+* Or, to upload a file of contigs:
+* In a new browser tab, go to this webpage: https://zenodo.org/record/1156405#.WxYoTlOFOgw
+* Find the file called <fn>contigs.fasta</fn>
+* Right click on file name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
 
 <!--
 We will import a history from Galaxy:
@@ -39,13 +43,13 @@ We will import a history from Galaxy:
 - The history will now appear in your Current History pane, and the <fn>SPAdes_contigs.fasta</fn> file is now ready to use in Galaxy analyses.
 -->
 
-
-
 ## Run Prokka
 
-- In Galaxy, go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: Annotation &rarr; Prokka</ss>  
-- Set the following parameters (leave everything else unchanged):
-    - <ss>Contigs to annotate</ss>: <fn>SPAdes contigs (fasta)</fn>  
+* Go to the Tool panel and search for "prokka" in the search box.
+* Click on <ss>Prokka</ss>
+
+* Set the following parameters (leave other settings as they are):
+    - <ss>Contigs to annotate</ss>: your <fn>contigs.fasta</fn> file  
     - <ss>Locus tag prefix (--locustag)</ss>: P
     - <ss>Force GenBank/ENA/DDJB compliance (--compliant)</ss>: *No*
     - <ss>Sequencing Centre ID (--centre)</ss>: V
@@ -77,7 +81,7 @@ Once Prokka has finished, examine each of its output files.
 
 Now that we have annotated the draft genome sequence, we would like to view the sequence in the JBrowse genome viewer.
 
-- Go to the Galaxy tool panel, and use the top search box to search for "JBrowse". 
+- Go to the Galaxy tool panel, and use the top search box to search for "JBrowse".
 
 - Under <ss>Reference genome to display</ss> choose *Use a genome from history*.
 
@@ -142,3 +146,14 @@ Zoomed in view:
 
 - Identify genome variants (nucletotide changes) using [Snippy](/modules/snippy/index.md).
 -->
+
+## What's next?
+
+To use the tutorials on this website:
+
+* &#8592; see the list in the left hand panel
+* &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
+
+You can find more tutorials at the Galaxy Training Network:
+
+* [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/)

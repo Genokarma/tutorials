@@ -1,5 +1,7 @@
 # Sample identification with Kraken
 
+<ss>Not yet updated for Galaxy-Australia</ss>
+
 To identify a sample from sequencing reads, we can use the tool "Kraken". This tool can also be used to identify members in a mixed set of reads, for metagenomics.
 
 - e.g. reads from one sample &rarr; Kraken &rarr; 95% *Staphylococcus aureus*.
