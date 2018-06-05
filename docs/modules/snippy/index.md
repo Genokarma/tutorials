@@ -30,7 +30,11 @@ For variant calling, we need a reference genome that is of the same strain as th
 
 Get data:
 
-* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
+* In a new browser tab, go to this webpage:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.582600.svg)](https://doi.org/10.5281/zenodo.582600)
+
+
 * Find the file called <fn>mutant_R1.fastq</fn>
 * Right click on file name: select "copy link address"
 * In Galaxy, go to <ss>Get Data</ss> and then Upload File

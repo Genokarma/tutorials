@@ -115,7 +115,7 @@ This tool has summarised information about all of the reads in our FASTQ file.
 * Do these reads have higher quality scores in the centre or at the ends?
 
 
-## Run another tool
+## Optional: Run another tool
 
 Let's run a tool to filter out lower-quality reads from our FASTQ file.
 
@@ -141,7 +141,7 @@ What are the results from this filtering tool?
 
 ![filter1](../images/filter-fastq1.png)
 
-## Re-run that tool with changed settings
+## Optional: Re-run that tool with changed settings
 
 We have now decided that our input reads have to be filtered to an even higher standard.
 

@@ -10,9 +10,11 @@ In this tutorial we will find antibiotic-resistant genes in a bacterial genome.
 
 * Create a new history for this analysis.
 
+* In a new browser tab, go to this webpage:
 
-* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
-* Find the file called <fn>mutant_R1.fastq</fn>
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1156405.svg)](https://doi.org/10.5281/zenodo.1156405)
+
+* Find the file called <fn>contigs.fasta</fn>
 * Right click on file name: select "copy link address"
 * In Galaxy, go to <ss>Get Data</ss> and then Upload File
 * Click <ss>Paste/Fetch data</ss>
@@ -46,23 +48,31 @@ In this tutorial we will find antibiotic-resistant genes in a bacterial genome.
 
 ## Find antibiotic-resistant genes
 
-- We will use the tool called [ABRicate](https://github.com/tseemann/abricate) to find antibiotic-resistant genes in the (draft) genome.
+We will use the tool called [ABRicate](https://github.com/tseemann/abricate) to find antibiotic-resistant genes in the (draft) genome.
+
 - ABRicate uses a [database](https://cge.cbs.dtu.dk/services/data.php) of these genes called [ResFinder](https://cge.cbs.dtu.dk/services/ResFinder).
 
-In the tools panel, go to <ss>NGS Analysis: NGS Annotation: ABRicate</ss>.
+In the tools panel seach box, type in "abricate"
 
-- For <ss>Select fasta file</ss> choose <fn>contigs.fasta</fn> (or the name of your own assembly file.)
+* Click on <ss>ABRicate</ss>
+- For <ss>Input file</ss> choose <fn>contigs.fasta</fn> (or the name of your own assembly file.)
 - Click <ss>Execute</ss>.
 
-There is one output file. Click on the eye icon to view. It should look like this, although likely with a different number of rows.
+There is one output file.
+
+* Click on the eye icon to view.
+* It should look like this, although likely with a different number of rows.
+* (We have used a miniature genome in this example, so only have a few rows).
 
 - This shows a table with one line for each antibiotic-resistant gene found, in which contig, at which position, and the % coverage.
 
 ![abricate results](images/abricate.png)
 
-In the output from Abricate, column 5 has the list of the antibiotic-resistant gene names. Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.
+In the output from Abricate, column 5 has the list of the antibiotic-resistant gene names.
 
-To find out more about what type of AMR genes these are, you can search [Genbank](https://www.ncbi.nlm.nih.gov/gene/) with the gene name (e.g. aadD).
+* Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.
+
+* To find out more about what type of AMR genes these are, you can search [Genbank](https://www.ncbi.nlm.nih.gov/gene/) with the gene name (e.g. aadD).
 
 
 ## What's next?
