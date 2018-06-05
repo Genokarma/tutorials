@@ -174,6 +174,10 @@
       
         
       
+        
+      
+        
+      
     </ul>
   </div>
 </nav>
@@ -259,6 +263,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../fastqc/" title="Quality control" class="md-nav__link">
+      Quality control
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../spades/" title="Genome assembly" class="md-nav__link">
       Genome assembly
     </a>
@@ -310,22 +326,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#background" title="Background" class="md-nav__link">
-    Background
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#learning-objectives" title="Learning Objectives" class="md-nav__link">
-    Learning Objectives
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prepare-reference" title="Prepare reference" class="md-nav__link">
-    Prepare reference
+  <a href="#get-data" title="Get data" class="md-nav__link">
+    Get data
   </a>
   
 </li>
@@ -351,6 +353,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#whats-next" title="What's next?" class="md-nav__link">
+    What's next?
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -366,8 +375,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../abricate/" title="Finding antibiotic-resistant genes" class="md-nav__link">
-      Finding antibiotic-resistant genes
+    <a href="../abricate/" title="Antibiotic-resistant genes" class="md-nav__link">
+      Antibiotic-resistant genes
     </a>
   </li>
 
@@ -380,6 +389,18 @@
   <li class="md-nav__item">
     <a href="../mlst/" title="Using MLST" class="md-nav__link">
       Using MLST
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../kraken/" title="Sample identification" class="md-nav__link">
+      Sample identification
     </a>
   </li>
 
@@ -405,22 +426,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#background" title="Background" class="md-nav__link">
-    Background
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#learning-objectives" title="Learning Objectives" class="md-nav__link">
-    Learning Objectives
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prepare-reference" title="Prepare reference" class="md-nav__link">
-    Prepare reference
+  <a href="#get-data" title="Get data" class="md-nav__link">
+    Get data
   </a>
   
 </li>
@@ -446,6 +453,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#whats-next" title="What's next?" class="md-nav__link">
+    What's next?
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -463,39 +477,79 @@
                   <a href="https://github.com/Galaxy-Au-training/tutorials/edit/master/docs/modules/snippy/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <p><br></p>
-<h1 id="variant-calling-with-snippy">Variant calling with Snippy</h1>
-<p>Keywords: variant calling, SNP, Snippy, JBrowse, Galaxy, Microbial Genomics Virtual Lab</p>
-<h2 id="background">Background</h2>
-<p>Variant calling is the process of identifying differences between two genome samples.
-Usually differences are limited to single nucleotide polymorphisms (SNPs) and small insertions and deletions (indels). Larger structural variation such as inversions, duplications and large deletions are not typically covered by &ldquo;variant calling&rdquo;.</p>
-<p>In this tutorial, we will use the tool &ldquo;Snippy&rdquo; (link to Snippy is <a href="https://github.com/tseemann/snippy">here</a>). Snippy uses a tool to align the reads to a reference genome, and another tool to decide (&ldquo;call&rdquo;) if the discrepancies are real variants.</p>
-<h2 id="learning-objectives">Learning Objectives</h2>
-<ol>
-<li>Find variants between a reference genome and a set of reads</li>
-<li>Visualise the SNP in context of the reads aligned to the genome</li>
-<li>Determine the effect of those variants on genomic features</li>
-<li>Understand if the SNP is potentially affecting the phenotype</li>
-</ol>
-<h2 id="prepare-reference">Prepare reference</h2>
-<!-- We will import  history from Galaxy:
+                <h1 id="variant-calling-with-snippy">Variant calling with Snippy</h1>
+<p>Variant calling is the process of identifying differences between two genome samples.</p>
+<ul>
+<li>Differences are usually limited to single nucleotide polymorphisms (SNPs) and small insertions and deletions (indels).</li>
+<li>Larger structural variation such as inversions, duplications and large deletions are not typically covered by &ldquo;variant calling&rdquo;.</li>
+<li>In this tutorial, we will use the tool &ldquo;Snippy&rdquo; (link to Snippy is <a href="https://github.com/tseemann/snippy">here</a>).</li>
+<li>Snippy uses a tool to align the reads to a reference genome, and another tool to decide (&ldquo;call&rdquo;) if the discrepancies are real variants.</li>
+</ul>
+<p><fn><strong>New to Galaxy?</strong> First try the <a href="../galaxy/">introduction</a> and then learn some <a href="../intro/">key tasks</a></fn></p>
+<!--
+## Learning Objectives
 
-- In the menu options across the top, go to <ss>Shared Data</ss>.
-- Click on <ss>Histories</ss>.
-- A list of published histories should appear. Click on <fn>GCC 2016 small genome variants</fn>.
-- Click on <ss>Import history</ss>.
-- An option will appear to re-name the history. We don't need to rename it, so click <ss>Import</ss>.
-- The history will now appear in your Current History pane, and the files are now ready to use in Galaxy analyses.
+1. Find variants between a reference genome and a set of reads
+2. Visualise the SNP in context of the reads aligned to the genome
+3. Determine the effect of those variants on genomic features
+4. Understand if the SNP is potentially affecting the phenotype
 -->
 
-<!-- We will use the same data that we used in the [Assembly with Spades tutorial.](../spades/index.md) This should still be in your current galaxy history. If not, re-import the data into a new history using the instructions in that tutorial.-->
-
-<p>For variant calling, we need a reference genome that is of the same strain as the input sequence reads.</p>
-<p>For this tutorial, our reference is the <fn>wildtype.gbk</fn> file and our reads are <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>. </p>
-<p>If these files are not presently in your Galaxy history, import them from the <a href="../data-dna/index.md">Training dataset page.</a></p>
-<h2 id="call-variants-with-snippy">Call variants with Snippy</h2>
+<h2 id="get-data">Get data</h2>
 <ul>
-<li>Go to the Galaxy tools panel, and use the search box at the top to search for &ldquo;snippy&rdquo;. </li>
+<li>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</li>
+<li>Create a new history for this analysis.</li>
+</ul>
+<p>For variant calling, we need a reference genome that is of the same strain as the input sequence reads.</p>
+<ul>
+<li>For this tutorial, our reference is the <fn>wildtype.gbk</fn> file and our reads are <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>.</li>
+</ul>
+<p>Get data:</p>
+<ul>
+<li>In a new browser tab, go to this webpage: <em>http://doi.org/10.5281/zenodo.582600</em></li>
+<li>Find the file called <fn>mutant_R1.fastq</fn></li>
+<li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
+<li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
+<li>Click <ss>Paste/Fetch data</ss></li>
+<li>A box will appear: paste in link address</li>
+<li>Click <ss>Start</ss></li>
+<li>Click <ss>Close</ss></li>
+<li>The file will now appear in the top of your history panel.</li>
+<li>Shorten the file name if you wish. (Click the pencil icon).</li>
+</ul>
+<p>Repeat these steps for the other set of reads (reverse reads) called <fn>mutant_R2.fq</fn>:</p>
+<ul>
+<li>In a new browser tab, go to this webpage: <em>http://doi.org/10.5281/zenodo.582600</em></li>
+<li>Find the file called <fn>mutant_R2.fastq</fn></li>
+<li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
+<li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
+<li>Click <ss>Paste/Fetch data</ss></li>
+<li>A box will appear: paste in link address</li>
+<li>Click <ss>Start</ss></li>
+<li>Click <ss>Close</ss></li>
+<li>The file will now appear in the top of your history panel.</li>
+<li>Shorten the file name if you wish.</li>
+</ul>
+<p>Repeat these steps for the reference genome called <fn>wildtype.gbk</fn>.</p>
+<ul>
+<li>In a new browser tab, go to this webpage: <em>http://doi.org/10.5281/zenodo.582600</em></li>
+<li>Find the file called <fn>wildtype.gbk</fn> <em>Note: choose .gbk, not .gff or .fna</em></li>
+<li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
+<li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
+<li>Click <ss>Paste/Fetch data</ss></li>
+<li>A box will appear: paste in link address</li>
+<li>Click <ss>Start</ss></li>
+<li>Click <ss>Close</ss></li>
+<li>The file will now appear in the top of your history panel.</li>
+<li>Shorten the file name if you wish.</li>
+</ul>
+<h2 id="call-variants-with-snippy">Call variants with Snippy</h2>
+<p>Go to the Tool panel and search for &ldquo;snippy&rdquo; in the search box.</p>
+<ul>
+<li>Click on <ss>snippy</ss></li>
+</ul>
+<p>Set the following parameters (leave other settings as they are):</p>
+<ul>
 <li>For <ss>Reference type</ss> select <em>Genbank</em>.</li>
 <li>Then for <ss>Reference Genbank</ss> choose the <fn>wildtype.gbk</fn> file.</li>
 <li>For <ss>Single or Paired-end reads</ss> choose <em>Paired</em>.</li>
@@ -516,14 +570,15 @@ Usually differences are limited to single nucleotide polymorphisms (SNPs) and sm
 
 <p>From Snippy, there are 10 output files in various formats.</p>
 <ul>
-<li>Go to the file called <fn>snippy on data XX, data XX and data XX table</fn> and click on the eye icon.</li>
+<li>Go to the <strong>table</strong> file called <fn>snippy on data XX, data XX and data XX table</fn> and click on the eye icon.</li>
+<li>The XX refers to the number that Galaxy has given your files.</li>
 <li>We can see a list of variants. Look in column 3 to see which types the variants are, such as a SNP or a deletion.</li>
 <li>Look at the third variant called. This is a T&rarr;A mutation, causing a stop codon. Look at column 14: the product of this gene is a methicillin resistance protein. Methicillin is an antibiotic. What might be the result of such a mutation? <!--[add a hint/info box]--></li>
 </ul>
 <h2 id="view-snippy-output-in-jbrowse">View Snippy output in JBrowse</h2>
 <ul>
 <li>
-<p>Go to the Galaxy tools panel, and use the search box at the top to search for &ldquo;JBrowse&rdquo;. </p>
+<p>Go to the Galaxy tools panel, and use the search box at the top to search for &ldquo;JBrowse&rdquo;.</p>
 </li>
 <li>
 <p>Under <ss>Reference genome to display</ss> choose <em>Use a genome from history</em>.</p>
@@ -609,6 +664,16 @@ Usually differences are limited to single nucleotide polymorphisms (SNPs) and sm
 </li>
 </ul>
 <p><img alt="JBrowse screenshot" src="./images/jbrowse2.png" />    </p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>To use the tutorials on this website:</p>
+<ul>
+<li>&#8592; see the list in the left hand panel</li>
+<li>&#8598; or, click the <strong>menu button</strong> (three horizontal bars) in the top left of the page</li>
+</ul>
+<p>You can find more tutorials at the Galaxy Training Network:</p>
+<ul>
+<li><a href="http://galaxyproject.github.io/training-material/">http://galaxyproject.github.io/training-material/</a></li>
+</ul>
                 
                   
                 
@@ -642,13 +707,13 @@ Usually differences are limited to single nucleotide polymorphisms (SNPs) and sm
           </a>
         
         
-          <a href="../abricate/" title="Finding antibiotic-resistant genes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../abricate/" title="Antibiotic-resistant genes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Finding antibiotic-resistant genes
+                Antibiotic-resistant genes
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

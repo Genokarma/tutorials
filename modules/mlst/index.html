@@ -174,6 +174,10 @@
       
         
       
+        
+      
+        
+      
     </ul>
   </div>
 </nav>
@@ -259,6 +263,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../fastqc/" title="Quality control" class="md-nav__link">
+      Quality control
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../spades/" title="Genome assembly" class="md-nav__link">
       Genome assembly
     </a>
@@ -295,8 +311,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../abricate/" title="Finding antibiotic-resistant genes" class="md-nav__link">
-      Finding antibiotic-resistant genes
+    <a href="../abricate/" title="Antibiotic-resistant genes" class="md-nav__link">
+      Antibiotic-resistant genes
     </a>
   </li>
 
@@ -312,11 +328,87 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Using MLST
+      </label>
     
     <a href="./" title="Using MLST" class="md-nav__link md-nav__link--active">
       Using MLST
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-data" title="Get data" class="md-nav__link">
+    Get data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-file-to-galaxy" title="Upload file to Galaxy" class="md-nav__link">
+    Upload file to Galaxy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-mlst" title="Run MLST" class="md-nav__link">
+    Run MLST
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-mlst-do" title="What does MLST do?" class="md-nav__link">
+    What does MLST do?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-results" title="View results" class="md-nav__link">
+    View results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" title="What's next?" class="md-nav__link">
+    What's next?
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../kraken/" title="Sample identification" class="md-nav__link">
+      Sample identification
+    </a>
   </li>
 
     
@@ -327,6 +419,70 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-data" title="Get data" class="md-nav__link">
+    Get data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-file-to-galaxy" title="Upload file to Galaxy" class="md-nav__link">
+    Upload file to Galaxy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-mlst" title="Run MLST" class="md-nav__link">
+    Run MLST
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-mlst-do" title="What does MLST do?" class="md-nav__link">
+    What does MLST do?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-results" title="View results" class="md-nav__link">
+    View results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" title="What's next?" class="md-nav__link">
+    What's next?
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -335,9 +491,88 @@
                   <a href="https://github.com/Galaxy-Au-training/tutorials/edit/master/docs/modules/mlst/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Using MLST</h1>
-                
-                <p>in preparation</p>
+                <h1 id="using-mlst-for-bacterial-typing">Using MLST for bacterial typing</h1>
+<p>A bacterial &ldquo;type&rdquo; is a particular species with certain features.</p>
+<ul>
+<li>For example, the bacterial type may be <em>Staphyloccus aureus</em> with resistance to penicillin.</li>
+<li>To &ldquo;type&rdquo; a bacteria, we can focus on several genes, and see which allele is present for each of these genes.</li>
+<li>Each bacterial species will have its own scheme, which is the set of genes that are looked at.</li>
+<li>Overall, this process is called multi-locus (= several genes) sequence typing, or MLST.</li>
+</ul>
+<p>In this tutorial, we will perform MLST on a bacterial sequence.</p>
+<p><fn><strong>New to Galaxy?</strong> First try the <a href="../galaxy/">introduction</a> and then learn some <a href="../intro/">key tasks</a></fn></p>
+<h2 id="get-data">Get data</h2>
+<ul>
+<li>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</li>
+</ul>
+<p>We will get a sequence from Genbank.</p>
+<ul>
+<li>Go to this address: <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_002952.2">https://www.ncbi.nlm.nih.gov/nuccore/NC_002952.2</a></li>
+<li>Click <ss>Send to</ss></li>
+<li>Choose <ss>File</ss></li>
+<li>Choose <ss>FASTA</ss></li>
+<li>Click <ss>Create File</ss></li>
+</ul>
+<p>This downloads <fn>sequence.fasta</fn> to your computer.</p>
+<p><img src="images/genbank.png" style="width: 620px;"/></p>
+<h2 id="upload-file-to-galaxy">Upload file to Galaxy</h2>
+<p>In the tool panel, go to <ss>Get Data -&gt; Upload File</ss></p>
+<ul>
+<li><ss>Choose local file</ss>: select <fn>sequence.fasta</fn></li>
+<li><ss>Start</ss></li>
+<li><ss>Close</ss></li>
+</ul>
+<p>This file should now be in your History panel.</p>
+<h2 id="run-mlst">Run MLST</h2>
+<p>In the tool panel search box, search for MLST.</p>
+<ul>
+<li>Click on MLST</li>
+</ul>
+<p>The tool interface will appear in the centre Galaxy panel.</p>
+<ul>
+<li>For <ss>input_file</ss>, choose the file that you uploaded - <fn>sequence.fasta</fn></li>
+<li>Click <ss>Execute</ss></li>
+</ul>
+<h2 id="what-does-mlst-do">What does MLST do?</h2>
+<ul>
+<li>Takes a fasta or genbank file</li>
+<li>Scans this against all the typing schemes</li>
+<li>Finds the best match (e.g. a scheme for the correct species)</li>
+<li>Reports the output:<ul>
+<li>the scheme chosen</li>
+<li>the sequence type (e.g. ST = 21)</li>
+<li>the genes in this scheme and the alleles found in the data</li>
+</ul>
+</li>
+</ul>
+<h2 id="view-results">View results</h2>
+<p>The results file will be at the top of your history panel.</p>
+<ul>
+<li>
+<p>Click on the eye icon to view the output.</p>
+</li>
+<li>
+<p>Your results will be a single line.</p>
+</li>
+</ul>
+<p><img src="images/mlst.png" style="width: 620px;"/></p>
+<p>For example:</p>
+<ul>
+<li>Column 2: the scheme</li>
+<li>Column 3: the sequence type</li>
+<li>The rest of the columns: the gene names with the allele number in brackets. It is this combination of alleles that defines the sequence type.</li>
+</ul>
+<p>In this example, our sequence type is ST=36. This is methicillin-resistant <em>Staphylococcus aureus</em> (or MRSA).</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>To use the tutorials on this website:</p>
+<ul>
+<li>&#8592; see the list in the left hand panel</li>
+<li>&#8598; or, click the <strong>menu button</strong> (three horizontal bars) in the top left of the page</li>
+</ul>
+<p>You can find more tutorials at the Galaxy Training Network:</p>
+<ul>
+<li><a href="http://galaxyproject.github.io/training-material/">http://galaxyproject.github.io/training-material/</a></li>
+</ul>
                 
                   
                 
@@ -356,7 +591,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../abricate/" title="Finding antibiotic-resistant genes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../abricate/" title="Antibiotic-resistant genes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -365,11 +600,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Finding antibiotic-resistant genes
+                Antibiotic-resistant genes
               </span>
             </div>
           </a>
         
+        
+          <a href="../kraken/" title="Sample identification" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Sample identification
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>

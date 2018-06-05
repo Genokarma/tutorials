@@ -27,6 +27,14 @@
 
     
     <url>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/fastqc/</loc>
+     <lastmod>2018-06-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>https://galaxy-au-training.github.io/tutorials//modules/spades/</loc>
      <lastmod>2018-06-05</lastmod>
      <changefreq>daily</changefreq>
@@ -60,6 +68,14 @@
     
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials//modules/mlst/</loc>
+     <lastmod>2018-06-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/kraken/</loc>
      <lastmod>2018-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url>

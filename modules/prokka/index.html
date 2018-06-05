@@ -174,6 +174,10 @@
       
         
       
+        
+      
+        
+      
     </ul>
   </div>
 </nav>
@@ -259,6 +263,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../fastqc/" title="Quality control" class="md-nav__link">
+      Quality control
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../spades/" title="Genome assembly" class="md-nav__link">
       Genome assembly
     </a>
@@ -305,13 +321,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" title="Learning objectives" class="md-nav__link">
-    Learning objectives
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#input-data" title="Input data" class="md-nav__link">
     Input data
   </a>
@@ -335,6 +344,13 @@
         <li class="md-nav__item">
   <a href="#view-annotated-features-in-jbrowse" title="View annotated features in JBrowse" class="md-nav__link">
     View annotated features in JBrowse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" title="What's next?" class="md-nav__link">
+    What's next?
   </a>
   
 </li>
@@ -366,8 +382,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../abricate/" title="Finding antibiotic-resistant genes" class="md-nav__link">
-      Finding antibiotic-resistant genes
+    <a href="../abricate/" title="Antibiotic-resistant genes" class="md-nav__link">
+      Antibiotic-resistant genes
     </a>
   </li>
 
@@ -380,6 +396,18 @@
   <li class="md-nav__item">
     <a href="../mlst/" title="Using MLST" class="md-nav__link">
       Using MLST
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../kraken/" title="Sample identification" class="md-nav__link">
+      Sample identification
     </a>
   </li>
 
@@ -412,13 +440,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" title="Learning objectives" class="md-nav__link">
-    Learning objectives
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#input-data" title="Input data" class="md-nav__link">
     Input data
   </a>
@@ -446,6 +467,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#whats-next" title="What's next?" class="md-nav__link">
+    What's next?
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -463,31 +491,39 @@
                   <a href="https://github.com/Galaxy-Au-training/tutorials/edit/master/docs/modules/prokka/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <p><br></p>
-<h1 id="genome-annotation-using-prokka">Genome annotation using Prokka</h1>
-<p>Keywords: annotation, Prokka, JBrowse, Galaxy, Microbial Genomics Virtual Lab</p>
+                <h1 id="genome-annotation-using-prokka">Genome annotation using Prokka</h1>
 <h2 id="background">Background</h2>
-<p>In this section we will use a software tool called Prokka to annotate the draft genome sequence produced in the previous <a href="../spades/">tutorial</a>. Prokka is a “wrapper”; it collects together several pieces of software (from various authors), and so avoids “re-inventing the wheel”.</p>
-<p>Prokka finds and annotates features (both protein coding regions and RNA genes, i.e. tRNA, rRNA) present on on a sequence. Note, Prokka uses a two-step process for the annotation of protein coding regions: first, protein coding regions on the genome are identified using <a href="http://prodigal.ornl.gov/">Prodigal</a>; second, the <em>function</em> of the encoded protein is predicted by similarity to proteins in one of many protein or protein domain databases. Prokka is a software tool that can be used to annotate bacterial, archaeal and viral genomes quickly, generating standard output files in GenBank, EMBL and gff formats. More information about Prokka can be found <a href="https://github.com/tseemann/prokka">here</a>.</p>
-<h2 id="learning-objectives">Learning objectives</h2>
-<p>At the end of this tutorial you should be able to:</p>
-<ol>
-<li>load a genome assembly into Prokka</li>
-<li>annotate the assembly using Prokka</li>
-<li>examine the annotated genome using JBrowse</li>
-</ol>
+<p>In this section we will use a software tool called Prokka to annotate the draft genome sequence produced in the previous <a href="../spades/">tutorial</a>.</p>
+<ul>
+<li>Prokka is a “wrapper”; it collects together several pieces of software (from various authors), and so avoids “re-inventing the wheel”.</li>
+<li>Prokka finds and annotates features (both protein coding regions and RNA genes, i.e. tRNA, rRNA) present on on a sequence.</li>
+<li>Note, Prokka uses a two-step process for the annotation of protein coding regions: first, protein coding regions on the genome are identified using <a href="http://prodigal.ornl.gov/">Prodigal</a>; second, the <em>function</em> of the encoded protein is predicted by similarity to proteins in one of many protein or protein domain databases.</li>
+<li>Prokka is a software tool that can be used to annotate bacterial, archaeal and viral genomes quickly, generating standard output files in GenBank, EMBL and gff formats.</li>
+<li>More information about Prokka can be found <a href="https://github.com/tseemann/prokka">here</a>.</li>
+</ul>
+<p><fn><strong>New to Galaxy?</strong> First try the <a href="../galaxy/">introduction</a> and then learn some <a href="../intro/">key tasks</a></fn></p>
 <h2 id="input-data">Input data</h2>
+<ul>
+<li>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</li>
+<li>Create a new history for this analysis.</li>
+</ul>
 <p>Prokka requires assembled contigs.</p>
 <ul>
 <li>
-<p>If you are continuing on from the previous workshop (<a href="../spades/">Assembly with Spades</a>), this file will be in your current history named something like <fn>SPAdes contigs(fasta)</fn>. </p>
+<p><em>If you are continuing on from the previous workshop (<a href="../spades/">Assembly with Spades</a>), this file will be in your current history named something like <fn>SPAdes contigs(fasta)</fn>.</em></p>
 </li>
 <li>
-<p>Or, if you have uploaded the history of workshop files, there is also a copy in your history called <fn>SPAdes_contigs.fasta</fn>. Either copy is fine to use. </p>
+<p>Or, to upload a file of contigs:</p>
 </li>
-<li>
-<p>Alternatively, get the file called &ldquo;assembled contigs&rdquo; from the <a href="../data-dna/index.md">Training dataset page.</a></p>
-</li>
+<li>In a new browser tab, go to this webpage: https://zenodo.org/record/1156405#.WxYoTlOFOgw</li>
+<li>Find the file called <fn>contigs.fasta</fn></li>
+<li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
+<li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
+<li>Click <ss>Paste/Fetch data</ss></li>
+<li>A box will appear: paste in link address</li>
+<li>Click <ss>Start</ss></li>
+<li>Click <ss>Close</ss></li>
+<li>The file will now appear in the top of your history panel.</li>
 </ul>
 <!--
 We will import a history from Galaxy:
@@ -502,9 +538,14 @@ We will import a history from Galaxy:
 
 <h2 id="run-prokka">Run Prokka</h2>
 <ul>
-<li>In Galaxy, go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: Annotation &rarr; Prokka</ss>  </li>
-<li>Set the following parameters (leave everything else unchanged):<ul>
-<li><ss>Contigs to annotate</ss>: <fn>SPAdes contigs (fasta)</fn>  </li>
+<li>Go to the Tool panel and search for &ldquo;prokka&rdquo; in the search box.</li>
+<li>
+<p>Click on <ss>Prokka</ss></p>
+</li>
+<li>
+<p>Set the following parameters (leave other settings as they are):</p>
+<ul>
+<li><ss>Contigs to annotate</ss>: your <fn>contigs.fasta</fn> file  </li>
 <li><ss>Locus tag prefix (&ndash;locustag)</ss>: P</li>
 <li><ss>Force GenBank/ENA/DDJB compliance (&ndash;compliant)</ss>: <em>No</em></li>
 <li><ss>Sequencing Centre ID (&ndash;centre)</ss>: V</li>
@@ -536,7 +577,7 @@ We will import a history from Galaxy:
 <p>Now that we have annotated the draft genome sequence, we would like to view the sequence in the JBrowse genome viewer.</p>
 <ul>
 <li>
-<p>Go to the Galaxy tool panel, and use the top search box to search for &ldquo;JBrowse&rdquo;. </p>
+<p>Go to the Galaxy tool panel, and use the top search box to search for &ldquo;JBrowse&rdquo;.</p>
 </li>
 <li>
 <p>Under <ss>Reference genome to display</ss> choose <em>Use a genome from history</em>.</p>
@@ -623,6 +664,17 @@ We will import a history from Galaxy:
 
 - Identify genome variants (nucletotide changes) using [Snippy](/modules/snippy/index.md).
 -->
+
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>To use the tutorials on this website:</p>
+<ul>
+<li>&#8592; see the list in the left hand panel</li>
+<li>&#8598; or, click the <strong>menu button</strong> (three horizontal bars) in the top left of the page</li>
+</ul>
+<p>You can find more tutorials at the Galaxy Training Network:</p>
+<ul>
+<li><a href="http://galaxyproject.github.io/training-material/">http://galaxyproject.github.io/training-material/</a></li>
+</ul>
                 
                   
                 
