@@ -53,7 +53,7 @@ Repeat these steps for the other set of reads (reverse reads) called <fn>mutant_
 * The file will now appear in the top of your history panel.
 * Shorten the file name if you wish.
 
-Repeat these steps for three other files: <fn>wildtype.gbk</fn>, <fn>wildtype.gff</fn> and <fh>wildtype.fna</fn>.
+Repeat these steps for three other files: <fn>wildtype.gbk</fn>, <fn>wildtype.gff</fn> and <fn>wildtype.fna</fn>.
 
 ## Call variants with Snippy
 
