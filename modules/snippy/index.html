@@ -500,10 +500,6 @@
 <li>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</li>
 <li>Create a new history for this analysis.</li>
 </ul>
-<p>For variant calling, we need a reference genome that is of the same strain as the input sequence reads.</p>
-<ul>
-<li>For this tutorial, our reference is the <fn>wildtype.gbk</fn> file and our reads are <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>.</li>
-</ul>
 <p>Get data:</p>
 <ul>
 <li>In a new browser tab, go to this webpage:</li>
@@ -533,19 +529,7 @@
 <li>The file will now appear in the top of your history panel.</li>
 <li>Shorten the file name if you wish.</li>
 </ul>
-<p>Repeat these steps for the reference genome called <fn>wildtype.gbk</fn>.</p>
-<ul>
-<li>In a new browser tab, go to this webpage: <em>http://doi.org/10.5281/zenodo.582600</em></li>
-<li>Find the file called <fn>wildtype.gbk</fn> <em>Note: choose .gbk, not .gff or .fna</em></li>
-<li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
-<li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
-<li>Click <ss>Paste/Fetch data</ss></li>
-<li>A box will appear: paste in link address</li>
-<li>Click <ss>Start</ss></li>
-<li>Click <ss>Close</ss></li>
-<li>The file will now appear in the top of your history panel.</li>
-<li>Shorten the file name if you wish.</li>
-</ul>
+<p>Repeat these steps for three other files: <fn>wildtype.gbk</fn>, <fn>wildtype.gff</fn> and <fn>wildtype.fna</fn>.</p>
 <h2 id="call-variants-with-snippy">Call variants with Snippy</h2>
 <p>Go to the Tool panel and search for &ldquo;snippy&rdquo; in the search box.</p>
 <ul>
@@ -557,7 +541,7 @@
 <li>Then for <ss>Reference Genbank</ss> choose the <fn>wildtype.gbk</fn> file.</li>
 <li>For <ss>Single or Paired-end reads</ss> choose <em>Paired</em>.</li>
 <li>Then choose the first set of reads, <fn>mutant_R1.fastq</fn> and second set of reads, <fn>mutant_R2.fastq</fn>.</li>
-<li>For <ss>Cleanup the non-snp output files</ss> select <em>No</em>.</li>
+<li>For <ss>Cleanup the non-snp output files</ss> select <em>No</em>. The box will be a darker grey.</li>
 </ul>
 <p>Your tool interface should look like this:</p>
 <p><img alt="Snippy interface" src="./images/interface.png" /></p>
