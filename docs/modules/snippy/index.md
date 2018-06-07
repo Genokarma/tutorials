@@ -23,11 +23,6 @@ Variant calling is the process of identifying differences between two genome sam
 * Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
 * Create a new history for this analysis.
 
-
-For variant calling, we need a reference genome that is of the same strain as the input sequence reads.
-
-* For this tutorial, our reference is the <fn>wildtype.gbk</fn> file and our reads are <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>.
-
 Get data:
 
 * In a new browser tab, go to this webpage:
@@ -58,18 +53,7 @@ Repeat these steps for the other set of reads (reverse reads) called <fn>mutant_
 * The file will now appear in the top of your history panel.
 * Shorten the file name if you wish.
 
-Repeat these steps for the reference genome called <fn>wildtype.gbk</fn>.
-
-* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
-* Find the file called <fn>wildtype.gbk</fn> *Note: choose .gbk, not .gff or .fna*
-* Right click on file name: select "copy link address"
-* In Galaxy, go to <ss>Get Data</ss> and then Upload File
-* Click <ss>Paste/Fetch data</ss>
-* A box will appear: paste in link address
-* Click <ss>Start</ss>
-* Click <ss>Close</ss>
-* The file will now appear in the top of your history panel.
-* Shorten the file name if you wish.
+Repeat these steps for three other files: <fn>wildtype.gbk</fn>, <fn>wildtype.gff</fn> and <fh>wildtype.fna</fn>.
 
 ## Call variants with Snippy
 
@@ -84,7 +68,7 @@ Set the following parameters (leave other settings as they are):
 - Then for <ss>Reference Genbank</ss> choose the <fn>wildtype.gbk</fn> file.
 - For <ss>Single or Paired-end reads</ss> choose *Paired*.
 - Then choose the first set of reads, <fn>mutant_R1.fastq</fn> and second set of reads, <fn>mutant_R2.fastq</fn>.
-- For <ss>Cleanup the non-snp output files</ss> select *No*.
+- For <ss>Cleanup the non-snp output files</ss> select *No*. The box will be a darker grey.
 
 Your tool interface should look like this:
 
