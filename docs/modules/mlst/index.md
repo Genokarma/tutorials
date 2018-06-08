@@ -87,6 +87,7 @@ In this example, our sequence type is ST=36. This is methicillin-resistant *Stap
 
 If you want to see this Galaxy history without performing the steps above:
 
+* Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
 * Go to <ss>Shared Data</ss>
 * Click <ss>Histories</ss>
 * Click <fn>Completed-MLST-analysis</fn>
