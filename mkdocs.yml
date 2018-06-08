@@ -49,7 +49,7 @@ pages:
 - Variant calling - bacteria: modules/snippy/index.md
 - Variant calling - human: modules/variants/index.md
 
-# - Differential gene expression: modules/dge/index.md
+
 # - Metagenomics: modules/metagenomics/metagenomics.md
 # - Workflows - Introduction: modules/workflows/index.md
 # - Workflow - Assembly and annotation: modules/workflow-assembly-annotation/index.md
@@ -79,6 +79,8 @@ pages:
     #- Annotation using command line tools: modules/cmdline_prokka/index.md
     #- Bash scripts: modules/scripts/index.md
 
+- RNA-seq - bacteria: modules/dge/index.md
+- RNA-seq - humans: modules/rna-humans/index.md
 
 #- Transcriptomics:
 #  - Overview: modules/transcriptomics.md
