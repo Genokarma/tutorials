@@ -89,4 +89,20 @@
     </url>
     
 
+    
+    <url>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/dge/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://galaxy-au-training.github.io/tutorials//modules/rna-humans/</loc>
+     <lastmod>2018-06-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
 </urlset>

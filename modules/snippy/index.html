@@ -180,6 +180,10 @@
       
         
       
+        
+      
+        
+      
     </ul>
   </div>
 </nav>
@@ -356,6 +360,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
+    See this history in Galaxy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#whats-next" title="What's next?" class="md-nav__link">
     What's next?
   </a>
@@ -419,6 +430,30 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../dge/" title="RNA-seq - bacteria" class="md-nav__link">
+      RNA-seq - bacteria
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../rna-humans/" title="RNA-seq - humans" class="md-nav__link">
+      RNA-seq - humans
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -463,6 +498,13 @@
         <li class="md-nav__item">
   <a href="#view-snippy-output-in-jbrowse" title="View Snippy output in JBrowse" class="md-nav__link">
     View Snippy output in JBrowse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
+    See this history in Galaxy
   </a>
   
 </li>
@@ -532,7 +574,10 @@
 </ul>
 <p>Repeat these steps for the other set of reads (reverse reads) called <fn>mutant_R2.fq</fn>:</p>
 <ul>
-<li>In a new browser tab, go to this webpage: <em>http://doi.org/10.5281/zenodo.582600</em></li>
+<li>In a new browser tab, go to this webpage:</li>
+</ul>
+<p><a href="https://doi.org/10.5281/zenodo.582600"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.582600.svg" /></a></p>
+<ul>
 <li>Find the file called <fn>mutant_R2.fastq</fn></li>
 <li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
 <li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
@@ -572,7 +617,7 @@
 <p>From Snippy, there are 10 output files in various formats.</p>
 <ul>
 <li>Go to the <strong>table</strong> file called <fn>snippy on data XX, data XX and data XX table</fn> and click on the eye icon.</li>
-<li>The XX refers to the number that Galaxy has given your files.</li>
+<li>(The XX refers to the number that Galaxy has given your files.)</li>
 <li>We can see a list of variants. Look in column 3 to see which types the variants are, such as a SNP or a deletion.</li>
 <li>Look at the third variant called. This is a T&rarr;A mutation, causing a stop codon. Look at column 14: the product of this gene is a methicillin resistance protein. Methicillin is an antibiotic. What might be the result of such a mutation? <!--[add a hint/info box]--></li>
 </ul>
@@ -629,15 +674,18 @@
 <li>Under <ss>JBrowse Track Type[Advanced]</ss> select <em>Canvas Features</em>.</li>
 <li>Click on <ss>JBrowse Styling Options <Advanced]</ss></li>
 <li>Under <ss>JBrowse style.label</ss> add in the word <em>product</em>.</li>
-<li>Under <ss>JBrowse style.description</ss> add in the word <em>product</em>.</li>
+<li>Under <ss>JBrowse style.description</ss> check that it says <em>product,name,id</em>.</li>
 <li>
 <p>Under <ss>Track Visibility</ss> choose <em>On for new users</em>.</p>
 </li>
 <li>
 <p>Click <ss>Execute</ss></p>
 </li>
+</ul>
+<p>A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. (This may take some time. If you would like to see a completed history for this tutorial, instructions are in the next section.)</p>
+<ul>
 <li>
-<p>A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.</p>
+<p>Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.</p>
 </li>
 <li>
 <p>On the left, tick boxes to display the tracks</p>
@@ -665,6 +713,16 @@
 </li>
 </ul>
 <p><img alt="JBrowse screenshot" src="./images/jbrowse2.png" />    </p>
+<h2 id="see-this-history-in-galaxy">See this history in Galaxy</h2>
+<p>If you want to see this Galaxy history without performing the steps above:</p>
+<ul>
+<li>Log in to Galaxy Australia: <a href="https://usegalaxy.org.au/">https://usegalaxy.org.au/</a></li>
+<li>Go to <ss>Shared Data</ss></li>
+<li>Click <ss>Histories</ss></li>
+<li>Click <fn>Completed-variant-calling-analysis</fn></li>
+<li>Click <ss>Import</ss> (at the top right corner)</li>
+<li>The analysis should now be showing as your current history.</li>
+</ul>
 <h2 id="whats-next">What&rsquo;s next?</h2>
 <p>To use the tutorials on this website:</p>
 <ul>

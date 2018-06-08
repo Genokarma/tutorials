@@ -180,6 +180,10 @@
       
         
       
+        
+      
+        
+      
     </ul>
   </div>
 </nav>
@@ -357,6 +361,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
+    See this history in Galaxy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#whats-next" title="What's next?" class="md-nav__link">
     What's next?
   </a>
@@ -468,6 +479,30 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../dge/" title="RNA-seq - bacteria" class="md-nav__link">
+      RNA-seq - bacteria
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../rna-humans/" title="RNA-seq - humans" class="md-nav__link">
+      RNA-seq - humans
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -566,6 +601,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
+    See this history in Galaxy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#whats-next" title="What's next?" class="md-nav__link">
     What's next?
   </a>
@@ -629,7 +671,7 @@
 <ul>
 <li>Go to the History panel</li>
 <li>Click on the history name (&ldquo;Unnamed history&rdquo;)</li>
-<li>Type in a new name, for example, &ldquo;My-Analysis&rdquo;</li>
+<li>Type in a new name, for example, <fn>My-Analysis</fn></li>
 <li>Press Enter
 <br></li>
 </ul>
@@ -638,18 +680,18 @@
 <p>Your &ldquo;Tools&rdquo; are in the panel at the left.</p>
 <ul>
 <li>Go to the Tools panel</li>
-<li>Click &ldquo;Get Data&rdquo; (at the top of the list)</li>
-<li>Click &ldquo;Upload File&rdquo;</li>
+<li>Click <ss>Get Data</ss> (at the top of the list)</li>
+<li>Click <ss>Upload File</ss></li>
 </ul>
 <p>This brings up a box:
 <br></p>
 <p><img src="../images/upload-box.png" alt="filebox" style="width: 620px;"/>
 <br></p>
 <ul>
-<li>Click &ldquo;Paste/Fetch data&rdquo;</li>
+<li>Click <ss>Paste/Fetch data</ss></li>
 <li>Paste in the address of a file: <em>https://zenodo.org/record/582600/files/mutant_R1.fastq</em></li>
-<li>Then click &ldquo;Start&rdquo;.</li>
-<li>Then click &ldquo;Close&rdquo;.
+<li>Then click <ss>Start</ss>.</li>
+<li>Then click <ss>Close</ss>.
 Your uploaded file is now in your current history.</li>
 </ul>
 <p>When the file has uploaded to Galaxy, it will turn green.</p>
@@ -670,15 +712,15 @@ Your uploaded file is now in your current history.</li>
 <p>Let&rsquo;s look at the quality of the reads in this file.</p>
 <ul>
 <li>In the tools panel search box, type in FastQC.</li>
-<li>Click on the tool &ldquo;FastQC&rdquo;</li>
+<li>Click on the tool <ss>FastQC</ss></li>
 <li>This brings up a window in the centre of the screen.</li>
-<li>For &ldquo;Short read data from your current history&rdquo; select the FASTQ file that we uploaded.</li>
+<li>For <ss>Short read data from your current history</ss> select the FASTQ file that we uploaded.</li>
 <li>Leave the other parameters as they are.</li>
-<li>Click &ldquo;Execute&rdquo;.</li>
+<li>Click <ss>Execute</ss>.</li>
 <li>This tool will run and the two output files will appear at the top of your history panel.</li>
 </ul>
 <h2 id="view-results">View results</h2>
-<p>We will look at the output file called <em>FastQC on data 1: Webpage</em>.</p>
+<p>We will look at the output file called <fn>FastQC on data 1: Webpage</fn>.</p>
 <ul>
 <li>Note that Galaxy has given this file a name according to both the tool (FastQC) and the data file (&ldquo;data 1&rdquo;) that it used.</li>
 <li>
@@ -699,15 +741,15 @@ Your uploaded file is now in your current history.</li>
 <p>Let&rsquo;s run a tool to filter out lower-quality reads from our FASTQ file.</p>
 <ul>
 <li>In the tool panel search box, type in &ldquo;Filter by quality&rdquo;.</li>
-<li>Click on the tool &ldquo;Filter by quality&rdquo;.</li>
-<li>Under &ldquo;Library to filter&rdquo;, Galaxy will probably have found your input FASTQ file. If not, select this file in the drop-down box.</li>
-<li>Under &ldquo;Quality cut-off value&rdquo;, type in 35.</li>
-<li>Under &ldquo;Percent of bases in sequence that must have quality equal to / higher than cut-off value&rdquo;, type in 80.</li>
-<li>Click &ldquo;Execute&rdquo;.</li>
+<li>Click on the tool <ss>Filter by qualit</ss></li>
+<li>Under <ss>Library to filter</ss>, Galaxy will probably have found your input FASTQ file. If not, select this file in the drop-down box.</li>
+<li>Under <ss>Quality cut-off value</ss>, type in 35.</li>
+<li>Under <ss>Percent of bases in sequence that must have quality equal to / higher than cut-off value</ss>, type in 80.</li>
+<li>Click <ss>Execute</ss>.</li>
 </ul>
 <p>After the tool has run, the output file will appear at the top of your History panel.</p>
 <ul>
-<li>This file will be called &ldquo;Filter by quality on data 1&rdquo;.</li>
+<li>This file will be called <fn>Filter by quality on data 1</fn>.</li>
 <li>Remember that Galaxy has named this file according to the tool it used (&ldquo;Filter by quality&rdquo;) and the data file (&ldquo;data 1&rdquo;).</li>
 <li>The actual numbers in front of the files in the history are not important.</li>
 </ul>
@@ -725,14 +767,15 @@ Your uploaded file is now in your current history.</li>
 <p>We will change the filter settings and re-run the tool.</p>
 </li>
 <li>
-<p>In the History panel, find the output file from the first time we ran the filter tool. This file is called &ldquo;Filter by quality on data 1&rdquo;.</p>
+<p>In the History panel, find the output file from the first time we ran the filter tool.</p>
 </li>
+<li>This file is called <fn>Filter by quality on data 1</fn>.</li>
 <li>Click on the icon with two arrows - this means &ldquo;run this tool again&rdquo;.
 <br>
 <img alt="rerun" src="./../images/rerun.png" /></li>
 <li>This brings up the tool interface in the centre panel.</li>
 <li>Change the settings to something even stricter. For example, you might decide you want 80 percent of bases to have a quality of 36 or higher, instead of 35.</li>
-<li>Click &ldquo;Execute&rdquo;.</li>
+<li>Click <ss>Execute</ss>.</li>
 </ul>
 <p>View the results:</p>
 <ul>
@@ -750,13 +793,13 @@ Your uploaded file is now in your current history.</li>
 <br>
 <img alt="cog" src="./../images/cog.png" />
 <br></li>
-<li>Select &ldquo;Create New&rdquo;.</li>
-<li>Name your history, <em>e.g.</em> &ldquo;Next-analysis&rdquo;</li>
+<li>Select <ss>Create New</ss>.</li>
+<li>Name your history, <em>e.g.</em> <fn>Next-analysis</fn></li>
 <li>Press Enter</li>
 </ul>
 <p>This new history does not have any files in it yet.</p>
 <h2 id="look-at-all-your-histories">Look at all your histories</h2>
-<p>Where is your first history, called &ldquo;my-analysis&rdquo;?</p>
+<p>Where is your first history, called <fn>my-analysis</fn>?</p>
 <ul>
 <li>In the History panel, click on the &ldquo;View all histories&rdquo; icon.
 <br>
@@ -765,14 +808,14 @@ Your uploaded file is now in your current history.</li>
 <li>All your histories are displayed here.
 <br></li>
 <li>Drag a file into your new history:</li>
-<li>Click on the FASTQ file in &ldquo;my-analysis&rdquo; history</li>
-<li>Drag it into the &ldquo;Next-analysis&rdquo; history</li>
+<li>Click on the FASTQ file in <fn>my-analysis</fn> history</li>
+<li>Drag it into the <fn>Next-analysis</fn> history</li>
 <li>This makes a copy of the file in the new history</li>
-<li>Click &ldquo;Done&rdquo;
+<li>Click <ss>Done</ss>
 <br>
 <img alt="view-all-hist" src="./../images/view-all-hist.png" /></li>
 </ul>
-<p>Your main Galaxy window will now show the current history as &ldquo;Next-analysis&rdquo;, and it will have one file in it.</p>
+<p>Your main Galaxy window will now show the current history as <fn>Next-analysis</fN>, and it will have one file in it.</p>
 <p>You can go back into the &ldquo;View all histories&rdquo; page and &ldquo;Switch to&rdquo; a different history.</p>
 <h2 id="summary">Summary</h2>
 <p>What have we learned?</p>
@@ -788,6 +831,16 @@ Your uploaded file is now in your current history.</li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>
 <p>Well done! You have completed the short introduction to Galaxy, where you named the history, uploaded a file, used a tool, and viewed results. Additional tutorials are available for a more in-depth introduction to Galaxy&rsquo;s features.</p>
+<h2 id="see-this-history-in-galaxy">See this history in Galaxy</h2>
+<p>If you want to see this Galaxy history without performing the steps above:</p>
+<ul>
+<li>Log in to Galaxy Australia: <a href="https://usegalaxy.org.au/">https://usegalaxy.org.au/</a></li>
+<li>Go to <ss>Shared Data</ss></li>
+<li>Click <ss>Histories</ss></li>
+<li>Click <fn>Completed-key-tasks-analysis</fn></li>
+<li>Click <ss>Import</ss> (at the top right corner)</li>
+<li>The analysis should now be showing as your current history.</li>
+</ul>
 <h2 id="whats-next">What&rsquo;s next?</h2>
 <p>To use the tutorials on this website:</p>
 <ul>

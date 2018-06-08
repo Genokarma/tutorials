@@ -9,7 +9,7 @@
         <meta name="description" content="Tutorials for using Galaxy Australia">
       
       
-        <link rel="canonical" href="https://galaxy-au-training.github.io/tutorials/modules/abricate/">
+        <link rel="canonical" href="https://galaxy-au-training.github.io/tutorials/modules/rna-humans/">
       
       
         <meta name="author" content="Anna Syme, Gareth Price, Torsten Seemann">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Antibiotic-resistant genes - Galaxy Australia Training</title>
+        <title>RNA-seq - humans - Galaxy Australia Training</title>
       
     
     
@@ -82,7 +82,7 @@
             
               
             
-            Antibiotic-resistant genes
+            RNA-seq - humans
           
         </span>
       </div>
@@ -327,68 +327,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Antibiotic-resistant genes
-      </label>
-    
-    <a href="./" title="Antibiotic-resistant genes" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../abricate/" title="Antibiotic-resistant genes" class="md-nav__link">
       Antibiotic-resistant genes
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#get-data" title="Get data" class="md-nav__link">
-    Get data
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#find-antibiotic-resistant-genes" title="Find antibiotic-resistant genes" class="md-nav__link">
-    Find antibiotic-resistant genes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
-    See this history in Galaxy
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-next" title="What's next?" class="md-nav__link">
-    What's next?
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -432,11 +375,54 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../rna-humans/" title="RNA-seq - humans" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        RNA-seq - humans
+      </label>
+    
+    <a href="./" title="RNA-seq - humans" class="md-nav__link md-nav__link--active">
       RNA-seq - humans
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic" title="Basic" class="md-nav__link">
+    Basic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced" title="Advanced" class="md-nav__link">
+    Advanced
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -461,29 +447,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get-data" title="Get data" class="md-nav__link">
-    Get data
+  <a href="#basic" title="Basic" class="md-nav__link">
+    Basic
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#find-antibiotic-resistant-genes" title="Find antibiotic-resistant genes" class="md-nav__link">
-    Find antibiotic-resistant genes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
-    See this history in Galaxy
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-next" title="What's next?" class="md-nav__link">
-    What's next?
+  <a href="#advanced" title="Advanced" class="md-nav__link">
+    Advanced
   </a>
   
 </li>
@@ -502,108 +474,15 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Galaxy-Au-training/tutorials/edit/master/docs/modules/abricate/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/Galaxy-Au-training/tutorials/edit/master/docs/modules/rna-humans/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <h1 id="finding-antibiotic-resistant-genes">Finding antibiotic-resistant genes</h1>
-<p>In this tutorial we will find antibiotic-resistant genes in a bacterial genome.</p>
-<p><fn><strong>New to Galaxy?</strong> First try the <a href="../galaxy/">introduction</a> and then learn some <a href="../intro/">key tasks</a></fn></p>
-<h2 id="get-data">Get data</h2>
-<ul>
-<li>
-<p>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</p>
-</li>
-<li>
-<p>Create a new history for this analysis.</p>
-</li>
-<li>
-<p>In a new browser tab, go to this webpage:</p>
-</li>
-</ul>
-<p><a href="https://doi.org/10.5281/zenodo.1156405"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1156405.svg" /></a></p>
-<ul>
-<li>Find the file called <fn>contigs.fasta</fn></li>
-<li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
-<li>In Galaxy, go to <ss>Get Data -&gt; Upload File</ss></li>
-<li>Click <ss>Paste/Fetch data</ss></li>
-<li>A box will appear: paste in link address</li>
-<li>Click <ss>Start</ss></li>
-<li>Click <ss>Close</ss></li>
-<li>The file will now appear in the top of your history panel. When it has finished uploading, the file name will be green.</li>
-</ul>
-<!--
-##Import data
-
-- Go to your Galaxy instance.
-- Set up a new History for this Activity.
-    - In the History panel, click on the cog icon, select <ss>Create New</ss>.
-    - A new empty history should appear; click on <fn>Unnamed history</fn> and re-name it (e.g. AMR genes).
-
-    ![Galaxy new history](images/galaxy1.png)
-
-- Import an assembled genome (or use one from your history).
-    - Copy this URL for a previously-assembled genome:  <tt>https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Microbial_tutorials/SPAdes_contigs.fasta</tt>
-    -  From the Galaxy tool panel, click on <ss>Get Data &rarr; Upload File</ss>  
-    -  Click the <ss>Paste/Fetch data</ss> button  
-    -  Paste the URL into the box.
-    -  Click the <ss>Start</ss> button.  
-    -  Once the progress bar reaches 100%, click the <ss>Close</ss> button  
-    - The file will now upload to your current history.
-    - Re-name it with the pencil icon to <fn>contigs.fasta</fn>.
--->
-
-<h2 id="find-antibiotic-resistant-genes">Find antibiotic-resistant genes</h2>
-<p>We will use the tool called <a href="https://github.com/tseemann/abricate">ABRicate</a> to find antibiotic-resistant genes in the (draft) genome.</p>
-<ul>
-<li>ABRicate uses a <a href="https://cge.cbs.dtu.dk/services/data.php">database</a> of these genes called <a href="https://cge.cbs.dtu.dk/services/ResFinder">ResFinder</a>.</li>
-</ul>
-<p>In the tools panel seach box, type in &ldquo;abricate&rdquo;</p>
-<ul>
-<li>Click on <ss>ABRicate</ss></li>
-<li>For <ss>Input file</ss> choose <fn>contigs.fasta</fn> (or the name of your own assembly file.)</li>
-<li>Click <ss>Execute</ss>.</li>
-</ul>
-<p>There is one output file.</p>
-<ul>
-<li>Click on the eye icon to view.</li>
-<li>It should look like this, although likely with a different number of rows.</li>
-<li>
-<p>(We have used a miniature genome in this example, so only have a few rows).</p>
-</li>
-<li>
-<p>This shows a table with one line for each antibiotic-resistant gene found, in which contig, at which position, and the % coverage.</p>
-</li>
-</ul>
-<p><img alt="abricate results" src="./images/abricate.png" /></p>
-<p>In the output from Abricate, column 5 has the list of the antibiotic-resistant gene names.</p>
-<ul>
-<li>
-<p>Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.</p>
-</li>
-<li>
-<p>To find out more about what type of AMR genes these are, you can search <a href="https://www.ncbi.nlm.nih.gov/gene/">Genbank</a> with the gene name (e.g. aadD).</p>
-</li>
-</ul>
-<h2 id="see-this-history-in-galaxy">See this history in Galaxy</h2>
-<p>If you want to see this Galaxy history without performing the steps above:</p>
-<ul>
-<li>Log in to Galaxy Australia: <a href="https://usegalaxy.org.au/">https://usegalaxy.org.au/</a></li>
-<li>Go to <ss>Shared Data</ss></li>
-<li>Click <ss>Histories</ss></li>
-<li>Click <fn>Completed-Abricate-analysis</fn></li>
-<li>Click <ss>Import</ss> (at the top right corner)</li>
-<li>The analysis should now be showing as your current history.</li>
-</ul>
-<h2 id="whats-next">What&rsquo;s next?</h2>
-<p>To use the tutorials on this website:</p>
-<ul>
-<li>&#8592; see the list in the left hand panel</li>
-<li>&#8598; or, click the <strong>menu button</strong> (three horizontal bars) in the top left of the page</li>
-</ul>
-<p>You can find more tutorials at the Galaxy Training Network:</p>
-<ul>
-<li><a href="http://galaxyproject.github.io/training-material/">http://galaxyproject.github.io/training-material/</a></li>
-</ul>
+                <h1 id="rna-seq-humans">RNA-seq: Humans</h1>
+<p><ss>not yet updated for Galaxy Australia</ss></p>
+<h2 id="basic">Basic</h2>
+<p><a href="https://www.melbournebioinformatics.org.au/tutorials/tutorials/rna_seq_dge_basic/rna_seq_basic_tutorial/">https://www.melbournebioinformatics.org.au/tutorials/tutorials/rna_seq_dge_basic/rna_seq_basic_tutorial/</a></p>
+<h2 id="advanced">Advanced</h2>
+<p><a href="https://www.melbournebioinformatics.org.au/tutorials/tutorials/rna_seq_dge_advanced/rna_seq_advanced_tutorial/">https://www.melbournebioinformatics.org.au/tutorials/tutorials/rna_seq_dge_advanced/rna_seq_advanced_tutorial/</a></p>
                 
                   
                 
@@ -622,7 +501,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../variants/" title="Variant calling - human" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../dge/" title="RNA-seq - bacteria" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -631,25 +510,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Variant calling - human
+                RNA-seq - bacteria
               </span>
             </div>
           </a>
         
-        
-          <a href="../mlst/" title="Using MLST" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Using MLST
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>

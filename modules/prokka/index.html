@@ -180,6 +180,10 @@
       
         
       
+        
+      
+        
+      
     </ul>
   </div>
 </nav>
@@ -351,6 +355,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
+    See this history in Galaxy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#whats-next" title="What's next?" class="md-nav__link">
     What's next?
   </a>
@@ -426,6 +437,30 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../dge/" title="RNA-seq - bacteria" class="md-nav__link">
+      RNA-seq - bacteria
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../rna-humans/" title="RNA-seq - humans" class="md-nav__link">
+      RNA-seq - humans
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -482,6 +517,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
+    See this history in Galaxy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#whats-next" title="What's next?" class="md-nav__link">
     What's next?
   </a>
@@ -529,7 +571,10 @@
 <li>
 <p>Or, to upload a file of contigs:</p>
 </li>
-<li>In a new browser tab, go to this webpage: https://zenodo.org/record/1156405#.WxYoTlOFOgw</li>
+<li>In a new browser tab, go to this webpage:</li>
+</ul>
+<p><a href="https://doi.org/10.5281/zenodo.1156405"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1156405.svg" /></a></p>
+<ul>
 <li>Find the file called <fn>contigs.fasta</fn></li>
 <li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
 <li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
@@ -537,7 +582,7 @@
 <li>A box will appear: paste in link address</li>
 <li>Click <ss>Start</ss></li>
 <li>Click <ss>Close</ss></li>
-<li>The file will now appear in the top of your history panel.</li>
+<li>The file will now appear in the top of your history panel. When uploaded, the file name will turn green.</li>
 </ul>
 <!--
 We will import a history from Galaxy:
@@ -590,8 +635,9 @@ We will import a history from Galaxy:
 <h2 id="view-annotated-features-in-jbrowse">View annotated features in JBrowse</h2>
 <p>Now that we have annotated the draft genome sequence, we would like to view the sequence in the JBrowse genome viewer.</p>
 <ul>
+<li>Go to the Galaxy tool panel, and use the top search box to search for &ldquo;JBrowse&rdquo;.</li>
 <li>
-<p>Go to the Galaxy tool panel, and use the top search box to search for &ldquo;JBrowse&rdquo;.</p>
+<p>Click <ss>JBrowse</ss></p>
 </li>
 <li>
 <p>Under <ss>Reference genome to display</ss> choose <em>Use a genome from history</em>.</p>
@@ -630,7 +676,7 @@ We will import a history from Galaxy:
 <p>Click on <ss>JBrowse Styling Options <Advanced]</ss></p>
 </li>
 <li>
-<p>Under <ss>JBrowse style.label</ss> add in <em>product</em>.</p>
+<p>Under <ss>JBrowse style.label</ss> check that it says <em>product,name,id</em>.</p>
 </li>
 <li>
 <p>Under <ss>Track Visibility</ss> choose <em>On for new users</em>.</p>
@@ -642,20 +688,21 @@ We will import a history from Galaxy:
 ![JBrowse interface](images/jbrowse_oldversion.png) -->
 
 <ul>
+<li>Click <ss>Execute</ss></li>
+</ul>
+<p>A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. In place of &ldquo;XX&rdquo;, there will be numbers that will refer to the files that Galaxy used in your particular history. (This may take some time. If you would like to see a completed history for this tutorial, instructions are in the next section.)</p>
+<ul>
 <li>
-<p>Click <ss>Execute</ss></p>
-</li>
-<li>
-<p>A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.</p>
+<p>Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.</p>
 </li>
 <li>
 <p>Under <ss>Available Tracks</ss> on the left, tick the box for <fn>Prokka on data XX:gff</fn>.</p>
 </li>
 <li>
-<p>Select contig 1 in the drop down box. You can only see one contig displayed at a time.</p>
+<p>Select contig 6 in the drop down box. You can only see one contig displayed at a time.</p>
 </li>
 </ul>
-<p><img alt="JBrowse" src="./images/jbrowse5.png" /></p>
+<p><img alt="JBrowse" src="./images/jbrowse33.png" /></p>
 <ul>
 <li>
 <p>Use the plus and minus buttons to zoom in and out, and the arrows to move left or right (or click and drag within the window to move left or right).</p>
@@ -679,6 +726,16 @@ We will import a history from Galaxy:
 - Identify genome variants (nucletotide changes) using [Snippy](/modules/snippy/index.md).
 -->
 
+<h2 id="see-this-history-in-galaxy">See this history in Galaxy</h2>
+<p>If you want to see this Galaxy history without performing the steps above:</p>
+<ul>
+<li>Log in to Galaxy Australia: <a href="https://usegalaxy.org.au/">https://usegalaxy.org.au/</a></li>
+<li>Go to <ss>Shared Data</ss></li>
+<li>Click <ss>Histories</ss></li>
+<li>Click <fn>Completed-annotation-analysis</fn></li>
+<li>Click <ss>Import</ss> (at the top right corner)</li>
+<li>The analysis should now be showing as your current history.</li>
+</ul>
 <h2 id="whats-next">What&rsquo;s next?</h2>
 <p>To use the tutorials on this website:</p>
 <ul>
