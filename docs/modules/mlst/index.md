@@ -92,6 +92,7 @@ If you want to see this Galaxy history without performing the steps above:
 * Click <ss>Histories</ss>
 * Click <fn>Completed-MLST-analysis</fn>
 * Click <ss>Import</ss> (at the top right corner)
+* The MLST analysis should now be showing as your current history.
 
 ## What's next?
 
