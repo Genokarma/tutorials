@@ -2,7 +2,7 @@
 
 ## Background
 
-In this section we will use a software tool called Prokka to annotate the draft genome sequence produced in the previous [tutorial](/modules/spades/index.md).
+In this section we will use a software tool called Prokka to annotate a draft genome sequence.
 
 * Prokka is a “wrapper”; it collects together several pieces of software (from various authors), and so avoids “re-inventing the wheel”.
 * Prokka finds and annotates features (both protein coding regions and RNA genes, i.e. tRNA, rRNA) present on on a sequence.
