@@ -42,7 +42,10 @@ Get data:
 
 Repeat these steps for the other set of reads (reverse reads) called <fn>mutant_R2.fq</fn>:
 
-* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
+* In a new browser tab, go to this webpage:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.582600.svg)](https://doi.org/10.5281/zenodo.582600)
+
 * Find the file called <fn>mutant_R2.fastq</fn>
 * Right click on file name: select "copy link address"
 * In Galaxy, go to <ss>Get Data</ss> and then Upload File
@@ -60,7 +63,6 @@ Repeat these steps for three other files: <fn>wildtype.gbk</fn>, <fn>wildtype.gf
 Go to the Tool panel and search for "snippy" in the search box.
 
 * Click on <ss>snippy</ss>
-
 
 Set the following parameters (leave other settings as they are):
 
@@ -86,7 +88,7 @@ Your tool interface should look like this:
 From Snippy, there are 10 output files in various formats.
 
 - Go to the **table** file called <fn>snippy on data XX, data XX and data XX table</fn> and click on the eye icon.
-* The XX refers to the number that Galaxy has given your files.
+* (The XX refers to the number that Galaxy has given your files.)
 - We can see a list of variants. Look in column 3 to see which types the variants are, such as a SNP or a deletion.
 - Look at the third variant called. This is a T&rarr;A mutation, causing a stop codon. Look at column 14: the product of this gene is a methicillin resistance protein. Methicillin is an antibiotic. What might be the result of such a mutation? <!--[add a hint/info box]-->
 
@@ -135,12 +137,14 @@ From Snippy, there are 10 output files in various formats.
 - Under <ss>JBrowse Track Type[Advanced]</ss> select *Canvas Features*.
 - Click on <ss>JBrowse Styling Options <Advanced]</ss>
 - Under <ss>JBrowse style.label</ss> add in the word *product*.
-- Under <ss>JBrowse style.description</ss> add in the word *product*.
+- Under <ss>JBrowse style.description</ss> check that it says *product,name,id*.
 - Under <ss>Track Visibility</ss> choose *On for new users*.
 
 - Click <ss>Execute</ss>
 
-- A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.
+A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. (This may take some time. If you would like to see a completed history for this tutorial, instructions are in the next section.)
+
+* Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.
 
 - On the left, tick boxes to display the tracks
 
@@ -158,6 +162,17 @@ From Snippy, there are 10 output files in various formats.
     - the mutation of T &rarr; A turns this triplet into TGA, a stop codon.
 
 ![JBrowse screenshot](images/jbrowse2.png)    
+
+## See this history in Galaxy
+
+If you want to see this Galaxy history without performing the steps above:
+
+* Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
+* Go to <ss>Shared Data</ss>
+* Click <ss>Histories</ss>
+* Click <fn>Completed-variant-calling-analysis</fn>
+* Click <ss>Import</ss> (at the top right corner)
+* The analysis should now be showing as your current history.
 
 ## What's next?
 

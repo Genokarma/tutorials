@@ -146,6 +146,17 @@ We will perform a *de novo* assembly of the mutant FASTQ reads into long contigu
 
 ![spades output contigs](images/contig_stats.png)
 
+## See this history in Galaxy
+
+If you want to see this Galaxy history without performing the steps above:
+
+* Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
+* Go to <ss>Shared Data</ss>
+* Click <ss>Histories</ss>
+* Click <fn>Completed-assembly-analysis</fn>
+* Click <ss>Import</ss> (at the top right corner)
+* The analysis should now be showing as your current history.
+
 ## What's next?
 
 To use the tutorials on this website:

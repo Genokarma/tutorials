@@ -35,7 +35,7 @@ Your "History" is in the panel at the right.
 
 * Go to the History panel
 * Click on the history name ("Unnamed history")
-* Type in a new name, for example, "My-Analysis"
+* Type in a new name, for example, <fn>My-Analysis</fn>
 * Press Enter
 <br>
 
@@ -48,8 +48,8 @@ Your "Tools" are in the panel at the left.
 
 
 * Go to the Tools panel
-* Click "Get Data" (at the top of the list)
-* Click "Upload File"
+* Click <ss>Get Data</ss> (at the top of the list)
+* Click <ss>Upload File</ss>
 
 This brings up a box:
 <br>
@@ -57,10 +57,10 @@ This brings up a box:
 <img src="../images/upload-box.png" alt="filebox" style="width: 620px;"/>
 <br>
 
-* Click "Paste/Fetch data"
+* Click <ss>Paste/Fetch data</ss>
 * Paste in the address of a file: *https://zenodo.org/record/582600/files/mutant_R1.fastq*
-* Then click "Start".
-* Then click "Close".
+* Then click <ss>Start</ss>.
+* Then click <ss>Close</ss>.
 Your uploaded file is now in your current history.
 
 
@@ -87,17 +87,17 @@ Let's look at the quality of the reads in this file.
 
 
 * In the tools panel search box, type in FastQC.
-* Click on the tool "FastQC"
+* Click on the tool <ss>FastQC</ss>
 * This brings up a window in the centre of the screen.
-* For "Short read data from your current history" select the FASTQ file that we uploaded.
+* For <ss>Short read data from your current history</ss> select the FASTQ file that we uploaded.
 * Leave the other parameters as they are.
-* Click "Execute".
+* Click <ss>Execute</ss>.
 * This tool will run and the two output files will appear at the top of your history panel.
 
 
 ## View results
 
-We will look at the output file called *FastQC on data 1: Webpage*.
+We will look at the output file called <fn>FastQC on data 1: Webpage</fn>.
 
 * Note that Galaxy has given this file a name according to both the tool (FastQC) and the data file ("data 1") that it used.
 * The name "data 1" means the data file (our FASTQ file) which was file number 1 in Galaxy's current history.
@@ -120,16 +120,16 @@ This tool has summarised information about all of the reads in our FASTQ file.
 Let's run a tool to filter out lower-quality reads from our FASTQ file.
 
 * In the tool panel search box, type in "Filter by quality".
-* Click on the tool "Filter by quality".
-* Under "Library to filter", Galaxy will probably have found your input FASTQ file. If not, select this file in the drop-down box.
-* Under "Quality cut-off value", type in 35.
-* Under "Percent of bases in sequence that must have quality equal to / higher than cut-off value", type in 80.
-* Click "Execute".
+* Click on the tool <ss>Filter by qualit</ss>
+* Under <ss>Library to filter</ss>, Galaxy will probably have found your input FASTQ file. If not, select this file in the drop-down box.
+* Under <ss>Quality cut-off value</ss>, type in 35.
+* Under <ss>Percent of bases in sequence that must have quality equal to / higher than cut-off value</ss>, type in 80.
+* Click <ss>Execute</ss>.
 
 
 After the tool has run, the output file will appear at the top of your History panel.
 
-* This file will be called "Filter by quality on data 1".
+* This file will be called <fn>Filter by quality on data 1</fn>.
 * Remember that Galaxy has named this file according to the tool it used ("Filter by quality") and the data file ("data 1").
 * The actual numbers in front of the files in the history are not important.
 
@@ -148,13 +148,14 @@ We have now decided that our input reads have to be filtered to an even higher s
 * We will change the filter settings and re-run the tool.
 
 
-* In the History panel, find the output file from the first time we ran the filter tool. This file is called "Filter by quality on data 1".
+* In the History panel, find the output file from the first time we ran the filter tool.
+* This file is called <fn>Filter by quality on data 1</fn>.
 * Click on the icon with two arrows - this means "run this tool again".
 <br>
 ![rerun](../images/rerun.png)
 * This brings up the tool interface in the centre panel.
 * Change the settings to something even stricter. For example, you might decide you want 80 percent of bases to have a quality of 36 or higher, instead of 35.
-* Click "Execute".
+* Click <ss>Execute</ss>.
 
 
 View the results:
@@ -175,8 +176,8 @@ Let's create a new history.
 <br>
 ![cog](../images/cog.png)
 <br>
-* Select "Create New".
-* Name your history, *e.g.* "Next-analysis"
+* Select <ss>Create New</ss>.
+* Name your history, *e.g.* <fn>Next-analysis</fn>
 * Press Enter
 
 
@@ -184,7 +185,7 @@ This new history does not have any files in it yet.
 
 ## Look at all your histories
 
-Where is your first history, called "my-analysis"?
+Where is your first history, called <fn>my-analysis</fn>?
 
 
 * In the History panel, click on the "View all histories" icon.
@@ -194,15 +195,15 @@ Where is your first history, called "my-analysis"?
 * All your histories are displayed here.
 <br>
 * Drag a file into your new history:
-* Click on the FASTQ file in "my-analysis" history
-* Drag it into the "Next-analysis" history
+* Click on the FASTQ file in <fn>my-analysis</fn> history
+* Drag it into the <fn>Next-analysis</fn> history
 * This makes a copy of the file in the new history
-* Click "Done"
+* Click <ss>Done</ss>
 <br>
 ![view-all-hist](../images/view-all-hist.png)
 
 
-Your main Galaxy window will now show the current history as "Next-analysis", and it will have one file in it.
+Your main Galaxy window will now show the current history as <fn>Next-analysis</fN>, and it will have one file in it.
 
 You can go back into the "View all histories" page and "Switch to" a different history.
 
@@ -223,6 +224,17 @@ What have we learned?
 ## Conclusion
 
 Well done! You have completed the short introduction to Galaxy, where you named the history, uploaded a file, used a tool, and viewed results. Additional tutorials are available for a more in-depth introduction to Galaxy's features.
+
+## See this history in Galaxy
+
+If you want to see this Galaxy history without performing the steps above:
+
+* Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
+* Go to <ss>Shared Data</ss>
+* Click <ss>Histories</ss>
+* Click <fn>Completed-key-tasks-analysis</fn>
+* Click <ss>Import</ss> (at the top right corner)
+* The analysis should now be showing as your current history.
 
 ## What's next?
 To use the tutorials on this website:

@@ -22,7 +22,10 @@ Prokka requires assembled contigs.
 - *If you are continuing on from the previous workshop ([Assembly with Spades](/modules/spades/index.md)), this file will be in your current history named something like <fn>SPAdes contigs(fasta)</fn>.*
 
 * Or, to upload a file of contigs:
-* In a new browser tab, go to this webpage: https://zenodo.org/record/1156405#.WxYoTlOFOgw
+* In a new browser tab, go to this webpage:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1156405.svg)](https://doi.org/10.5281/zenodo.1156405)
+
 * Find the file called <fn>contigs.fasta</fn>
 * Right click on file name: select "copy link address"
 * In Galaxy, go to <ss>Get Data</ss> and then Upload File
@@ -30,7 +33,7 @@ Prokka requires assembled contigs.
 * A box will appear: paste in link address
 * Click <ss>Start</ss>
 * Click <ss>Close</ss>
-* The file will now appear in the top of your history panel.
+* The file will now appear in the top of your history panel. When uploaded, the file name will turn green.
 
 <!--
 We will import a history from Galaxy:
@@ -82,6 +85,7 @@ Once Prokka has finished, examine each of its output files.
 Now that we have annotated the draft genome sequence, we would like to view the sequence in the JBrowse genome viewer.
 
 - Go to the Galaxy tool panel, and use the top search box to search for "JBrowse".
+- Click <ss>JBrowse</ss>
 
 - Under <ss>Reference genome to display</ss> choose *Use a genome from history*.
 
@@ -108,7 +112,7 @@ Now that we have annotated the draft genome sequence, we would like to view the 
 
 - Click on <ss>JBrowse Styling Options <Advanced]</ss>
 
-- Under <ss>JBrowse style.label</ss> add in *product*.
+- Under <ss>JBrowse style.label</ss> check that it says *product,name,id*.
 
 - Under <ss>Track Visibility</ss> choose *On for new users*.
 
@@ -121,13 +125,15 @@ Your tool interface should look like this:
 
 - Click <ss>Execute</ss>
 
-- A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.
+A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. In place of "XX", there will be numbers that will refer to the files that Galaxy used in your particular history. (This may take some time. If you would like to see a completed history for this tutorial, instructions are in the next section.)
+
+* Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.
 
 - Under <ss>Available Tracks</ss> on the left, tick the box for <fn>Prokka on data XX:gff</fn>.
 
-- Select contig 1 in the drop down box. You can only see one contig displayed at a time.
+- Select contig 6 in the drop down box. You can only see one contig displayed at a time.
 
-![JBrowse](images/jbrowse5.png)
+![JBrowse](images/jbrowse33.png)
 
 - Use the plus and minus buttons to zoom in and out, and the arrows to move left or right (or click and drag within the window to move left or right).
 
@@ -146,6 +152,17 @@ Zoomed in view:
 
 - Identify genome variants (nucletotide changes) using [Snippy](/modules/snippy/index.md).
 -->
+
+## See this history in Galaxy
+
+If you want to see this Galaxy history without performing the steps above:
+
+* Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
+* Go to <ss>Shared Data</ss>
+* Click <ss>Histories</ss>
+* Click <fn>Completed-annotation-analysis</fn>
+* Click <ss>Import</ss> (at the top right corner)
+* The analysis should now be showing as your current history.
 
 ## What's next?
 
