@@ -1,7 +1,7 @@
 
 # Variant calling: Humans
 
-<ss>Not yet updated for Galaxy Australia>/ss>
+<ss>Not yet updated for Galaxy Australia</ss>
 
 
 ### Introduction
