@@ -46,7 +46,9 @@ pages:
 - Quality control: modules/fastqc/index.md
 - Genome assembly: modules/spades/index.md
 - Genome annotation: modules/prokka/index.md
-- Variant calling: modules/snippy/index.md
+- Variant calling - bacteria: modules/snippy/index.md
+- Variant calling - human: modules/variants/index.md
+
 # - Differential gene expression: modules/dge/index.md
 # - Metagenomics: modules/metagenomics/metagenomics.md
 # - Workflows - Introduction: modules/workflows/index.md
