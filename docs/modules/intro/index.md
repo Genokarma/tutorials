@@ -120,7 +120,7 @@ This tool has summarised information about all of the reads in our FASTQ file.
 Let's run a tool to filter out lower-quality reads from our FASTQ file.
 
 * In the tool panel search box, type in "Filter by quality".
-* Click on the tool <ss>Filter by qualit</ss>
+* Click on the tool <ss>Filter by quality</ss>
 * Under <ss>Library to filter</ss>, Galaxy will probably have found your input FASTQ file. If not, select this file in the drop-down box.
 * Under <ss>Quality cut-off value</ss>, type in 35.
 * Under <ss>Percent of bases in sequence that must have quality equal to / higher than cut-off value</ss>, type in 80.
