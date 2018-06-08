@@ -178,6 +178,8 @@
       
         
       
+        
+      
     </ul>
   </div>
 </nav>
@@ -299,8 +301,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../snippy/" title="Variant calling" class="md-nav__link">
-      Variant calling
+    <a href="../snippy/" title="Variant calling - bacteria" class="md-nav__link">
+      Variant calling - bacteria
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../variants/" title="Variant calling - human" class="md-nav__link">
+      Variant calling - human
     </a>
   </li>
 
@@ -357,13 +371,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#upload-file-to-galaxy" title="Upload file to Galaxy" class="md-nav__link">
-    Upload file to Galaxy
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#run-mlst" title="Run MLST" class="md-nav__link">
     Run MLST
   </a>
@@ -380,6 +387,13 @@
         <li class="md-nav__item">
   <a href="#view-results" title="View results" class="md-nav__link">
     View results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
+    See this history in Galaxy
   </a>
   
 </li>
@@ -440,13 +454,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#upload-file-to-galaxy" title="Upload file to Galaxy" class="md-nav__link">
-    Upload file to Galaxy
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#run-mlst" title="Run MLST" class="md-nav__link">
     Run MLST
   </a>
@@ -463,6 +470,13 @@
         <li class="md-nav__item">
   <a href="#view-results" title="View results" class="md-nav__link">
     View results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
+    See this history in Galaxy
   </a>
   
 </li>
@@ -505,9 +519,17 @@
 <ul>
 <li>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</li>
 </ul>
-<p>We will get a sequence from Genbank.</p>
+<p>If you are using Galaxy Australia, look for the file we need in the <ss>Shared Data</ss>.</p>
 <ul>
-<li>Go to this address: <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_002952.2">https://www.ncbi.nlm.nih.gov/nuccore/NC_002952.2</a></li>
+<li>In the top centre panel, go to <ss>Shared Data</ss></li>
+<li>Click <ss>Histories</ss></li>
+<li>Click on the history named <fn>MLST-tutorial</fn></li>
+<li>Click <ss>Import</ss> (in the top right corner)</li>
+<li>This should now be your current history.</li>
+</ul>
+<p><strong>Alternatively</strong>, we can get the sequence from Genbank.</p>
+<ul>
+<li>In a new browser tab, go to this address: <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_002952.2">https://www.ncbi.nlm.nih.gov/nuccore/NC_002952.2</a></li>
 <li>Click <ss>Send to</ss></li>
 <li>Choose <ss>File</ss></li>
 <li>Choose <ss>FASTA</ss></li>
@@ -515,22 +537,21 @@
 </ul>
 <p>This downloads <fn>sequence.fasta</fn> to your computer.</p>
 <p><img src="images/genbank.png" style="width: 620px;"/></p>
-<h2 id="upload-file-to-galaxy">Upload file to Galaxy</h2>
 <p>In the tool panel, go to <ss>Get Data -&gt; Upload File</ss></p>
 <ul>
 <li><ss>Choose local file</ss>: select <fn>sequence.fasta</fn></li>
 <li><ss>Start</ss></li>
 <li><ss>Close</ss></li>
 </ul>
-<p>This file should now be in your History panel.</p>
+<p>This file should now be in your History panel. When it has completed uploading, the file name will be green.</p>
 <h2 id="run-mlst">Run MLST</h2>
 <p>In the tool panel search box, search for MLST.</p>
 <ul>
-<li>Click on MLST</li>
+<li>Click <ss>MLST</ss></li>
 </ul>
 <p>The tool interface will appear in the centre Galaxy panel.</p>
 <ul>
-<li>For <ss>input_file</ss>, choose the file that you uploaded - <fn>sequence.fasta</fn></li>
+<li>For <ss>input_file</ss>, choose the sequence file that you uploaded, e.g. <fn>sequence.fasta</fn></li>
 <li>Click <ss>Execute</ss></li>
 </ul>
 <h2 id="what-does-mlst-do">What does MLST do?</h2>
@@ -563,6 +584,16 @@
 <li>The rest of the columns: the gene names with the allele number in brackets. It is this combination of alleles that defines the sequence type.</li>
 </ul>
 <p>In this example, our sequence type is ST=36. This is methicillin-resistant <em>Staphylococcus aureus</em> (or MRSA).</p>
+<h2 id="see-this-history-in-galaxy">See this history in Galaxy</h2>
+<p>If you want to see this Galaxy history without performing the steps above:</p>
+<ul>
+<li>Log in to Galaxy Australia: <a href="https://usegalaxy.org.au/">https://usegalaxy.org.au/</a></li>
+<li>Go to <ss>Shared Data</ss></li>
+<li>Click <ss>Histories</ss></li>
+<li>Click <fn>Completed-MLST-analysis</fn></li>
+<li>Click <ss>Import</ss> (at the top right corner)</li>
+<li>The MLST analysis should now be showing as your current history.</li>
+</ul>
 <h2 id="whats-next">What&rsquo;s next?</h2>
 <p>To use the tutorials on this website:</p>
 <ul>
