@@ -16,12 +16,12 @@ In this tutorial we will find antibiotic-resistant genes in a bacterial genome.
 
 * Find the file called <fn>contigs.fasta</fn>
 * Right click on file name: select "copy link address"
-* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* In Galaxy, go to <ss>Get Data -> Upload File</ss>
 * Click <ss>Paste/Fetch data</ss>
 * A box will appear: paste in link address
 * Click <ss>Start</ss>
 * Click <ss>Close</ss>
-* The file will now appear in the top of your history panel.
+* The file will now appear in the top of your history panel. When it has finished uploading, the file name will be green.
 
 
 <!--
@@ -73,6 +73,17 @@ In the output from Abricate, column 5 has the list of the antibiotic-resistant g
 * Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.
 
 * To find out more about what type of AMR genes these are, you can search [Genbank](https://www.ncbi.nlm.nih.gov/gene/) with the gene name (e.g. aadD).
+
+## See this history in Galaxy
+
+If you want to see this Galaxy history without performing the steps above:
+
+* Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
+* Go to <ss>Shared Data</ss>
+* Click <ss>Histories</ss>
+* Click <fn>Completed-Abricate-analysis</fn>
+* Click <ss>Import</ss> (at the top right corner)
+* The MLST analysis should now be showing as your current history.
 
 
 ## What's next?
