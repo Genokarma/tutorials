@@ -539,6 +539,66 @@
             "location": "/modules/rna-humans/#advanced", 
             "text": "https://www.melbournebioinformatics.org.au/tutorials/tutorials/rna_seq_dge_advanced/rna_seq_advanced_tutorial/", 
             "title": "Advanced"
+        }, 
+        {
+            "location": "/modules/metagenomics/metagenomics/", 
+            "text": "Metagenomics\n\n\nIn development\n\n\n\n\n\n\nAdd link to intro metagenomics material (RDC project)\n\n\n\n\n\n\nGalaxy Training Network: Metagenomics tutorial (under testing in Galaxy Australia) \nlink", 
+            "title": "Metagenomics"
+        }, 
+        {
+            "location": "/modules/metagenomics/metagenomics/#metagenomics", 
+            "text": "In development    Add link to intro metagenomics material (RDC project)    Galaxy Training Network: Metagenomics tutorial (under testing in Galaxy Australia)  link", 
+            "title": "Metagenomics"
+        }, 
+        {
+            "location": "/modules/resources/", 
+            "text": "Resources\n\n\nUnder development\n\n\nMore training material for Galaxy\n\n\n\n\nAdd links\n\n\n\n\nI have a problem in Galaxy\n\n\n\n\nFor Galaxy Australia, email [add email]\n\n\n\n\nCan I attend a Galaxy workshop?\n\n\n\n\nYes: instructions\n\n\n\n\nCan I get this new tool into Galaxy?\n\n\n\n\nPossibly: instructions/email\n\n\n\n\nCan I use a different Galaxy server?\n\n\n\n\nYes: instructions\n\n\n\n\nCan I set up my own Galaxy server?\n\n\n\n\nYes: instructions\n\n\n\n\nI have a suggestion for a new tutorial topic\n\n\n\n\nThank you: please email [add]\n\n\n\n\nCan I contribute training material?\n\n\n\n\nYes: Galaxy Australian, GTN : instructions", 
+            "title": "Galaxy help & resources"
+        }, 
+        {
+            "location": "/modules/resources/#resources", 
+            "text": "Under development", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/modules/resources/#more-training-material-for-galaxy", 
+            "text": "Add links", 
+            "title": "More training material for Galaxy"
+        }, 
+        {
+            "location": "/modules/resources/#i-have-a-problem-in-galaxy", 
+            "text": "For Galaxy Australia, email [add email]", 
+            "title": "I have a problem in Galaxy"
+        }, 
+        {
+            "location": "/modules/resources/#can-i-attend-a-galaxy-workshop", 
+            "text": "Yes: instructions", 
+            "title": "Can I attend a Galaxy workshop?"
+        }, 
+        {
+            "location": "/modules/resources/#can-i-get-this-new-tool-into-galaxy", 
+            "text": "Possibly: instructions/email", 
+            "title": "Can I get this new tool into Galaxy?"
+        }, 
+        {
+            "location": "/modules/resources/#can-i-use-a-different-galaxy-server", 
+            "text": "Yes: instructions", 
+            "title": "Can I use a different Galaxy server?"
+        }, 
+        {
+            "location": "/modules/resources/#can-i-set-up-my-own-galaxy-server", 
+            "text": "Yes: instructions", 
+            "title": "Can I set up my own Galaxy server?"
+        }, 
+        {
+            "location": "/modules/resources/#i-have-a-suggestion-for-a-new-tutorial-topic", 
+            "text": "Thank you: please email [add]", 
+            "title": "I have a suggestion for a new tutorial topic"
+        }, 
+        {
+            "location": "/modules/resources/#can-i-contribute-training-material", 
+            "text": "Yes: Galaxy Australian, GTN : instructions", 
+            "title": "Can I contribute training material?"
         }
     ]
 }
