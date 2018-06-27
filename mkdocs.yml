@@ -82,6 +82,9 @@ pages:
 - RNA-seq - bacteria: modules/dge/index.md
 - RNA-seq - humans: modules/rna-humans/index.md
 
+- Metagenomics: modules/metagenomics/metagenomics.md
+
+- Galaxy help & resources: modules/resources/index.md
 #- Transcriptomics:
 #  - Overview: modules/transcriptomics.md
 #  - Dataset: modules/data-rna/index.md
