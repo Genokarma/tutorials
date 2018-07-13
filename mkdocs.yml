@@ -49,6 +49,7 @@ pages:
 - Genome annotation: modules/prokka/index.md
 - Workflow - genome annotation: modules/workflow-annotation/index.md
 - Variant calling - bacteria: modules/snippy/index.md
+- Workflow - variant calling, bacteria: modules/workflow-variant-calling/index.md
 - Variant calling - human: modules/variants/index.md
 
 
