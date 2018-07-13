@@ -47,6 +47,7 @@ pages:
 - Genome assembly: modules/spades/index.md
 - Workflow - genome assembly: modules/workflow-assembly/index.md
 - Genome annotation: modules/prokka/index.md
+- Workflow - genome annotation: modules/workflow-annotation/index.md
 - Variant calling - bacteria: modules/snippy/index.md
 - Variant calling - human: modules/variants/index.md
 
