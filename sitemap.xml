@@ -46,6 +46,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://galaxy-au-training.github.io/tutorials/modules/workflow-variant-calling/</loc>
+     <lastmod>2018-07-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/variants/</loc>
      <lastmod>2018-07-13</lastmod>
      <changefreq>daily</changefreq>
@@ -67,6 +72,11 @@
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/dge/</loc>
+     <lastmod>2018-07-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://galaxy-au-training.github.io/tutorials/modules/workflow-rna-seq/</loc>
      <lastmod>2018-07-13</lastmod>
      <changefreq>daily</changefreq>
     </url>

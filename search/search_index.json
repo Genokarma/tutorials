@@ -361,6 +361,36 @@
             "title": "What's next?"
         }, 
         {
+            "location": "/modules/workflow-variant-calling/", 
+            "text": "Workflow: Variant Calling\n\n\nCreate a Galaxy workflow\n\n\nGalaxy provides the option to extract a workflow based on the steps you just followed and the tools and parameters used.\n\n\nNew to Galaxy?\n First try the \nintroduction\n and then learn some \nkey tasks\n\n\nVariant calling\n\n\n\n\nLog in to your Galaxy instance (for example, Galaxy Australia, \nusegalaxy.org.au\n).\n\n\n\n\nBefore we create a workflow for variant calling, we need the correct files in our current Galaxy history. We can get these files in two ways:\n\n\n\n\n\n\nEither follow the tutorial on \nvariant calling\n\n\n\n\n\n\nOr, obtain the files from a Shared History (Galaxy Australia only).\n\n\n\n\nGo to \nShared Data\n\n\nClick \nHistories\n\n\nClick \nCompleted-variant-calling-analysis\n\n\nClick \nImport\n (at the top right corner)\n\n\nThe analysis should now be showing as your current history.\n\n\n\n\n\n\n\n\nWhen you have completed this tutorial or imported the history, you will have the correct files in your history panel.\n\n\nExtract the Workflow\n\n\n\n\nIn the history panel, click on the cog icon.\n\n\nClick \nExtract Workflow\n\n\nIf all looks ok, click \nCreate Workflow\n\n\nIn the centre panel, click \nedit\n\n\n\n\nThis brings up the workflow canvas, a space for graphically viewing and re-arranging your workflow.\n\n\n\n\n\n\nDrag the panes around until your workflow is clear.\n\n\nIn the top right corner click on the cog icon and \nSave\n\n\n\n\nClick on the cog icon again and \nRun\n\n\n\n\nSend results to a new history\n: \nYes\n\n\nCheck all input files are correct and change if necessary\n\n\nIn the top right corner \nRun workflow\n\n\n\n\n\n\n\n\nThis workflow will now run.\n\n\n\n\nIn the History panel, click on the \nView all histories\n icon\n\n\n\nFind your workflow history and \nSwitch to\n it.\n\n\n\n\nTo see all your workflows, go to the top panel in Galaxy and click \nWorkflow\n.\n\n\n\n\nYou can edit or run workflows from here by clicking on the drop-down arrow next to each workflow.\n\n\n\n\nWhat\ns next?\n\n\nTo use the tutorials on this website:\n\n\n\n\n see the list in the left hand panel\n\n\n or, click the \nmenu button\n (three horizontal bars) in the top left of the page\n\n\n\n\nYou can find more tutorials at the Galaxy Training Network:\n\n\n\n\nhttp://galaxyproject.github.io/training-material/", 
+            "title": "Workflow - variant calling, bacteria"
+        }, 
+        {
+            "location": "/modules/workflow-variant-calling/#workflow-variant-calling", 
+            "text": "", 
+            "title": "Workflow: Variant Calling"
+        }, 
+        {
+            "location": "/modules/workflow-variant-calling/#create-a-galaxy-workflow", 
+            "text": "Galaxy provides the option to extract a workflow based on the steps you just followed and the tools and parameters used.  New to Galaxy?  First try the  introduction  and then learn some  key tasks", 
+            "title": "Create a Galaxy workflow"
+        }, 
+        {
+            "location": "/modules/workflow-variant-calling/#variant-calling", 
+            "text": "Log in to your Galaxy instance (for example, Galaxy Australia,  usegalaxy.org.au ).   Before we create a workflow for variant calling, we need the correct files in our current Galaxy history. We can get these files in two ways:    Either follow the tutorial on  variant calling    Or, obtain the files from a Shared History (Galaxy Australia only).   Go to  Shared Data  Click  Histories  Click  Completed-variant-calling-analysis  Click  Import  (at the top right corner)  The analysis should now be showing as your current history.     When you have completed this tutorial or imported the history, you will have the correct files in your history panel.", 
+            "title": "Variant calling"
+        }, 
+        {
+            "location": "/modules/workflow-variant-calling/#extract-the-workflow", 
+            "text": "In the history panel, click on the cog icon.  Click  Extract Workflow  If all looks ok, click  Create Workflow  In the centre panel, click  edit   This brings up the workflow canvas, a space for graphically viewing and re-arranging your workflow.    Drag the panes around until your workflow is clear.  In the top right corner click on the cog icon and  Save   Click on the cog icon again and  Run   Send results to a new history :  Yes  Check all input files are correct and change if necessary  In the top right corner  Run workflow     This workflow will now run.   In the History panel, click on the  View all histories  icon  Find your workflow history and  Switch to  it.   To see all your workflows, go to the top panel in Galaxy and click  Workflow .   You can edit or run workflows from here by clicking on the drop-down arrow next to each workflow.", 
+            "title": "Extract the Workflow"
+        }, 
+        {
+            "location": "/modules/workflow-variant-calling/#whats-next", 
+            "text": "To use the tutorials on this website:    see the list in the left hand panel   or, click the  menu button  (three horizontal bars) in the top left of the page   You can find more tutorials at the Galaxy Training Network:   http://galaxyproject.github.io/training-material/", 
+            "title": "What's next?"
+        }, 
+        {
             "location": "/modules/variants/", 
             "text": "Variant calling: Humans\n\n\nNot yet updated for Galaxy Australia\n\n\nIntroduction\n\n\nhttps://www.melbournebioinformatics.org.au/tutorials/tutorials/variant_calling_galaxy_1/variant_calling_galaxy_1/\n\n\nAdvanced\n\n\nhttps://www.melbournebioinformatics.org.au/tutorials/tutorials/var_detect_advanced/var_detect_advanced/", 
             "title": "Variant calling - human"
@@ -577,6 +607,36 @@
         }, 
         {
             "location": "/modules/dge/#whats-next", 
+            "text": "To use the tutorials on this website:    see the list in the left hand panel   or, click the  menu button  (three horizontal bars) in the top left of the page   You can find more tutorials at the Galaxy Training Network:   http://galaxyproject.github.io/training-material/", 
+            "title": "What's next?"
+        }, 
+        {
+            "location": "/modules/workflow-rna-seq/", 
+            "text": "Workflow: RNA-Seq\n\n\nCreate a Galaxy workflow\n\n\nGalaxy provides the option to extract a workflow based on the steps you just followed and the tools and parameters used.\n\n\nNew to Galaxy?\n First try the \nintroduction\n and then learn some \nkey tasks\n\n\nRNA-Seq\n\n\n\n\nLog in to your Galaxy instance (for example, Galaxy Australia, \nusegalaxy.org.au\n).\n\n\n\n\nBefore we create a workflow for RNA-seq, we need the correct files in our current Galaxy history. We can get these files in two ways:\n\n\n\n\n\n\nEither follow the tutorial on \nRNA-seq\n\n\n\n\n\n\nOr, obtain the files from a Shared History (Galaxy Australia only).\n\n\n\n\nGo to \nShared Data\n\n\nClick \nHistories\n\n\nClick \nCompleted-RNA-seq-bacteria\n\n\nClick \nImport\n (at the top right corner)\n\n\nThe analysis should now be showing as your current history.\n\n\n\n\n\n\n\n\nWhen you have completed this tutorial or imported the history, you will have the correct files in your history panel.\n\n\nExtract the Workflow\n\n\n\n\nIn the history panel, click on the cog icon.\n\n\nClick \nExtract Workflow\n\n\nIf all looks ok, click \nCreate Workflow\n\n\nIn the centre panel, click \nedit\n\n\n\n\nThis brings up the workflow canvas, a space for graphically viewing and re-arranging your workflow.\n\n\n\n\n\n\nDrag the panes around until your workflow is clear.\n\n\nIn the top right corner click on the cog icon and \nSave\n\n\n\n\nClick on the cog icon again and \nRun\n\n\n\n\nSend results to a new history\n: \nYes\n\n\nCheck all input files are correct and change if necessary\n\n\nIn the top right corner \nRun workflow\n\n\n\n\n\n\n\n\nThis workflow will now run.\n\n\n\n\nIn the History panel, click on the \nView all histories\n icon\n\n\n\nFind your workflow history and \nSwitch to\n it.\n\n\n\n\nTo see all your workflows, go to the top panel in Galaxy and click \nWorkflow\n.\n\n\n\n\nYou can edit or run workflows from here by clicking on the drop-down arrow next to each workflow.\n\n\n\n\nWhat\ns next?\n\n\nTo use the tutorials on this website:\n\n\n\n\n see the list in the left hand panel\n\n\n or, click the \nmenu button\n (three horizontal bars) in the top left of the page\n\n\n\n\nYou can find more tutorials at the Galaxy Training Network:\n\n\n\n\nhttp://galaxyproject.github.io/training-material/", 
+            "title": "Workflow - RNA-seq"
+        }, 
+        {
+            "location": "/modules/workflow-rna-seq/#workflow-rna-seq", 
+            "text": "", 
+            "title": "Workflow: RNA-Seq"
+        }, 
+        {
+            "location": "/modules/workflow-rna-seq/#create-a-galaxy-workflow", 
+            "text": "Galaxy provides the option to extract a workflow based on the steps you just followed and the tools and parameters used.  New to Galaxy?  First try the  introduction  and then learn some  key tasks", 
+            "title": "Create a Galaxy workflow"
+        }, 
+        {
+            "location": "/modules/workflow-rna-seq/#rna-seq", 
+            "text": "Log in to your Galaxy instance (for example, Galaxy Australia,  usegalaxy.org.au ).   Before we create a workflow for RNA-seq, we need the correct files in our current Galaxy history. We can get these files in two ways:    Either follow the tutorial on  RNA-seq    Or, obtain the files from a Shared History (Galaxy Australia only).   Go to  Shared Data  Click  Histories  Click  Completed-RNA-seq-bacteria  Click  Import  (at the top right corner)  The analysis should now be showing as your current history.     When you have completed this tutorial or imported the history, you will have the correct files in your history panel.", 
+            "title": "RNA-Seq"
+        }, 
+        {
+            "location": "/modules/workflow-rna-seq/#extract-the-workflow", 
+            "text": "In the history panel, click on the cog icon.  Click  Extract Workflow  If all looks ok, click  Create Workflow  In the centre panel, click  edit   This brings up the workflow canvas, a space for graphically viewing and re-arranging your workflow.    Drag the panes around until your workflow is clear.  In the top right corner click on the cog icon and  Save   Click on the cog icon again and  Run   Send results to a new history :  Yes  Check all input files are correct and change if necessary  In the top right corner  Run workflow     This workflow will now run.   In the History panel, click on the  View all histories  icon  Find your workflow history and  Switch to  it.   To see all your workflows, go to the top panel in Galaxy and click  Workflow .   You can edit or run workflows from here by clicking on the drop-down arrow next to each workflow.", 
+            "title": "Extract the Workflow"
+        }, 
+        {
+            "location": "/modules/workflow-rna-seq/#whats-next", 
             "text": "To use the tutorials on this website:    see the list in the left hand panel   or, click the  menu button  (three horizontal bars) in the top left of the page   You can find more tutorials at the Galaxy Training Network:   http://galaxyproject.github.io/training-material/", 
             "title": "What's next?"
         }, 
