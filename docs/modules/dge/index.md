@@ -1,15 +1,7 @@
-<ss>Not yet updated for Galaxy Australia</ss>
-
-
-
-# Differential Gene Expression
-
-Keywords: differential gene expression, DGE, RNA, RNA-Seq, transcriptomics, Degust, voom, limma, Galaxy, Microbial Genomics Virtual Laboratory.
-
-This tutorial is about differential gene expression in bacteria, using Galaxy tools and Degust (web).
+# RNA-Seq: Bacteria
+This tutorial is about using RNA-seq data to investigate differential gene expression in bacteria, using Galaxy tools and Degust (a tool on the web).
 
 <!-- **FIXME:**
-- Degust to be installed on mGVL Galaxy
 - (Fastq files have been shortened to 1% using seqtk)
 - Data files (Fastq reads and refs): link to swift URL? -- add correct link to the "input data" section - RNA-Seq data - and information about how to upload
 -->
@@ -18,7 +10,7 @@ This tutorial is about differential gene expression in bacteria, using Galaxy to
 ## Background
 Differential Gene Expression (DGE) is the process of determining whether any genes were expressed at a different level between two conditions. For example, the conditions could be wildtype versus mutant, or two growth conditions. Usually multiple biological replicates are done for each condition - these are needed to separate variation within the condition from that between the conditions.
 
-## Learning Objectives
+<!-- ## Learning Objectives
 
 At the end of this tutorial you should be able to:
 
@@ -26,6 +18,7 @@ At the end of this tutorial you should be able to:
 2. Count transcripts for each sample
 3. Perform statistical analysis to obtain a list of differentially expressed genes
 4. Visualize and interpret the results
+-->
 
 ## Input data: reads and reference
 
@@ -72,16 +65,55 @@ The reference genomes is in <fn>FASTA</fn> format and the gene annotations are i
 
 **Upload files to Galaxy**
 
-- Log in to your Galaxy server.
+* Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
+* Create a new history for this analysis.
+
+If you are using Galaxy Australia:
+
+* Go to <ss>Shared Data: Data Libraries</ss>.
+* Click on <fn>RNA-Seq-data</fn>, then Import.
+* The files should now be in your current history.
+
+![Files for DGE](images/image18.png)
+
+**Alternatively**, you can obtain the data from Zenodo:
+
+* In a new browser tab, go to this webpage:
+* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1311269.svg)](https://doi.org/10.5281/zenodo.1311269)
+* For each file, right click on file name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
+* Repeat for all files in Zenodo.
+* Change (shorten) the file names with the pencil icon.
+
+<!--
+
+    https://zenodo.org/record/1311269/files/E_coli_aMG1.fastq?download=1
+    https://zenodo.org/record/1311269/files/E_coli_aMG2.fastq?download=1
+    https://zenodo.org/record/1311269/files/E_coli_aMG3.fastq?download=1
+    https://zenodo.org/record/1311269/files/E_coli_Lb1.fastq?download=1
+    https://zenodo.org/record/1311269/files/E_coli_Lb2.fastq?download=1
+    https://zenodo.org/record/1311269/files/E_coli_Lb3.fastq?download=1
+    https://zenodo.org/record/1311269/files/Ecoli_k12.fasta?download=1
+    https://zenodo.org/record/1311269/files/Ecoli_k12.gtf?download=1
+
+-->
+
+<!--
+
+- Log in to your Galaxy server, e.g. Galaxy Australia (usegalaxy.org.au).
 - In the <ss>History</ss> pane, click on the cog![cog icon](images/Galaxy-cog.png)icon, and select <ss>Import from File</ss> (at the bottom of the list).
 - Under <ss>Archived History URL</ss> paste:
 <tt>https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Microbial_tutorials/Galaxy-History-BacterialDGE.tar.gz</tt>
 - In the <ss>History</ss> pane, click on the view![view icon](images/Galaxy-histories.png)icon and find the uploaded history.
     - (This may take a minute. Refresh the page.)
 - Click <ss>Switch to</ss> that history, then <ss>Done</ss>.
-- The files should now be ready to use in your current History pane.
+-->
 
-![Files for DGE](images/image18.png)
 
 
 
@@ -91,7 +123,7 @@ The RNA-Seq reads are fragmented and are not complete transcripts. To determine 
 
 In Galaxy:
 
-- Go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: Mapping &rarr; Map with BWA-MEM</ss>
+- In the <ss>Tools</ss> panel, search for <ss>Map with BWA-MEM</ss> and click on it.
 - Under <ss>Will you select a reference genome from your history or use a built-in index?</ss>: *Use a genome from history and build index*
 - <ss>Use the following dataset as the reference sequence</ss>: <fn>Ecoli_k12.fasta</fn>
 - <ss>Single or Paired-end reads</ss>: *single*
@@ -110,8 +142,8 @@ Your tool interface should look like this:
 
 - Re-name the output files:
     - These are called <fn>Map with BWA-MEM on data x and data x</fn>.
+    - The x will refer to the numbered file that Galaxy used in the analysis.
     - Click on the pencil icon next to each of these and re-name them as their sample name (e.g. LB1, LB2 etc.).
-    - Click <ss>Save</ss>.
 
 ## Count reads per gene
 
@@ -119,7 +151,7 @@ We now need to count how many reads overlap with particular genes. The informati
 
 In Galaxy:
 
-- Go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: RNA Analysis &rarr; SAM/BAM to count matrix</ss>.
+- In the <ss>Tools</ss> panel, search for <ss>count matrix</ss> and click on <ss>SAM/BAM to count matrix</ss>
     - Note: Don't select the tool called *htseq-count*. The *SAM/BAM to count matrix* also uses that tool but allows an input of multiple bam files, which is what we want.
 - For <ss>Gene model (GFF) file to count reads over from your current history</ss>, select the <fn>GTF</fn> file.
 - For <ss>Reads are stranded</ss> select *Yes* (box turns dark grey)
@@ -152,14 +184,13 @@ Degust is a tool on the web that can analyse the counts files produced in the st
 
 (Degust can also display the results from DGE analyses performed elsewhere.)
 
-###Upload counts file
+### Upload counts file
 
-Go to the [Degust web page](http://degust.erc.monash.edu/). Click <ss>Get Started</ss>.
+Go to the [Degust web page](http://degust.erc.monash.edu/).
 
-![Degust webpage image](images/image04.png)
-
+- Click <ss>Upload your counts file</ss>.
 - Click on <ss>Choose File</ss>.
-- Select the <fn>htseq output file. tabular</fn> (that you previously downloaded to your computer from Galaxy) and click <ss>Open</ss>.
+- Select the <fn>htseq output file. tabular</fn> (that you previously downloaded to your computer from Galaxy) and click <ss>Open</ss>. This file may have a different name, for example, it may have "Galaxy" in the title.
 - Click <ss>Upload</ss>.
 
 A Configuation page will appear.
@@ -167,19 +198,14 @@ A Configuation page will appear.
 - For <ss>Name</ss> type *DGE in E coli*
 - For <ss>Info columns</ss> select *Contig*
 - For <ss>Analyze server side</ss> leave box checked.
-- For <ss>Min read count</ss> put *10*.
+- For <ss>Min gene read count</ss> put *10*.
 - Click <ss>Add condition</ss>
     - Add a condition called "Control" and select the LB columns.
     - Add a condition called "Treament" and select the MG columns.
-
-Your Configuration page should look like this:
-
-![Degust configuation](images/image10.png)
-
 - <ss>Save changes</ss>
 - <ss>View</ss> - this brings up the Degust viewing window.
 
-###Overview of Degust sections
+### Overview of Degust sections
 
 - Top black panel with <ss>Configure</ss> settings at right.
 - Left: Conditions: Control and Treatment.
@@ -190,12 +216,12 @@ Your Configuration page should look like this:
 
 ![Degust overview](images/image12.png)
 
-###Analyze gene expression
+### Analyze gene expression
 
 - Under <ss>Method</ss>, make sure that <ss>Voom/Limma</ss> is selected.
 - Click <ss>Apply</ss>. This runs Voom/Limma on the uploaded counts.
 
-###MDS plot
+### MDS plot
 
 First, look at the MDS plot.
 
@@ -209,7 +235,7 @@ First, look at the MDS plot.
 - The x-axis is the dimension with the highest magnitude. The control/treatment samples should be split along this axis.
 - Our LB samples are on the left and the MG samples are on the right, which means they are well separated on their major MDS dimension, which looks correct.
 
-###Expression - MA plot
+### Expression - MA plot
 Each dot shows the change in expression in one gene.
 
 - The average expression (over both condition and treatment samples) is represented on the x-axis.
@@ -223,7 +249,7 @@ Click on the dot to see the gene name.
 
 ![MAplot](images/image17.png)
 
-###Expression - Parallel Coordinates and heatmap
+### Expression - Parallel Coordinates and heatmap
 Each line shows the change in expression in one gene, between control and treatment.
 
 - Go to <ss>Options</ss> at the right.
@@ -243,7 +269,7 @@ Note:
 
 - for an experiment with multiple treatments, the various treatment axes can be dragged to rearrange. There is no natural order (such as a time series).
 
-###Table of genes
+### Table of genes
 - **Contig**: names of genes. Note that gene names are sometimes specific to a species, or they may be only named as a locus ID (a chromosomal location specified in the genome annotation).
 - **FDR**: False Discovery Rate. This is an adjusted p value to show the significance of the difference in gene expression between two conditions. Click on column headings to sort. By default, this table is sorted by FDR.
 - **Control** and **Treatment**: log2(Fold Change) of gene expression. The default display is of fold change in the treatment relative to the control. Therefore, values in the "Control" column are zero. This can be changed in the <ss>Options</ss> panel at the top right.
@@ -265,7 +291,8 @@ numbers are EC numbers - enzyme commission ->  enzyme/s that catalyze a reaction
 
 Differential gene expression can also be analyzed in Galaxy. The input is the count matrix produced by a tool such as HTSeq-Count (see section above: "Count reads per gene").
 
-- Go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: RNA Analysis &rarr; Differential Count models</ss>
+
+- In the <ss>Tools</ss> panel, search for <ss>Differential_Count models</ss> (don't forget the underscore) and click on it.
     - This has options to use edgeR, DESeq, or Voom. Here we will use Voom.
 - For <ss>Select an input matrix</ss> choose the <fn>count matrix</fn> file generated in the previous step.
 - For <ss>Title for job outputs</ss> enter *DGE using voom*.
@@ -294,8 +321,9 @@ View the file called <fn>DEGusingvoom_topTable_VOOM.xls</fn>.
 
 - This is a list of all the genes that had transcripts mapped, and associated statistics.
 
+- [Link to Voom paper.]( https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29)
 
-##What next?
+## Investigate differentially-expressed genes
 
 To learn more about the differentially-expressed genes:
 
@@ -313,33 +341,26 @@ Some of the most (statistically) significant differentially-expressed genes in t
 - [sucB](http://www.ncbi.nlm.nih.gov/gene/945307): a component of the 2-oxoglutarate dehydrogenase complex; catalyzes a step in the Krebs cycle.
 - [deoC](http://www.ncbi.nlm.nih.gov/gene/948902): 2-deoxyribose-5-phosphate aldolase; binds selenium; may be involved in selenium transport.
 
-Next steps: Investigate the biochemical pathways involving the genes of interest.
+<!-- Next steps: Investigate the biochemical pathways involving the genes of interest.-->
 
-## More information
+## See this history in Galaxy
 
-- [Link to Degust.](https://github.com/Victorian-Bioinformatics-Consortium/degust#degust-formerly-known-as-dge-vis)
-- [Link to Voom paper.]( https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29)
+If you want to see this Galaxy history without performing the steps above:
 
-<!-- If you have already run voom within Degust, continue from there. -->
+* Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
+* Go to <ss>Shared Data</ss>
+* Click <ss>Histories</ss>
+* Click <fn>Completed-RNA-seq-bacteria</fn>
+* Click <ss>Import</ss> (at the top right corner)
+* The analysis should now be showing as your current history.
 
-<!---
-Not sure if this is right: can't see MDS plot?
+## What's next?
 
-Alternatively, to upload a file of DGE analysis results (e.g. from Galaxy):
+To use the tutorials on this website:
 
-- Go to the [Degust web page](http://vicbioinformatics.com/degust/index.html). Click on <ss>Get Started</ss>.
-- Click on <ss>Choose File</ss>.
-- Select the <fn>voom output.tabular</fn> (that you previously downloaded to your computer from Galaxy) and click <ss>Open</ss>.
-- Click <ss>Upload</ss>.
-- A Configuation page will appear.
-- For <ss>Name</ss>, give it a name.
-- Leave other setting as they are except:
-- For <ss>Analyze server side</ss> uncheck box.
-- For <ss>Primary condition</ss> write "Control".
-- For <ss>FDR column</ss> click on the drop-down list and choose *adj.P.Val*
-- For <ss>Average expression column</ss> click on the drop-down list and choose *AveExpr*.
-- For <ss>Fold-change columns</ss> check the box next to *logFC*.
-    - this is the change in the treatment relative to the control (FIXME: check)
-- Click <ss>Save changes</ss>.
-- Click <ss>View</ss>.
---->
+* &#8592; see the list in the left hand panel
+* &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
+
+You can find more tutorials at the Galaxy Training Network:
+
+* [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/)
