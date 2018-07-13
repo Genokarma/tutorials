@@ -26,6 +26,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://galaxy-au-training.github.io/tutorials/modules/workflow-assembly/</loc>
+     <lastmod>2018-07-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/prokka/</loc>
      <lastmod>2018-07-13</lastmod>
      <changefreq>daily</changefreq>
