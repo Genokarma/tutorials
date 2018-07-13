@@ -83,6 +83,7 @@ pages:
     #- Bash scripts: modules/scripts/index.md
 
 - RNA-seq - bacteria: modules/dge/index.md
+- Workflow - RNA-seq: modules/workflow-rna-seq/index.md
 - RNA-seq - humans: modules/rna-humans/index.md
 
 - Metagenomics: modules/metagenomics/metagenomics.md
