@@ -146,6 +146,37 @@ We will perform a *de novo* assembly of the mutant FASTQ reads into long contigu
 
 ![spades output contigs](images/contig_stats.png)
 
+## Create a Galaxy workflow
+
+Galaxy provides the option to extract a workflow based on the steps you just followed and the tools and parameters used.
+
+* In the history pane, click on the cog icon.
+* Click <ss>Extract Workflow</ss>
+* If all looks ok, click <ss>Create Workflow</ss>
+* In the centre panel, click <ss>edit</ss>
+
+![edit](images/edit.png)
+
+This brings up the workflow canvas, a space for graphically viewing and re-arranging your workflow.
+
+![canvas](images/canvas.png)
+
+* Drag the panes around until your workflow is clear.
+* In the top right corner click on the cog icon and <ss>Save</ss>
+* Click on the cog icon again and <ss>Run</ss>
+    * <ss>Send results to a new history</ss>: *Yes*
+    * Check all input files are correct and change if necessary
+    * In the top right corner <ss>Run workflow</ss>
+
+* This workflow will now run.
+* In the History panel, click on the <ss>View all histories</ss> icon
+![view hist](images/view_all_hist.png)
+* Find your workflow history and <ss>Switch to</ss> it.
+
+To see all your workflows, go to the top panel in Galaxy and click <ss>Workflow</ss>.
+
+* You can edit or run workflows from here by clicking on the drop-down arrow next to each workflow.
+
 ## See this history in Galaxy
 
 If you want to see this Galaxy history without performing the steps above:
