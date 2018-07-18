@@ -81,12 +81,13 @@ The contents of the file will be displayed in the centre Galaxy panel.
 
 <img src="../images/fastq.png" alt="fastq" style="width: 620px;"/>
 
+[Click here for more information about FASTQ format.](https://en.wikipedia.org/wiki/FASTQ_format)
+
 ## Use a tool
 
 Let's look at the quality of the reads in this file.
 
-
-* In the tools panel search box, type in FastQC.
+* In the tools panel search box, type in "FastQC".
 * Click on the tool <ss>FastQC</ss>
 * This brings up a window in the centre of the screen.
 * For <ss>Short read data from your current history</ss> select the FASTQ file that we uploaded.
@@ -94,6 +95,11 @@ Let's look at the quality of the reads in this file.
 * Click <ss>Execute</ss>.
 * This tool will run and the two output files will appear at the top of your history panel.
 
+How do I choose the correct parameters for my analysis?
+
+* Under the tool interface panel in Galaxy there will usually be a description of the tool function and options, and a link to the tool's documentation.
+* When trying a tool, you can usually use most of the default settings, as these are typically (generally) appropriate.
+* When doing your own analyses, it is definitely recommended that you read about the tool parameters in more detail in the documentation, and adjust to your data and analysis accordingly.
 
 ## View results
 
@@ -194,11 +200,14 @@ Where is your first history, called <fn>my-analysis</fn>?
 <br>
 * All your histories are displayed here.
 <br>
-* Drag a file into your new history:
+
+Drag a file into your new history:
+
 * Click on the FASTQ file in <fn>my-analysis</fn> history
 * Drag it into the <fn>Next-analysis</fn> history
 * This makes a copy of the file in the new history
-* Click <ss>Done</ss>
+* Click <ss>Done</ss>, or, if that button is not showing, click <ss>Analyze Data</ss> in the menu panel across the top.
+
 <br>
 ![view-all-hist](../images/view-all-hist.png)
 
