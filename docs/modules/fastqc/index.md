@@ -1,5 +1,4 @@
 # FastQC in Galaxy
-<ss>Not yet updated for Galaxy-Australia</ss>
 
 After sequencing, the reads should be checked for their quality.
 
@@ -12,7 +11,10 @@ After sequencing, the reads should be checked for their quality.
 
 * Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
 * Create a new history for this analysis.
-* In a new browser tab, go to this webpage: *http://doi.org/10.5281/zenodo.582600*
+* In a new browser tab, go to this webpage:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.582600.svg)](https://doi.org/10.5281/zenodo.582600)
+
 * Find the file called <fn>mutant_R1.fastq</fn>
 * Right click on file name: select "copy link address"
 * In Galaxy, go to <ss>Get Data</ss> and then Upload File
@@ -29,6 +31,7 @@ The file name is quite long: let's change it:
 * Shorten the file name to <fn>mutant_R1.fastq</s>
 * Then click <ss>Save</ss>
 
+![rename](../spades/images/rename.png)
 
 FASTQ is a file format for sequence reads that displays quality scores for each of the sequenced nucleotides.
 
@@ -37,9 +40,9 @@ FASTQ is a file format for sequence reads that displays quality scores for each 
 
 ## Run FastQC
 
-- Go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: QC and Manipulation &rarr; FastQC</ss>
+In the Tool panel search box, search for "FastQC"; then click on the tool <ss>FastQC</ss>.
 
-![FastQC selection](images/image04.png)
+The tool interface will appear in the centre Galaxy panel.
 
 - for <ss>Short read data from your current history</ss>: <fn>mutant_R1.fastq</fn>
 - Click <ss>Execute</ss>
@@ -62,13 +65,6 @@ Look at:
 ![sequence quality graph](images/seq_quality.png)
 
 -   <ss>Per base N content</ss>: Presence of large numbers of Ns in reads may point to a poor quality sequencing run. You would need to trim these reads to remove Ns.
-
--   <ss>Kmer content</ss>: Presence of highly recurring k-mers: may point to contamination of reads with barcodes, adapter sequences etc. In this case, we have spikes in two types of kmers. <!-- explain why?
--->
-
-![kmer content graph](images/kmer_content.png)
-
-We have warnings for two outputs (per base sequence content; Kmer content). This would warrant more investigation.
 
 General questions you might ask about your input reads include:
 
