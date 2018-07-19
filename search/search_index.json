@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome!\n\n\nTutorials\n\n\nThis site contains tutorials for using \nGalaxy-Australia\n.\n\n\nTo use the tutorials:\n\n\n\n\n see the list in the left hand panel\n\n\n or, click the \nmenu button\n (three horizontal bars) in the top left of the page\n\n\n\n\nWelcome to Galaxy-Australia! Web address: \nwww.usegalaxy.org.au\n\n\n\n\nSupport\n\n\n\n\nRCCC\n\n\nQCIF\n\n\nMB\n\n\nBPA\n\n\nEMBL-ABR\n\n\nNCRIS\n\n\nRDS\n\n\nANDS\n\n\nNectar", 
+            "text": "Welcome!\n\n\nTutorials\n\n\nThis site contains tutorials for using \nGalaxy Australia\n.\n\n\nTo use the tutorials:\n\n\n\n\n see the list in the left hand panel\n\n\n or, click the \nmenu button\n (three horizontal bars) in the top left of the page\n\n\n\n\nWeb address: \nwww.usegalaxy.org.au\n\n\n\n\nSupport\n\n\n\n\nRCCC\n\n\nQCIF\n\n\nMB\n\n\nBPA\n\n\nEMBL-ABR\n\n\nNCRIS\n\n\nRDS\n\n\nANDS\n\n\nNectar", 
             "title": "Welcome"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#tutorials", 
-            "text": "This site contains tutorials for using  Galaxy-Australia .  To use the tutorials:    see the list in the left hand panel   or, click the  menu button  (three horizontal bars) in the top left of the page   Welcome to Galaxy-Australia! Web address:  www.usegalaxy.org.au", 
+            "text": "This site contains tutorials for using  Galaxy Australia .  To use the tutorials:    see the list in the left hand panel   or, click the  menu button  (three horizontal bars) in the top left of the page   Web address:  www.usegalaxy.org.au", 
             "title": "Tutorials"
         }, 
         {
@@ -22,13 +22,13 @@
         }, 
         {
             "location": "/modules/galaxy/", 
-            "text": "What is Galaxy-Australia?\n\n\nWhat is Galaxy?\n\n\nGalaxy is a web-based analysis and workflow platform.\n\n\n\n\nDesigned for biologists\n\n\nEasily accessible via a web page\n\n\nFree to use\n\n\nYou can upload your own data\n\n\nYou can access shared data\n\n\nUse common bioinformatics tools\n\n\nDevelop workflows\n\n\n\n\nWhat does Galaxy look like?\n\n\n\n\nTools\n on the left\n\n\nViewing\n panel in the middle\n\n\nHistory\n of analysis and files on the right\n\n\n\n\n\n\nCan I use Galaxy?\n\n\nYes!\n\n\n\n\nGalaxy is free to use and available for everyone.\n\n\nAustralian researchers may find Galaxy-Australia particularly suited to their analysis needs as it has been developed in consultation with scientists across the country.\n\n\n\n\nWhat is Galaxy-Australia?\n\n\nGalaxy-Australia has been developed for Australian researchers. It replaces the previous servers called Galaxy-Qld and Galaxy-Mel.\n\n\n\n\nWhere are the other Galaxy servers?\n\n\nA list of Galaxy servers is \nhere\n.\n\n\n\n\n\n\nWhat is on the other Galaxy servers?\n\n\nSome have a set of general tools, and some have been developed for particular analyses.\n\n\n\n\n\n\nCan I use more than one Galaxy server?\n\n\nYes, but you will need to register separately for each one, and they don\nt share data between them.\n\n\n\n\n\n\n\n\nLog in\n\n\n\n\nOpen your internet browser.\n\n\nUse Safari, Chrome or Firefox. Don\nt use Internet Explorer.\n\n\nType in the address of Galaxy-Australia: \nusegalaxy.org.au\n\n\nThe first time you use Galaxy-Australia, click on the \nLogin or Register\n tab and select \nRegister\n.\n\n\nEnter the details required and click \nSubmit\n.\n\n\nLog in, and refresh the page.\n\n\n\n\n\n\n\n\nEach time you use this Galaxy server, log in to see your data and histories.\n\n\nIf you are using a different Galaxy server, you would need to register/log in to that server.\n\n\n\n\nUse tools\n\n\n\n\n\n\nAvailable tools are in the left hand panel. Find the tool you want or use the search bar at the top of the tools.\n\n\n\n\n\n\nClick on the tool you want to use.\n\n\n\n\n\n\nThe tool interface will appear in the centre Galaxy panel. Check the settings.\n\n\n\n\n\n\nClick \nExecute\n.\n\n\n\n\n\n\nWhen the tool has finished, output file(s) will appear at the top of your \nCurrent History\n in the right hand panel.\n\n\n\n\n\n\nClick on the eye icon next to a file to view it.\n\n\n\n\n\n\nTo access older histories, use the button at the top right of the History panel.\n\n\n\n\n\n\nMore information\n\n\nMore information about the Galaxy project can be found \nhere\n.\n\n\nWhat\ns next?\n\n\nTo use the tutorials on this website:\n\n\n\n\n see the list in the left hand panel\n\n\n or, click the \nmenu button\n (three horizontal bars) in the top left of the page\n\n\n\n\nYou can find more tutorials at the Galaxy Training Network:\n\n\n\n\nhttp://galaxyproject.github.io/training-material/", 
+            "text": "What is Galaxy Australia?\n\n\nWhat is Galaxy?\n\n\nGalaxy is a web-based analysis and workflow platform.\n\n\n\n\nDesigned for biologists\n\n\nEasily accessible via a web page\n\n\nFree to use\n\n\nYou can upload your own data\n\n\nYou can access shared data\n\n\nUse common bioinformatics tools\n\n\nDevelop workflows\n\n\n\n\nWhat does Galaxy look like?\n\n\n\n\nTools\n on the left\n\n\nViewing\n panel in the middle\n\n\nHistory\n of analysis and files on the right\n\n\n\n\n\n\nCan I use Galaxy?\n\n\nYes!\n\n\n\n\nGalaxy is free to use and available for everyone.\n\n\nAustralian researchers may find Galaxy Australia particularly suited to their analysis needs as it has been developed in consultation with scientists across the country.\n\n\n\n\nWhat is Galaxy Australia?\n\n\nGalaxy Australia has been developed for Australian researchers. It replaces the previous servers called Galaxy-Qld and Galaxy-Mel.\n\n\n\n\nWhere are the other Galaxy servers?\n\n\nA list of Galaxy servers is \nhere\n.\n\n\n\n\n\n\nWhat is on the other Galaxy servers?\n\n\nSome have a set of general tools, and some have been developed for particular analyses.\n\n\n\n\n\n\nCan I use more than one Galaxy server?\n\n\nYes, but you will need to register separately for each one, and they don\nt share data between them.\n\n\n\n\n\n\n\n\nLog in\n\n\n\n\nOpen your internet browser.\n\n\nUse Safari, Chrome or Firefox. Don\nt use Internet Explorer.\n\n\nType in the address of Galaxy Australia: \nusegalaxy.org.au\n\n\nThe first time you use Galaxy Australia, click on the \nLogin or Register\n tab and select \nRegister\n.\n\n\nEnter the details required and click \nSubmit\n.\n\n\nLog in, and refresh the page.\n\n\n\n\n\n\n\n\nEach time you use this Galaxy server, log in to see your data and histories.\n\n\nIf you are using a different Galaxy server, you would need to register/log in to that server.\n\n\n\n\nUse tools\n\n\n\n\n\n\nAvailable tools are in the left hand panel. Find the tool you want or use the search bar at the top of the tools.\n\n\n\n\n\n\nClick on the tool you want to use.\n\n\n\n\n\n\nThe tool interface will appear in the centre Galaxy panel. Check the settings.\n\n\n\n\n\n\nClick \nExecute\n.\n\n\n\n\n\n\nWhen the tool has finished, output file(s) will appear at the top of your \nCurrent History\n in the right hand panel.\n\n\n\n\n\n\nClick on the eye icon next to a file to view it.\n\n\n\n\n\n\nTo access older histories, use the button at the top right of the History panel.\n\n\n\n\n\n\nMore information\n\n\nMore information about the Galaxy project can be found \nhere\n.\n\n\nWhat\ns next?\n\n\nTo use the tutorials on this website:\n\n\n\n\n see the list in the left hand panel\n\n\n or, click the \nmenu button\n (three horizontal bars) in the top left of the page\n\n\n\n\nYou can find more tutorials at the Galaxy Training Network:\n\n\n\n\nhttp://galaxyproject.github.io/training-material/", 
             "title": "Get started"
         }, 
         {
             "location": "/modules/galaxy/#what-is-galaxy-australia", 
             "text": "", 
-            "title": "What is Galaxy-Australia?"
+            "title": "What is Galaxy Australia?"
         }, 
         {
             "location": "/modules/galaxy/#what-is-galaxy", 
@@ -42,17 +42,17 @@
         }, 
         {
             "location": "/modules/galaxy/#can-i-use-galaxy", 
-            "text": "Yes!   Galaxy is free to use and available for everyone.  Australian researchers may find Galaxy-Australia particularly suited to their analysis needs as it has been developed in consultation with scientists across the country.", 
+            "text": "Yes!   Galaxy is free to use and available for everyone.  Australian researchers may find Galaxy Australia particularly suited to their analysis needs as it has been developed in consultation with scientists across the country.", 
             "title": "Can I use Galaxy?"
         }, 
         {
             "location": "/modules/galaxy/#what-is-galaxy-australia_1", 
-            "text": "Galaxy-Australia has been developed for Australian researchers. It replaces the previous servers called Galaxy-Qld and Galaxy-Mel.   Where are the other Galaxy servers?  A list of Galaxy servers is  here .    What is on the other Galaxy servers?  Some have a set of general tools, and some have been developed for particular analyses.    Can I use more than one Galaxy server?  Yes, but you will need to register separately for each one, and they don t share data between them.", 
-            "title": "What is Galaxy-Australia?"
+            "text": "Galaxy Australia has been developed for Australian researchers. It replaces the previous servers called Galaxy-Qld and Galaxy-Mel.   Where are the other Galaxy servers?  A list of Galaxy servers is  here .    What is on the other Galaxy servers?  Some have a set of general tools, and some have been developed for particular analyses.    Can I use more than one Galaxy server?  Yes, but you will need to register separately for each one, and they don t share data between them.", 
+            "title": "What is Galaxy Australia?"
         }, 
         {
             "location": "/modules/galaxy/#log-in", 
-            "text": "Open your internet browser.  Use Safari, Chrome or Firefox. Don t use Internet Explorer.  Type in the address of Galaxy-Australia:  usegalaxy.org.au  The first time you use Galaxy-Australia, click on the  Login or Register  tab and select  Register .  Enter the details required and click  Submit .  Log in, and refresh the page.     Each time you use this Galaxy server, log in to see your data and histories.  If you are using a different Galaxy server, you would need to register/log in to that server.", 
+            "text": "Open your internet browser.  Use Safari, Chrome or Firefox. Don t use Internet Explorer.  Type in the address of Galaxy Australia:  usegalaxy.org.au  The first time you use Galaxy Australia, click on the  Login or Register  tab and select  Register .  Enter the details required and click  Submit .  Log in, and refresh the page.     Each time you use this Galaxy server, log in to see your data and histories.  If you are using a different Galaxy server, you would need to register/log in to that server.", 
             "title": "Log in"
         }, 
         {
