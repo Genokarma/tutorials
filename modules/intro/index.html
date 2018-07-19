@@ -573,18 +573,6 @@
   </li>
 
     
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../resources/" title="Galaxy help & resources" class="md-nav__link">
-      Galaxy help & resources
-    </a>
-  </li>
-
-    
   </ul>
 </nav>
                   </div>
@@ -792,16 +780,23 @@ Your uploaded file is now in your current history.</li>
 <li>This file contains DNA sequencing reads from a bacteria, in FASTQ format:</li>
 </ul>
 <p><img src="../images/fastq.png" alt="fastq" style="width: 620px;"/></p>
+<p><a href="https://en.wikipedia.org/wiki/FASTQ_format">Click here for more information about FASTQ format.</a></p>
 <h2 id="use-a-tool">Use a tool</h2>
 <p>Let&rsquo;s look at the quality of the reads in this file.</p>
 <ul>
-<li>In the tools panel search box, type in FastQC.</li>
+<li>In the tools panel search box, type in &ldquo;FastQC&rdquo;.</li>
 <li>Click on the tool <ss>FastQC</ss></li>
 <li>This brings up a window in the centre of the screen.</li>
 <li>For <ss>Short read data from your current history</ss> select the FASTQ file that we uploaded.</li>
 <li>Leave the other parameters as they are.</li>
 <li>Click <ss>Execute</ss>.</li>
 <li>This tool will run and the two output files will appear at the top of your history panel.</li>
+</ul>
+<p>How do I choose the correct parameters for my analysis?</p>
+<ul>
+<li>Under the tool interface panel in Galaxy there will usually be a description of the tool function and options, and a link to the tool&rsquo;s documentation.</li>
+<li>When trying a tool, you can usually use most of the default settings, as these are typically (generally) appropriate.</li>
+<li>When doing your own analyses, it is definitely recommended that you read about the tool parameters in more detail in the documentation, and adjust to your data and analysis accordingly.</li>
 </ul>
 <h2 id="view-results">View results</h2>
 <p>We will look at the output file called <fn>FastQC on data 1: Webpage</fn>.</p>
@@ -891,14 +886,16 @@ Your uploaded file is now in your current history.</li>
 <br></li>
 <li>All your histories are displayed here.
 <br></li>
-<li>Drag a file into your new history:</li>
+</ul>
+<p>Drag a file into your new history:</p>
+<ul>
 <li>Click on the FASTQ file in <fn>my-analysis</fn> history</li>
 <li>Drag it into the <fn>Next-analysis</fn> history</li>
 <li>This makes a copy of the file in the new history</li>
-<li>Click <ss>Done</ss>
-<br>
-<img alt="view-all-hist" src="./../images/view-all-hist.png" /></li>
+<li>Click <ss>Done</ss>, or, if that button is not showing, click <ss>Analyze Data</ss> in the menu panel across the top.</li>
 </ul>
+<p><br>
+<img alt="view-all-hist" src="./../images/view-all-hist.png" /></p>
 <p>Your main Galaxy window will now show the current history as <fn>Next-analysis</fN>, and it will have one file in it.</p>
 <p>You can go back into the &ldquo;View all histories&rdquo; page and &ldquo;Switch to&rdquo; a different history.</p>
 <h2 id="summary">Summary</h2>
