@@ -1,5 +1,4 @@
 # FastQC in Galaxy
-
 After sequencing, the reads should be checked for their quality.
 
 * This tutorial demonstrates how to use the tool called FastQC to examine bacterial paired-end Illumina sequence reads.
