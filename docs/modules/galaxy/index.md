@@ -1,4 +1,4 @@
-# What is Galaxy-Australia?
+# What is Galaxy Australia?
 
 ## What is Galaxy?
 
@@ -26,11 +26,11 @@ Galaxy is a web-based analysis and workflow platform.
 Yes!
 
   * Galaxy is free to use and available for everyone.
-  * Australian researchers may find Galaxy-Australia particularly suited to their analysis needs as it has been developed in consultation with scientists across the country.
+  * Australian researchers may find Galaxy Australia particularly suited to their analysis needs as it has been developed in consultation with scientists across the country.
 
-## What is Galaxy-Australia?
+## What is Galaxy Australia?
 
-Galaxy-Australia has been developed for Australian researchers. It replaces the previous servers called Galaxy-Qld and Galaxy-Mel.
+Galaxy Australia has been developed for Australian researchers. It replaces the previous servers called Galaxy-Qld and Galaxy-Mel.
 
 * Where are the other Galaxy servers?
     * A list of Galaxy servers is [here](https://galaxyproject.org/public-galaxy-servers/).
@@ -43,8 +43,8 @@ Galaxy-Australia has been developed for Australian researchers. It replaces the 
 
 * Open your internet browser.
 * Use Safari, Chrome or Firefox. Don't use Internet Explorer.
-* Type in the address of Galaxy-Australia: [usegalaxy.org.au](https://usegalaxy.org.au/)
-* The first time you use Galaxy-Australia, click on the <ss>Login or Register</ss> tab and select <ss>Register</ss>.
+* Type in the address of Galaxy Australia: [usegalaxy.org.au](https://usegalaxy.org.au/)
+* The first time you use Galaxy Australia, click on the <ss>Login or Register</ss> tab and select <ss>Register</ss>.
 * Enter the details required and click <ss>Submit</ss>.
 * Log in, and refresh the page.
 
