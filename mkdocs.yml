@@ -88,7 +88,7 @@ pages:
 
 - Metagenomics: modules/metagenomics/metagenomics.md
 
-- Galaxy help & resources: modules/resources/index.md
+#- Galaxy help & resources: modules/resources/index.md
 #- Transcriptomics:
 #  - Overview: modules/transcriptomics.md
 #  - Dataset: modules/data-rna/index.md
