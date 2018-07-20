@@ -456,74 +456,79 @@ The aim here is to estimate the diversity and richness of the sample.
 * Collector's curves describe how the richness or diversity change as you add more samples into the dataset.
 * If a collector's curve plateaus, it is a good indication that enough samples were collected and you can have confidence in the last value of the curve.
 
+### Collector's curve
+
 In the tool panel on the left hand side, search for the <ss>Collector Curve</ss> tool.
 
-, either using the search box or under the “Metagenomics 16S Analysis” category
-For the first field “OTU list (rabund, sabund, list or shared format)”, select “10: Map Reads to OTU on data 7 and data 4:rabund”
-For the second field “Labels - OTU labels”, select 0.03 (corresponding to 97%). Note that this value is the inverse of other similarity thresholds we used thus far (1-0.97=0.03) and is the default value. DEFAULT
-For the third field “Calculators”, there is no need to change anything from the default calculators
-chao - Community richness the Chao estimator
-invsimpson - Community diversity the Simpson index
-npshannon - Community diversity the non-parametric Shannon index
-In this tutorial we do not enable advanced options.
-Click Execute
+* For <ss>OTU list (rabund, sabund, list or shared format)</ss>, select <fn>Map Reads to OTU on data XX and data XX:rabund</fn>
+* For <ss>Labels - OTU labels</ss>, Click <ss>Select</ss> and make sure that <fn>0.03</fn> appears in the box.
 
-Four outputs are generated from this tool, click on the job name to examine them:
+    * This correspondd to 97%. Note that this value is the inverse of other similarity thresholds we used thus far (1-0.97=0.03) and is the default value.
 
-“23: Collector Curve on data 10:tab”
-This file provides a summary containing the following fields, number of sequences, the sample coverage, the number of observed OTUs, and then a summary of each of the selected calculators that were applied to the sample.         
+* For <ss>Calculators</ss>, there is no need to change anything from the default calculators:
 
-“24: Collector Curve on data 10:tab (invsimpson)”
-The [Simpson’s Inverse Index](https://www.mothur.org/wiki/Invsimpson) also referred to as Simpson’s Reciprocal Index is a measure of diversity. Species diversity is a way to compare samples that incorporates both a measure of evenness (representation by each species) and richness (number of each species in the sample).
-This index starts with the value of 1 as the lowest possible figure. This figure would represent a community containing only one species. The higher the value, the greater the diversity. The maximum value is the number of species in the sample.
+    * *chao* - Community richness  - the Chao estimator
+    * *invsimpson* - Community diversity - the Simpson index
+    * *npshannon* - Community diversity - the non-parametric Shannon index.
 
-“25: Collector Curve on data 10:tab (npshannon)”
-The [non-parametric Shannon Index](https://www.mothur.org/wiki/Npshannon), like the Simpson’s Inverse Index, is a diversity estimator and calculates a non-parametric estimate of the classical [Shannon](https://www.mothur.org/wiki/Shannon) diversity Index for an OTU definition. The interpretation of the curve has to be performed in a comparison to the diversity curve of one or more communities.
+* Click <ss>Execute</ss>
 
-“26: Collector Curve on data 10:tab (chao)”
-The [Chao1 estimator](https://www.mothur.org/wiki/Chao) is a species richness estimator. The species richness estimators estimate the total number of species present in a community.  The Chao1 index estimator the species richness for one community based on the observed species frequencies or presence/absence data.
-If you compare the rarefaction curve (observed richness) and Chao1 estimator curve (estimated richness), you will observe a gap. The greater estimated richness in comparison to the observed richness usually indicates that with further sampling, the richness would likely continue to increase. Please note that if a sample contains many singletons, it is likely that more undetected OTUs exist, and the Chao1 index will estimate greater species richness than it would for a sample without rare OTUs.
+### Output
+
+* Click on <fn>Collector Curve on data XX:tab</fn>
+
+    * This file provides a summary containing the following fields: number of sequences, the sample coverage, the number of observed OTUs, and then a summary of each of the selected calculators that were applied to the sample.         
+
+* Click on <fn>Collector Curve on data XX:tab (invsimpson)</fn>
+
+    * The [Simpson’s Inverse Index](https://www.mothur.org/wiki/Invsimpson) also referred to as Simpson’s Reciprocal Index is a measure of diversity.
+    * Species diversity is a way to compare samples that incorporates both a measure of evenness (representation by each species) and richness (number of each species in the sample).
+    * This index starts with the value of 1 as the lowest possible figure. This figure would represent a community containing only one species. The higher the value, the greater the diversity. The maximum value is the number of species in the sample.
+
+* Click on <fn>Collector Curve on data XX:tab (npshannon)</fn>
+
+    * The [non-parametric Shannon Index](https://www.mothur.org/wiki/Npshannon), like the Simpson’s Inverse Index, is a diversity estimator and calculates a non-parametric estimate of the classical [Shannon](https://www.mothur.org/wiki/Shannon) diversity Index for an OTU definition.
+    * The interpretation of the curve has to be performed in a comparison to the diversity curve of one or more communities.
+
+* Click on <fn>Collector Curve on data XX:tab (chao)</fn>
+
+    * The [Chao1 estimator](https://www.mothur.org/wiki/Chao) is a species richness estimator. The species richness estimators estimate the total number of species present in a community. The Chao1 index estimator the species richness for one community based on the observed species frequencies or presence/absence data.
+
+    * If you compare the rarefaction curve (observed richness) and Chao1 estimator curve (estimated richness), you will observe a gap. The greater estimated richness in comparison to the observed richness usually indicates that with further sampling, the richness would likely continue to increase. Please note that if a sample contains many singletons, it is likely that more undetected OTUs exist, and the Chao1 index will estimate greater species richness than it would for a sample without rare OTUs.
 
 
 These three outputs are tabbed delimited with the following columns:
 
-First column (numsampled)
+* First column (numsampled): is the number sampled and indicates the level of sampling intensity (by default this information is provided every 100 individuals)
 
-is the number sampled and indicates the level of sampling intensity (by default this information is provided every 100 individuals)
+* The second column (0.03) is the average number of OTUs that were observed for that sampling intensity based on the number of iterations, which is 1000 by default. This would represents the data for the y-axis for the corresponding minimum identity (1-0.97=0.03).
 
+* The third column (lci) and fourth column (hci) represent the confidence intervals
 
-The second column (0.03)
-
-is the average number of OTUs that were observed for that sampling intensity based on the number of iterations, which is 1000 by default. This would represents the data for the y-axis for the corresponding minimum identity (1-0.97=0.03).
-
-
-The third column (lci)
-
-fourth column (hci)
-
-represent the confidence intervals
+These files can be plotted similar to the rarefaction curve in the previous step.
 
 
-These files can be plotted similar to the rarefaction curve (see Section 6).
+### Plot the collector’s curves
+
+* Click on <fn>Collector Curve on data XX:tab (invsimpson)</fn> to extend the dataset information.
+* Click on the now accessible “Visualize” icon
+* Select “Scatterplot”
+
+* Under Column 1, highlight "X Column" (the number sampled)
+* Under Column 2, highlight "Y Column" (the average number of OTUs that were observed for that sampling intensity based on the number of iterations, which is 1,000 by default).
+* Click <ss>Draw</ss>
+
+
+Repeat to plot the curves from the other calculators.
+
+## The workflow canvas
+
+![canvas](images/canvas.png)
 
 
 
-Plot the collector’s curves:
-Click on “24: Collector Curve on data 10:tab (invsimpson)” to extend the dataset information.
-Click on the now accessible “Visualize” icon
-Select “Scatterplot”
-Select the “Data Controls” tab
-For the first field “Data column for X”, select column 1 (the number sampled)
-For the second field “Data column for Y”, select column 2 (the average number of OTUs that were observed for that sampling intensity based on the number of iterations, which is 1,000 by default)
-Click Draw
+## References
 
-
-Repeat the previous step 8 to plot the results of the other calculators selected. Here:
-chao - “25: Collector Curve on data 10:tab (npshannon)”
-invsimpson - “26: Collector Curve on data 10:tab (chao)”
-
-
-References
 1. Woese CR, Kandler O, Wheelis ML (1990) Towards a natural system of organisms: proposal for the domains Archaea, Bacteria, and Eucarya. Proc Natl Acad Sci U S A 87: 4576-4579.
 
 2. Lane DJ, Pace B, Olsen GJ, Stahl DA, Sogin ML, et al. (1985) Rapid determination of 16S ribosomal RNA sequences for phylogenetic analyses. Proc Natl Acad Sci U S A 82: 6955-6959.
