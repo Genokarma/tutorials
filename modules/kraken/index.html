@@ -465,6 +465,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
+    See this history in Galaxy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" title="What's next?" class="md-nav__link">
+    What's next?
+  </a>
+  
+</li>
+      
       
       
       
@@ -586,6 +600,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
+    See this history in Galaxy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" title="What's next?" class="md-nav__link">
+    What's next?
+  </a>
+  
+</li>
+      
       
       
       
@@ -606,7 +634,6 @@
                 
                 
                 <h1 id="sample-identification-with-kraken">Sample identification with Kraken</h1>
-<p><ss>Not yet updated for Galaxy-Australia</ss></p>
 <p>To identify a sample from sequencing reads, we can use the tool &ldquo;Kraken&rdquo;. This tool can also be used to identify members in a mixed set of reads, for metagenomics.</p>
 <ul>
 <li>
@@ -623,8 +650,29 @@
 <p>In this tutorial we will use Kraken to confirm the identify of reads from a bacterial isolate.</p>
 <p><fn><strong>New to Galaxy?</strong> First try the <a href="../galaxy/">introduction</a> and then learn some <a href="../intro/">key tasks</a></fn></p>
 <h2 id="get-data">Get data</h2>
-<p>In Galaxy, go to <ss>Shared Data</ss> in the top panel, and click on the history named <fn>Kraken data</fn>. In the top right, click <ss>Switch to this history</ss>.</p>
-<p>Your current history should now contain four files. If you are using the tutorial independently of a workshop, at this stage you can upload your FASTQ files into the current history.</p>
+<ul>
+<li>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</li>
+<li>Create a new history for this analysis.</li>
+<li>In a new browser tab, go to this webpage:</li>
+</ul>
+<p><a href="https://doi.org/10.5281/zenodo.1319181"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1319181.svg" /></a></p>
+<ul>
+<li>Right click on a  name: select &ldquo;copy link address&rdquo;</li>
+<li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
+<li>Click <ss>Paste/Fetch data</ss></li>
+<li>A box will appear: paste in link address</li>
+<li>Click <ss>Start</ss></li>
+<li>Click <ss>Close</ss></li>
+<li>The file will now appear in the top of your history panel.</li>
+</ul>
+<p>The file name is quite long: let&rsquo;s change it:</p>
+<ul>
+<li>Click on the pencil icon next to the file name.</li>
+<li>In the centre Galaxy panel, click in the box under <ss>Name</ss></li>
+<li>Shorten the file name to, for example, <fn>staph_R1.fastq</s></li>
+<li>Then click <ss>Save</ss></li>
+</ul>
+<p>Repeat this for all the files on Zenodo. You should now have four files in your current history:</p>
 <p><img alt="galaxy history" src="./images/files2.png" /></p>
 <!-- used ERR019289_1 and 2 from EBI. see public data tutorial.
 rename and change datatypes. -- not working -->
@@ -637,7 +685,7 @@ rename and change datatypes. -- not working -->
 <p>(We will look at the other set of files later on in the tutorial).</p>
 <ul>
 <li>
-<p>Go to <ss>Tools &rarr; NGS Analysis &rarr; Metagenomic analyses &rarr; Kraken, assign taxonomic labels to sequencing reads</ss></p>
+<p>Go to <ss>Tools</ss> search bar and type in &ldquo;Kraken&rdquo;. Click on the <em>Kraken</em> tool.  </p>
 </li>
 <li>
 <p>Set the following parameters:</p>
@@ -645,16 +693,11 @@ rename and change datatypes. -- not working -->
 <li><ss>Single or paired reads</ss>: <em>Paired</em></li>
 <li><ss>Forward strand:</ss> <fn>staph_R1.fq</fn></li>
 <li><ss>Reverse strand:</ss> <fn>staph_R2.fq</fn></li>
+<li><ss>Select a Kraken database:</ss> <em>Minikraken</em></li>
 <li>leave other settings as they are</li>
-</ul>
-</li>
-<li>
-<p>Your tool interface should look like this:</p>
-</li>
-</ul>
-<p><img alt="tool interface" src="./images/tool_interface2.png" /></p>
-<ul>
 <li>Click <ss>Execute</ss></li>
+</ul>
+</li>
 </ul>
 <!-- ### How it works
 
@@ -698,13 +741,15 @@ Each sequence classified by Kraken results in a single line of output. Output li
 -->
 
 <h2 id="kraken-report">Kraken report</h2>
-<p>Go to <ss>Tools &rarr; NGS Analysis &rarr; Metagenomic analyses &rarr; Kraken-report</ss></p>
 <ul>
+<li>
+<p>Go to <ss>Tools</ss> search bar and type in &ldquo;Kraken-report&rdquo;. Click on the <em>Kraken-report</em> tool.</p>
+</li>
 <li>
 <p>Set the following parameters:</p>
 <ul>
 <li><ss>Kraken output</ss>: <fn>Kraken on data x and x: Classification</fn></li>
-<li><ss>Select a Kraken database</ss>: <em>krakendb</em></li>
+<li><ss>Select a Kraken database</ss>: <em>Minikraken</em></li>
 <li>Click <ss>Execute</ss></li>
 </ul>
 </li>
@@ -764,6 +809,26 @@ The output of kraken-report is tab-delimited, with one line per taxon. The field
 <h2 id="links">Links</h2>
 <p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-3-r46">Kraken paper</a></p>
 <p><a href="http://ccb.jhu.edu/software/kraken/">Kraken software</a></p>
+<h2 id="see-this-history-in-galaxy">See this history in Galaxy</h2>
+<p>If you want to see this Galaxy history without performing the steps above:</p>
+<ul>
+<li>Log in to Galaxy Australia: <a href="https://usegalaxy.org.au/">https://usegalaxy.org.au/</a></li>
+<li>Go to <ss>Shared Data</ss></li>
+<li>Click <ss>Histories</ss></li>
+<li>Click <fn>Completed-kraken-analysis</fn></li>
+<li>Click <ss>Import</ss> (at the top right corner)</li>
+<li>The analysis should now be showing as your current history.</li>
+</ul>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>To use the tutorials on this website:</p>
+<ul>
+<li>&#8592; see the list in the left hand panel</li>
+<li>&#8598; or, click the <strong>menu button</strong> (three horizontal bars) in the top left of the page</li>
+</ul>
+<p>You can find more tutorials at the Galaxy Training Network:</p>
+<ul>
+<li><a href="http://galaxyproject.github.io/training-material/">http://galaxyproject.github.io/training-material/</a></li>
+</ul>
                 
                   
                 
