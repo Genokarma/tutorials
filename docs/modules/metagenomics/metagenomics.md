@@ -320,7 +320,9 @@ Click on the eye icon next to the output file.
 
 ## Phylogeny
 
-How are our taxa related phylogenetically? We will run three tools to investigate.
+How are our taxa related phylogenetically? We will run two tools to investigate.
+
+<!--
 
 ### Re-run the classifier
 
@@ -335,6 +337,8 @@ In the tool panel on the left hand side, search for the <ss>RDP MultiClassifier<
 * For <ss>Assignment confidence cutoff</ss>, enter 0.8.
 * For <ss>Tab delimited output format</ss>, select “allrank“ from the drop-down list
 * Click on <ss>Execute</ss>
+
+-->
 
 ### PyNAST
 
@@ -523,7 +527,7 @@ Repeat to plot the curves from the other calculators.
 
 ## The workflow canvas
 
-![canvas](images/canvas.png)
+![canvas](images/canvas2.png)
 
 
 
