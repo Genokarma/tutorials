@@ -1,7 +1,5 @@
 # Sample identification with Kraken
 
-<ss>Not yet updated for Galaxy-Australia</ss>
-
 To identify a sample from sequencing reads, we can use the tool "Kraken". This tool can also be used to identify members in a mixed set of reads, for metagenomics.
 
 - e.g. reads from one sample &rarr; Kraken &rarr; 95% *Staphylococcus aureus*.
@@ -18,9 +16,28 @@ In this tutorial we will use Kraken to confirm the identify of reads from a bact
 
 ## Get data
 
-In Galaxy, go to <ss>Shared Data</ss> in the top panel, and click on the history named <fn>Kraken data</fn>. In the top right, click <ss>Switch to this history</ss>.
+* Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
+* Create a new history for this analysis.
+* In a new browser tab, go to this webpage:
 
-Your current history should now contain four files. If you are using the tutorial independently of a workshop, at this stage you can upload your FASTQ files into the current history.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1319181.svg)](https://doi.org/10.5281/zenodo.1319181)
+
+* Right click on a  name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
+
+The file name is quite long: let's change it:
+
+* Click on the pencil icon next to the file name.
+* In the centre Galaxy panel, click in the box under <ss>Name</ss>
+* Shorten the file name to, for example, <fn>staph_R1.fastq</s>
+* Then click <ss>Save</ss>
+
+Repeat this for all the files on Zenodo. You should now have four files in your current history:
 
 ![galaxy history](images/files2.png)
 
@@ -35,20 +52,16 @@ We have a sample that should be *Staphylococcus aureus*. The paired-end FASTQ re
 
 (We will look at the other set of files later on in the tutorial).
 
-- Go to <ss>Tools &rarr; NGS Analysis &rarr; Metagenomic analyses &rarr; Kraken, assign taxonomic labels to sequencing reads</ss>
+- Go to <ss>Tools</ss> search bar and type in "Kraken". Click on the *Kraken* tool.  
 
 - Set the following parameters:
 
     - <ss>Single or paired reads</ss>: *Paired*
     - <ss>Forward strand:</ss> <fn>staph_R1.fq</fn>
     - <ss>Reverse strand:</ss> <fn>staph_R2.fq</fn>
+    - <ss>Select a Kraken database:</ss> *Minikraken*
     - leave other settings as they are
-
-- Your tool interface should look like this:
-
-![tool interface](images/tool_interface2.png)
-
--  Click <ss>Execute</ss>
+    -  Click <ss>Execute</ss>
 
 <!-- ### How it works
 
@@ -99,12 +112,12 @@ Each sequence classified by Kraken results in a single line of output. Output li
 
 ## Kraken report
 
-Go to <ss>Tools &rarr; NGS Analysis &rarr; Metagenomic analyses &rarr; Kraken-report</ss>
+- Go to <ss>Tools</ss> search bar and type in "Kraken-report". Click on the *Kraken-report* tool.
 
 - Set the following parameters:
 
     - <ss>Kraken output</ss>: <fn>Kraken on data x and x: Classification</fn>
-    - <ss>Select a Kraken database</ss>: *krakendb*
+    - <ss>Select a Kraken database</ss>: *Minikraken*
     -  Click <ss>Execute</ss>
 
 
@@ -165,3 +178,25 @@ Re-run Kraken with another sample. This sample should be *Enterococcus faecalis*
 [Kraken paper](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-3-r46)
 
 [Kraken software](http://ccb.jhu.edu/software/kraken/)
+
+## See this history in Galaxy
+
+If you want to see this Galaxy history without performing the steps above:
+
+* Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
+* Go to <ss>Shared Data</ss>
+* Click <ss>Histories</ss>
+* Click <fn>Completed-kraken-analysis</fn>
+* Click <ss>Import</ss> (at the top right corner)
+* The analysis should now be showing as your current history.
+
+## What's next?
+
+To use the tutorials on this website:
+
+* &#8592; see the list in the left hand panel
+* &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
+
+You can find more tutorials at the Galaxy Training Network:
+
+* [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/)
