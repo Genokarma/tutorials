@@ -1,24 +1,14 @@
 # Galaxy workflows
 
-## What are Galaxy workflows?
+A workflow is a chain of analysis steps. In Galaxy, we can create a workflow from an existing analysis history, or we can create one visually by adding tools to a canvas.
 
+This tutorial covers building a workflow to analyse a bacterial genome, from input FASTQ sequencing reads to assembly, annotation, and visualization.
 
-
-
-
-
-
-
-
-## Move, change this stuff below
-
-Although we can use tools in Galaxy to analyse data and create a history, there is also a way to create a workflow of files, tools, settings and outputs. You can then input different datasets and run the workflow.
-
-This tutorial covers building a workflow to analyse a bacterial genome, from input Fastq sequencing reads to assembly, annotation, and visualization.
+<fn>**New to Galaxy?** First try the [introduction](../galaxy/index.md) and then learn some [key tasks](../intro/index.md)</fn>
 
 ## Start
 
-Go to your Galaxy instance and Register/Login.
+Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
 
 Import a history of data files:
 
@@ -28,12 +18,12 @@ Import a history of data files:
 
 <tt>https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Microbial_tutorials/Galaxy_history_input_files.tar.gz</tt>
 
-- Click <ss>Submit</ss>
+- Click <ss>Import History</ss>
 - Wait a few seconds.
 - Click on the "View all histories" button ![histories icon](images/histories.png)
 - See if the Galaxy history has been imported: it will be called <fn>imported from archive: Data</fn>
 - Above that pane, click on the <ss>Switch to</ss> button.
-- Then click <ss>Done</ss> (in the top left corner).
+- Then click <ss>Analyze Data</ss> (in the top menu bar).
 - You should now have a list of five files in your current history.
 
 - Re-name this history "Workflows".
@@ -46,13 +36,13 @@ We will first write a workflow for genome assembly.
 
 ![workflowmenu](images/workflow_menu.png)
 
-- Click on <ss>Create new workflow</ss>
+- Click on the plus button.
 
-![createnew](images/create_new.png)
+![createnew](images/create.png)
 
 - Under <ss>Workflow Name:</ss> put in "Reads to Annotation".
 
-- Click <ss>Create</ss>
+- Click <ss>Save</ss>
 
 - This will bring up the "Workflow Canvas", a grid where you can arrange the workflow.
 
@@ -64,18 +54,16 @@ We will first write a workflow for genome assembly.
 
 ![inputs](images/inputs.png)
 
-- Click on the first box. Look in the right hand panel (now called "Details") and change the name of the Input dataset to <fn>R1.fastq</fn>. Press Enter for the change to be saved.
-
-![input_name](images/R1fastq.png)
+- Click on the first box. Look in the right hand panel (now called "Details"). Under <ss>Label</ss> type in <fn>R1.fastq</fn>. Press Enter for the change to be saved.
 
 - Repeat for the second input dataset box, naming that one <fn>R2.fastq</fn>.
 
 ### Add the tool "spades"
 
-- In the tools panel, click on <ss>NGS Analysis: NGS Assembly: spades</ss>.
+- In the tools panel, search for <ss>spades</ss> and click on the tool name.
 This puts the spades box onto the workflow canvas.
 
-![spades](images/spades.png)
+![spades](images/spades_canvas.png)
 
 - Click on the spades box and look in the Details pane on the right. This shows all the options in spades. Choose:
 
@@ -91,18 +79,14 @@ Now tell spades which input files to use.
 
 - Click on this and drag the arrow over to the spades box input arrow > next to "Libraries 1 > Files 1 > Forward reads".
 
-![join boxes](images/join.png)
+![join boxes](images/join2.png)
 
 - Repeat for the dataset box <fn>R2.fastq</fn>, joining to the spades box next to "Libraries 1 > Files 1 > Reverse reads".
 
 ### Save it and run
 
 - Click on the cog at the top right of the workflow canvas and "Save".
-
-![save workflow](images/save.png)
-
 - Click the cog again and choose "Run".
-
 - This brings up a window where you specify the input datasets to use in the workflow.
 
     - Under <ss>Step1: Input dataset</ss> choose <fn>mutant_R1.fastq</fn>.
@@ -124,11 +108,9 @@ We will add another tool to the workflow.
 
 - This will bring up the Workflow Canvas where we can add more inputs and tools.
 
-- In the Tools panel, click on <ss>NGS Annotation: Prokka</ss>. This will add a Prokka box to the workflow canvas.
+- In the Tools panel search for <ss>Prokka</ss> and click on the tool name. This will add a Prokka box to the workflow canvas.
 
 - We need to tell Prokka which genome assembly) to annotate. Join the spades output called <fn>out_contigs(fasta)</fn> to the Prokka input called <fn>Contigs to annotate</fn>.
-
-![join spades to prokka](images/prokka.png)
 
 - Click on the Prokka box and change some of the settings in the right hand Details panel:
 
@@ -158,17 +140,19 @@ We will add a visualization tool to view the genome annotation.
 
 - This will bring up the Workflow Canvas where we can add more inputs and tools.
 
-- In the Tools panel, click on <ss>Statistics and Visualisation: Graph/Display Data: JBrowse</ss>. This will add a JBrowse box to the workflow canvas.
+- In the Tools panel, search for <ss>JBrowse</ss> and click on *JBrowse genome browser*. This will add a JBrowse box to the workflow canvas.
 
 - Click on the JBrowse box. In the Details pane:
 
-    - Under <ss>JBrowse-in-Galaxy Action</ss> choose *New JBrowse Instance*.
-
     - Under <ss>Reference genome to display</ss> choose *Use a genome from history*.
-
     - For <ss>Produce a Standalone Instance</ss> select *Yes*.
 
     - For <ss>Genetic Code</ss> choose *11: The Bacterial, Archaeal and Plant Plastid Code*.
+    - Under <ss>JBrowse-in-Galaxy Action</ss> choose *New JBrowse Instance*.
+
+
+
+
 
     - Click <ss>Insert Track Group</ss>
 
@@ -180,19 +164,15 @@ We will add a visualization tool to view the genome annotation.
 
     - Under <ss>JBrowse Track Type[Advanced]</ss> select *Canvas Features*.
 
-    - Click on <ss>JBrowse Styling Options <Advanced]</ss>
-
-    - Under <ss>JBrowse style.label</ss> correct the word "prodcut" to "product".
-
     - Under <ss>Track Visibility</ss> choose *On for new users*.
 
 - Now we need to tell JBrowse the input files to use.
 
-    - Join the Prokka output <fn>out_fna (fasta)</fn> to the JBrowse input <fn>Fasta sequences</fn>
+    - Join the Prokka output <fn>out_fna (fasta)</fn> to the JBrowse input <fn>Select the reference genome</fn>
 
     - Join the Prokka output <fn>out_gff (gff)</fn> to the JBrowse input <fn>Track Group 1...</fn>
 
-![jbrowse](images/jbrowse.png)
+![jbrowse](images/prokka2.png)
 
 - Click on the cog to save; again to run; choose input files; <ss>Run workflow</ss>; examine output files in current history.
 
@@ -201,12 +181,12 @@ We will add a visualization tool to view the genome annotation.
 - JBrowse will produce one output file.
 
     - Click on the eye icon to view.
-    - In the centre drop down box, choose contig 6.
+    - In the centre drop down box, choose contig 1.
     - Under "Available Tracks" on the left, tick the boxes.
     - Zoom in and out with the plus and minus icons.
     - The blue blocks are the genome annotations.
 
-![annotations](images/annotations.png)
+![annotations](images/annotations2.png)
 
 
 
@@ -226,11 +206,11 @@ Create a new workflow for variant calling.
 
 - Our workflow is now:
 
-    - <fn>Fastq</fn> sequence reads to Spades for assembly
+    - <fn>FASTQ</fn> sequence reads to Spades for assembly
     - Spades <fn>contigs fasta file</fn> to Prokka for annotation
     - Prokka <fn>fasta file</fn> and <fn>.gff file</fn> to JBrowse for visualisation.
 
-- We can re-run this workflow with different input Fastq files.
+- We can re-run this workflow with different input FASTQ files.
 
 ## Other workflow options
 
@@ -266,19 +246,17 @@ You can extract a workflow from an existing Galaxy history.
 
 ### A note on workflow tabs
 
-We have been using the top Workflow tab. There is another tab at the bottom of the tool panel called Workflows. Click on <ss>Workflows: All Workflows</ss>. This gives a similar view with a list of workflows, and you can also click on the top right tab "switch to workflow management view".
+We have been using the top Workflow tab. There is another tab at the bottom of the tool panel called Workflows. Click on <ss>Workflows: All Workflows</ss>. This gives a similar view with a list of workflows.
 
-To return to the main Galaxy window click on the Analyze Data tab in the top panel.
+To return to the main Galaxy window click on the <ss>Analyze Data</ss> tab in the top panel.
 
-### Links
+## What's next?
 
-Introduction to workflows:
-<https://wiki.galaxyproject.org/Learn/AdvancedWorkflow>
+To use the tutorials on this website:
 
+* &#8592; see the list in the left hand panel
+* &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
 
-Another tutorial on workflows:
-<http://vlsci.github.io/lscc_docs/tutorials/galaxy-workflows/galaxy-workflows/>
+You can find more tutorials at the Galaxy Training Network:
 
-
-Galaxy published workflows:
-<https://usegalaxy.org/workflow/list_published>
+* [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/)
