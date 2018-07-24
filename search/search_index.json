@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome!\n\n\nTutorials\n\n\nThis site contains tutorials for using \nGalaxy Australia\n.\n\n\nTo use the tutorials:\n\n\n\n\n see the list in the left hand panel\n\n\n or, click the \nmenu button\n (three horizontal bars) in the top left of the page\n\n\n\n\nWeb address: \nwww.usegalaxy.org.au\n\n\n\n\nSupport\n\n\n\n\nRCCC\n\n\nQCIF\n\n\nMB\n\n\nBPA\n\n\nEMBL-ABR\n\n\nNCRIS\n\n\nRDS\n\n\nANDS\n\n\nNectar", 
+            "text": "Welcome!\n\n\nTutorials\n\n\nThis site contains tutorials for using \nGalaxy Australia\n.\n\n\nTo use the tutorials:\n\n\n\n\n see the list in the left hand panel\n\n\n or, click the \nmenu button\n (three horizontal bars) in the top left of the page\n\n\n\n\nWeb address: \nwww.usegalaxy.org.au\n\n\n\n\nSupport\n\n\n\n\n\n\nAustralian Research Data Commons\n\n\nNational Research Infrastructure for Australia\n\n\nUQ RCC\n\n\nQCIF\n\n\nMelbourne Bioinformatics\n\n\nBioplatforms Australia\n\n\nEMBL-ABR", 
             "title": "Welcome"
         }, 
         {
@@ -17,7 +17,7 @@
         }, 
         {
             "location": "/#support", 
-            "text": "RCCC  QCIF  MB  BPA  EMBL-ABR  NCRIS  RDS  ANDS  Nectar", 
+            "text": "Australian Research Data Commons  National Research Infrastructure for Australia  UQ RCC  QCIF  Melbourne Bioinformatics  Bioplatforms Australia  EMBL-ABR", 
             "title": "Support"
         }, 
         {
