@@ -44,13 +44,13 @@ pages:
 
 # - Starting with Galaxy: modules/galaxy/index.md
 - Quality control: modules/fastqc/index.md
-- Galaxy workflows - introduction: modules/workflows/index.md
+
 - Genome assembly: modules/spades/index.md
-- Workflow - genome assembly: modules/workflow-assembly/index.md
+
 - Genome annotation: modules/prokka/index.md
-- Workflow - genome annotation: modules/workflow-annotation/index.md
+
 - Variant calling - bacteria: modules/snippy/index.md
-- Workflow - variant calling, bacteria: modules/workflow-variant-calling/index.md
+
 - Variant calling - human: modules/variants/index.md
 
 
@@ -84,10 +84,16 @@ pages:
     #- Bash scripts: modules/scripts/index.md
 
 - RNA-seq - bacteria: modules/dge/index.md
-- Workflow - RNA-seq: modules/workflow-rna-seq/index.md
+
 - RNA-seq - humans: modules/rna-humans/index.md
 
 - Metagenomics: modules/metagenomics/metagenomics.md
+
+- Galaxy workflows - introduction: modules/workflows/index.md
+- Workflow - genome assembly: modules/workflow-assembly/index.md
+- Workflow - genome annotation: modules/workflow-annotation/index.md
+- Workflow - variant calling, bacteria: modules/workflow-variant-calling/index.md
+- Workflow - RNA-seq: modules/workflow-rna-seq/index.md
 
 #- Galaxy help & resources: modules/resources/index.md
 #- Transcriptomics:
