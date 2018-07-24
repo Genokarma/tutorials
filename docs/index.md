@@ -15,12 +15,13 @@ Web address: [www.usegalaxy.org.au](https://usegalaxy.org.au)
 
 ## Support
 
-* RCCC
+
+![logos](images/logos.png)
+
+* Australian Research Data Commons
+* National Research Infrastructure for Australia
+* UQ RCC
 * QCIF
-* MB
-* BPA
+* Melbourne Bioinformatics
+* Bioplatforms Australia
 * EMBL-ABR
-* NCRIS
-* RDS
-* ANDS
-* [Nectar](http://www.nectar.org.au/)
