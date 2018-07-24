@@ -500,15 +500,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#import-the-data" title="Import the data" class="md-nav__link">
-    Import the data
+  <a href="#use-shared-data" title="Use shared data" class="md-nav__link">
+    Use shared data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#alternative-way-to-import-data" title="Alternative way to import data" class="md-nav__link">
-    Alternative way to import data
+  <a href="#or-import-from-the-web" title="Or, import from the web" class="md-nav__link">
+    Or, import from the web
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shorten-file-names" title="Shorten file names" class="md-nav__link">
+    Shorten file names
   </a>
   
 </li>
@@ -527,8 +534,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dereplicate" title="Dereplicate" class="md-nav__link">
-    Dereplicate
+  <a href="#de-replicate" title="De-replicate" class="md-nav__link">
+    De-replicate
   </a>
   
 </li>
@@ -937,15 +944,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#import-the-data" title="Import the data" class="md-nav__link">
-    Import the data
+  <a href="#use-shared-data" title="Use shared data" class="md-nav__link">
+    Use shared data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#alternative-way-to-import-data" title="Alternative way to import data" class="md-nav__link">
-    Alternative way to import data
+  <a href="#or-import-from-the-web" title="Or, import from the web" class="md-nav__link">
+    Or, import from the web
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shorten-file-names" title="Shorten file names" class="md-nav__link">
+    Shorten file names
   </a>
   
 </li>
@@ -964,8 +978,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#dereplicate" title="Dereplicate" class="md-nav__link">
-    Dereplicate
+  <a href="#de-replicate" title="De-replicate" class="md-nav__link">
+    De-replicate
   </a>
   
 </li>
@@ -1247,43 +1261,58 @@
 <h2 id="the-workflow-in-galaxy">The workflow in Galaxy</h2>
 <p>The process presented in this workshop is aimed to be an introduction for molecular biologists to 16S rRNA metagenomics analysis. The workflow is also implemented such that it can be run using a standard desktop or laptop environment without the requirements of a large cluster or cloud infrastructure.</p>
 <p>The steps are:</p>
-<p>Dereplicate reads
+<p>De-replicate reads
 Cluster reads into Operational Taxonomic Units (OTU)
 Chimera detection and removal
 OTU Table
-Phylogenetic Tree alignment
+Visualize taxa in a pie chart
+Phylogenetic Tree
 Rarefaction analysis
 Collector Curve analysis</p>
-<p>Figure 1:</p>
-<p><img alt="flowchart" src="../images/flowchart.png" /></p>
-<p>We will also perform an extra step where we visualize the taxa present in the sample, using the tool Krona.</p>
 <h3 id="where-is-the-data-in-this-tutorial-from">Where is the data in this tutorial from?</h3>
 <p>We use the same data from the <a href="https://www.mothur.org/wiki/Marine_community_analysis">Mothur Marine community analysis</a>, that is  the study from the <a href="https://www.jcvi.org/global-ocean-sampling-expedition-gos">Global Ocean Sampling (GOS) Expedition</a>. However we only concentrate on one site as opposed to the 14 sites they sampled.</p>
 <h2 id="preparation">Preparation</h2>
-<p>Open a browser and go to your Galaxy server, for example, Galaxy Australia: usegalaxy.org.au</p>
-<h3 id="import-the-data">Import the data</h3>
-<p>In Galaxy, go to <ss>Shared Data</ss> and then <ss>Data Libraries</ss>.</p>
 <ul>
-<li>Search for <fn>Metagenomics 16S rRNA Data</fn> and click on it.</li>
-<li>Tick the box next to the three files and then click the <ss>To History</ss> button, and select <em>as Datasets</em>.</li>
-<li>Name a new history and click <ss>Import</ss></li>
-<li>These three files should now be in your current history.</li>
+<li>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</li>
 </ul>
-<p>Click on the eye icon on the top right of each fasta file to view the first part of the file.</p>
-<h3 id="alternative-way-to-import-data">Alternative way to import data</h3>
-<p>Download the data directly to your computer using these URLs, then upload to Galaxy:</p>
-<p>https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Metagenomics_BASIC/seqs.fasta
-https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Metagenomics_BASIC/gold.fasta
-https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Metagenomics_BASIC/core_set_aligned.fasta</p>
+<h3 id="use-shared-data">Use shared data</h3>
+<p>If you are using Galaxy Australia, you can import the data from a shared data library.</p>
+<p>In the top menu bar, go to <ss>Shared Data</ss>.</p>
 <ul>
-<li>Once files are downloaded, in Galaxy click on <ss>Get data&gt;Upload File</ss></li>
-<li>Click <ss>Choose local file</ss>, locate the local copy of each of the three fasta files and upload.</li>
-<li>You can leave File Format as Auto-detect, or if you prefer, set it to fasta.</li>
-<li>Click <ss>Start</ss> and wait for the files to upload to Galaxy. It can take a couple of minutes.</li>
+<li>Click on <ss>Data Libraries</ss>.</li>
+<li>Click on <fn>Galaxy Australia Training Material: Metagenomics: 16S Metagenomics</fn>.</li>
+<li>Tick the boxes next to the three files.</li>
+<li>Click the <ss>To History</ss> button, select <em>As Datasets</em>.</li>
+<li>Name a new history and click <ss>Import</ss>.</li>
+<li>In the top menu bar, click <ss>Analyze Data</ss>.</li>
+<li>You should now have three files in your current history.</li>
+</ul>
+<h3 id="or-import-from-the-web">Or, import from the web</h3>
+<p><em>Only follow this step if unable to load the data files from shared data, as described above</em>.</p>
+<ul>
+<li>In a new browser tab, go to this webpage:</li>
+</ul>
+<p><a href="https://doi.org/10.5281/zenodo.1319864"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1319864.svg" /></a></p>
+<ul>
+<li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
+<li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
+<li>Click <ss>Paste/Fetch data</ss></li>
+<li>A box will appear: paste in link address</li>
+<li>Click <ss>Start</ss></li>
+<li>Click <ss>Close</ss></li>
+<li>The file will now appear in the top of your history panel.</li>
+<li>Repeat for the other two files.</li>
+</ul>
+<h3 id="shorten-file-names">Shorten file names</h3>
+<ul>
+<li>Click on the pencil icon next to the file name</li>
+<li>In the centre Galaxy panel, click in the box under <ss>Name</ss></li>
+<li>Shorten the file name</li>
+<li>Then click <ss>Save</ss></li>
 </ul>
 <h2 id="keep-only-the-unique-reads">Keep only the unique reads</h2>
 <p>The aim here is to reduce the number of reads in the input file into clusters of identical sequences.</p>
-<h3 id="dereplicate">Dereplicate</h3>
+<h3 id="de-replicate">De-replicate</h3>
 <p>In the tool panel (left hand side) search for the <ss>Dereplicate</ss> tool and click on it.</p>
 <ul>
 <li>For <ss>Input sequence file</ss> select the <fn>seqs.fasta</fn> dataset</li>

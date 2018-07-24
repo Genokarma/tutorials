@@ -414,6 +414,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#upload-files-to-galaxy" title="Upload files to Galaxy" class="md-nav__link">
+    Upload files to Galaxy
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-shared-data" title="Use shared data" class="md-nav__link">
+    Use shared data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-import-from-the-web" title="Or, import from the web" class="md-nav__link">
+    Or, import from the web
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#align-reads-to-reference" title="Align reads to reference" class="md-nav__link">
     Align reads to reference
   </a>
@@ -647,6 +674,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#upload-files-to-galaxy" title="Upload files to Galaxy" class="md-nav__link">
+    Upload files to Galaxy
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-shared-data" title="Use shared data" class="md-nav__link">
+    Use shared data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-import-from-the-web" title="Or, import from the web" class="md-nav__link">
+    Or, import from the web
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#align-reads-to-reference" title="Align reads to reference" class="md-nav__link">
     Align reads to reference
   </a>
@@ -826,19 +880,24 @@ At the end of this tutorial you should be able to:
 - For the reference genome in GTF format, change datatype to GTF (not GFF)
 -->
 
-<p><strong>Upload files to Galaxy</strong></p>
+<h2 id="upload-files-to-galaxy">Upload files to Galaxy</h2>
 <ul>
 <li>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</li>
-<li>Create a new history for this analysis.</li>
 </ul>
-<p>If you are using Galaxy Australia:</p>
+<h3 id="use-shared-data">Use shared data</h3>
+<p>If you are using Galaxy Australia, you can import the data from a shared data library.</p>
+<p>In the top menu bar, go to <ss>Shared Data</ss>.</p>
 <ul>
-<li>Go to <ss>Shared Data: Data Libraries</ss>.</li>
-<li>Click on <fn>RNA-Seq-data</fn>, then Import.</li>
-<li>The files should now be in your current history.</li>
+<li>Click on <ss>Data Libraries</ss>.</li>
+<li>Click on <fn>Galaxy Australia Training Material: RNA-Seq: Microbial RNA-Seq</fn>.</li>
+<li>Tick the boxes next to the eight files.</li>
+<li>Click the <ss>To History</ss> button, select <em>As Datasets</em>.</li>
+<li>Name a new history and click <ss>Import</ss>.</li>
+<li>In the top menu bar, click <ss>Analyze Data</ss>.</li>
+<li>You should now have eight files in your current history.</li>
 </ul>
-<p><img alt="Files for DGE" src="./images/image18.png" /></p>
-<p><strong>Alternatively</strong>, you can obtain the data from Zenodo:</p>
+<h3 id="or-import-from-the-web">Or, import from the web</h3>
+<p><em>Only follow this step if unable to load the data files from shared data, as described above</em>.</p>
 <ul>
 <li>In a new browser tab, go to this webpage:</li>
 <li><a href="https://doi.org/10.5281/zenodo.1311269"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1311269.svg" /></a></li>
@@ -852,6 +911,7 @@ At the end of this tutorial you should be able to:
 <li>Repeat for all files in Zenodo.</li>
 <li>Change (shorten) the file names with the pencil icon.</li>
 </ul>
+<p><img alt="Files for DGE" src="./images/image18.png" /></p>
 <!--
 
     https://zenodo.org/record/1311269/files/E_coli_aMG1.fastq?download=1
