@@ -302,7 +302,7 @@
         }, 
         {
             "location": "/modules/variants/", 
-            "text": "Variant calling: Humans\n\n\nIntroduction\n\n\nNow updated for Galaxy Australia\n\n\nhttps://www.melbournebioinformatics.org.au/tutorials/tutorials/variant_calling_galaxy_1/variant_calling_galaxy_1/\n\n\n\n\n\n\nAdvanced\n\n\nNot yet updated for Galaxy Australia\n\n\nhttps://www.melbournebioinformatics.org.au/tutorials/tutorials/var_detect_advanced/var_detect_advanced/", 
+            "text": "Variant calling: Humans\n\n\nIntroduction\n\n\nNow updated for Galaxy Australia\n\n\nhttp://melbournebioinformatics.github.io/MelBioInf_docs/tutorials/variant_calling_galaxy_1/variant_calling_galaxy_1/\n\n\n\n\n\n\nAdvanced\n\n\nNot yet updated for Galaxy Australia\n\n\nhttps://www.melbournebioinformatics.org.au/tutorials/tutorials/var_detect_advanced/var_detect_advanced/", 
             "title": "Variant calling - human"
         }, 
         {
@@ -312,7 +312,7 @@
         }, 
         {
             "location": "/modules/variants/#introduction", 
-            "text": "Now updated for Galaxy Australia  https://www.melbournebioinformatics.org.au/tutorials/tutorials/variant_calling_galaxy_1/variant_calling_galaxy_1/", 
+            "text": "Now updated for Galaxy Australia  http://melbournebioinformatics.github.io/MelBioInf_docs/tutorials/variant_calling_galaxy_1/variant_calling_galaxy_1/", 
             "title": "Introduction"
         }, 
         {
