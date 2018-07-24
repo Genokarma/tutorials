@@ -8,7 +8,23 @@ In this tutorial we will find antibiotic-resistant genes in a bacterial genome.
 
 * Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
 
-* Create a new history for this analysis.
+### Use shared data
+
+If you are using Galaxy Australia, you can import the data from a shared data library.
+
+In the top menu bar, go to <ss>Shared Data</ss>.
+
+* Click on <ss>Data Libraries</ss>.
+* Click on <fn>Galaxy Australia Training Material: Annotation: Microbial Annotation</fn>.
+* Tick the box next to the file.
+* Click the <ss>To History</ss> button, select *As Datasets*.
+* Name a new history and click <ss>Import</ss>.
+* In the top menu bar, click <ss>Analyze Data</ss>.
+* You should now have one file in your current history.
+
+### Or, import from the web
+
+*Only follow this step if unable to load the data files from shared data, as described above*.
 
 * In a new browser tab, go to this webpage:
 
@@ -23,6 +39,12 @@ In this tutorial we will find antibiotic-resistant genes in a bacterial genome.
 * Click <ss>Close</ss>
 * The file will now appear in the top of your history panel. When it has finished uploading, the file name will be green.
 
+### Shorten file name
+
+* Click on the pencil icon next to the file name.
+* In the centre Galaxy panel, click in the box under <ss>Name</ss>
+* Shorten the file name.
+* Then click <ss>Save</ss>
 
 <!--
 ##Import data

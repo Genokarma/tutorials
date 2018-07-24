@@ -65,20 +65,28 @@ The reference genomes is in <fn>FASTA</fn> format and the gene annotations are i
 - For the reference genome in GTF format, change datatype to GTF (not GFF)
 -->
 
-**Upload files to Galaxy**
+## Upload files to Galaxy
 
 * Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
-* Create a new history for this analysis.
 
-If you are using Galaxy Australia:
 
-* Go to <ss>Shared Data: Data Libraries</ss>.
-* Click on <fn>RNA-Seq-data</fn>, then Import.
-* The files should now be in your current history.
+### Use shared data
 
-![Files for DGE](images/image18.png)
+If you are using Galaxy Australia, you can import the data from a shared data library.
 
-**Alternatively**, you can obtain the data from Zenodo:
+In the top menu bar, go to <ss>Shared Data</ss>.
+
+* Click on <ss>Data Libraries</ss>.
+* Click on <fn>Galaxy Australia Training Material: RNA-Seq: Microbial RNA-Seq</fn>.
+* Tick the boxes next to the eight files.
+* Click the <ss>To History</ss> button, select *As Datasets*.
+* Name a new history and click <ss>Import</ss>.
+* In the top menu bar, click <ss>Analyze Data</ss>.
+* You should now have eight files in your current history.
+
+### Or, import from the web
+
+*Only follow this step if unable to load the data files from shared data, as described above*.
 
 * In a new browser tab, go to this webpage:
 * [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1311269.svg)](https://doi.org/10.5281/zenodo.1311269)
@@ -91,6 +99,9 @@ If you are using Galaxy Australia:
 * The file will now appear in the top of your history panel.
 * Repeat for all files in Zenodo.
 * Change (shorten) the file names with the pencil icon.
+
+
+![Files for DGE](images/image18.png)
 
 <!--
 
@@ -115,9 +126,6 @@ If you are using Galaxy Australia:
     - (This may take a minute. Refresh the page.)
 - Click <ss>Switch to</ss> that history, then <ss>Done</ss>.
 -->
-
-
-
 
 ## Align reads to reference
 

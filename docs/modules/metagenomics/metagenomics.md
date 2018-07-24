@@ -42,19 +42,14 @@ The process presented in this workshop is aimed to be an introduction for molecu
 
 The steps are:
 
-Dereplicate reads
+De-replicate reads
 Cluster reads into Operational Taxonomic Units (OTU)
 Chimera detection and removal
 OTU Table
-Phylogenetic Tree alignment
+Visualize taxa in a pie chart
+Phylogenetic Tree
 Rarefaction analysis
 Collector Curve analysis
-
-Figure 1:
-
-![flowchart](images/flowchart.png)
-
-We will also perform an extra step where we visualize the taxa present in the sample, using the tool Krona.
 
 ### Where is the data in this tutorial from?
 
@@ -62,37 +57,51 @@ We use the same data from the [Mothur Marine community analysis](https://www.mot
 
 ## Preparation
 
-Open a browser and go to your Galaxy server, for example, Galaxy Australia: usegalaxy.org.au
+* Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
 
-### Import the data
+### Use shared data
 
-In Galaxy, go to <ss>Shared Data</ss> and then <ss>Data Libraries</ss>.
+If you are using Galaxy Australia, you can import the data from a shared data library.
 
-* Search for <fn>Metagenomics 16S rRNA Data</fn> and click on it.
-* Tick the box next to the three files and then click the <ss>To History</ss> button, and select *as Datasets*.
-* Name a new history and click <ss>Import</ss>
-* These three files should now be in your current history.
+In the top menu bar, go to <ss>Shared Data</ss>.
 
-Click on the eye icon on the top right of each fasta file to view the first part of the file.
+* Click on <ss>Data Libraries</ss>.
+* Click on <fn>Galaxy Australia Training Material: Metagenomics: 16S Metagenomics</fn>.
+* Tick the boxes next to the three files.
+* Click the <ss>To History</ss> button, select *As Datasets*.
+* Name a new history and click <ss>Import</ss>.
+* In the top menu bar, click <ss>Analyze Data</ss>.
+* You should now have three files in your current history.
 
-### Alternative way to import data
+### Or, import from the web
 
-Download the data directly to your computer using these URLs, then upload to Galaxy:
+*Only follow this step if unable to load the data files from shared data, as described above*.
 
-https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Metagenomics_BASIC/seqs.fasta
-https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Metagenomics_BASIC/gold.fasta
-https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Metagenomics_BASIC/core_set_aligned.fasta
+* In a new browser tab, go to this webpage:
 
-* Once files are downloaded, in Galaxy click on <ss>Get data>Upload File</ss>
-* Click <ss>Choose local file</ss>, locate the local copy of each of the three fasta files and upload.
-* You can leave File Format as Auto-detect, or if you prefer, set it to fasta.
-* Click <ss>Start</ss> and wait for the files to upload to Galaxy. It can take a couple of minutes.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1319864.svg)](https://doi.org/10.5281/zenodo.1319864)
+
+* Right click on file name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
+* Repeat for the other two files.
+
+### Shorten file names
+
+* Click on the pencil icon next to the file name
+* In the centre Galaxy panel, click in the box under <ss>Name</ss>
+* Shorten the file name
+* Then click <ss>Save</ss>
 
 ## Keep only the unique reads
 
 The aim here is to reduce the number of reads in the input file into clusters of identical sequences.
 
-### Dereplicate
+### De-replicate
 
 In the tool panel (left hand side) search for the <ss>Dereplicate</ss> tool and click on it.
 

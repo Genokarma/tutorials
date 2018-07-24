@@ -21,14 +21,28 @@ Variant calling is the process of identifying differences between two genome sam
 ## Get data
 
 * Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
-* Create a new history for this analysis.
 
-Get data:
+### Use shared data
+
+If you are using Galaxy Australia, you can import the data from a shared data library.
+
+In the top menu bar, go to <ss>Shared Data</ss>.
+
+* Click on <ss>Data Libraries</ss>.
+* Click on <fn>Galaxy Australia Training Material: Variant Calling: Microbial Variant Calling</fn>.
+* Tick the boxes next to the five files.
+* Click the <ss>To History</ss> button, select *As Datasets*.
+* Name a new history and click <ss>Import</ss>.
+* In the top menu bar, click <ss>Analyze Data</ss>.
+* You should now have five files in your current history.
+
+### Or, import from the web
+
+*Only follow this step if unable to load the data files from shared data, as described above*.
 
 * In a new browser tab, go to this webpage:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.582600.svg)](https://doi.org/10.5281/zenodo.582600)
-
 
 * Find the file called <fn>mutant_R1.fastq</fn>
 * Right click on file name: select "copy link address"
@@ -57,6 +71,14 @@ Repeat these steps for the other set of reads (reverse reads) called <fn>mutant_
 * Shorten the file name if you wish.
 
 Repeat these steps for three other files: <fn>wildtype.gbk</fn>, <fn>wildtype.gff</fn> and <fn>wildtype.fna</fn>.
+
+### Shorten file names
+
+* Click on the pencil icon next to the file name.
+* In the centre Galaxy panel, click in the box under <ss>Name</ss>
+* Shorten the file name.
+* Then click <ss>Save</ss>
+
 
 ## Call variants with Snippy
 

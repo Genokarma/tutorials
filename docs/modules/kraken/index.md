@@ -17,7 +17,25 @@ In this tutorial we will use Kraken to confirm the identify of reads from a bact
 ## Get data
 
 * Log in to your Galaxy instance (for example, Galaxy Australia, [usegalaxy.org.au](https://usegalaxy.org.au/)).
-* Create a new history for this analysis.
+
+### Use shared data
+
+If you are using Galaxy Australia, you can import the data from a shared data library.
+
+In the top menu bar, go to <ss>Shared Data</ss>.
+
+* Click on <ss>Data Libraries</ss>.
+* Click on <fn>Galaxy Australia Training Material: Sample Identification</fn>.
+* Tick the box next to the four files.
+* Click the <ss>To History</ss> button, select *As Datasets*.
+* Name a new history and click <ss>Import</ss>.
+* In the top menu bar, click <ss>Analyze Data</ss>.
+* You should now have four files in your current history.
+
+### Or, import from the web
+
+*Only follow this step if unable to load the data files from shared data, as described above*.
+
 * In a new browser tab, go to this webpage:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1319181.svg)](https://doi.org/10.5281/zenodo.1319181)
@@ -29,15 +47,16 @@ In this tutorial we will use Kraken to confirm the identify of reads from a bact
 * Click <ss>Start</ss>
 * Click <ss>Close</ss>
 * The file will now appear in the top of your history panel.
+* Repeat this for all the files on Zenodo.
 
-The file name is quite long: let's change it:
+### Shorten file names
 
 * Click on the pencil icon next to the file name.
 * In the centre Galaxy panel, click in the box under <ss>Name</ss>
-* Shorten the file name to, for example, <fn>staph_R1.fastq</s>
+* Shorten the file name.
 * Then click <ss>Save</ss>
 
-Repeat this for all the files on Zenodo. You should now have four files in your current history:
+You should now have four files in your current history:
 
 ![galaxy history](images/files2.png)
 
