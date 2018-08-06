@@ -25,3 +25,4 @@ Web address: [www.usegalaxy.org.au](https://usegalaxy.org.au)
 * Melbourne Bioinformatics
 * Bioplatforms Australia
 * EMBL-ABR
+* UseGalaxy and The Galaxy Training Network
