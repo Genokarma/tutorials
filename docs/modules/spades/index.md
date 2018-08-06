@@ -149,6 +149,20 @@ We will perform a *de novo* assembly of the mutant FASTQ reads into long contigu
 
 ![spades output contigs](images/contig_stats.png)
 
+## Optional extension exercise
+
+* Look at the <fn>contigs.stats</fn> file.
+* Find a contig that seems to have high coverage relative to the other contigs.
+* Extract this sequence from the <fn>contigs.fasta</fn> file. Select the sequence for the contig (called a Node) of interest, and copy.
+* Go to the [NCBI page](https://blast.ncbi.nlm.nih.gov/Blast.cgi) and BLAST this sequence to see what it matches.
+* Try the "blastx" option, which will translate your nucleotide sequence into a protein sequence.
+* For <ss>Enter Query Sequence</ss>, paste your sequence into the box.
+* For <ss>Genetic Code</ss> choose "Bacteria and Archaea".
+* For <ss>Database</ss>, try the "SwissProt" database. You can also re-try with other options to see how the database affects the results.
+* All other options can be left as default. Click <ss>BLAST</ss>.
+* What does your sequence match?
+* Does this suggest that the sequence is a repeat region in this bacterial genome?
+* For a detailed description of the output, see the top right corner of the page and click "Blast report description".
 
 
 ## See this history in Galaxy
