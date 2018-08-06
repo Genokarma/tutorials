@@ -178,6 +178,25 @@ Zoomed in view:
 - Identify genome variants (nucletotide changes) using [Snippy](/modules/snippy/index.md).
 -->
 
+## Optional extension exercise
+
+* Open the JBrowse file that you created to show the gene annotations.
+* In the drop-down box, select the longest contig. (This is probably contig # 6).
+* In the coordinates box, enter "100,000".
+* Zoom out; see the annotation that spans this location. It is a "hypothetical protein".
+* Click on this annotation. See the nucleotide sequence: select and copy.
+* Go to the [NCBI page](https://blast.ncbi.nlm.nih.gov/Blast.cgi) and BLAST this sequence to see what it matches.
+* Try the "blastx" option, which will translate your nucleotide sequence into a protein sequence.
+* For <ss>Enter Query Sequence</ss>, paste your sequence into the box.
+* For <ss>Genetic Code</ss> choose "Bacteria and Archaea".
+* For <ss>Database</ss>, try the "SwissProt" database. You can also re-try with other options to see how the database affects the results.
+* All other options can be left as default. Click <ss>BLAST</ss>.
+* What does your sequence match?
+* In this case, the top hit is to a carboxylase enzyme.
+* In the <ss>Show Conserved Domains</ss> window, we can see that this is part of a superfamily of metallo-dependent hydrolases. Click through to find out more about this superfamily.  
+* Genome annotation is constantly refined. We can see here that some manual investigation gave us more information about an annotation. This would need to be experimentally confirmed. 
+* For a detailed description of the BLAST output, see the top right corner of the page and click "Blast report description".
+
 ## See this history in Galaxy
 
 If you want to see this Galaxy history without performing the steps above:
