@@ -109,6 +109,12 @@ Although we have warnings for two outputs (per base sequence content; Kmer conte
 
 -->
 
+## Quality Control
+
+If you want to check the quality of your reads, see the [Quality Control tutorial](../fastqc/index.md).
+
+* *Note:* Skip over the "Import Data" section and instead use the file called <fn>mutant_R1.fastq</fn> that is already in your current history. 
+
 ## Assemble the reads
 
 We will perform a *de novo* assembly of the mutant FASTQ reads into long contiguous sequences (in FASTA format.)
@@ -149,7 +155,7 @@ We will perform a *de novo* assembly of the mutant FASTQ reads into long contigu
 
 ![spades output contigs](images/contig_stats.png)
 
-## Optional extension exercise
+## Extension exercise
 
 * Look at the <fn>contigs.stats</fn> file.
 * Find a contig that seems to have high coverage relative to the other contigs.

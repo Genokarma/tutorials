@@ -178,7 +178,7 @@ Zoomed in view:
 - Identify genome variants (nucletotide changes) using [Snippy](/modules/snippy/index.md).
 -->
 
-## Optional extension exercise
+## Extension exercise
 
 * Open the JBrowse file that you created to show the gene annotations.
 * In the drop-down box, select the longest contig. (This is probably contig # 6).
@@ -194,7 +194,7 @@ Zoomed in view:
 * What does your sequence match?
 * In this case, the top hit is to a carboxylase enzyme.
 * In the <ss>Show Conserved Domains</ss> window, we can see that this is part of a superfamily of metallo-dependent hydrolases. Click through to find out more about this superfamily.  
-* Genome annotation is constantly refined. We can see here that some manual investigation gave us more information about an annotation. This would need to be experimentally confirmed. 
+* Genome annotation is constantly refined. We can see here that some manual investigation gave us more information about an annotation. This would need to be experimentally confirmed.
 * For a detailed description of the BLAST output, see the top right corner of the page and click "Blast report description".
 
 ## See this history in Galaxy
