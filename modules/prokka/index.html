@@ -373,12 +373,25 @@
     Run Prokka
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-choose-settings-when-running-a-tool" title="How do I choose settings when running a tool?" class="md-nav__link">
+    How do I choose settings when running a tool?
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#examine-the-output" title="Examine the output" class="md-nav__link">
     Examine the output
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -387,11 +400,24 @@
     View annotated features in JBrowse
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jbrowse-output" title="JBrowse output" class="md-nav__link">
+    JBrowse output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#optional-extension-exercise" title="Optional extension exercise" class="md-nav__link">
-    Optional extension exercise
+  <a href="#extension-exercise" title="Extension exercise" class="md-nav__link">
+    Extension exercise
   </a>
   
 </li>
@@ -643,12 +669,25 @@
     Run Prokka
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-choose-settings-when-running-a-tool" title="How do I choose settings when running a tool?" class="md-nav__link">
+    How do I choose settings when running a tool?
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#examine-the-output" title="Examine the output" class="md-nav__link">
     Examine the output
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -657,11 +696,24 @@
     View annotated features in JBrowse
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jbrowse-output" title="JBrowse output" class="md-nav__link">
+    JBrowse output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#optional-extension-exercise" title="Optional extension exercise" class="md-nav__link">
-    Optional extension exercise
+  <a href="#extension-exercise" title="Extension exercise" class="md-nav__link">
+    Extension exercise
   </a>
   
 </li>
@@ -740,7 +792,7 @@
 <ul>
 <li>In a new browser tab, go to this webpage:</li>
 </ul>
-<p><a href="https://doi.org/10.5281/zenodo.1156405"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1156405.svg" /></a></p>
+<p><a href="https://doi.org/10.5281/zenodo.1341567"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1341567.svg" /></a></p>
 <ul>
 <li>Find the file called <fn>contigs.fasta</fn></li>
 <li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
@@ -776,24 +828,22 @@ We will import a history from Galaxy:
 <p>Click on <ss>Prokka</ss></p>
 </li>
 <li>
-<p>Set the following parameters (leave other settings as they are):</p>
-<ul>
-<li><ss>Contigs to annotate</ss>: your <fn>contigs.fasta</fn> file  </li>
-<li><ss>Locus tag prefix (&ndash;locustag)</ss>: P</li>
-<li><ss>Force GenBank/ENA/DDJB compliance (&ndash;compliant)</ss>: <em>No</em></li>
-<li><ss>Sequencing Centre ID (&ndash;centre)</ss>: V</li>
-<li><ss>Genus Name</ss>: <em>Staphylococcus</em>  </li>
-<li><ss>Species Name</ss>: <em>aureus</em>  </li>
-<li><ss>Use genus-specific BLAST database</ss> <em>No</em>  </li>
-</ul>
+<p>For <ss>Contigs to annotate</ss>: your <fn>contigs.fasta</fn> file</p>
 </li>
+<li>All the other settings can be left as they are.</li>
 </ul>
 <p>Your tool interface should look like this:</p>
-<p><img alt="prokka interface" src="./images/interface.png" /></p>
+<p><img alt="prokka interface" src="./images/interface2.png" /></p>
 <ul>
-<li>Click <ss>Execute</ss>  </li>
+<li>Click <ss>Execute</ss></li>
 </ul>
-<h2 id="examine-the-output">Examine the output</h2>
+<h3 id="how-do-i-choose-settings-when-running-a-tool">How do I choose settings when running a tool?</h3>
+<ul>
+<li>In this case, the default settings are appropriate for our data set and analysis.</li>
+<li>Under the tool interface in Galaxy there will usually be a more detailed description of the tool options, and a link to the tool&rsquo;s documentation.</li>
+<li>It is recommended that you read about the tool parameters in more detail in the documentation, and adjust to your data and analysis accordingly.  </li>
+</ul>
+<h3 id="examine-the-output">Examine the output</h3>
 <!-- First, enable *Scratchbook* in Galaxy - this allows you to view several windows simultaneously. Click on the 3&times;3 squares icon on the menu bar:
 
 ![scratchbook icon](images/scratchbook.png)
@@ -810,24 +860,27 @@ We will import a history from Galaxy:
 <p>Now that we have annotated the draft genome sequence, we would like to view the sequence in the JBrowse genome viewer.</p>
 <ul>
 <li>Go to the Galaxy tool panel, and use the top search box to search for &ldquo;JBrowse&rdquo;.</li>
-<li>
-<p>Click <ss>JBrowse</ss></p>
-</li>
+<li>Click <ss>JBrowse</ss></li>
+</ul>
+<p>Leave most settings as they are, except for:</p>
+<ul>
 <li>
 <p>Under <ss>Reference genome to display</ss> choose <em>Use a genome from history</em>.</p>
 </li>
 <li>
 <p>Under <ss>Select the reference genome</ss> choose <fn>Prokka on data XX:fna</fn>. This .fna sequence is the fasta nucleotide sequence, and will be the reference against which annotations are displayed.</p>
 </li>
-<li>
-<p>For <ss>Produce a Standalone Instance</ss> select <em>Yes</em>.</p>
-</li>
-<li>
-<p>For <ss>Genetic Code</ss> choose <em>11: The Bacterial, Archaeal and Plant Plastid Code</em>.</p>
-</li>
-<li>
-<p>Under <ss>JBrowse-in-Galaxy Action</ss> choose <em>New JBrowse Instance</em>.</p>
-</li>
+</ul>
+<!-- - For <ss>Produce a Standalone Instance</ss> select *Yes*. (The "Yes" box will be a darker grey when selected.)
+-->
+
+<ul>
+<li>For <ss>Genetic Code</ss> choose <em>11: The Bacterial, Archaeal and Plant Plastid Code</em>.</li>
+</ul>
+<!--
+- Under <ss>JBrowse-in-Galaxy Action</ss> choose *New JBrowse Instance*. -->
+
+<ul>
 <li>
 <p>Click <ss>Insert Track Group</ss></p>
 </li>
@@ -843,37 +896,37 @@ We will import a history from Galaxy:
 <li>
 <p>For <ss>GFF/GFF3/BED Track Data</ss> select <fn>Prokka on data XX:gff</fn>  [Note: not wildtype.gff]</p>
 </li>
-<li>
-<p>Under <ss>JBrowse Track Type[Advanced]</ss> select <em>Canvas Features</em>.</p>
-</li>
-<li>
-<p>Click on <ss>JBrowse Styling Options <Advanced]</ss></p>
-</li>
-<li>
-<p>Under <ss>JBrowse style.label</ss> check that it says <em>product,name,id</em>.</p>
-</li>
-<li>
-<p>Under <ss>Track Visibility</ss> choose <em>On for new users</em>.</p>
-</li>
 </ul>
+<!--
+- Under <ss>JBrowse Track Type[Advanced]</ss> select *Canvas Features*.
+
+- Click on <ss>JBrowse Styling Options <Advanced]</ss>
+
+- Under <ss>JBrowse style.label</ss> check that it says *product,name,id*.
+
+- Under <ss>Track Visibility</ss> choose *On for new users*.
+-->
+
 <p>Your tool interface should look like this:</p>
-<p><img alt="JBrowse interface" src="./images/jbrowse_int.png" /></p>
+<p><img alt="JBrowse interface" src="./images/jbrowse_interface3.png" /></p>
 <!--
 ![JBrowse interface](images/jbrowse_oldversion.png) -->
 
 <ul>
 <li>Click <ss>Execute</ss></li>
 </ul>
-<p>A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. In place of &ldquo;XX&rdquo;, there will be numbers that will refer to the files that Galaxy used in your particular history. (This may take some time. If you would like to see a completed history for this tutorial, instructions are in the next section.)</p>
+<h3 id="jbrowse-output">JBrowse output</h3>
+<p>A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>.</p>
 <ul>
-<li>
+<li>In place of &ldquo;XX&rdquo;, there will be numbers that will refer to the files that Galaxy used in your particular history.</li>
+</ul>
 <p>Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.</p>
-</li>
+<ul>
 <li>
 <p>Under <ss>Available Tracks</ss> on the left, tick the box for <fn>Prokka on data XX:gff</fn>.</p>
 </li>
 <li>
-<p>Select contig 6 in the drop down box. You can only see one contig displayed at a time.</p>
+<p>Select a contig to view, in the drop down box. You can only see one contig displayed at a time. Choose the longest contig.</p>
 </li>
 </ul>
 <p><img alt="JBrowse" src="./images/jbrowse33.png" /></p>
@@ -900,7 +953,7 @@ We will import a history from Galaxy:
 - Identify genome variants (nucletotide changes) using [Snippy](/modules/snippy/index.md).
 -->
 
-<h2 id="optional-extension-exercise">Optional extension exercise</h2>
+<h2 id="extension-exercise">Extension exercise</h2>
 <ul>
 <li>Open the JBrowse file that you created to show the gene annotations.</li>
 <li>In the drop-down box, select the longest contig. (This is probably contig # 6).</li>
@@ -916,7 +969,7 @@ We will import a history from Galaxy:
 <li>What does your sequence match?</li>
 <li>In this case, the top hit is to a carboxylase enzyme.</li>
 <li>In the <ss>Show Conserved Domains</ss> window, we can see that this is part of a superfamily of metallo-dependent hydrolases. Click through to find out more about this superfamily.  </li>
-<li>Genome annotation is constantly refined. We can see here that some manual investigation gave us more information about an annotation. This would need to be experimentally confirmed. </li>
+<li>Genome annotation is constantly refined. We can see here that some manual investigation gave us more information about an annotation. This would need to be experimentally confirmed.</li>
 <li>For a detailed description of the BLAST output, see the top right corner of the page and click &ldquo;Blast report description&rdquo;.</li>
 </ul>
 <h2 id="see-this-history-in-galaxy">See this history in Galaxy</h2>
