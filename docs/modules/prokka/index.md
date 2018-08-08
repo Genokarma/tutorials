@@ -42,7 +42,7 @@ In the top menu bar, go to <ss>Shared Data</ss>.
 
 * In a new browser tab, go to this webpage:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1156405.svg)](https://doi.org/10.5281/zenodo.1156405)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1341567.svg)](https://doi.org/10.5281/zenodo.1341567)
 
 * Find the file called <fn>contigs.fasta</fn>
 * Right click on file name: select "copy link address"
@@ -76,22 +76,22 @@ We will import a history from Galaxy:
 * Go to the Tool panel and search for "prokka" in the search box.
 * Click on <ss>Prokka</ss>
 
-* Set the following parameters (leave other settings as they are):
-    - <ss>Contigs to annotate</ss>: your <fn>contigs.fasta</fn> file  
-    - <ss>Locus tag prefix (--locustag)</ss>: P
-    - <ss>Force GenBank/ENA/DDJB compliance (--compliant)</ss>: *No*
-    - <ss>Sequencing Centre ID (--centre)</ss>: V
-    - <ss>Genus Name</ss>: *Staphylococcus*  
-    - <ss>Species Name</ss>: *aureus*  
-    - <ss>Use genus-specific BLAST database</ss> *No*  
+* For <ss>Contigs to annotate</ss>: your <fn>contigs.fasta</fn> file
+* All the other settings can be left as they are.
 
 Your tool interface should look like this:
 
-![prokka interface](images/interface.png)
+![prokka interface](images/interface2.png)
 
-- Click <ss>Execute</ss>  
+- Click <ss>Execute</ss>
 
-## Examine the output
+### How do I choose settings when running a tool?
+
+* In this case, the default settings are appropriate for our data set and analysis.
+* Under the tool interface in Galaxy there will usually be a more detailed description of the tool options, and a link to the tool's documentation.
+* It is recommended that you read about the tool parameters in more detail in the documentation, and adjust to your data and analysis accordingly.  
+
+### Examine the output
 
 <!-- First, enable *Scratchbook* in Galaxy - this allows you to view several windows simultaneously. Click on the 3&times;3 squares icon on the menu bar:
 
@@ -112,16 +112,20 @@ Now that we have annotated the draft genome sequence, we would like to view the 
 - Go to the Galaxy tool panel, and use the top search box to search for "JBrowse".
 - Click <ss>JBrowse</ss>
 
-- Under <ss>Reference genome to display</ss> choose *Use a genome from history*.
+Leave most settings as they are, except for:
 
+- Under <ss>Reference genome to display</ss> choose *Use a genome from history*.
 
 - Under <ss>Select the reference genome</ss> choose <fn>Prokka on data XX:fna</fn>. This .fna sequence is the fasta nucleotide sequence, and will be the reference against which annotations are displayed.
 
-- For <ss>Produce a Standalone Instance</ss> select *Yes*.
+<!-- - For <ss>Produce a Standalone Instance</ss> select *Yes*. (The "Yes" box will be a darker grey when selected.)
+-->
 
 - For <ss>Genetic Code</ss> choose *11: The Bacterial, Archaeal and Plant Plastid Code*.
 
-- Under <ss>JBrowse-in-Galaxy Action</ss> choose *New JBrowse Instance*.
+<!--
+- Under <ss>JBrowse-in-Galaxy Action</ss> choose *New JBrowse Instance*. -->
+
 
 - Click <ss>Insert Track Group</ss>
 
@@ -133,6 +137,7 @@ Now that we have annotated the draft genome sequence, we would like to view the 
 
 - For <ss>GFF/GFF3/BED Track Data</ss> select <fn>Prokka on data XX:gff</fn>  [Note: not wildtype.gff]
 
+<!--
 - Under <ss>JBrowse Track Type[Advanced]</ss> select *Canvas Features*.
 
 - Click on <ss>JBrowse Styling Options <Advanced]</ss>
@@ -140,23 +145,28 @@ Now that we have annotated the draft genome sequence, we would like to view the 
 - Under <ss>JBrowse style.label</ss> check that it says *product,name,id*.
 
 - Under <ss>Track Visibility</ss> choose *On for new users*.
+-->
 
 Your tool interface should look like this:
 
-![JBrowse interface](images/jbrowse_int.png)
+![JBrowse interface](images/jbrowse_interface3.png)
 
 <!--
 ![JBrowse interface](images/jbrowse_oldversion.png) -->
 
 - Click <ss>Execute</ss>
 
-A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. In place of "XX", there will be numbers that will refer to the files that Galaxy used in your particular history. (This may take some time. If you would like to see a completed history for this tutorial, instructions are in the next section.)
+### JBrowse output
 
-* Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.
+A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>.
+
+* In place of "XX", there will be numbers that will refer to the files that Galaxy used in your particular history.
+
+Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.
 
 - Under <ss>Available Tracks</ss> on the left, tick the box for <fn>Prokka on data XX:gff</fn>.
 
-- Select contig 6 in the drop down box. You can only see one contig displayed at a time.
+- Select a contig to view, in the drop down box. You can only see one contig displayed at a time. Choose the longest contig.
 
 ![JBrowse](images/jbrowse33.png)
 

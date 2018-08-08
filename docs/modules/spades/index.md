@@ -113,7 +113,7 @@ Although we have warnings for two outputs (per base sequence content; Kmer conte
 
 If you want to check the quality of your reads, see the [Quality Control tutorial](../fastqc/index.md).
 
-* *Note:* Skip over the "Import Data" section and instead use the file called <fn>mutant_R1.fastq</fn> that is already in your current history. 
+* *Note:* Skip over the "Import Data" section and instead use the file called <fn>mutant_R1.fastq</fn> that is already in your current history.
 
 ## Assemble the reads
 
@@ -136,6 +136,12 @@ We will perform a *de novo* assembly of the mutant FASTQ reads into long contigu
 ![Spades interface](images/image03.png)
 
 -  Click <ss>Execute</ss>
+
+### How do I choose settings when running a tool?
+
+* In this case, most of the default settings are appropriate for our data set and analysis.
+* Under the tool interface in Galaxy there will usually be a more detailed description of the tool options, and a link to the tool's documentation.
+* It is recommended that you read about the tool parameters in more detail in the documentation, and adjust to your data and analysis accordingly.  
 
 ## Examine the output
 
