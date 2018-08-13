@@ -188,6 +188,37 @@ If you want to see this Galaxy history without performing the steps above:
 * Click <ss>Import</ss> (at the top right corner)
 * The analysis should now be showing as your current history.
 
+## More information
+
+Here are some references covering more information about genome assembly.
+
+** *More about de Bruijn graphs:* **
+Compeau PEC, Pevzner PA, Tesler G. How to apply de Bruijn graphs to genome assembly. Nat Biotechnol. 2011 Nov 8;29(11):987–91.
+
+** *An assembler for long reads:* **
+Koren S, Walenz BP, Berlin K, Miller JR, Phillippy AM. Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation Genome Res. 2017 May;27(5):722-736.
+
+** *An assembler for large genomes:* **
+Jackman SD, Vandervalk BP, Mohamadi H, Chu J, Yeo S, Hammond SA, Jahesh G, Khan H, Coombe L, Warren RL, Birol I. ABySS 2.0: resource-efficient assembly of large genomes using a Bloom filter. Genome Res. 2017 May;27(5):768–77.
+
+** *Visualizing genome assemblies:* **
+Wick RR, Schultz MB, Zobel J, Holt KE. Bandage: interactive visualization of de novo genome assemblies. Bioinformatics. 2015 Oct 15;31(20):3350–2.
+
+** *Yeast genome assembly:* **
+Goodwin S, Gurtowski J, Ethe-Sayers S, Deshpande P, Schatz MC, McCombie WR. Oxford Nanopore sequencing, hybrid error correction, and de novo assembly of a eukaryotic genome. Genome Res. 2015 Nov;25(11):1750–6.
+
+** *Animal genome assembly:* **
+Austin CM, Tan MH, Harrisson KA, Lee YP, Croft LJ, Sunnucks P, Pavlova A, Gan HM. De novo genome assembly and annotation of Australia’s largest freshwater fish, the Murray cod (*Maccullochella peelii*), from Illumina and Nanopore sequencing read. Gigascience. 2017 Aug 1;6(8):1–6.
+
+** *Human genome assembly:* **
+Chaisson MJP, Wilson RK, Eichler EE. Genetic variation and the de novo assembly of human genomes. Nat Rev Genet. 2015 Nov;16(11):627–40.
+
+** *Plant genome assembly:* **
+Jiao W-B, Schneeberger K. The impact of third generation genomic technologies on plant genome assembly. Curr Opin Plant Biol. 2017 Apr;36:64–70.
+
+
+
+
 ## What's next?
 
 To use the tutorials on this website:
