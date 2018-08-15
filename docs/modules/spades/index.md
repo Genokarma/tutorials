@@ -216,9 +216,6 @@ Chaisson MJP, Wilson RK, Eichler EE. Genetic variation and the de novo assembly 
 ** *Plant genome assembly:* **
 Jiao W-B, Schneeberger K. The impact of third generation genomic technologies on plant genome assembly. Curr Opin Plant Biol. 2017 Apr;36:64–70.
 
-
-
-
 ## What's next?
 
 To use the tutorials on this website:

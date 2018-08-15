@@ -219,6 +219,31 @@ If you want to see this Galaxy history without performing the steps above:
 * Click <ss>Import</ss> (at the top right corner)
 * The analysis should now be showing as your current history.
 
+## More information
+
+Here are some references covering more information about genome annotation.
+
+** *Prokaryote genome annotation:* **
+Seemann T. Prokka: rapid prokaryotic genome annotation. Bioinformatics. 2014 Jul 15;30(14):2068–9.
+
+** *Eukaryote genome annotation:* **
+Yandell M, Ence D. A beginner’s guide to eukaryotic genome annotation. Nat Rev Genet. 2012 Apr 18;13(5):329–42.
+
+** *Wheat genome annotation:* **
+Clavijo BJ, et al. An improved assembly and annotation of the allohexaploid wheat genome identifies complete families of agronomic genes and provides genomic evidence for chromosomal translocations. Genome Res. 2017 May;27(5):885–96.
+
+** *Human genome annotation:* **
+Harrow J, et al. GENCODE: the reference human genome annotation for The ENCODE Project. Genome Res. 2012 Sep;22(9):1760–74.
+
+** *Annotation in the clinical setting:* **
+Steward CA, Parker APJ, Minassian BA, Sisodiya SM, Frankish A, Harrow J. Genome annotation for clinical genomic diagnostics: strengths and weaknesses. Genome Med. 2017 May 30;9(1):49.
+
+** *Assessing your annotation:* **
+Simão FA, Waterhouse RM, Ioannidis P, Kriventseva EV, Zdobnov EM. BUSCO: assessing genome assembly and annotation completeness with single-copy orthologs. Bioinformatics. 2015 Oct 1;31(19):3210–2.
+
+** *Comparative genome annotation:* **
+König S, Romoth L, Stanke M. Comparative Genome Annotation. Methods Mol Biol. 2018;1704:189–212.
+
 ## What's next?
 
 To use the tutorials on this website:
