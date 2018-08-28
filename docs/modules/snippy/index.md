@@ -219,6 +219,11 @@ You should now have a JBrowse file showing the results of variant calling on the
 
 ![mycoplasma](images/myco2.png)
 
+The workflow:
+
+![mycoplasma](images/ext-workflow.png)
+
+
 ## See this history in Galaxy
 
 If you want to see this Galaxy history without performing the steps above:
@@ -227,7 +232,7 @@ If you want to see this Galaxy history without performing the steps above:
 * Go to <ss>Shared Data</ss>
 * Click <ss>Histories</ss>
 * Click <fn>Completed-variant-calling-analysis</fn>
-* Or, Click <fn>Completed-variant-calling-with-extension</fn> - this includes the extension exercise.
+* Or, click <fn>Completed-variant-calling-with-extension</fn> - this includes the extension exercise.
 * Click <ss>Import</ss> (at the top right corner)
 * The analysis should now be showing as your current history.
 
