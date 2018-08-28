@@ -13,7 +13,7 @@
         <meta name="description" content="Tutorials for using Galaxy Australia">
       
       
-        <link rel="canonical" href="https://galaxy-au-training.github.io/tutorials/modules/workflow-rna-seq/">
+        <link rel="canonical" href="https://galaxy-au-training.github.io/tutorials/modules/refseq/">
       
       
         <meta name="author" content="Anna Syme, Gareth Price, Torsten Seemann">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Workflow - RNA-seq - Galaxy Australia Training</title>
+        <title>Reference genomes - Galaxy Australia Training</title>
       
     
     
@@ -98,7 +98,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#workflow-rna-seq" tabindex="1" class="md-skip">
+      <a href="#reference-genomes" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -124,7 +124,7 @@
                 Galaxy Australia Training
               </span>
               <span class="md-header-nav__topic">
-                Workflow - RNA-seq
+                Reference genomes
               </span>
             
           
@@ -455,70 +455,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Workflow - RNA-seq
-      </label>
-    
-    <a href="./" title="Workflow - RNA-seq" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../workflow-rna-seq/" title="Workflow - RNA-seq" class="md-nav__link">
       Workflow - RNA-seq
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-galaxy-workflow" title="Create a Galaxy workflow" class="md-nav__link">
-    Create a Galaxy workflow
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rna-seq" title="RNA-Seq" class="md-nav__link">
-    RNA-Seq
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extract-the-workflow" title="Extract the Workflow" class="md-nav__link">
-    Extract the Workflow
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-next" title="What's next?" class="md-nav__link">
-    What's next?
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -538,11 +479,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../refseq/" title="Reference genomes" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Reference genomes" class="md-nav__link md-nav__link--active">
       Reference genomes
     </a>
+    
   </li>
 
     
@@ -563,43 +513,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#create-a-galaxy-workflow" title="Create a Galaxy workflow" class="md-nav__link">
-    Create a Galaxy workflow
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rna-seq" title="RNA-Seq" class="md-nav__link">
-    RNA-Seq
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extract-the-workflow" title="Extract the Workflow" class="md-nav__link">
-    Extract the Workflow
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-next" title="What's next?" class="md-nav__link">
-    What's next?
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -610,75 +523,49 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Galaxy-Au-training/tutorials/edit/master/docs/modules/workflow-rna-seq/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/Galaxy-Au-training/tutorials/edit/master/docs/modules/refseq/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="workflow-rna-seq">Workflow: RNA-Seq</h1>
-<h2 id="create-a-galaxy-workflow">Create a Galaxy workflow</h2>
-<p>Galaxy provides the option to extract a workflow based on the steps you just followed and the tools and parameters used.</p>
-<p><fn><strong>New to Galaxy?</strong> First try the <a href="../galaxy/">introduction</a> and then learn some <a href="../intro/">key tasks</a></fn></p>
-<h2 id="rna-seq">RNA-Seq</h2>
-<ul>
-<li>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</li>
-</ul>
-<p>Before we create a workflow for RNA-seq, we need the correct files in our current Galaxy history. We can get these files in two ways:</p>
+                <h1 id="reference-genomes">Reference genomes</h1>
+<p>How to get a reference genome into Galaxy?</p>
 <ul>
 <li>
-<p>Either follow the tutorial on <a href="../dge/">RNA-seq</a></p>
+<p>In a web browser, go to <a href="https://www.ncbi.nlm.nih.gov/assembly/">https://www.ncbi.nlm.nih.gov/assembly/</a></p>
 </li>
 <li>
-<p>Or, obtain the files from a Shared History (Galaxy Australia only).</p>
-<ul>
-<li>Go to <ss>Shared Data</ss></li>
-<li>Click <ss>Histories</ss></li>
-<li>Click <fn>Completed-RNA-seq-bacteria</fn></li>
-<li>Click <ss>Import</ss> (at the top right corner)</li>
-<li>The analysis should now be showing as your current history.</li>
-</ul>
-</li>
-</ul>
-<p>When you have completed this tutorial or imported the history, you will have the correct files in your history panel.</p>
-<h2 id="extract-the-workflow">Extract the Workflow</h2>
-<ul>
-<li>In the history panel, click on the cog icon.</li>
-<li>Click <ss>Extract Workflow</ss></li>
-<li>If all looks ok, click <ss>Create Workflow</ss></li>
-<li>In the centre panel, click <ss>edit</ss></li>
-</ul>
-<p>This brings up the workflow canvas, a space for graphically viewing and re-arranging your workflow.</p>
-<p><img alt="canvas" src="./images/workflow.png" /></p>
-<ul>
-<li>Drag the panes around until your workflow is clear.</li>
-<li>In the top right corner click on the cog icon and <ss>Save</ss></li>
-<li>
-<p>Click on the cog icon again and <ss>Run</ss></p>
-<ul>
-<li><ss>Send results to a new history</ss>: <em>Yes</em></li>
-<li>Check all input files are correct and change if necessary</li>
-<li>In the top right corner <ss>Run workflow</ss></li>
-</ul>
+<p>Enter the taxon into the search bar.</p>
 </li>
 <li>
-<p>This workflow will now run.</p>
+<p>For example, enter <em>Myocoplasma synoviae</em></p>
 </li>
-<li>In the History panel, click on the <ss>View all histories</ss> icon
-<img alt="view hist" src="./../spades/images/view_all_hist.png" /></li>
-<li>Find your workflow history and <ss>Switch to</ss> it.</li>
+<li>Choose the assembly you want, for example, <em>ASM314756v1</em></li>
+<li>Under the <ss>Assembly Definition</ss>, click on the GenBank sequence ID, for example, <em>CP021129.1</em></li>
+<li>In the top right, click on <ss>Send to</ss></li>
+<li>For <ss>Choose Destination</ss> select <em>File</em></li>
+<li>For <ss>Format</ss> choose <em>FASTA</em></li>
+<li>Click <ss>Create File</ss></li>
+<li>
+<p>The file will download locally.</p>
+</li>
+<li>
+<p>In Galaxy, go to <ss>Get Data</ss> and choose <ss>Upload File</ss>.</p>
+</li>
+<li>Click <ss>Choose local file</ss></li>
+<li>Select the file.</li>
+<li>Click <ss>Start</ss></li>
+<li>Click <ss>Close</ss></li>
+<li>You should now have the file in the top of your current history.</li>
 </ul>
-<p>To see all your workflows, go to the top panel in Galaxy and click <ss>Workflow</ss>.</p>
+<p>How to convert this into other formats?</p>
+<p>Tools in Galaxy may require various formats for your reference genome. For bacterial genomes, an easy way to get the required formats is to use the tool <em>Prokka</em>.</p>
 <ul>
-<li>You can edit or run workflows from here by clicking on the drop-down arrow next to each workflow.</li>
+<li>Go to the Tool panel and search for &ldquo;prokka&rdquo; in the search box.</li>
+<li>Click on <ss>Prokka</ss></li>
+<li>For <ss>Contigs to annotate</ss>: your <fn>reference.fasta</fn> file</li>
+<li>All the other settings can be left as they are.</li>
+<li>Click <ss>Execute</ss></li>
 </ul>
-<h2 id="whats-next">What&rsquo;s next?</h2>
-<p>To use the tutorials on this website:</p>
-<ul>
-<li>&#8592; see the list in the left hand panel</li>
-<li>&#8598; or, click the <strong>menu button</strong> (three horizontal bars) in the top left of the page</li>
-</ul>
-<p>You can find more tutorials at the Galaxy Training Network:</p>
-<ul>
-<li><a href="http://galaxyproject.github.io/training-material/">http://galaxyproject.github.io/training-material/</a></li>
-</ul>
+<p>Prokka outputs lots of different files including a genbank, fasta and gff version of your input fasta file.</p>
                 
                   
                 
@@ -699,7 +586,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../workflow-variant-calling/" title="Workflow - variant calling, bacteria" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../shortreads/" title="Short read data" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -708,25 +595,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Workflow - variant calling, bacteria
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../shortreads/" title="Short read data" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
                 Short read data
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>

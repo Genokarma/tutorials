@@ -395,6 +395,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#extension-exercise" title="Extension exercise" class="md-nav__link">
+    Extension exercise
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-this-history-in-galaxy" title="See this history in Galaxy" class="md-nav__link">
     See this history in Galaxy
   </a>
@@ -563,6 +570,30 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../shortreads/" title="Short read data" class="md-nav__link">
+      Short read data
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../refseq/" title="Reference genomes" class="md-nav__link">
+      Reference genomes
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -634,6 +665,13 @@
         <li class="md-nav__item">
   <a href="#view-snippy-output-in-jbrowse" title="View Snippy output in JBrowse" class="md-nav__link">
     View Snippy output in JBrowse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extension-exercise" title="Extension exercise" class="md-nav__link">
+    Extension exercise
   </a>
   
 </li>
@@ -870,6 +908,49 @@
 </li>
 </ul>
 <p><img alt="JBrowse screenshot" src="./images/jbrowse2.png" />    </p>
+<h2 id="extension-exercise">Extension exercise</h2>
+<p>Let&rsquo;s repeat this tutorial using other data.</p>
+<ul>
+<li>We will investigate the bacteria <em>Mycoplasma synoviae</em> as it has a small genome and will not take too long to analyse.</li>
+<li>We want to find out if our sequencing reads vary from a reference genome.</li>
+<li>
+<p>To get some sequencing reads, follow the instructions <a href="../shortreads/">here</a>.</p>
+<ul>
+<li>This will give us paired-end sequencing reads (two files).</li>
+</ul>
+</li>
+<li>
+<p>To obtain a reference genome, follow the instructions <a href="../refseq/">here</a> including the Prokka step.</p>
+<ul>
+<li>This will give us 12 output files from Prokka.</li>
+<li>We need three of these files: the genbank file  <fn>Prokka.gbk</fn>, the fasta file <fn>Prokka.fna</fn>, and the gff file <fn>Prokka.gff</fn>.</li>
+<li>Galaxy has interpreted the genbank file as a text file. Click on the pencil icon next to the genbank file; click Datatypes, and change the datatype to &ldquo;genbank&rdquo;.</li>
+</ul>
+</li>
+<li>
+<p>Run snippy on the sequencing reads.</p>
+<ul>
+<li>For the reference genome, use the <fn>Prokka:gbk</fn> file.</li>
+</ul>
+</li>
+<li>
+<p>Snippy has mapped the sequencing reads to the reference genome and produced a BAM file.</p>
+<ul>
+<li>This is a very large file so we will sub-sample it.</li>
+<li>In the tool panel, search for &ldquo;downsample&rdquo;. Click on the &ldquo;Downsample SAM/BAM&rdquo; tool.</li>
+<li>The input file is the snippy BAM file.</li>
+<li>Set the probability to 0.01</li>
+</ul>
+</li>
+<li>
+<p>Run JBrowse to produce a visualization of the called variants.</p>
+<ul>
+<li>For the reference genome, use the <fn>Prokka.fna</fn> file.</li>
+<li>As we did above, set up three &ldquo;Tracks&rdquo; to view underneath this reference genome nucleotide sequence: The <fn>downsampled.bam</fn> file showing the reads mapped to the reference, the <fn>snippy.gff</fn> file showing the snps (the variants), and the annotated reference genome <fn>Prokka.gff</fn>.</li>
+</ul>
+</li>
+</ul>
+<p>You should now have a JBrowse file showing the results of variant calling on these reads of the bacteria <em>Mycoplasma synoviae</em>. Can you find any variants?</p>
 <h2 id="see-this-history-in-galaxy">See this history in Galaxy</h2>
 <p>If you want to see this Galaxy history without performing the steps above:</p>
 <ul>
