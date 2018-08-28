@@ -3,7 +3,7 @@
 How to get short-read FASTQ files into Galaxy?
 
 * In the tool panel, click on <ss>Get Data</ss>
-* Click on <ss>EBI SRA</ss>
+* Click on <ss>EBI SRA</ss>. This will open the ENA webpage.
 * In the top right, next to the search bar, click on <ss>Advanced</ss>
 * For <ss>Select domain</ss> click *Read*
 * Select other options as required.
@@ -11,14 +11,11 @@ How to get short-read FASTQ files into Galaxy?
 <br>
 * For example:
     * For <ss>Taxonomy and related</ss> enter *Mycoplasma synoviae*.
-    * Tick *Include subordinate taxa*
-    * For <ss>Instrument platform</ss> choose *ILLUMINA*.
 <br>
 <br>
 * In the bottom right corner click <ss>Search</ss>
 <br>
 <br>
-* For this search, there is one Study found.
 * Click on *Study*
 * Click *PRJNA183042*
 * In the column <ss>FASTQ files (Galaxy)</ss> click on *File 1*

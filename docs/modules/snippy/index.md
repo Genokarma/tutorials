@@ -138,7 +138,6 @@ From Snippy, there are 10 output files in various formats.
 - For <ss>Track Type</ss> choose *BAM Pileups*
 - For <ss>BAM Track Data</ss> select <fn>the snippy bam file</fn>
 - For <ss>Autogenerate SNP Track</ss> select *Yes*
-- Under <ss>Track Visibility</ss> choose *On for new users*.
 
 *Track 2 - variants*
 
@@ -147,7 +146,6 @@ From Snippy, there are 10 output files in various formats.
 - Click <ss>Insert Annotation Track</ss>
 - For <ss>Track Type</ss> choose *GFF/GFF3/BED/GBK Features*
 - For <ss>Track Data</ss> select <fn>the snippy snps gff file</fn>
-- Under <ss>Track Visibility</ss> choose *On for new users*.
 
 *Track 3 - annotated reference*
 
@@ -156,12 +154,8 @@ From Snippy, there are 10 output files in various formats.
 - Click <ss>Insert Annotation Track</ss>
 - For <ss>Track Type</ss> choose *GFF/GFF3/BED/GBK Features*
 - For <ss>Track Data</ss> select <fn>wildtype.gff</fn>
-- Under <ss>JBrowse Track Type[Advanced]</ss> select *Canvas Features*.
-- Click on <ss>JBrowse Styling Options <Advanced]</ss>
-- Under <ss>JBrowse style.label</ss> add in the word *product*.
-- Under <ss>JBrowse style.description</ss> check that it says *product,name,id*.
-- Under <ss>Track Visibility</ss> choose *On for new users*.
-
+<br>
+<br>
 - Click <ss>Execute</ss>
 
 A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. (This may take some time. If you would like to see a completed history for this tutorial, instructions are in the next section.)
@@ -194,6 +188,13 @@ Let's repeat this tutorial using other data.
 * To get some sequencing reads, follow the instructions [here](../shortreads/index.md).
     * This will give us paired-end sequencing reads (two files).
 
+* These files are very large. To subsample them so that we can run the analysis in a shorter time:
+    * Search for *Select first* in the tool search box
+    * Select first **4001** lines
+    * from the <fn>R1.fastq</fn> file
+    * Execute
+    * Repeat this for the <fn>R2.fastq</fn> file
+
 * To obtain a reference genome, follow the instructions [here](../refseq/index.md) including the Prokka step.
     * This will give us 12 output files from Prokka.
     * We need three of these files: the genbank file  <fn>Prokka.gbk</fn>, the fasta file <fn>Prokka.fna</fn>, and the gff file <fn>Prokka.gff</fn>.
@@ -201,20 +202,22 @@ Let's repeat this tutorial using other data.
 
 * Run snippy on the sequencing reads.
     * For the reference genome, use the <fn>Prokka:gbk</fn> file.
+    * Remember to check *No* for *Cleanup the non-snp output files*. We want all the output files.
 
-* Snippy has mapped the sequencing reads to the reference genome and produced a BAM file.
+<!-- * Snippy has mapped the sequencing reads to the reference genome and produced a BAM file.
     * This is a very large file so we will sub-sample it.
     * In the tool panel, search for "downsample". Click on the "Downsample SAM/BAM" tool.
     * The input file is the snippy BAM file.
     * Set the probability to 0.01
+-->
 
 * Run JBrowse to produce a visualization of the called variants.
     * For the reference genome, use the <fn>Prokka.fna</fn> file.
-    * As we did above, set up three "Tracks" to view underneath this reference genome nucleotide sequence: The <fn>downsampled.bam</fn> file showing the reads mapped to the reference, the <fn>snippy.gff</fn> file showing the snps (the variants), and the annotated reference genome <fn>Prokka.gff</fn>.
+    * As we did above, set up three "Tracks" to view underneath this reference genome nucleotide sequence: The <fn>snippy.bam</fn> file showing the reads mapped to the reference, the <fn>snippy.gff</fn> file showing the snps (the variants), and the annotated reference genome <fn>Prokka.gff</fn>.
 
 You should now have a JBrowse file showing the results of variant calling on these reads of the bacteria *Mycoplasma synoviae*. Can you find any variants?
 
-![mycoplasma](images/myco.png)
+![mycoplasma](images/myco2.png)
 
 ## See this history in Galaxy
 
@@ -224,8 +227,25 @@ If you want to see this Galaxy history without performing the steps above:
 * Go to <ss>Shared Data</ss>
 * Click <ss>Histories</ss>
 * Click <fn>Completed-variant-calling-analysis</fn>
+* Or, Click <fn>Completed-variant-calling-with-extension</fn> - this includes the extension exercise.
 * Click <ss>Import</ss> (at the top right corner)
 * The analysis should now be showing as your current history.
+
+## More information
+
+Here are some references covering more information about variant calling.
+
+** *Comparison of variant calling tools:* ** Sandmann S, de Graaf AO, Karimi M, van der Reijden BA, Hellström-Lindberg E, Jansen JH, Dugas M. Evaluating Variant Calling Tools for Non-Matched Next-Generation Sequencing Data. Sci Rep. 2017 Feb 24;7:43169.
+
+** *Human variant calling pipelines:* ** Hwang S, Kim E, Lee I, Marcotte EM. Systematic comparison of variant calling pipelines using gold standard personal exome variants. Sci Rep. 2015 Dec 7;5:17875.
+
+** *Rare and common disease variants:* ** Fritsche LG, Igl W, Bailey JNC, et al. A large genome-wide association study of age-related macular degeneration highlights contributions of rare and common variants. Nat Genet. 2016 Feb;48(2):134–43.
+
+** *Variant calling in the Ebola virus:* ** Quick J, Loman NJ, Duraffour S, Simpson JT, et al. Real-time, portable genome sequencing for Ebola surveillance. Nature. 2016 Feb 11;530(7589):228–32.
+
+** *Variant calling to detect antibiotic-resistant bacteria:* ** Kpeli G, Buultjens AH, Giulieri S, Owusu-Mireku E, Aboagye SY, Baines SL, Seemann T, Bulach D, Gonçalves da Silva A, Monk IR, Howden BP, Pluschke G, Yeboah-Manu D, Stinear T. Genomic analysis of ST88 community-acquired methicillin resistant Staphylococcus aureus in Ghana. PeerJ. 2017 Feb 28;5:e3047.
+
+** *High coverage artifacts:* ** Li H. Toward better understanding of artifacts in variant calling from high-coverage samples. Bioinformatics. 2014 Oct 15;30(20):2843–51.
 
 ## What's next?
 

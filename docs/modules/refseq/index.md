@@ -6,7 +6,7 @@ How to get a reference genome into Galaxy?
 
 * Enter the taxon into the search bar.
 
-* For example, enter *Myocoplasma synoviae*
+* For example, enter *Mycoplasma synoviae*
 * Choose the assembly you want, for example, *ASM314756v1*
 * Under the <ss>Assembly Definition</ss>, click on the GenBank sequence ID, for example, *CP021129.1*
 * In the top right, click on <ss>Send to</ss>
@@ -22,6 +22,7 @@ How to get a reference genome into Galaxy?
 * Click <ss>Start</ss>
 * Click <ss>Close</ss>
 * You should now have the file in the top of your current history.
+* Re-name it, e.g. to *Mycoplasma_reference.fasta* 
 
 How to convert this into other formats?
 
