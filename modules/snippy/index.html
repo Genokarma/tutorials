@@ -409,6 +409,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#more-information" title="More information" class="md-nav__link">
+    More information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#whats-next" title="What's next?" class="md-nav__link">
     What's next?
   </a>
@@ -684,6 +691,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#more-information" title="More information" class="md-nav__link">
+    More information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#whats-next" title="What's next?" class="md-nav__link">
     What's next?
   </a>
@@ -848,7 +862,6 @@
 <li>For <ss>Track Type</ss> choose <em>BAM Pileups</em></li>
 <li>For <ss>BAM Track Data</ss> select <fn>the snippy bam file</fn></li>
 <li>For <ss>Autogenerate SNP Track</ss> select <em>Yes</em></li>
-<li>Under <ss>Track Visibility</ss> choose <em>On for new users</em>.</li>
 </ul>
 <p><em>Track 2 - variants</em></p>
 <ul>
@@ -857,7 +870,6 @@
 <li>Click <ss>Insert Annotation Track</ss></li>
 <li>For <ss>Track Type</ss> choose <em>GFF/GFF3/BED/GBK Features</em></li>
 <li>For <ss>Track Data</ss> select <fn>the snippy snps gff file</fn></li>
-<li>Under <ss>Track Visibility</ss> choose <em>On for new users</em>.</li>
 </ul>
 <p><em>Track 3 - annotated reference</em></p>
 <ul>
@@ -865,17 +877,10 @@
 <li>For <ss> Track Category</ss> name it &ldquo;annotated reference&rdquo;</li>
 <li>Click <ss>Insert Annotation Track</ss></li>
 <li>For <ss>Track Type</ss> choose <em>GFF/GFF3/BED/GBK Features</em></li>
-<li>For <ss>Track Data</ss> select <fn>wildtype.gff</fn></li>
-<li>Under <ss>JBrowse Track Type[Advanced]</ss> select <em>Canvas Features</em>.</li>
-<li>Click on <ss>JBrowse Styling Options <Advanced]</ss></li>
-<li>Under <ss>JBrowse style.label</ss> add in the word <em>product</em>.</li>
-<li>Under <ss>JBrowse style.description</ss> check that it says <em>product,name,id</em>.</li>
-<li>
-<p>Under <ss>Track Visibility</ss> choose <em>On for new users</em>.</p>
-</li>
-<li>
-<p>Click <ss>Execute</ss></p>
-</li>
+<li>For <ss>Track Data</ss> select <fn>wildtype.gff</fn>
+<br>
+<br></li>
+<li>Click <ss>Execute</ss></li>
 </ul>
 <p>A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. (This may take some time. If you would like to see a completed history for this tutorial, instructions are in the next section.)</p>
 <ul>
@@ -920,6 +925,16 @@
 </ul>
 </li>
 <li>
+<p>These files are very large. To subsample them so that we can run the analysis in a shorter time:</p>
+<ul>
+<li>Search for <em>Select first</em> in the tool search box</li>
+<li>Select first <strong>4001</strong> lines</li>
+<li>from the <fn>R1.fastq</fn> file</li>
+<li>Execute</li>
+<li>Repeat this for the <fn>R2.fastq</fn> file</li>
+</ul>
+</li>
+<li>
 <p>To obtain a reference genome, follow the instructions <a href="../refseq/">here</a> including the Prokka step.</p>
 <ul>
 <li>This will give us 12 output files from Prokka.</li>
@@ -931,27 +946,26 @@
 <p>Run snippy on the sequencing reads.</p>
 <ul>
 <li>For the reference genome, use the <fn>Prokka:gbk</fn> file.</li>
+<li>Remember to check <em>No</em> for <em>Cleanup the non-snp output files</em>. We want all the output files.</li>
 </ul>
 </li>
-<li>
-<p>Snippy has mapped the sequencing reads to the reference genome and produced a BAM file.</p>
-<ul>
-<li>This is a very large file so we will sub-sample it.</li>
-<li>In the tool panel, search for &ldquo;downsample&rdquo;. Click on the &ldquo;Downsample SAM/BAM&rdquo; tool.</li>
-<li>The input file is the snippy BAM file.</li>
-<li>Set the probability to 0.01</li>
 </ul>
-</li>
-<li>
-<p>Run JBrowse to produce a visualization of the called variants.</p>
+<!-- * Snippy has mapped the sequencing reads to the reference genome and produced a BAM file.
+    * This is a very large file so we will sub-sample it.
+    * In the tool panel, search for "downsample". Click on the "Downsample SAM/BAM" tool.
+    * The input file is the snippy BAM file.
+    * Set the probability to 0.01
+-->
+
 <ul>
+<li>Run JBrowse to produce a visualization of the called variants.<ul>
 <li>For the reference genome, use the <fn>Prokka.fna</fn> file.</li>
-<li>As we did above, set up three &ldquo;Tracks&rdquo; to view underneath this reference genome nucleotide sequence: The <fn>downsampled.bam</fn> file showing the reads mapped to the reference, the <fn>snippy.gff</fn> file showing the snps (the variants), and the annotated reference genome <fn>Prokka.gff</fn>.</li>
+<li>As we did above, set up three &ldquo;Tracks&rdquo; to view underneath this reference genome nucleotide sequence: The <fn>snippy.bam</fn> file showing the reads mapped to the reference, the <fn>snippy.gff</fn> file showing the snps (the variants), and the annotated reference genome <fn>Prokka.gff</fn>.</li>
 </ul>
 </li>
 </ul>
 <p>You should now have a JBrowse file showing the results of variant calling on these reads of the bacteria <em>Mycoplasma synoviae</em>. Can you find any variants?</p>
-<p><img alt="mycoplasma" src="./images/myco.png" /></p>
+<p><img alt="mycoplasma" src="./images/myco2.png" /></p>
 <h2 id="see-this-history-in-galaxy">See this history in Galaxy</h2>
 <p>If you want to see this Galaxy history without performing the steps above:</p>
 <ul>
@@ -959,9 +973,18 @@
 <li>Go to <ss>Shared Data</ss></li>
 <li>Click <ss>Histories</ss></li>
 <li>Click <fn>Completed-variant-calling-analysis</fn></li>
+<li>Or, Click <fn>Completed-variant-calling-with-extension</fn> - this includes the extension exercise.</li>
 <li>Click <ss>Import</ss> (at the top right corner)</li>
 <li>The analysis should now be showing as your current history.</li>
 </ul>
+<h2 id="more-information">More information</h2>
+<p>Here are some references covering more information about variant calling.</p>
+<p><strong> <em>Comparison of variant calling tools:</em> </strong> Sandmann S, de Graaf AO, Karimi M, van der Reijden BA, Hellström-Lindberg E, Jansen JH, Dugas M. Evaluating Variant Calling Tools for Non-Matched Next-Generation Sequencing Data. Sci Rep. 2017 Feb 24;7:43169.</p>
+<p><strong> <em>Human variant calling pipelines:</em> </strong> Hwang S, Kim E, Lee I, Marcotte EM. Systematic comparison of variant calling pipelines using gold standard personal exome variants. Sci Rep. 2015 Dec 7;5:17875.</p>
+<p><strong> <em>Rare and common disease variants:</em> </strong> Fritsche LG, Igl W, Bailey JNC, et al. A large genome-wide association study of age-related macular degeneration highlights contributions of rare and common variants. Nat Genet. 2016 Feb;48(2):134–43.</p>
+<p><strong> <em>Variant calling in the Ebola virus:</em> </strong> Quick J, Loman NJ, Duraffour S, Simpson JT, et al. Real-time, portable genome sequencing for Ebola surveillance. Nature. 2016 Feb 11;530(7589):228–32.</p>
+<p><strong> <em>Variant calling to detect antibiotic-resistant bacteria:</em> </strong> Kpeli G, Buultjens AH, Giulieri S, Owusu-Mireku E, Aboagye SY, Baines SL, Seemann T, Bulach D, Gonçalves da Silva A, Monk IR, Howden BP, Pluschke G, Yeboah-Manu D, Stinear T. Genomic analysis of ST88 community-acquired methicillin resistant Staphylococcus aureus in Ghana. PeerJ. 2017 Feb 28;5:e3047.</p>
+<p><strong> <em>High coverage artifacts:</em> </strong> Li H. Toward better understanding of artifacts in variant calling from high-coverage samples. Bioinformatics. 2014 Oct 15;30(20):2843–51.</p>
 <h2 id="whats-next">What&rsquo;s next?</h2>
 <p>To use the tutorials on this website:</p>
 <ul>
