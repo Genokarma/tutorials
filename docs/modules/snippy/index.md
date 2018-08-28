@@ -214,6 +214,7 @@ Let's repeat this tutorial using other data.
 
 You should now have a JBrowse file showing the results of variant calling on these reads of the bacteria *Mycoplasma synoviae*. Can you find any variants?
 
+![mycoplasma](images/myco.png)
 
 ## See this history in Galaxy
 
