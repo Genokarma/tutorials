@@ -185,6 +185,36 @@ A new file will be created, called <fn>JBrowse on data XX and data XX - Complete
 
 ![JBrowse screenshot](images/jbrowse2.png)    
 
+## Extension exercise
+
+Let's repeat this tutorial using other data.
+
+* We will investigate the bacteria *Mycoplasma synoviae* as it has a small genome and will not take too long to analyse.
+* We want to find out if our sequencing reads vary from a reference genome.
+* To get some sequencing reads, follow the instructions [here](../shortreads/index.md).
+    * This will give us paired-end sequencing reads (two files).
+
+* To obtain a reference genome, follow the instructions [here](../refseq/index.md) including the Prokka step.
+    * This will give us 12 output files from Prokka.
+    * We need three of these files: the genbank file  <fn>Prokka.gbk</fn>, the fasta file <fn>Prokka.fna</fn>, and the gff file <fn>Prokka.gff</fn>.
+    * Galaxy has interpreted the genbank file as a text file. Click on the pencil icon next to the genbank file; click Datatypes, and change the datatype to "genbank".
+
+* Run snippy on the sequencing reads.
+    * For the reference genome, use the <fn>Prokka:gbk</fn> file.
+
+* Snippy has mapped the sequencing reads to the reference genome and produced a BAM file.
+    * This is a very large file so we will sub-sample it.
+    * In the tool panel, search for "downsample". Click on the "Downsample SAM/BAM" tool.
+    * The input file is the snippy BAM file.
+    * Set the probability to 0.01
+
+* Run JBrowse to produce a visualization of the called variants.
+    * For the reference genome, use the <fn>Prokka.fna</fn> file.
+    * As we did above, set up three "Tracks" to view underneath this reference genome nucleotide sequence: The <fn>downsampled.bam</fn> file showing the reads mapped to the reference, the <fn>snippy.gff</fn> file showing the snps (the variants), and the annotated reference genome <fn>Prokka.gff</fn>.
+
+You should now have a JBrowse file showing the results of variant calling on these reads of the bacteria *Mycoplasma synoviae*. Can you find any variants?
+
+
 ## See this history in Galaxy
 
 If you want to see this Galaxy history without performing the steps above:

@@ -94,6 +94,8 @@ pages:
 - Workflow - genome annotation: modules/workflow-annotation/index.md
 - Workflow - variant calling, bacteria: modules/workflow-variant-calling/index.md
 - Workflow - RNA-seq: modules/workflow-rna-seq/index.md
+- Short read data: modules/shortreads/index.md
+- Reference genomes: modules/refseq/index.md
 
 #- Galaxy help & resources: modules/resources/index.md
 #- Transcriptomics:
