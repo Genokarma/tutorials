@@ -208,6 +208,29 @@ Zoomed in view:
 * Genome annotation is constantly refined. We can see here that some manual investigation gave us more information about an annotation. This would need to be experimentally confirmed.
 * For a detailed description of the BLAST output, see the top right corner of the page and click "Blast report description".
 
+
+<!--
+
+## Questions and Answers
+
+!!! note "Question"
+    Can you edit annotations in JBrowse?
+
+    ??? "Answer (click to reveal)"
+        Apollo (a plugin for JBrowse) allows collaborative editing [http://genomearchitect.github.io](http://genomearchitect.github.io). EMBL-ABR hosted a previous training session from the Apollo Project manager: [Video](https://www.youtube.com/watch?v=Wec7ZlXykQc&t=4325s)
+
+
+!!! note "Question"
+    Qu
+
+    ??? "Answer (click to reveal)"
+        Answer
+
+
+
+-->
+
+
 ## See this history in Galaxy
 
 If you want to see this Galaxy history without performing the steps above:

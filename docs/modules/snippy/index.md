@@ -79,6 +79,11 @@ Repeat these steps for three other files: <fn>wildtype.gbk</fn>, <fn>wildtype.gf
 * Shorten the file name.
 * Then click <ss>Save</ss>
 
+## Quality Control
+
+If you want to check the quality of your reads, see the [Quality Control tutorial](../fastqc/index.md).
+
+* *Note:* Skip over the "Import Data" section and instead use the file called <fn>mutant_R1.fastq</fn> that is already in your current history.
 
 ## Call variants with Snippy
 
