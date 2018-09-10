@@ -677,17 +677,17 @@
         }, 
         {
             "location": "/modules/rna-humans/", 
-            "text": "RNA-seq: Humans\n\n\nnot yet updated for Galaxy Australia\n\n\nBasic\n\n\nhttps://www.melbournebioinformatics.org.au/tutorials/tutorials/rna_seq_dge_basic/rna_seq_basic_tutorial/\n\n\nAdvanced\n\n\nhttps://www.melbournebioinformatics.org.au/tutorials/tutorials/rna_seq_dge_advanced/rna_seq_advanced_tutorial/", 
-            "title": "RNA-seq - humans"
+            "text": "RNA-seq: Eukaryotes\n\n\nnow updated for Galaxy Australia\n\n\nBasic\n\n\nhttp://melbournebioinformatics.github.io/MelBioInf_docs/tutorials/rna_seq_dge_basic/rna_seq_basic_tutorial/\n\n\nnot yet updated for Galaxy Australia\n\n\nAdvanced\n\n\nhttps://www.melbournebioinformatics.org.au/tutorials/tutorials/rna_seq_dge_advanced/rna_seq_advanced_tutorial/", 
+            "title": "RNA-seq - eukaryotes"
         }, 
         {
-            "location": "/modules/rna-humans/#rna-seq-humans", 
-            "text": "not yet updated for Galaxy Australia", 
-            "title": "RNA-seq: Humans"
+            "location": "/modules/rna-humans/#rna-seq-eukaryotes", 
+            "text": "now updated for Galaxy Australia", 
+            "title": "RNA-seq: Eukaryotes"
         }, 
         {
             "location": "/modules/rna-humans/#basic", 
-            "text": "https://www.melbournebioinformatics.org.au/tutorials/tutorials/rna_seq_dge_basic/rna_seq_basic_tutorial/", 
+            "text": "http://melbournebioinformatics.github.io/MelBioInf_docs/tutorials/rna_seq_dge_basic/rna_seq_basic_tutorial/  not yet updated for Galaxy Australia", 
             "title": "Basic"
         }, 
         {
