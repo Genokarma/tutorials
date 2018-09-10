@@ -85,7 +85,7 @@ pages:
 
 - RNA-seq - bacteria: modules/dge/index.md
 
-- RNA-seq - humans: modules/rna-humans/index.md
+- RNA-seq - eukaryotes: modules/rna-humans/index.md
 
 - Metagenomics: modules/metagenomics/metagenomics.md
 
