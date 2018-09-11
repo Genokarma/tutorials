@@ -207,7 +207,7 @@ Let's repeat this tutorial using other data.
 
 * Run snippy on the sequencing reads.
     * For the reference genome, use the <fn>Prokka:gbk</fn> file.
-    * Remember to check *No* for *Cleanup the non-snp output files*. We want all the output files.
+    * Remember to include all the output files.
 
 <!-- * Snippy has mapped the sequencing reads to the reference genome and produced a BAM file.
     * This is a very large file so we will sub-sample it.
