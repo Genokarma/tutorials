@@ -97,9 +97,9 @@ Set the following parameters (leave other settings as they are):
 - Then for <ss>Reference Genbank</ss> choose the <fn>wildtype.gbk</fn> file.
 - For <ss>Single or Paired-end reads</ss> choose *Paired*.
 - Then choose the first set of reads, <fn>mutant_R1.fastq</fn> and second set of reads, <fn>mutant_R2.fastq</fn>.
-- For <ss>Cleanup the non-snp output files</ss> select *No*. The box will be a darker grey.
+- Click <ss>Advanced Parameters</ss> and for <ss>Output selection</ss>, select all the files.
 
-Your tool interface should look like this:
+Your tool interface should look a bit like this (not exactly, as tool versions are often updated):
 
 ![Snippy interface](images/interface.png)
 
@@ -236,8 +236,7 @@ If you want to see this Galaxy history without performing the steps above:
 * Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
 * Go to <ss>Shared Data</ss>
 * Click <ss>Histories</ss>
-* Click <fn>Completed-variant-calling-analysis</fn>
-* Or, click <fn>Completed-variant-calling-with-extension</fn> - this includes the extension exercise.
+* Click <fn>Variant_calling_with_snippy</fn>
 * Click <ss>Import</ss> (at the top right corner)
 * The analysis should now be showing as your current history.
 
