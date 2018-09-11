@@ -17,7 +17,7 @@ Before we create a workflow for variant calling, we need the correct files in ou
 * Or, obtain the files from a Shared History (Galaxy Australia only).
     * Go to <ss>Shared Data</ss>
     * Click <ss>Histories</ss>
-    * Click <fn>Completed-variant-calling-analysis</fn>
+    * Click <fn>Variant_calling_with_snippy</fn>
     * Click <ss>Import</ss> (at the top right corner)
     * The analysis should now be showing as your current history.
 
