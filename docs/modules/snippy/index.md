@@ -237,6 +237,7 @@ If you want to see this Galaxy history without performing the steps above:
 * Go to <ss>Shared Data</ss>
 * Click <ss>Histories</ss>
 * Click <fn>Variant_calling_with_snippy</fn>
+* (or, for the extension part, click <fn>Variant-calling-bacteria-extension</fn>)
 * Click <ss>Import</ss> (at the top right corner)
 * The analysis should now be showing as your current history.
 
