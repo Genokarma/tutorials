@@ -82,11 +82,19 @@ In the top menu bar, go to <ss>Shared Data</ss>.
 * Click the <ss>To History</ss> button, select *As Datasets*.
 * Name a new history and click <ss>Import</ss>.
 * In the top menu bar, click <ss>Analyze Data</ss>.
+* [Optional] Next to each file, click on the pencil icon and change (shorten) its name.
 * You should now have eight files in your current history.
+
+![Files for DGE](images/image18.png)
+
 
 ### Or, import from the web
 
-*Only follow this step if unable to load the data files from shared data, as described above*.
+<details>
+
+<summary> *Only follow this step if unable to load the data files from shared data, as described above. Click here to expand.* </summary>
+
+
 
 * In a new browser tab, go to this webpage:
 * [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1311269.svg)](https://doi.org/10.5281/zenodo.1311269)
@@ -99,9 +107,7 @@ In the top menu bar, go to <ss>Shared Data</ss>.
 * The file will now appear in the top of your history panel.
 * Repeat for all files in Zenodo.
 * Change (shorten) the file names with the pencil icon.
-
-
-![Files for DGE](images/image18.png)
+</details>
 
 <!--
 
@@ -126,6 +132,18 @@ In the top menu bar, go to <ss>Shared Data</ss>.
     - (This may take a minute. Refresh the page.)
 - Click <ss>Switch to</ss> that history, then <ss>Done</ss>.
 -->
+
+### Convert the GTF file
+
+In the tool panel, search for "GTF".
+
+- Click on <ss>GTF-to-GFF</ss> converter
+- select the <fn>Ecoli_k12.gtf</fn> file
+- Click <ss>Execute</ss>
+
+This will produce a convereted reference genome file that we need in a different format for downstream analyses.
+
+Re-name the output file with the pencil icon, e.g. to <fn>Ecoli_k12.gff</fn>.
 
 ## Align reads to reference
 
@@ -153,7 +171,59 @@ Your tool interface should look like this:
 - Re-name the output files:
     - These are called <fn>Map with BWA-MEM on data x and data x</fn>.
     - The x will refer to the numbered file that Galaxy used in the analysis.
-    - Click on the pencil icon next to each of these and re-name them as their sample name (e.g. LB1, LB2 etc.).
+    - Click on the pencil icon next to each of these and re-name them as their sample name, e.g. <fn>LB1.bam</fn>, <fn>LB2.bam</fn> etc.
+
+## View the mapped reads
+
+In the tool panel, search for the tool "JBrowse" and click on <ss>JBrowse Genome Browser</ss>.
+
+- Under <ss>Reference genome to display</ss> choose *Use a genome from history*.
+
+- Under <ss>Select the reference genome</ss> choose <fn>Ecoli_k12.fasta</fn>.
+
+- For <ss>Produce a Standalone Instance</ss> select *Yes*.
+
+- For <ss>Genetic Code</ss> choose *11: The Bacterial, Archaeal and Plant Plastid Code*.
+
+- We will now set up several different "tracks" - these are datasets displayed underneath the reference sequence (which is displayed as nucleotides in FASTA format). We will choose to display the mapped reads from one of each of the experimental conditions, and the annotated reference genome.
+
+*Track 1 - mapped RNA-seq reads*
+
+- Click <ss>Insert Track Group</ss>
+- For <ss>Track Cateogry</ss> name it "RNA-seq reads"
+- Click <ss>Insert Annotation Track</ss>
+- For <ss>Track Type</ss> choose *BAM Pileups*
+- For <ss>BAM Track Data</ss> select <fn>LB1.bam</fn> and <fn>MG1.bam</fn> (Your files may be named differently)
+- For <ss>Autogenerate SNP Track</ss> select *Yes*
+
+*Track 2 - annotated reference*
+
+- Click <ss>Insert Track Group</ss> again
+- For <ss> Track Category</ss> name it "annotated reference"
+- Click <ss>Insert Annotation Track</ss>
+- For <ss>Track Type</ss> choose *GFF/GFF3/BED/GBK Features*
+- For <ss>Track Data</ss> select <fn>Ecoli_k12.gff</fn> *Note - select the GFF not the GTF file*
+<br>
+<br>
+- Click <ss>Execute</ss>
+
+A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>.
+
+* Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.
+
+- On the left, tick boxes to display the tracks
+
+- Use the plus and minus buttons to zoom in and out.
+
+This visualization is for us to check that the mapping of the reads worked as expected.
+
+
+![JBrowse screenshot](images/jbrowse.png)
+
+
+You may be able to see some places where more reads have mapped to a gene from one of the conditions. This suggests that the gene in that condition was more highly expressed.
+
+However, this needs to be verified with statistical testing, which will be covered in the next parts of this tutorial.
 
 ## Count reads per gene
 
@@ -187,6 +257,42 @@ Output:
 - Each row is a gene (or feature) and each column is a sample, with counts against each gene.
 - Have a look at how the counts vary between samples, per gene.
 - We can't just compare the counts directly; they need to be normalized before comparison, and this will be done as part of the DGE analysis in the next step.
+
+
+
+## Test for differential expression
+
+- In the <ss>Tools</ss> panel, search for <ss>Differential_Count models</ss> (don't forget the underscore) and click on it.
+    - This has options to use edgeR, DESeq, or Voom. Here we will use Voom.
+- For <ss>Select an input matrix</ss> choose the <fn>count matrix</fn> file generated in the previous step.
+- For <ss>Title for job outputs</ss> enter *DGE using voom*.
+- For <ss>Select columns containing treatment</ss> tick boxes for the MG samples.
+- For <ss>Select columns containing control</ss> tick boxes for the LB samples.
+- Under <ss>Run this model using edgeR</ss> choose *Do not run edgeR*.
+- Under <ss>Run the same model with DESeq2 and compare findings</ss> choose *Do not run DESeq2*.
+- Under <ss>Run the same model with Voom/limma and compare findings</ss> choose *Run VOOM*.
+
+Your tool interface should look like this:
+
+![DGE using voom](images/image16.png)
+
+- Click <ss>Execute</ss>.
+
+There are two output files.
+
+View the file called <fn>DGEusingvoom.html</fn>.
+
+- Scroll down to "VOOM log output" and "#VOOM top 50".
+- The "Contig" column has the gene names.
+- Look at the "adj.P.Val" column. This is an adjusted p value to show the significance of the gene expression difference, accounting for the effect of multiple testing. Also known as False Discovery Rate. The table is ordered by the values in this column.
+- Look at the "logFC" column. This is log2(Fold Change) of relative gene expression between the treatment samples and the control samples.
+
+View the file called <fn>DEGusingvoom_topTable_VOOM.xls</fn>.
+
+- This is a list of all the genes that had transcripts mapped, and associated statistics.
+
+### More on PCA here from the html output
+
 
 ## DGE in Degust
 
@@ -297,39 +403,6 @@ The Kegg pathway database: (Kyoto Encyclopedia of Genes and Genomes)
 numbers are EC numbers - enzyme commission ->  enzyme/s that catalyze a reaction (might be >1)
 -->
 
-## DGE in Galaxy
-
-Differential gene expression can also be analyzed in Galaxy. The input is the count matrix produced by a tool such as HTSeq-Count (see section above: "Count reads per gene").
-
-
-- In the <ss>Tools</ss> panel, search for <ss>Differential_Count models</ss> (don't forget the underscore) and click on it.
-    - This has options to use edgeR, DESeq, or Voom. Here we will use Voom.
-- For <ss>Select an input matrix</ss> choose the <fn>count matrix</fn> file generated in the previous step.
-- For <ss>Title for job outputs</ss> enter *DGE using voom*.
-- For <ss>Select columns containing treatment</ss> tick boxes for the MG samples.
-- For <ss>Select columns containing control</ss> tick boxes for the LB samples.
-- Under <ss>Run this model using edgeR</ss> choose *Do not run edgeR*.
-- Under <ss>Run the same model with DESeq2 and compare findings</ss> choose *Do not run DESeq2*.
-- Under <ss>Run the same model with Voom/limma and compare findings</ss> choose *Run VOOM*.
-
-Your tool interface should look like this:
-
-![DGE using voom](images/image16.png)
-
-- Click <ss>Execute</ss>.
-
-There are two output files.
-
-View the file called <fn>DGEusingvoom.html</fn>.
-
-- Scroll down to "VOOM log output" and "#VOOM top 50".
-- The "Contig" column has the gene names.
-- Look at the "adj.P.Val" column. This is an adjusted p value to show the significance of the gene expression difference, accounting for the effect of multiple testing. Also known as False Discovery Rate. The table is ordered by the values in this column.
-- Look at the "logFC" column. This is log2(Fold Change) of relative gene expression between the treatment samples and the control samples.
-
-View the file called <fn>DEGusingvoom_topTable_VOOM.xls</fn>.
-
-- This is a list of all the genes that had transcripts mapped, and associated statistics.
 
 - [Link to Voom paper.]( https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29)
 
