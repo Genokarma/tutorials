@@ -435,6 +435,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#convert-the-gtf-file" title="Convert the GTF file" class="md-nav__link">
+    Convert the GTF file
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -448,9 +455,36 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#view-the-mapped-reads" title="View the mapped reads" class="md-nav__link">
+    View the mapped reads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#count-reads-per-gene" title="Count reads per gene" class="md-nav__link">
     Count reads per gene
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-for-differential-expression" title="Test for differential expression" class="md-nav__link">
+    Test for differential expression
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#more-on-pca-here-from-the-html-output" title="More on PCA here from the html output" class="md-nav__link">
+    More on PCA here from the html output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -513,13 +547,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dge-in-galaxy" title="DGE in Galaxy" class="md-nav__link">
-    DGE in Galaxy
-  </a>
   
 </li>
       
@@ -719,6 +746,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#convert-the-gtf-file" title="Convert the GTF file" class="md-nav__link">
+    Convert the GTF file
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -732,9 +766,36 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#view-the-mapped-reads" title="View the mapped reads" class="md-nav__link">
+    View the mapped reads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#count-reads-per-gene" title="Count reads per gene" class="md-nav__link">
     Count reads per gene
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-for-differential-expression" title="Test for differential expression" class="md-nav__link">
+    Test for differential expression
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#more-on-pca-here-from-the-html-output" title="More on PCA here from the html output" class="md-nav__link">
+    More on PCA here from the html output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -797,13 +858,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dge-in-galaxy" title="DGE in Galaxy" class="md-nav__link">
-    DGE in Galaxy
-  </a>
   
 </li>
       
@@ -918,10 +972,13 @@ At the end of this tutorial you should be able to:
 <li>Click the <ss>To History</ss> button, select <em>As Datasets</em>.</li>
 <li>Name a new history and click <ss>Import</ss>.</li>
 <li>In the top menu bar, click <ss>Analyze Data</ss>.</li>
+<li>[Optional] Next to each file, click on the pencil icon and change (shorten) its name.</li>
 <li>You should now have eight files in your current history.</li>
 </ul>
+<p><img alt="Files for DGE" src="./images/image18.png" /></p>
 <h3 id="or-import-from-the-web">Or, import from the web</h3>
-<p><em>Only follow this step if unable to load the data files from shared data, as described above</em>.</p>
+<p><details></p>
+<p><summary> <em>Only follow this step if unable to load the data files from shared data, as described above. Click here to expand.</em> </summary></p>
 <ul>
 <li>In a new browser tab, go to this webpage:</li>
 <li><a href="https://doi.org/10.5281/zenodo.1311269"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1311269.svg" /></a></li>
@@ -933,9 +990,9 @@ At the end of this tutorial you should be able to:
 <li>Click <ss>Close</ss></li>
 <li>The file will now appear in the top of your history panel.</li>
 <li>Repeat for all files in Zenodo.</li>
-<li>Change (shorten) the file names with the pencil icon.</li>
+<li>Change (shorten) the file names with the pencil icon.
+</details></li>
 </ul>
-<p><img alt="Files for DGE" src="./images/image18.png" /></p>
 <!--
 
     https://zenodo.org/record/1311269/files/E_coli_aMG1.fastq?download=1
@@ -960,6 +1017,15 @@ At the end of this tutorial you should be able to:
 - Click <ss>Switch to</ss> that history, then <ss>Done</ss>.
 -->
 
+<h3 id="convert-the-gtf-file">Convert the GTF file</h3>
+<p>In the tool panel, search for &ldquo;GTF&rdquo;.</p>
+<ul>
+<li>Click on <ss>GTF-to-GFF</ss> converter</li>
+<li>select the <fn>Ecoli_k12.gtf</fn> file</li>
+<li>Click <ss>Execute</ss></li>
+</ul>
+<p>This will produce a convereted reference genome file that we need in a different format for downstream analyses.</p>
+<p>Re-name the output file with the pencil icon, e.g. to <fn>Ecoli_k12.gff</fn>.</p>
 <h2 id="align-reads-to-reference">Align reads to reference</h2>
 <p>The RNA-Seq reads are fragmented and are not complete transcripts. To determine the transcripts from which the reads originated (and therefore, to which gene they correspond) we can map them to a reference genome.</p>
 <p>In Galaxy:</p>
@@ -988,10 +1054,65 @@ At the end of this tutorial you should be able to:
 <ul>
 <li>These are called <fn>Map with BWA-MEM on data x and data x</fn>.</li>
 <li>The x will refer to the numbered file that Galaxy used in the analysis.</li>
-<li>Click on the pencil icon next to each of these and re-name them as their sample name (e.g. LB1, LB2 etc.).</li>
+<li>Click on the pencil icon next to each of these and re-name them as their sample name, e.g. <fn>LB1.bam</fn>, <fn>LB2.bam</fn> etc.</li>
 </ul>
 </li>
 </ul>
+<h2 id="view-the-mapped-reads">View the mapped reads</h2>
+<p>In the tool panel, search for the tool &ldquo;JBrowse&rdquo; and click on <ss>JBrowse Genome Browser</ss>.</p>
+<ul>
+<li>
+<p>Under <ss>Reference genome to display</ss> choose <em>Use a genome from history</em>.</p>
+</li>
+<li>
+<p>Under <ss>Select the reference genome</ss> choose <fn>Ecoli_k12.fasta</fn>.</p>
+</li>
+<li>
+<p>For <ss>Produce a Standalone Instance</ss> select <em>Yes</em>.</p>
+</li>
+<li>
+<p>For <ss>Genetic Code</ss> choose <em>11: The Bacterial, Archaeal and Plant Plastid Code</em>.</p>
+</li>
+<li>
+<p>We will now set up several different &ldquo;tracks&rdquo; - these are datasets displayed underneath the reference sequence (which is displayed as nucleotides in FASTA format). We will choose to display the mapped reads from one of each of the experimental conditions, and the annotated reference genome.</p>
+</li>
+</ul>
+<p><em>Track 1 - mapped RNA-seq reads</em></p>
+<ul>
+<li>Click <ss>Insert Track Group</ss></li>
+<li>For <ss>Track Cateogry</ss> name it &ldquo;RNA-seq reads&rdquo;</li>
+<li>Click <ss>Insert Annotation Track</ss></li>
+<li>For <ss>Track Type</ss> choose <em>BAM Pileups</em></li>
+<li>For <ss>BAM Track Data</ss> select <fn>LB1.bam</fn> and <fn>MG1.bam</fn> (Your files may be named differently)</li>
+<li>For <ss>Autogenerate SNP Track</ss> select <em>Yes</em></li>
+</ul>
+<p><em>Track 2 - annotated reference</em></p>
+<ul>
+<li>Click <ss>Insert Track Group</ss> again</li>
+<li>For <ss> Track Category</ss> name it &ldquo;annotated reference&rdquo;</li>
+<li>Click <ss>Insert Annotation Track</ss></li>
+<li>For <ss>Track Type</ss> choose <em>GFF/GFF3/BED/GBK Features</em></li>
+<li>For <ss>Track Data</ss> select <fn>Ecoli_k12.gff</fn> <em>Note - select the GFF not the GTF file</em>
+<br>
+<br></li>
+<li>Click <ss>Execute</ss></li>
+</ul>
+<p>A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>.</p>
+<ul>
+<li>
+<p>Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.</p>
+</li>
+<li>
+<p>On the left, tick boxes to display the tracks</p>
+</li>
+<li>
+<p>Use the plus and minus buttons to zoom in and out.</p>
+</li>
+</ul>
+<p>This visualization is for us to check that the mapping of the reads worked as expected.</p>
+<p><img alt="JBrowse screenshot" src="./images/jbrowse.png" /></p>
+<p>You may be able to see some places where more reads have mapped to a gene from one of the conditions. This suggests that the gene in that condition was more highly expressed.</p>
+<p>However, this needs to be verified with statistical testing, which will be covered in the next parts of this tutorial.</p>
 <h2 id="count-reads-per-gene">Count reads per gene</h2>
 <p>We now need to count how many reads overlap with particular genes. The information about gene names is from the annotations in the GTF file.</p>
 <p>In Galaxy:</p>
@@ -1024,6 +1145,38 @@ At the end of this tutorial you should be able to:
 <li>Have a look at how the counts vary between samples, per gene.</li>
 <li>We can&rsquo;t just compare the counts directly; they need to be normalized before comparison, and this will be done as part of the DGE analysis in the next step.</li>
 </ul>
+<h2 id="test-for-differential-expression">Test for differential expression</h2>
+<ul>
+<li>In the <ss>Tools</ss> panel, search for <ss>Differential_Count models</ss> (don&rsquo;t forget the underscore) and click on it.<ul>
+<li>This has options to use edgeR, DESeq, or Voom. Here we will use Voom.</li>
+</ul>
+</li>
+<li>For <ss>Select an input matrix</ss> choose the <fn>count matrix</fn> file generated in the previous step.</li>
+<li>For <ss>Title for job outputs</ss> enter <em>DGE using voom</em>.</li>
+<li>For <ss>Select columns containing treatment</ss> tick boxes for the MG samples.</li>
+<li>For <ss>Select columns containing control</ss> tick boxes for the LB samples.</li>
+<li>Under <ss>Run this model using edgeR</ss> choose <em>Do not run edgeR</em>.</li>
+<li>Under <ss>Run the same model with DESeq2 and compare findings</ss> choose <em>Do not run DESeq2</em>.</li>
+<li>Under <ss>Run the same model with Voom/limma and compare findings</ss> choose <em>Run VOOM</em>.</li>
+</ul>
+<p>Your tool interface should look like this:</p>
+<p><img alt="DGE using voom" src="./images/image16.png" /></p>
+<ul>
+<li>Click <ss>Execute</ss>.</li>
+</ul>
+<p>There are two output files.</p>
+<p>View the file called <fn>DGEusingvoom.html</fn>.</p>
+<ul>
+<li>Scroll down to &ldquo;VOOM log output&rdquo; and &ldquo;#VOOM top 50&rdquo;.</li>
+<li>The &ldquo;Contig&rdquo; column has the gene names.</li>
+<li>Look at the &ldquo;adj.P.Val&rdquo; column. This is an adjusted p value to show the significance of the gene expression difference, accounting for the effect of multiple testing. Also known as False Discovery Rate. The table is ordered by the values in this column.</li>
+<li>Look at the &ldquo;logFC&rdquo; column. This is log2(Fold Change) of relative gene expression between the treatment samples and the control samples.</li>
+</ul>
+<p>View the file called <fn>DEGusingvoom_topTable_VOOM.xls</fn>.</p>
+<ul>
+<li>This is a list of all the genes that had transcripts mapped, and associated statistics.</li>
+</ul>
+<h3 id="more-on-pca-here-from-the-html-output">More on PCA here from the html output</h3>
 <h2 id="dge-in-degust">DGE in Degust</h2>
 <p>Degust is a tool on the web that can analyse the counts files produced in the step above, to test for differential gene expression.</p>
 <p>(Degust can also display the results from DGE analyses performed elsewhere.)</p>
@@ -1137,42 +1290,8 @@ The Kegg pathway database: (Kyoto Encyclopedia of Genes and Genomes)
 numbers are EC numbers - enzyme commission ->  enzyme/s that catalyze a reaction (might be >1)
 -->
 
-<h2 id="dge-in-galaxy">DGE in Galaxy</h2>
-<p>Differential gene expression can also be analyzed in Galaxy. The input is the count matrix produced by a tool such as HTSeq-Count (see section above: &ldquo;Count reads per gene&rdquo;).</p>
 <ul>
-<li>In the <ss>Tools</ss> panel, search for <ss>Differential_Count models</ss> (don&rsquo;t forget the underscore) and click on it.<ul>
-<li>This has options to use edgeR, DESeq, or Voom. Here we will use Voom.</li>
-</ul>
-</li>
-<li>For <ss>Select an input matrix</ss> choose the <fn>count matrix</fn> file generated in the previous step.</li>
-<li>For <ss>Title for job outputs</ss> enter <em>DGE using voom</em>.</li>
-<li>For <ss>Select columns containing treatment</ss> tick boxes for the MG samples.</li>
-<li>For <ss>Select columns containing control</ss> tick boxes for the LB samples.</li>
-<li>Under <ss>Run this model using edgeR</ss> choose <em>Do not run edgeR</em>.</li>
-<li>Under <ss>Run the same model with DESeq2 and compare findings</ss> choose <em>Do not run DESeq2</em>.</li>
-<li>Under <ss>Run the same model with Voom/limma and compare findings</ss> choose <em>Run VOOM</em>.</li>
-</ul>
-<p>Your tool interface should look like this:</p>
-<p><img alt="DGE using voom" src="./images/image16.png" /></p>
-<ul>
-<li>Click <ss>Execute</ss>.</li>
-</ul>
-<p>There are two output files.</p>
-<p>View the file called <fn>DGEusingvoom.html</fn>.</p>
-<ul>
-<li>Scroll down to &ldquo;VOOM log output&rdquo; and &ldquo;#VOOM top 50&rdquo;.</li>
-<li>The &ldquo;Contig&rdquo; column has the gene names.</li>
-<li>Look at the &ldquo;adj.P.Val&rdquo; column. This is an adjusted p value to show the significance of the gene expression difference, accounting for the effect of multiple testing. Also known as False Discovery Rate. The table is ordered by the values in this column.</li>
-<li>Look at the &ldquo;logFC&rdquo; column. This is log2(Fold Change) of relative gene expression between the treatment samples and the control samples.</li>
-</ul>
-<p>View the file called <fn>DEGusingvoom_topTable_VOOM.xls</fn>.</p>
-<ul>
-<li>
-<p>This is a list of all the genes that had transcripts mapped, and associated statistics.</p>
-</li>
-<li>
-<p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29">Link to Voom paper.</a></p>
-</li>
+<li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29">Link to Voom paper.</a></li>
 </ul>
 <h2 id="investigate-differentially-expressed-genes">Investigate differentially-expressed genes</h2>
 <p>To learn more about the differentially-expressed genes:</p>
