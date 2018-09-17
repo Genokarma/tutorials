@@ -17,7 +17,7 @@ Before we create a workflow for RNA-seq, we need the correct files in our curren
 * Or, obtain the files from a Shared History (Galaxy Australia only).
     * Go to <ss>Shared Data</ss>
     * Click <ss>Histories</ss>
-    * Click <fn>Completed-RNA-seq-bacteria</fn>
+    * Click <fn>Published-RNA-seq-bacteria</fn>
     * Click <ss>Import</ss> (at the top right corner)
     * The analysis should now be showing as your current history.
 
@@ -35,6 +35,7 @@ This brings up the workflow canvas, a space for graphically viewing and re-arran
 ![canvas](images/workflow.png)
 
 * Drag the panes around until your workflow is clear.
+* Click on the star icon next to any output files that you want to retain, such as the JBrowse output and the voom output.
 * In the top right corner click on the cog icon and <ss>Save</ss>
 * Click on the cog icon again and <ss>Run</ss>
     * <ss>Send results to a new history</ss>: *Yes*

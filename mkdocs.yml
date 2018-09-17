@@ -93,7 +93,7 @@ pages:
 - Workflow - genome assembly: modules/workflow-assembly/index.md
 - Workflow - genome annotation: modules/workflow-annotation/index.md
 - Workflow - variant calling, bacteria: modules/workflow-variant-calling/index.md
-- Workflow - RNA-seq: modules/workflow-rna-seq/index.md
+- Workflow - Bacterial RNA-seq: modules/workflow-rna-seq/index.md
 - Short read data: modules/shortreads/index.md
 - Reference genomes: modules/refseq/index.md
 

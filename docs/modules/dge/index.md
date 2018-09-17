@@ -235,6 +235,7 @@ In Galaxy:
     - Note: Don't select the tool called *htseq-count*. The *SAM/BAM to count matrix* also uses that tool but allows an input of multiple bam files, which is what we want.
 - For <ss>Gene model (GFF) file to count reads over from your current history</ss>, select the <fn>GTF</fn> file.
 - For <ss>Reads are stranded</ss> select *Yes* (box turns dark grey)
+- Leave the next two settings as default
 - For <ss>GTF feature type for counting reads...</ss> select *transcript*.
 - For <ss>bam/sam file from your history</ss> choose the 6 <fn>bam</fn> files.
 
@@ -245,7 +246,7 @@ Your tool interface should look like this:
 - Click <ss>Execute</ss>
 - Click <ss>Refresh</ss> in the history pane to see if the analysis has finished.
 
-Output:
+### Output
 
 - There is one output file: <fn>bams to DGE count matrix</fn>.
 - Click on the file name to expand the information in the History pane.
@@ -255,12 +256,13 @@ Output:
 ![counts file](images/image09.png)
 
 - Each row is a gene (or feature) and each column is a sample, with counts against each gene.
-- Have a look at how the counts vary between samples, per gene.
+- Have a look at how the counts vary between samples, per gene. (These are quite low as we are using a cut-down data set).
 - We can't just compare the counts directly; they need to be normalized before comparison, and this will be done as part of the DGE analysis in the next step.
 
-
-
 ## Test for differential expression
+
+There are various tools available to test for differential gene expression. In today's tutorial, we will use the tool Voom (link to the paper [here]( https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29)).
+
 
 - In the <ss>Tools</ss> panel, search for <ss>Differential_Count models</ss> (don't forget the underscore) and click on it.
     - This has options to use edgeR, DESeq, or Voom. Here we will use Voom.
@@ -278,27 +280,30 @@ Your tool interface should look like this:
 
 - Click <ss>Execute</ss>.
 
-There are two output files.
+### Output
 
-View the file called <fn>DGEusingvoom.html</fn>.
+There are two output files. We will look at the file called <fn>DEGusingvoom_topTable_VOOM.xls</fn>.
 
-- Scroll down to "VOOM log output" and "#VOOM top 50".
-- The "Contig" column has the gene names.
-- Look at the "adj.P.Val" column. This is an adjusted p value to show the significance of the gene expression difference, accounting for the effect of multiple testing. Also known as False Discovery Rate. The table is ordered by the values in this column.
-- Look at the "logFC" column. This is log2(Fold Change) of relative gene expression between the treatment samples and the control samples.
+- The <ss>Contig</ss> column shows the genes that had transcripts mapped (genes with low counts may be filtered out).
+- The <ss>adj.P.Val</ss> is the statistical significance (p value) adjusted for multiple testing. The table is sorted by this column (most significant to least significant).
+- The <ss>logFC</ss> is the log2 fold change, which is the change in gene expression between the treatment and control group.
 
-View the file called <fn>DEGusingvoom_topTable_VOOM.xls</fn>.
+![toptable](images/voomtable.png)
 
-- This is a list of all the genes that had transcripts mapped, and associated statistics.
+We can see that the most statistically signifcant result is that the ptsG gene was expressed differently between the two conditions.
 
-### More on PCA here from the html output
+- Its expression in the treatment group was lower.
+- The log base 2 change in expression is approximately -4, meaning the difference in expression is approximately 16x.
 
+To check, let's look at the ptsG gene in the original table of counts, the <fn>bams to DGE count matrix</fn>.
+
+- Click on the eye icon to view.
+- Search for the ptsG gene (Cmd-F to search on a Mac).
+- Do the read counts look different between the control samples and the treatment samples?
 
 ## DGE in Degust
 
-Degust is a tool on the web that can analyse the counts files produced in the step above, to test for differential gene expression.
-
-(Degust can also display the results from DGE analyses performed elsewhere.)
+Degust is a tool on the web that can analyse the counts files produced in the step above, to test for differential gene expression. (Degust can also display the results from DGE analyses performed elsewhere.)
 
 ### Upload counts file
 
@@ -313,7 +318,6 @@ A Configuation page will appear.
 
 - For <ss>Name</ss> type *DGE in E coli*
 - For <ss>Info columns</ss> select *Contig*
-- For <ss>Analyze server side</ss> leave box checked.
 - For <ss>Min gene read count</ss> put *10*.
 - Click <ss>Add condition</ss>
     - Add a condition called "Control" and select the LB columns.
@@ -323,14 +327,14 @@ A Configuation page will appear.
 
 ### Overview of Degust sections
 
-- Top black panel with <ss>Configure</ss> settings at right.
 - Left: Conditions: Control and Treatment.
 - Left: Method selection for DGE.
 - Top centre: Plots, with options at right.
-- When either of the expression plots are selected, a heatmap appears below.
+- When an expression plot is selected, a heatmap appears below.
 - A table of genes (or features); expression in treatment relative to control (Treatment column); and significance (FDR column).  
+- The FDR is the False Discovery Rate, also known as the adjusted p value.
 
-![Degust overview](images/image12.png)
+![Degust overview](images/degust1.png)
 
 ### Analyze gene expression
 
@@ -341,7 +345,7 @@ A Configuation page will appear.
 
 First, look at the MDS plot.
 
-![MDSplot](images/image11.png)
+![MDSplot](images/degust2.png)
 
 - This is a multidimensional scaling plot which represents the variation between samples.
 - Ideally:
@@ -363,7 +367,19 @@ Each dot shows the change in expression in one gene.
 
 Click on the dot to see the gene name.     
 
-![MAplot](images/image17.png)
+![MAplot](images/degustma.png)
+
+### Expression - Volcano plot
+
+ Another way to view expression levels is with the volcano plot.
+
+- As with the MA plot, each dot is a gene.
+- This time, the logFC axis is horizontal (in the MA plot, it was vertical).
+- The vertical axis is a measure of statistical significance (-log10 FDR).
+- If expression is significantly different between treatment and control, the dots are red. If not, they are blue. (In Degust, significant means FDR <0.05).
+- This is a quick way to visualize those genes with large changes in expression (the left and right sides of the graph).  
+
+![volcano plot](images/volcano.png)
 
 ### Expression - Parallel Coordinates and heatmap
 Each line shows the change in expression in one gene, between control and treatment.
@@ -404,7 +420,7 @@ numbers are EC numbers - enzyme commission ->  enzyme/s that catalyze a reaction
 -->
 
 
-- [Link to Voom paper.]( https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29)
+
 
 ## Investigate differentially-expressed genes
 
@@ -433,7 +449,7 @@ If you want to see this Galaxy history without performing the steps above:
 * Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
 * Go to <ss>Shared Data</ss>
 * Click <ss>Histories</ss>
-* Click <fn>Completed-RNA-seq-bacteria</fn>
+* Click <fn>Published-RNA-seq-bacteria</fn>
 * Click <ss>Import</ss> (at the top right corner)
 * The analysis should now be showing as your current history.
 
