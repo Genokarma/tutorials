@@ -466,6 +466,19 @@
     Count reads per gene
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -477,8 +490,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#more-on-pca-here-from-the-html-output" title="More on PCA here from the html output" class="md-nav__link">
-    More on PCA here from the html output
+  <a href="#output_1" title="Output" class="md-nav__link">
+    Output
   </a>
   
 </li>
@@ -527,6 +540,13 @@
           <li class="md-nav__item">
   <a href="#expression-ma-plot" title="Expression - MA plot" class="md-nav__link">
     Expression - MA plot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expression-volcano-plot" title="Expression - Volcano plot" class="md-nav__link">
+    Expression - Volcano plot
   </a>
   
 </li>
@@ -660,8 +680,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../workflow-rna-seq/" title="Workflow - RNA-seq" class="md-nav__link">
-      Workflow - RNA-seq
+    <a href="../workflow-rna-seq/" title="Workflow - Bacterial RNA-seq" class="md-nav__link">
+      Workflow - Bacterial RNA-seq
     </a>
   </li>
 
@@ -777,6 +797,19 @@
     Count reads per gene
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -788,8 +821,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#more-on-pca-here-from-the-html-output" title="More on PCA here from the html output" class="md-nav__link">
-    More on PCA here from the html output
+  <a href="#output_1" title="Output" class="md-nav__link">
+    Output
   </a>
   
 </li>
@@ -838,6 +871,13 @@
           <li class="md-nav__item">
   <a href="#expression-ma-plot" title="Expression - MA plot" class="md-nav__link">
     Expression - MA plot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expression-volcano-plot" title="Expression - Volcano plot" class="md-nav__link">
+    Expression - Volcano plot
   </a>
   
 </li>
@@ -1123,6 +1163,7 @@ At the end of this tutorial you should be able to:
 </li>
 <li>For <ss>Gene model (GFF) file to count reads over from your current history</ss>, select the <fn>GTF</fn> file.</li>
 <li>For <ss>Reads are stranded</ss> select <em>Yes</em> (box turns dark grey)</li>
+<li>Leave the next two settings as default</li>
 <li>For <ss>GTF feature type for counting reads&hellip;</ss> select <em>transcript</em>.</li>
 <li>For <ss>bam/sam file from your history</ss> choose the 6 <fn>bam</fn> files.</li>
 </ul>
@@ -1132,7 +1173,7 @@ At the end of this tutorial you should be able to:
 <li>Click <ss>Execute</ss></li>
 <li>Click <ss>Refresh</ss> in the history pane to see if the analysis has finished.</li>
 </ul>
-<p>Output:</p>
+<h3 id="output">Output</h3>
 <ul>
 <li>There is one output file: <fn>bams to DGE count matrix</fn>.</li>
 <li>Click on the file name to expand the information in the History pane.</li>
@@ -1142,10 +1183,11 @@ At the end of this tutorial you should be able to:
 <p><img alt="counts file" src="./images/image09.png" /></p>
 <ul>
 <li>Each row is a gene (or feature) and each column is a sample, with counts against each gene.</li>
-<li>Have a look at how the counts vary between samples, per gene.</li>
+<li>Have a look at how the counts vary between samples, per gene. (These are quite low as we are using a cut-down data set).</li>
 <li>We can&rsquo;t just compare the counts directly; they need to be normalized before comparison, and this will be done as part of the DGE analysis in the next step.</li>
 </ul>
 <h2 id="test-for-differential-expression">Test for differential expression</h2>
+<p>There are various tools available to test for differential gene expression. In today&rsquo;s tutorial, we will use the tool Voom (link to the paper <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29">here</a>).</p>
 <ul>
 <li>In the <ss>Tools</ss> panel, search for <ss>Differential_Count models</ss> (don&rsquo;t forget the underscore) and click on it.<ul>
 <li>This has options to use edgeR, DESeq, or Voom. Here we will use Voom.</li>
@@ -1164,22 +1206,27 @@ At the end of this tutorial you should be able to:
 <ul>
 <li>Click <ss>Execute</ss>.</li>
 </ul>
-<p>There are two output files.</p>
-<p>View the file called <fn>DGEusingvoom.html</fn>.</p>
+<h3 id="output_1">Output</h3>
+<p>There are two output files. We will look at the file called <fn>DEGusingvoom_topTable_VOOM.xls</fn>.</p>
 <ul>
-<li>Scroll down to &ldquo;VOOM log output&rdquo; and &ldquo;#VOOM top 50&rdquo;.</li>
-<li>The &ldquo;Contig&rdquo; column has the gene names.</li>
-<li>Look at the &ldquo;adj.P.Val&rdquo; column. This is an adjusted p value to show the significance of the gene expression difference, accounting for the effect of multiple testing. Also known as False Discovery Rate. The table is ordered by the values in this column.</li>
-<li>Look at the &ldquo;logFC&rdquo; column. This is log2(Fold Change) of relative gene expression between the treatment samples and the control samples.</li>
+<li>The <ss>Contig</ss> column shows the genes that had transcripts mapped (genes with low counts may be filtered out).</li>
+<li>The <ss>adj.P.Val</ss> is the statistical significance (p value) adjusted for multiple testing. The table is sorted by this column (most significant to least significant).</li>
+<li>The <ss>logFC</ss> is the log2 fold change, which is the change in gene expression between the treatment and control group.</li>
 </ul>
-<p>View the file called <fn>DEGusingvoom_topTable_VOOM.xls</fn>.</p>
+<p><img alt="toptable" src="./images/voomtable.png" /></p>
+<p>We can see that the most statistically signifcant result is that the ptsG gene was expressed differently between the two conditions.</p>
 <ul>
-<li>This is a list of all the genes that had transcripts mapped, and associated statistics.</li>
+<li>Its expression in the treatment group was lower.</li>
+<li>The log base 2 change in expression is approximately -4, meaning the difference in expression is approximately 16x.</li>
 </ul>
-<h3 id="more-on-pca-here-from-the-html-output">More on PCA here from the html output</h3>
+<p>To check, let&rsquo;s look at the ptsG gene in the original table of counts, the <fn>bams to DGE count matrix</fn>.</p>
+<ul>
+<li>Click on the eye icon to view.</li>
+<li>Search for the ptsG gene (Cmd-F to search on a Mac).</li>
+<li>Do the read counts look different between the control samples and the treatment samples?</li>
+</ul>
 <h2 id="dge-in-degust">DGE in Degust</h2>
-<p>Degust is a tool on the web that can analyse the counts files produced in the step above, to test for differential gene expression.</p>
-<p>(Degust can also display the results from DGE analyses performed elsewhere.)</p>
+<p>Degust is a tool on the web that can analyse the counts files produced in the step above, to test for differential gene expression. (Degust can also display the results from DGE analyses performed elsewhere.)</p>
 <h3 id="upload-counts-file">Upload counts file</h3>
 <p>Go to the <a href="http://degust.erc.monash.edu/">Degust web page</a>.</p>
 <ul>
@@ -1192,7 +1239,6 @@ At the end of this tutorial you should be able to:
 <ul>
 <li>For <ss>Name</ss> type <em>DGE in E coli</em></li>
 <li>For <ss>Info columns</ss> select <em>Contig</em></li>
-<li>For <ss>Analyze server side</ss> leave box checked.</li>
 <li>For <ss>Min gene read count</ss> put <em>10</em>.</li>
 <li>Click <ss>Add condition</ss><ul>
 <li>Add a condition called &ldquo;Control&rdquo; and select the LB columns.</li>
@@ -1204,14 +1250,14 @@ At the end of this tutorial you should be able to:
 </ul>
 <h3 id="overview-of-degust-sections">Overview of Degust sections</h3>
 <ul>
-<li>Top black panel with <ss>Configure</ss> settings at right.</li>
 <li>Left: Conditions: Control and Treatment.</li>
 <li>Left: Method selection for DGE.</li>
 <li>Top centre: Plots, with options at right.</li>
-<li>When either of the expression plots are selected, a heatmap appears below.</li>
+<li>When an expression plot is selected, a heatmap appears below.</li>
 <li>A table of genes (or features); expression in treatment relative to control (Treatment column); and significance (FDR column).  </li>
+<li>The FDR is the False Discovery Rate, also known as the adjusted p value.</li>
 </ul>
-<p><img alt="Degust overview" src="./images/image12.png" /></p>
+<p><img alt="Degust overview" src="./images/degust1.png" /></p>
 <h3 id="analyze-gene-expression">Analyze gene expression</h3>
 <ul>
 <li>Under <ss>Method</ss>, make sure that <ss>Voom/Limma</ss> is selected.</li>
@@ -1219,7 +1265,7 @@ At the end of this tutorial you should be able to:
 </ul>
 <h3 id="mds-plot">MDS plot</h3>
 <p>First, look at the MDS plot.</p>
-<p><img alt="MDSplot" src="./images/image11.png" /></p>
+<p><img alt="MDSplot" src="./images/degust2.png" /></p>
 <ul>
 <li>This is a multidimensional scaling plot which represents the variation between samples.</li>
 <li>Ideally:<ul>
@@ -1246,7 +1292,17 @@ At the end of this tutorial you should be able to:
 </li>
 </ul>
 <p>Click on the dot to see the gene name.     </p>
-<p><img alt="MAplot" src="./images/image17.png" /></p>
+<p><img alt="MAplot" src="./images/degustma.png" /></p>
+<h3 id="expression-volcano-plot">Expression - Volcano plot</h3>
+<p>Another way to view expression levels is with the volcano plot.</p>
+<ul>
+<li>As with the MA plot, each dot is a gene.</li>
+<li>This time, the logFC axis is horizontal (in the MA plot, it was vertical).</li>
+<li>The vertical axis is a measure of statistical significance (-log10 FDR).</li>
+<li>If expression is significantly different between treatment and control, the dots are red. If not, they are blue. (In Degust, significant means FDR &lt;0.05).</li>
+<li>This is a quick way to visualize those genes with large changes in expression (the left and right sides of the graph).  </li>
+</ul>
+<p><img alt="volcano plot" src="./images/volcano.png" /></p>
 <h3 id="expression-parallel-coordinates-and-heatmap">Expression - Parallel Coordinates and heatmap</h3>
 <p>Each line shows the change in expression in one gene, between control and treatment.</p>
 <ul>
@@ -1290,9 +1346,6 @@ The Kegg pathway database: (Kyoto Encyclopedia of Genes and Genomes)
 numbers are EC numbers - enzyme commission ->  enzyme/s that catalyze a reaction (might be >1)
 -->
 
-<ul>
-<li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r29">Link to Voom paper.</a></li>
-</ul>
 <h2 id="investigate-differentially-expressed-genes">Investigate differentially-expressed genes</h2>
 <p>To learn more about the differentially-expressed genes:</p>
 <ul>
@@ -1320,7 +1373,7 @@ numbers are EC numbers - enzyme commission ->  enzyme/s that catalyze a reaction
 <li>Log in to Galaxy Australia: <a href="https://usegalaxy.org.au/">https://usegalaxy.org.au/</a></li>
 <li>Go to <ss>Shared Data</ss></li>
 <li>Click <ss>Histories</ss></li>
-<li>Click <fn>Completed-RNA-seq-bacteria</fn></li>
+<li>Click <fn>Published-RNA-seq-bacteria</fn></li>
 <li>Click <ss>Import</ss> (at the top right corner)</li>
 <li>The analysis should now be showing as your current history.</li>
 </ul>
