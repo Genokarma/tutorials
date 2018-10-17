@@ -87,13 +87,14 @@ pages:
 
 - RNA-seq - eukaryotes: modules/rna-humans/index.md
 
-- Metagenomics: modules/metagenomics/metagenomics.md
+- Metagenomics: modules/metagenomics/index.md
 
 - Galaxy workflows - introduction: modules/workflows/index.md
 - Workflow - genome assembly: modules/workflow-assembly/index.md
 - Workflow - genome annotation: modules/workflow-annotation/index.md
 - Workflow - variant calling, bacteria: modules/workflow-variant-calling/index.md
 - Workflow - Bacterial RNA-seq: modules/workflow-rna-seq/index.md
+- Workflow - Metagenomics: modules/workflow-metagenomics/index.md
 - Short read data: modules/shortreads/index.md
 - Reference genomes: modules/refseq/index.md
 
