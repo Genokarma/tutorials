@@ -78,12 +78,12 @@ In the top menu bar, go to <ss>Shared Data</ss>.
 
 * Click on <ss>Data Libraries</ss>.
 * Click on <fn>Galaxy Australia Training Material: RNA-Seq: Microbial RNA-Seq</fn>.
-* Tick the boxes next to the eight files.
+* Tick the boxes next to the nine files.
 * Click the <ss>To History</ss> button, select *As Datasets*.
 * Name a new history and click <ss>Import</ss>.
 * In the top menu bar, click <ss>Analyze Data</ss>.
 * [Optional] Next to each file, click on the pencil icon and change (shorten) its name.
-* You should now have eight files in your current history.
+* You should now have eight files in your current history ready for the analysis, plus an additional "JBrowse" file that we will use later.
 
 ![Files for DGE](images/image18.png)
 
@@ -208,6 +208,10 @@ In the tool panel, search for the tool "JBrowse" and click on <ss>JBrowse Genome
 - Click <ss>Execute</ss>
 
 A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>.
+
+This file may take some time to be generated. For this workshop, we downloaded a completed JBrowse file at the start, which you could look at instead (it should be the same). This is the <fn>JBrowse on data XX and data XX - Complete</fn> file; the numbers are not important.
+
+
 
 * Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.
 
