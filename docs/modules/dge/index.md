@@ -457,6 +457,22 @@ If you want to see this Galaxy history without performing the steps above:
 * Click <ss>Import</ss> (at the top right corner)
 * The analysis should now be showing as your current history.
 
+## More information
+
+Here are some references covering more information about RNA-seq.
+
+** *A clear, up-to-date introduction to RNA-seq and testing for differential expression (pre-print):* ** Berge, K Hembach, K Soneson, C Tiberi, S Clement, L Love, M Patro, R Robinson, M. RNA sequencing data: hitchhiker’s guide to expression analysis. PeerJPreprints. Available from: http://dx.doi.org/10.7287/peerj.preprints.27283
+
+** *Transcriptome assembly:* ** Martin JA, Wang Z. Next-generation transcriptome assembly. Nat Rev Genet. 2011 Sep 7;12(10):671–82.
+
+** *SuperTranscrips:* ** Davidson NM, Hawkins ADK, Oshlack A. SuperTranscripts: a data driven reference for analysis and visualisation of transcriptomes. Genome Biol. 2017 Aug 4;18(1):148.
+
+** *Splicing:* ** Alamancos GP, Agirre E, Eyras E. Methods to study splicing from high-throughput RNA sequencing data. Methods Mol Biol. 2014;1126:357–97.
+
+** *Single-cell RNA-seq:* ** McCarthy DJ, Campbell KR, Lun ATL, Wills QF. Scater: pre-processing, quality control, normalization and visualization of single-cell RNA-seq data in R. Bioinformatics. 2017 Apr 15;33(8):1179–86.
+
+** *Pathway analysis:* ** Khatri P, Sirota M, Butte AJ. Ten years of pathway analysis: current approaches and outstanding challenges. PLoS Comput Biol. 2012 Feb 23;8(2):e1002375.
+
 ## What's next?
 
 To use the tutorials on this website:
