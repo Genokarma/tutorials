@@ -1,6 +1,6 @@
 # Galaxy Australia training
 
-Tutorials on how to use Galaxy Austratlia.
+Tutorials on how to use Galaxy Australia.
 
 Forked from sepsis-omics and being updated for Galaxy Australia.
 
