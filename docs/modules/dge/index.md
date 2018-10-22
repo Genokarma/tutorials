@@ -465,7 +465,7 @@ Here are some references covering more information about RNA-seq.
 
 ** *Transcriptome assembly:* ** Martin JA, Wang Z. Next-generation transcriptome assembly. Nat Rev Genet. 2011 Sep 7;12(10):671–82.
 
-** *SuperTranscrips:* ** Davidson NM, Hawkins ADK, Oshlack A. SuperTranscripts: a data driven reference for analysis and visualisation of transcriptomes. Genome Biol. 2017 Aug 4;18(1):148.
+** *SuperTranscripts:* ** Davidson NM, Hawkins ADK, Oshlack A. SuperTranscripts: a data driven reference for analysis and visualisation of transcriptomes. Genome Biol. 2017 Aug 4;18(1):148.
 
 ** *Splicing:* ** Alamancos GP, Agirre E, Eyras E. Methods to study splicing from high-throughput RNA sequencing data. Methods Mol Biol. 2014;1126:357–97.
 
