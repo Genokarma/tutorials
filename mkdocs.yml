@@ -40,6 +40,7 @@ pages:
 - Welcome: index.md
 - Get started: modules/galaxy/index.md
 - Learn key tasks: modules/intro/index.md
+- Download and Delete Data in Galaxy: modules/galaxy-data/index.md
 
 
 # - Starting with Galaxy: modules/galaxy/index.md

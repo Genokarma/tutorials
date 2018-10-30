@@ -12,7 +12,7 @@ The tutorials have been deployed here: https://galaxy-au-training.github.io/tuto
 
 ### Install the mkdocs tools
 ```
-% pip install mkdocs markdown-include mkdocs-alabaster mkdocs-bootstrap
+% pip install mkdocs markdown-include mkdocs-alabaster mkdocs-bootstrap mkdocs-material pymdown-extensions
 ```
 
 ### Clone the repo
@@ -59,4 +59,3 @@ mkdocs gh-deploy --clean --message "Added minia"
 This first builds a web HTML version of our Markdown hierarchy into the `site/` folder, then pushes it to a special
 branch of the github repo called `gh-pages` which GitHub makes available at the public URL
 [https://galaxy-au-training.github.io/tutorials/]
-
