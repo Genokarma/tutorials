@@ -27,6 +27,8 @@ It also has instructions and explanation of Galaxy's two step deletion process (
 
 At the end of this tutorial, the participate should have a greater knowledge of how Galaxy handles data downloads and deletions and be able to successfully download and delete their own data.
 
+This will also allow you to recover your disk quota and allow you to do more and new analyses if you have used it all!
+
 ## Downloading data from Galaxy
 
 There are multiple ways of downloading your data from Galaxy, the choice of which method to use depends on the amount of data you wish to download. You can download a single dataset, multiple datasets all the way to entire histories.
@@ -137,11 +139,60 @@ As a guide to how long it can take to produce the archive for downloading:
 | >50 GB       | multiple days   |
 
 
-
 ---
 
 ## Deleting data from Galaxy
 
+Once you have downloaded everything that you want to keep from your Galaxy account, we strongly encourage you to delete your no longer required histories.
+
+Deletion in Galaxy is a two stage process. If you delete something, it actually only gets *marked as deleted* and then is hidden. To actually delete an object you must *purge* it from disk. The instructions for how to delete datasets and histories follow.
+
 ### Part 1: Deleting a single dataset
 
+This section will show you how to **delete** and then **purge** a single dataset from a history. You can also delete multiple datasets and then purge them all at once.
+<table>
+    <tr>
+        <th style="width:66%">**Delete a single dataset**<th style="width:33%">
+    </tr>
+    <tr>
+        <td>- Click on the **Delete** button on the dataset you wish to delete
+        <td>![image/delete_dataset.png](images/delete_dataset.png)
+    </tr>
+    <tr>
+        <td>- The dataset has now disappeared from the history pane and there is a `1 deleted` link at the top.
+        <td>![image/dataset_gone.png](images/dataset_gone.png)
+    </tr>
+    <tr>
+        <td>- You can see the dataset by clicking on the `1 deleted` link at the top of the history pane.</br>- This will allow you to either: *Undelete it* OR *Permanently remove it from disk* by clicking on the appropriate link. </br>**Note: Once you click on the *permanently remove it from disk* link you CANNOT undo it.**
+        <td>![images/deleted_dataset_links.png](images/deleted_dataset_links.png)
+    </tr>
+    <tr>
+        <td>You can also delete and purge multiple datasets at a time by clicking on the **delete** button on all the datasets you want to remove and then purge them all at once by going to the history menu (the little cog wheel) and selecting **Purge Deleted Datasets**
+        <td>![images/purged_deleted.png](images/purge_deleted.png)
+    </tr>
+</table>
+
 ### Part 2: Deleting an entire history
+
+You can delete an entire history and purge it from disk by doing the following:
+<table>
+    <tr>
+        <th>**Delete an entire history**<th>
+    </tr>
+    <tr>
+        <td>- Open the **Saved Histories** display by clicking on the history menu (little cog wheel) and selecting **Saved Histories**
+        <td>![images/saved_histories_menu.png](images/saved_histories_menu.png)
+    </tr>
+    <tr>
+        <td colspan=2>- You will now see a list of all of your histories
+    </tr>
+    <tr>
+        <td colspan=2>![images/saved_histories.png](images/saved_histories.png)
+    </tr>
+    <tr>
+        <td>- You can now delete a history by clicking on the grey button with it's name near or on the little down arrow.</br>- Another little menu will appear.</br>- Select **Delete Permanently**</br>**Note: This will permanently remove the entire history and all of its non shared datasets from disk. It CANNOT be undone.**
+        <td>![images/delete_history.png](images/delete_history.png)
+    </tr>
+</table>
+
+Your history has now been deleted and purged from disk.
