@@ -38,15 +38,15 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
-        <title>Galaxy workflows - introduction - Galaxy Australia Training</title>
+        <title>Galaxy Australia Training</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
       
       
     
@@ -54,8 +54,8 @@
       <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -203,11 +203,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="https://galaxy-au-training.github.io/tutorials/" title="Galaxy Australia Training" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     Galaxy Australia Training
   </label>
   
@@ -267,6 +267,18 @@
   <li class="md-nav__item">
     <a href="../intro/" title="Learn key tasks" class="md-nav__link">
       Learn key tasks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../galaxy-data/" title="Download and Delete Data in Galaxy" class="md-nav__link">
+      Download and Delete Data in Galaxy
     </a>
   </li>
 
@@ -811,7 +823,7 @@
 <p>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</p>
 <p>Import a history of data files:</p>
 <ul>
-<li>Click on the <ss>History</ss> cog <img alt="cog icon" src="./images/image02.png" /></li>
+<li>Click on the <ss>History</ss> cog <img alt="cog icon" src="images/image02.png" /></li>
 <li>Select <ss>Import from File</ss></li>
 <li>In the box called <ss>Archived History URL</ss>, paste in this link address to the Galaxy history of input files:</li>
 </ul>
@@ -819,7 +831,7 @@
 <ul>
 <li>Click <ss>Import History</ss></li>
 <li>Wait a few seconds.</li>
-<li>Click on the &ldquo;View all histories&rdquo; button <img alt="histories icon" src="./images/histories.png" /></li>
+<li>Click on the &ldquo;View all histories&rdquo; button <img alt="histories icon" src="images/histories.png" /></li>
 <li>See if the Galaxy history has been imported: it will be called <fn>imported from archive: Data</fn></li>
 <li>Above that pane, click on the <ss>Switch to</ss> button.</li>
 <li>Then click <ss>Analyze Data</ss> (in the top menu bar).</li>
@@ -835,11 +847,11 @@
 <ul>
 <li>In the top menu bar in Galaxy, click on &ldquo;Workflow&rdquo;.</li>
 </ul>
-<p><img alt="workflowmenu" src="./images/workflow_menu.png" /></p>
+<p><img alt="workflowmenu" src="images/workflow_menu.png" /></p>
 <ul>
 <li>Click on the plus button.</li>
 </ul>
-<p><img alt="createnew" src="./images/create.png" /></p>
+<p><img alt="createnew" src="images/create.png" /></p>
 <ul>
 <li>
 <p>Under <ss>Workflow Name:</ss> put in &ldquo;Reads to Annotation&rdquo;.</p>
@@ -860,7 +872,7 @@
 <p>A box will appear: drag it to the left and there will be another box underneath it. Drag this also to the left. Your workflow canvas should look like this:</p>
 </li>
 </ul>
-<p><img alt="inputs" src="./images/inputs.png" /></p>
+<p><img alt="inputs" src="images/inputs.png" /></p>
 <ul>
 <li>
 <p>Click on the first box. Look in the right hand panel (now called &ldquo;Details&rdquo;). Under <ss>Label</ss> type in <fn>R1.fastq</fn>. Press Enter for the change to be saved.</p>
@@ -874,7 +886,7 @@
 <li>In the tools panel, search for <ss>spades</ss> and click on the tool name.
 This puts the spades box onto the workflow canvas.</li>
 </ul>
-<p><img alt="spades" src="./images/spades_canvas.png" /></p>
+<p><img alt="spades" src="images/spades_canvas.png" /></p>
 <ul>
 <li>
 <p>Click on the spades box and look in the Details pane on the right. This shows all the options in spades. Choose:</p>
@@ -895,7 +907,7 @@ This puts the spades box onto the workflow canvas.</li>
 <p>Click on this and drag the arrow over to the spades box input arrow &gt; next to &ldquo;Libraries 1 &gt; Files 1 &gt; Forward reads&rdquo;.</p>
 </li>
 </ul>
-<p><img alt="join boxes" src="./images/join2.png" /></p>
+<p><img alt="join boxes" src="images/join2.png" /></p>
 <ul>
 <li>Repeat for the dataset box <fn>R2.fastq</fn>, joining to the spades box next to &ldquo;Libraries 1 &gt; Files 1 &gt; Reverse reads&rdquo;.</li>
 </ul>
@@ -1022,7 +1034,7 @@ This puts the spades box onto the workflow canvas.</li>
 </ul>
 </li>
 </ul>
-<p><img alt="jbrowse" src="./images/prokka2.png" /></p>
+<p><img alt="jbrowse" src="images/prokka2.png" /></p>
 <ul>
 <li>
 <p>Click on the cog to save; again to run; choose input files; <ss>Run workflow</ss>; examine output files in current history.</p>
@@ -1041,7 +1053,7 @@ This puts the spades box onto the workflow canvas.</li>
 </ul>
 </li>
 </ul>
-<p><img alt="annotations" src="./images/annotations2.png" /></p>
+<p><img alt="annotations" src="images/annotations2.png" /></p>
 <!--  ## Extension section
 
 Create a new workflow for variant calling.
@@ -1073,7 +1085,7 @@ Create a new workflow for variant calling.
 <li>Find the star next to the outputs.</li>
 <li>Click on the star for any outputs you want to save.</li>
 </ul>
-<p><img alt="star" src="./images/star.png" /></p>
+<p><img alt="star" src="images/star.png" /></p>
 <p>To save these starred files from the workflow output as a new history:</p>
 <ul>
 <li>Before you click <ss>Run workflow</ss>, tick the box above to <ss>Send results to a new history</ss>.</li>
@@ -1191,9 +1203,9 @@ Create a new workflow for variant calling.
       
     </div>
     
-      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../../assets/javascripts/application.5e60981f.js"></script>
       
-      <script>app.initialize({version:"0.17.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
     

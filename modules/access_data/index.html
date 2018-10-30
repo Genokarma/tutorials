@@ -1,0 +1,937 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Tutorials for using Galaxy Australia">
+      
+      
+        <link rel="canonical" href="https://galaxy-au-training.github.io/tutorials/modules/access_data/">
+      
+      
+        <meta name="author" content="Anna Syme, Gareth Price, Torsten Seemann">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Galaxy Australia Training</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../css/sepsis.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#public-data-assembly-annotation-mlst" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://galaxy-au-training.github.io/tutorials/" title="Galaxy Australia Training" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Galaxy Australia Training
+              </span>
+              <span class="md-header-nav__topic">
+                Home
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/Galaxy-Au-training/tutorials/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Galaxy-Australia-training/tutorials
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://galaxy-au-training.github.io/tutorials/" title="Galaxy Australia Training" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Galaxy Australia Training
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/Galaxy-Au-training/tutorials/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Galaxy-Australia-training/tutorials
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../galaxy/" title="Get started" class="md-nav__link">
+      Get started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../intro/" title="Learn key tasks" class="md-nav__link">
+      Learn key tasks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../galaxy-data/" title="Download and Delete Data in Galaxy" class="md-nav__link">
+      Download and Delete Data in Galaxy
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../fastqc/" title="Quality control" class="md-nav__link">
+      Quality control
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../spades/" title="Genome assembly" class="md-nav__link">
+      Genome assembly
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../prokka/" title="Genome annotation" class="md-nav__link">
+      Genome annotation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../snippy/" title="Variant calling - bacteria" class="md-nav__link">
+      Variant calling - bacteria
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../variants/" title="Variant calling - human" class="md-nav__link">
+      Variant calling - human
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../abricate/" title="Antibiotic-resistant genes" class="md-nav__link">
+      Antibiotic-resistant genes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../mlst/" title="Using MLST" class="md-nav__link">
+      Using MLST
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../kraken/" title="Sample identification" class="md-nav__link">
+      Sample identification
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../dge/" title="RNA-seq - bacteria" class="md-nav__link">
+      RNA-seq - bacteria
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../rna-humans/" title="RNA-seq - eukaryotes" class="md-nav__link">
+      RNA-seq - eukaryotes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../metagenomics/" title="Metagenomics" class="md-nav__link">
+      Metagenomics
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workflows/" title="Galaxy workflows - introduction" class="md-nav__link">
+      Galaxy workflows - introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workflow-assembly/" title="Workflow - genome assembly" class="md-nav__link">
+      Workflow - genome assembly
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workflow-annotation/" title="Workflow - genome annotation" class="md-nav__link">
+      Workflow - genome annotation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workflow-variant-calling/" title="Workflow - variant calling, bacteria" class="md-nav__link">
+      Workflow - variant calling, bacteria
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workflow-rna-seq/" title="Workflow - Bacterial RNA-seq" class="md-nav__link">
+      Workflow - Bacterial RNA-seq
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../workflow-metagenomics/" title="Workflow - Metagenomics" class="md-nav__link">
+      Workflow - Metagenomics
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../shortreads/" title="Short read data" class="md-nav__link">
+      Short read data
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../refseq/" title="Reference genomes" class="md-nav__link">
+      Reference genomes
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" title="Background" class="md-nav__link">
+    Background
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-data" title="Import data" class="md-nav__link">
+    Import data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluate-quality" title="Evaluate quality" class="md-nav__link">
+    Evaluate quality
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trim" title="Trim" class="md-nav__link">
+    Trim
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assemble" title="Assemble" class="md-nav__link">
+    Assemble
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#find-antibiotic-resistance-genes" title="Find antibiotic resistance genes" class="md-nav__link">
+    Find antibiotic resistance genes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#find-the-sequence-type-mlst" title="Find the sequence type (MLST)" class="md-nav__link">
+    Find the sequence type (MLST)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotate" title="Annotate" class="md-nav__link">
+    Annotate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" title="Next" class="md-nav__link">
+    Next
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Galaxy-Au-training/tutorials/edit/master/docs/modules/access_data/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <p><br></p>
+<h1 id="public-data-assembly-annotation-mlst">Public data &rarr; assembly, annotation, MLST</h1>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>Download a readset from a public database</li>
+<li>Check the quality of the data and filter</li>
+<li>Assemble the reads into a draft genome</li>
+<li>Find antibiotic resistance genes</li>
+<li>Annotate the genome</li>
+<li>Find the sequence type (the MLST)</li>
+</ul>
+<h2 id="background">Background</h2>
+<p>Sequencing reads (readsets) for more than 100,000 isolates are available on public molecular sequence databases (GenBank/ENA/DDJB):</p>
+<ul>
+<li>Most of these have been produced using the Illumina sequencing platform.</li>
+<li>Most of these have no corresponding draft assembly.</li>
+</ul>
+<p>Not all readsets are of high quality:</p>
+<ul>
+<li>There may be insufficient reads (usually ~x20 is the minimum read coverage needed).</li>
+<li>The reads could be from a mixed colony.</li>
+<li>The classification could be incorrect (both genus and species).</li>
+</ul>
+<p>It is VERY important to check that what you find in the readset makes sense!</p>
+<h2 id="import-data">Import data</h2>
+<ul>
+<li>Go to your Galaxy instance.</li>
+<li>
+<p>Set up a new History for this Activity.</p>
+<ul>
+<li>In the History panel, click on the cog icon, select <ss>Create New</ss>.</li>
+<li>A new empty history should appear; click on <fn>Unnamed history</fn> and re-name it (e.g. ENA Activity).</li>
+</ul>
+<p><img alt="Galaxy new history" src="images/galaxy1.png" /></p>
+</li>
+<li>
+<p>Choose an accession number.</p>
+<ul>
+<li>If you are working on this tutorial in a workshop: assign yourself a readset from the table of isolates provided. Put your name in Column B. The accession number for the readset that relates to each isolate is located in Column A. ERR019289 will be used in this demonstration. <!-- <a href="https://docs.google.com/spreadsheets/d/12X68SEXXcEY2EASjvvZe6w__60_1w3onqCIu1RZMYcg/edit#gid=0">https://docs.google.com/spreadsheets/d/12X68SEXXcEY2EASjvvZe6w__60_1w3onqCIu1RZMYcg/edit#gid=0</a>. --></li>
+<li>Alternatively, use accession number ERR019289. This is <em>Vibrio cholerae</em>.</li>
+</ul>
+</li>
+<li>
+<p>In Galaxy, go to the Tools panel on the left, select <ss>Get Data &rarr; EBI SRA</ss>.</p>
+<ul>
+<li>This causes the ENA website to open.</li>
+<li>Enter the accession number in the ENA search bar.
+<img alt="ENA search bar" src="images/ENA.png" /></li>
+</ul>
+</li>
+<li>
+<p>(The search may find reads under Experiment and Run. If so, click on the Accession number under &ldquo;Run&rdquo;.)</p>
+</li>
+<li>
+<p>Find the column called <ss>Fastq files (galaxy)</ss>. Click on <fn>File 1</fn>.</p>
+</li>
+</ul>
+<p><img alt="ENA fastq" src="images/ENA_fastq.png" /></p>
+<p>This file will download to your Galaxy history, and will return you to the Galaxy page.</p>
+<ul>
+<li>
+<p>Repeat the above steps for <ss>Get Data &rarr; EBI SRA</ss> and download <fn>File 2</fn>.</p>
+</li>
+<li>
+<p>The files should now be in your Galaxy history.</p>
+</li>
+<li>Click on the pencil icon next to File 1.<ul>
+<li>Re-name it <fn>ERR019289_1.fastq.gz</fn>. <ss>Save</ss></li>
+<li>Change the datatype to <strong>fastqsanger</strong> (note: not fastqCsanger). <ss> Save</ss></li>
+</ul>
+</li>
+<li>Repeat for File 2 (name it <fn>ERR019289_2.fastq.gz</fn>).</li>
+</ul>
+<h2 id="evaluate-quality">Evaluate quality</h2>
+<p>We will run FastQC on the pair of fastq files.</p>
+<ul>
+<li>In the Galaxy tools panel, go to <ss>NGS Analysis: NGS QC and manipulation: FastQC</ss>.</li>
+<li>Choose the <ss>Multiple datasets</ss> icon and then select both <fn>fastq</fn> files.</li>
+<li>Your Galaxy window should look like this:</li>
+</ul>
+<p><img alt="galaxy window" src="images/galaxy2.png" /></p>
+<ul>
+<li>Click <ss>Execute</ss>  </li>
+<li>The output (4 files) will appear at the top of your Galaxy history.</li>
+<li>Click on the eye icon next to <fn>FastQC on data 1: Web page</fn></li>
+<li>Scroll through the results. Take note of the maximum read length (<em>e.g.</em> 54 bp).</li>
+</ul>
+<h2 id="trim">Trim</h2>
+<p>In this step we will remove adapters and trim low-quality sequence from the reads.</p>
+<ul>
+<li>In the Galaxy tools panel, go to <ss>NGS Analysis: NGS QC and manipulation: Trimmomatic</ss></li>
+<li>Leave settings as they are except for:<ul>
+<li><ss>Input FASTQ file R1</ss> - check this is File 1</li>
+<li><ss>Input FASTQ file R2</ss> - check this is File 2</li>
+</ul>
+</li>
+<li>Under <ss>Perform initial ILLUMINACLIP step</ss> choose <em>Yes</em><ul>
+<li>Under <ss>Adapter sequences to use</ss> choose <em>Nextera(paired-ended)</em></li>
+<li>This trims particular adapters from the sequences.</li>
+</ul>
+</li>
+<li>Under <ss>Trimmomatic Operation</ss> leave the settings as they are.<ul>
+<li>We will use the average quality across a 4-base sliding window to identify and delete bad sequence (and the flanking bases to the start or end of the sequences - whichever is nearest to the patch of poor quality sequence)</li>
+</ul>
+</li>
+</ul>
+<p>Your tool interface should look like this:</p>
+<p><img alt="trimmomatic tool interface" src="images/trimmomatic.png" /></p>
+<ul>
+<li>Click <ss>Execute</ss>  </li>
+</ul>
+<p>There are four output files.</p>
+<ul>
+<li>Because trimmomatic might have trimmed some reads to zero, there are now some reads reads with no pair. These are in the <em>unpaired</em> output files. These can be deleted (with the cross button).</li>
+<li>Re-name the other two output files, e.g. as <fn>ERRxxxxx_T1.fastq.gz</fn> &amp; <fn>ERRxxxxx_T2.fastq.gz</fn>. These properly paired fastq files will be the input for the Spades assembly.  </li>
+</ul>
+<h2 id="assemble">Assemble</h2>
+<p>We will assemble the trimmed reads.</p>
+<p>In the left hand tools panel, go to <ss>NGS Analysis: NGS Assembly: spades</ss>.</p>
+<p>Leave the parameters as their defaults except:</p>
+<ul>
+<li><ss>Careful correction?</ss> <em>No</em></li>
+<li><ss>Kmers to use, separated by commas:</ss> <em>21,33,51</em><ul>
+<li>chosen kmers must be <strong>shorter</strong> than the maximum read length (see the FastQC output: sequence length)</li>
+</ul>
+</li>
+<li><ss>Coverage Cutoff:</ss> <em>Off</em><ul>
+<li>using a coverage cutoff might cause a problem if there are high-copy-number plasmids</li>
+</ul>
+</li>
+<li><ss>Forward reads:</ss> ERR019289_T1.fastq.gz</li>
+<li><ss>Reverse reads:</ss> ERR019289_T2.fastq.gz</li>
+</ul>
+<p>Your tool interface should look like this:</p>
+<p><img alt="spades tool interface" src="images/spades.png" /></p>
+<ul>
+<li>Click <ss>Execute</ss>  </li>
+</ul>
+<p>There are five output files.</p>
+<ul>
+<li><fn>SPAdes contigs (fasta)</fn> &amp; <fn>SPAdes scaffolds (fasta)</fn>: The draft genome assembly. (These should be identical with the conditions used here.)</li>
+<li><fn>SPAdes contig stats</fn> &amp; <fn>SPAdes scaffold stats</fn>: A list of all the contigs and sizes in each of these files.</li>
+<li><fn>SPAdes log</fn>: A summary of the assembly run.</li>
+</ul>
+<p>Rename <fn>SPAdes contigs (fasta)</fn> to something like <fn>ERR019289.fasta</fn>.</p>
+<p><strong>Check the size of your draft genome sequence</strong></p>
+<ul>
+<li>If you only have a few contigs, you can estimate the size from the <fn>SPAdes contig stats</fn> file by adding together the contig sizes.</li>
+<li>Alternatively, go to <ss>NGS Common Toolsets: Fasta Statistics</ss> and input the <fn>SPAdes contigs (fasta)</fn> file. Click <ss>Execute</ss>. The output will show the draft genome size next to  <ss>num_bp</ss>.</li>
+</ul>
+<p><strong>Compare your assembly size to others of the same species</strong></p>
+<ul>
+<li>Go to the <a href="https://www.ncbi.nlm.nih.gov/genome/?term=">NCBI website: Genome</a></li>
+<li>Next to <ss> Genome </ss>, enter the name of your species; <em>e.g. Vibrio cholerae</em>.</li>
+<li>Click on <ss>Genome ASsembly and Annotation report</ss></li>
+<li>View the table. Click on the <ss>Size</ss> column to sort by size. (Check for additional pages at the bottom right.)</li>
+<li>Is your assembly size similar?</li>
+</ul>
+<h2 id="find-antibiotic-resistance-genes">Find antibiotic resistance genes</h2>
+<p>Now that we have our draft genome sequence, we can search for particular genes.</p>
+<ul>
+<li>We will use the tool called <a href="https://github.com/tseemann/abricate">ABRicate</a> to find antibiotic resistance genes in the genome.</li>
+<li>ABRicate uses a <a href="https://cge.cbs.dtu.dk/services/data.php">database</a> of these genes called <a href="https://cge.cbs.dtu.dk/services/ResFinder">ResFinder</a>.</li>
+</ul>
+<p>In the tools panel, go to <ss>NGS Analysis: NGS Annotation: ABRicate</ss>.</p>
+<ul>
+<li>For <ss>Select fasta file</ss> choose <fn>SPAdes contigs (fasta)</fn> or whatever you renamed it (e.g. ERR019289.fasta).</li>
+<li>Click <ss>Execute</ss>.</li>
+</ul>
+<p>There is one output file. Click on the eye icon to view.</p>
+<ul>
+<li>This shows a table with one line for each antibiotic resistance gene found, in which contig, at which position, and the % coverage.</li>
+</ul>
+<p><img alt="abricate results" src="images/abricate.png" /></p>
+<h2 id="find-the-sequence-type-mlst">Find the sequence type (MLST)</h2>
+<p>Bacterial samples (isolates) are often assigned a &ldquo;sequence type&rdquo;. This is a number that defines the particular combination of alleles in that isolate, <em>e.g.</em> ST248.</p>
+<ul>
+<li>Because several genes (loci) are used, this is termed Multi-Locus Sequence Typing (MLST).</li>
+<li>There are different MLST schemes for different groups of bacteria.</li>
+</ul>
+<p>In the tools panel, go to <ss>NGS Analysis: NGS Annotation: MLST</ss></p>
+<ul>
+<li>Under <ss>input_file</ss> choose choose <fn>SPAdes contigs (fasta)</fn> or whatever you renamed it (e.g. ERR019289.fasta).</li>
+<li>Note: a specific MLST scheme can be specified if you wish, but by default all schemes are searched</li>
+<li>Click <ss>Execute</ss>.</li>
+</ul>
+<p>There is one output file. Click on the eye icon to view.</p>
+<ul>
+<li>There is a one line output.</li>
+</ul>
+<p><img alt="MLST result" src="images/MLST.png" /></p>
+<p>Some symbols are used to describe missing or inexact matches to alleles:</p>
+<ul>
+<li>n: Exact intact allele</li>
+<li>~n : Novel allele similar to n</li>
+<li>n,m : Multiple alleles</li>
+<li>- : Allele missing</li>
+</ul>
+<h2 id="annotate">Annotate</h2>
+<p>We have found a list of resistance genes in the draft sequence, but we can also annotate the whole genome to find all the genes present.</p>
+<p>In the tools panel, go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: Annotation &rarr; Prokka</ss>  </p>
+<p>Set the following parameters (leave everything else unchanged):</p>
+<ul>
+<li><ss>Contigs to annotate</ss>: <fn>SPAdes contigs (fasta)</fn> (or equivalent)</li>
+<li><ss>Locus tag prefix (&ndash;locustag)</ss>: P</li>
+<li><ss>Force GenBank/ENA/DDJB compliance (&ndash;compliant)</ss>: <em>No</em></li>
+<li><ss>Sequencing Centre ID (&ndash;centre)</ss>: V</li>
+<li>Click <ss>Execute</ss>  </li>
+</ul>
+<p>There are several output files:</p>
+<ul>
+<li>
+<p><fn>gff</fn>: the master annotation in GFF format, containing both sequences and annotations</p>
+</li>
+<li>
+<p><fn>gbk</fn>: a standard GenBank file derived from the master .gff. If the input to prokka was a multi-FASTA, then this will be a multi-GenBank, with one record for each sequence</p>
+</li>
+<li>
+<p><fn>fna</fn>: nucleotide FASTA file of the input contig sequences</p>
+</li>
+<li>
+<p><fn>faa</fn>: protein FASTA file of the translated CDS sequences</p>
+</li>
+<li>
+<p><fn>ffn</fn>: nucleotide FASTA file of all the annotated sequences, not just CDS</p>
+</li>
+<li>
+<p><fn>sqn</fn>: an ASN1 format &ldquo;Sequin&rdquo; file for submission to GenBank. It needs to be edited to set the correct taxonomy, authors, related publication, etc.</p>
+</li>
+<li>
+<p><fn>fsa</fn>: nucleotide FASTA file of the input contig sequences, used by &ldquo;tbl2asn&rdquo; to create the .sqn file. It is mostly the same as the .fna file, but with extra Sequin tags in the sequence description lines</p>
+</li>
+<li>
+<p><fn>tbl</fn>: Feature Table file, used by &ldquo;tbl2asn&rdquo; to create the .sqn file</p>
+</li>
+<li>
+<p><fn>err</fn>: unacceptable annotations - the NCBI discrepancy report</p>
+</li>
+<li>
+<p><fn>log</fn>: contains all the output that Prokka produced during its run</p>
+</li>
+<li>
+<p><fn>txt</fn>: statistics relating to the annotated features found</p>
+</li>
+</ul>
+<p><strong>Tabulate</strong></p>
+<p>If you are working on this tutorial as part of a class workshop:</p>
+<ul>
+<li>Go to the table of isolates and add information about genome size, GC content, and number of contigs.</li>
+</ul>
+<h2 id="next">Next</h2>
+<ul>
+<li>View the annotated genome in Artemis or JBrowse.</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; The authors; 2018-
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="" class="md-footer-social__link fa fa-coffee"></a>
+    
+      <a href="https://github.com/Galaxy-Au-training/tutorials" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://github.com/Galaxy-Au-training/tutorials/issues" class="md-footer-social__link fa fa-bug"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.5e60981f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

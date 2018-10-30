@@ -38,15 +38,15 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
-        <title>RNA-seq - bacteria - Galaxy Australia Training</title>
+        <title>Galaxy Australia Training</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
       
       
     
@@ -54,8 +54,8 @@
       <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -203,11 +203,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="https://galaxy-au-training.github.io/tutorials/" title="Galaxy Australia Training" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     Galaxy Australia Training
   </label>
   
@@ -267,6 +267,18 @@
   <li class="md-nav__item">
     <a href="../intro/" title="Learn key tasks" class="md-nav__link">
       Learn key tasks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../galaxy-data/" title="Download and Delete Data in Galaxy" class="md-nav__link">
+      Download and Delete Data in Galaxy
     </a>
   </li>
 
@@ -1041,24 +1053,27 @@ At the end of this tutorial you should be able to:
 <li>[Optional] Next to each file, click on the pencil icon and change (shorten) its name.</li>
 <li>You should now have eight files in your current history ready for the analysis, plus an additional &ldquo;JBrowse&rdquo; file that we will use later.</li>
 </ul>
-<p><img alt="Files for DGE" src="./images/image18.png" /></p>
+<p><img alt="Files for DGE" src="images/image18.png" /></p>
 <h3 id="or-import-from-the-web">Or, import from the web</h3>
-<p><details></p>
-<p><summary> <em>Only follow this step if unable to load the data files from shared data, as described above. Click here to expand.</em> </summary></p>
-<ul>
-<li>In a new browser tab, go to this webpage:</li>
-<li><a href="https://doi.org/10.5281/zenodo.1311269"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1311269.svg" /></a></li>
-<li>For each file, right click on file name: select &ldquo;copy link address&rdquo;</li>
-<li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
-<li>Click <ss>Paste/Fetch data</ss></li>
-<li>A box will appear: paste in link address</li>
-<li>Click <ss>Start</ss></li>
-<li>Click <ss>Close</ss></li>
-<li>The file will now appear in the top of your history panel.</li>
-<li>Repeat for all files in Zenodo.</li>
-<li>Change (shorten) the file names with the pencil icon.
-</details></li>
-</ul>
+<details>
+
+<summary> *Only follow this step if unable to load the data files from shared data, as described above. Click here to expand.* </summary>
+
+
+
+* In a new browser tab, go to this webpage:
+* [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1311269.svg)](https://doi.org/10.5281/zenodo.1311269)
+* For each file, right click on file name: select "copy link address"
+* In Galaxy, go to <ss>Get Data</ss> and then Upload File
+* Click <ss>Paste/Fetch data</ss>
+* A box will appear: paste in link address
+* Click <ss>Start</ss>
+* Click <ss>Close</ss>
+* The file will now appear in the top of your history panel.
+* Repeat for all files in Zenodo.
+* Change (shorten) the file names with the pencil icon.
+</details>
+
 <!--
 
     https://zenodo.org/record/1311269/files/E_coli_aMG1.fastq?download=1
@@ -1108,7 +1123,7 @@ At the end of this tutorial you should be able to:
 </li>
 </ul>
 <p>Your tool interface should look like this:</p>
-<p><img alt="BWA-MEM tool commands" src="./images/image02.png" /></p>
+<p><img alt="BWA-MEM tool commands" src="images/image02.png" /></p>
 <ul>
 <li>Click <ss>Execute</ss></li>
 <li>Click <ss>Refresh</ss> in the history pane to see if the analysis has finished.</li>
@@ -1177,7 +1192,7 @@ At the end of this tutorial you should be able to:
 </li>
 </ul>
 <p>This visualization is for us to check that the mapping of the reads worked as expected.</p>
-<p><img alt="JBrowse screenshot" src="./images/jbrowse.png" /></p>
+<p><img alt="JBrowse screenshot" src="images/jbrowse.png" /></p>
 <p>You may be able to see some places where more reads have mapped to a gene from one of the conditions. This suggests that the gene in that condition was more highly expressed.</p>
 <p>However, this needs to be verified with statistical testing, which will be covered in the next parts of this tutorial.</p>
 <h2 id="count-reads-per-gene">Count reads per gene</h2>
@@ -1195,7 +1210,7 @@ At the end of this tutorial you should be able to:
 <li>For <ss>bam/sam file from your history</ss> choose the 6 <fn>bam</fn> files.</li>
 </ul>
 <p>Your tool interface should look like this:</p>
-<p><img alt="HTSeq tool commands" src="./images/image08.png" /></p>
+<p><img alt="HTSeq tool commands" src="images/image08.png" /></p>
 <ul>
 <li>Click <ss>Execute</ss></li>
 <li>Click <ss>Refresh</ss> in the history pane to see if the analysis has finished.</li>
@@ -1204,10 +1219,10 @@ At the end of this tutorial you should be able to:
 <ul>
 <li>There is one output file: <fn>bams to DGE count matrix</fn>.</li>
 <li>Click on the file name to expand the information in the History pane.</li>
-<li>Click on the file <img alt="File icon" src="./images/Galaxy-download.png" />icon underneath to download it to your computer for use later on in this tutorial.</li>
+<li>Click on the file <img alt="File icon" src="images/Galaxy-download.png" />icon underneath to download it to your computer for use later on in this tutorial.</li>
 <li>Click on the eye icon to see this file.</li>
 </ul>
-<p><img alt="counts file" src="./images/image09.png" /></p>
+<p><img alt="counts file" src="images/image09.png" /></p>
 <ul>
 <li>Each row is a gene (or feature) and each column is a sample, with counts against each gene.</li>
 <li>Have a look at how the counts vary between samples, per gene. (These are quite low as we are using a cut-down data set).</li>
@@ -1229,7 +1244,7 @@ At the end of this tutorial you should be able to:
 <li>Under <ss>Run the same model with Voom/limma and compare findings</ss> choose <em>Run VOOM</em>.</li>
 </ul>
 <p>Your tool interface should look like this:</p>
-<p><img alt="DGE using voom" src="./images/image16.png" /></p>
+<p><img alt="DGE using voom" src="images/image16.png" /></p>
 <ul>
 <li>Click <ss>Execute</ss>.</li>
 </ul>
@@ -1240,7 +1255,7 @@ At the end of this tutorial you should be able to:
 <li>The <ss>adj.P.Val</ss> is the statistical significance (p value) adjusted for multiple testing. The table is sorted by this column (most significant to least significant).</li>
 <li>The <ss>logFC</ss> is the log2 fold change, which is the change in gene expression between the treatment and control group.</li>
 </ul>
-<p><img alt="toptable" src="./images/voomtable.png" /></p>
+<p><img alt="toptable" src="images/voomtable.png" /></p>
 <p>We can see that the most statistically signifcant result is that the ptsG gene was expressed differently between the two conditions.</p>
 <ul>
 <li>Its expression in the treatment group was lower.</li>
@@ -1284,7 +1299,7 @@ At the end of this tutorial you should be able to:
 <li>A table of genes (or features); expression in treatment relative to control (Treatment column); and significance (FDR column).  </li>
 <li>The FDR is the False Discovery Rate, also known as the adjusted p value.</li>
 </ul>
-<p><img alt="Degust overview" src="./images/degust1.png" /></p>
+<p><img alt="Degust overview" src="images/degust1.png" /></p>
 <h3 id="analyze-gene-expression">Analyze gene expression</h3>
 <ul>
 <li>Under <ss>Method</ss>, make sure that <ss>Voom/Limma</ss> is selected.</li>
@@ -1292,7 +1307,7 @@ At the end of this tutorial you should be able to:
 </ul>
 <h3 id="mds-plot">MDS plot</h3>
 <p>First, look at the MDS plot.</p>
-<p><img alt="MDSplot" src="./images/degust2.png" /></p>
+<p><img alt="MDSplot" src="images/degust2.png" /></p>
 <ul>
 <li>This is a multidimensional scaling plot which represents the variation between samples.</li>
 <li>Ideally:<ul>
@@ -1319,7 +1334,7 @@ At the end of this tutorial you should be able to:
 </li>
 </ul>
 <p>Click on the dot to see the gene name.     </p>
-<p><img alt="MAplot" src="./images/degustma.png" /></p>
+<p><img alt="MAplot" src="images/degustma.png" /></p>
 <h3 id="expression-volcano-plot">Expression - Volcano plot</h3>
 <p>Another way to view expression levels is with the volcano plot.</p>
 <ul>
@@ -1329,7 +1344,7 @@ At the end of this tutorial you should be able to:
 <li>If expression is significantly different between treatment and control, the dots are red. If not, they are blue. (In Degust, significant means FDR &lt;0.05).</li>
 <li>This is a quick way to visualize those genes with large changes in expression (the left and right sides of the graph).  </li>
 </ul>
-<p><img alt="volcano plot" src="./images/volcano.png" /></p>
+<p><img alt="volcano plot" src="images/volcano.png" /></p>
 <h3 id="expression-parallel-coordinates-and-heatmap">Expression - Parallel Coordinates and heatmap</h3>
 <p>Each line shows the change in expression in one gene, between control and treatment.</p>
 <ul>
@@ -1353,7 +1368,7 @@ At the end of this tutorial you should be able to:
 </ul>
 </li>
 </ul>
-<p><img alt="Parallel Coordinates plot" src="./images/image14.png" /></p>
+<p><img alt="Parallel Coordinates plot" src="images/image14.png" /></p>
 <p>Note:</p>
 <ul>
 <li>for an experiment with multiple treatments, the various treatment axes can be dragged to rearrange. There is no natural order (such as a time series).</li>
@@ -1366,7 +1381,7 @@ At the end of this tutorial you should be able to:
 <li>In some cases, a large fold change will be meaningful but in others, even a small fold change can be important biologically.</li>
 </ul>
 <p>Table of genes and expression:</p>
-<p><img alt="gene table" src="./images/image15.png" /></p>
+<p><img alt="gene table" src="images/image15.png" /></p>
 <!--
 A pathway is a drawn network to show interaction between molecules, including some or all of genes, proteins, RNAs, chemical reactions. E.g.
 The Kegg pathway database: (Kyoto Encyclopedia of Genes and Genomes)
@@ -1508,9 +1523,9 @@ numbers are EC numbers - enzyme commission ->  enzyme/s that catalyze a reaction
       
     </div>
     
-      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../../assets/javascripts/application.5e60981f.js"></script>
       
-      <script>app.initialize({version:"0.17.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
     

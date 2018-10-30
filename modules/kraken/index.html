@@ -38,15 +38,15 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
-        <title>Sample identification - Galaxy Australia Training</title>
+        <title>Galaxy Australia Training</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.4f4f49e8.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
       
       
     
@@ -54,8 +54,8 @@
       <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -203,11 +203,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <span class="md-nav__button md-logo">
+    <a href="https://galaxy-au-training.github.io/tutorials/" title="Galaxy Australia Training" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
-    </span>
+    </a>
     Galaxy Australia Training
   </label>
   
@@ -267,6 +267,18 @@
   <li class="md-nav__item">
     <a href="../intro/" title="Learn key tasks" class="md-nav__link">
       Learn key tasks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../galaxy-data/" title="Download and Delete Data in Galaxy" class="md-nav__link">
+      Download and Delete Data in Galaxy
     </a>
   </li>
 
@@ -791,7 +803,7 @@
 <li>Then click <ss>Save</ss></li>
 </ul>
 <p>You should now have four files in your current history:</p>
-<p><img alt="galaxy history" src="./images/files2.png" /></p>
+<p><img alt="galaxy history" src="images/files2.png" /></p>
 <!-- used ERR019289_1 and 2 from EBI. see public data tutorial.
 rename and change datatypes. -- not working -->
 
@@ -833,7 +845,7 @@ In detail:
 <h2 id="examine-the-output">Examine the output</h2>
 <p>The output is a file called <fn>Kraken on data x and x: Classification</fn>. This will be at the top of your history pane.</p>
 <p>Click <ss>Refresh</ss> if the file hasn&rsquo;t yet turned green.</p>
-<p><img alt="refresh" src="./images/refresh.png" /></p>
+<p><img alt="refresh" src="images/refresh.png" /></p>
 <p>When the file is green, click on the eye icon to view.</p>
 <ul>
 <li>We will turn this output into something easier to read in the next step.</li>
@@ -841,7 +853,7 @@ In detail:
 <li>Column 3 is the taxon ID (from NCBI).</li>
 <li>Column 5 is a summary of all the taxon IDs that each k-mer in the sequence matched to (taxon ID:number of k-mers).  </li>
 </ul>
-<p><img alt="classification" src="./images/classification.png" /></p>
+<p><img alt="classification" src="images/classification.png" /></p>
 <!-- Output Format
 
 Each sequence classified by Kraken results in a single line of output. Output lines contain five tab-delimited fields; from left to right, they are:
@@ -881,7 +893,7 @@ Each sequence classified by Kraken results in a single line of output. Output li
 <li>Column 4: code indicating the rank of the classification: (U)nclassified, (D)omain, (K)ingdom, (P)hylum, (C)lass, (O)rder, (F)amily, (G)enus, (S)pecies).</li>
 <li>Column 5: NCBI taxonomy ID.</li>
 </ul>
-<p><img alt="kraken report" src="./images/kraken_output2.png" /></p>
+<p><img alt="kraken report" src="images/kraken_output2.png" /></p>
 <p>Approximately 95% of reads were classified as <em>Staphylococcus aureus</em>, confirming the correct identity of our bacterial sample.</p>
 <ul>
 <li>Of these reads, roughly half were uniquely present in <em>S. aureus</em> subsp. <em>aureus</em>, and most of those were uniquely present in strain HO 5096 0412.</li>
@@ -911,7 +923,7 @@ The output of kraken-report is tab-delimited, with one line per taxon. The field
 <li>With the <fn>Classification</fn> file from Kraken, run <ss>Kraken-report</ss>.</li>
 <li>Cick on the eye icon to view the <fn>Kraken-report</fn> file.</li>
 </ul>
-<p><img alt="output 1" src="./images/sample2_1.png" /></p>
+<p><img alt="output 1" src="images/sample2_1.png" /></p>
 <ul>
 <li>
 <p>63% are classified to the genus <em>Enterococcus</em>, and most of these to <em>E. faecalis</em>.</p>
@@ -920,7 +932,7 @@ The output of kraken-report is tab-delimited, with one line per taxon. The field
 <p>However, if we scroll down the table of results, we see that 31% are classified to the genus <em>Mycobacterium</em>, mostly <em>M. abscessus</em>. These are not in the same phylum as <em>Enterococcus</em>.</p>
 </li>
 </ul>
-<p><img alt="output2" src="./images/sample2_2.png" /></p>
+<p><img alt="output2" src="images/sample2_2.png" /></p>
 <ul>
 <li>This sample is probably contaminated.</li>
 </ul>
@@ -1033,9 +1045,9 @@ The output of kraken-report is tab-delimited, with one line per taxon. The field
       
     </div>
     
-      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      <script src="../../assets/javascripts/application.5e60981f.js"></script>
       
-      <script>app.initialize({version:"0.17.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
     

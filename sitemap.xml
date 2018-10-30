@@ -2,112 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/galaxy/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/intro/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://galaxy-au-training.github.io/tutorials/modules/galaxy-data/</loc>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/fastqc/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/spades/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/prokka/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/snippy/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/variants/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/abricate/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/mlst/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/kraken/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/dge/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/rna-humans/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/metagenomics/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/workflows/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/workflow-assembly/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/workflow-annotation/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/workflow-variant-calling/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/workflow-rna-seq/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/workflow-metagenomics/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/shortreads/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://galaxy-au-training.github.io/tutorials/modules/refseq/</loc>
-     <lastmod>2018-10-23</lastmod>
+     <lastmod>2018-10-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
