@@ -19,7 +19,7 @@ If you are using Galaxy Australia, you can import the data from a shared data li
 In the top menu bar, go to <ss>Shared Data</ss>.
 
 * Click on <ss>Data Libraries</ss>.
-* Click on <fn>Galaxy Australia Training Material: Assembly: Metagenomics: Soil metagenomics</fn>.
+* Click on <fn>Galaxy Australia Training Material: Metagenomics: Soil 16S metagenomics</fn>.
 * Tick the boxes next to the five files.
 * Click the <ss>To History</ss> button, select *As Datasets*.
 * Name a new history and click <ss>Import</ss>.
