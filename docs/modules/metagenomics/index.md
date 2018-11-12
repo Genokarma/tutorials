@@ -30,7 +30,7 @@ In the top menu bar, go to <ss>Shared Data</ss>.
 
 Follow the steps in the first half of this tutorial that covers metagenomics analyses using amplicon data:
 
-[Click here for tutorial link.](https://galaxyproject.github.io/training-material/topics/metagenomics/tutorials/general-tutorial/tutorial.html)
+[Click here for the link to the Galaxy Training Network tutorial](https://galaxyproject.github.io/training-material/topics/metagenomics/tutorials/general-tutorial/tutorial.html)
 
 The workflow for this tutorial looks like this:
 
