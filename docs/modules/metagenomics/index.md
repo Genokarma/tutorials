@@ -42,6 +42,10 @@ The workflow for this tutorial looks like this:
 
 ![image part 2](images/part2.png)
 
+
+For more detail about following this tutorial, including the details of the workflow, please see [these slides](https://docs.google.com/presentation/d/e/2PACX-1vTPdsCl9mtrgoHhMqGfJzcGC7nq5GYroArb0tCCoHxjMzj-NAd9mnL_hLpE971ENCxH78C_kXS-6WNw/pub?start=false&loop=false&delayms=3000).
+
+
 ## See this history in Galaxy
 
 If you want to see this Galaxy history without performing the steps above:
