@@ -1059,6 +1059,16 @@
             "location": "/modules/refseq/#reference-genomes", 
             "text": "How to get a reference genome into Galaxy?    In a web browser, go to  https://www.ncbi.nlm.nih.gov/assembly/    Enter the taxon into the search bar.    For example, enter  Mycoplasma synoviae   Choose the assembly you want, for example,  ASM314756v1  Under the  Assembly Definition , click on the GenBank sequence ID, for example,  CP021129.1  In the top right, click on  Send to  For  Choose Destination  select  File  For  Format  choose  FASTA  Click  Create File   The file will download locally.    In Galaxy, go to  Get Data  and choose  Upload File .   Click  Choose local file  Select the file.  Click  Start  Click  Close  You should now have the file in the top of your current history.  Re-name it, e.g. to  Mycoplasma_reference.fasta     How to convert this into other formats?  Tools in Galaxy may require various formats for your reference genome. For bacterial genomes, an easy way to get the required formats is to use the tool  Prokka .   Go to the Tool panel and search for  prokka  in the search box.  Click on  Prokka  For  Contigs to annotate : your  reference.fasta  file  All the other settings can be left as they are.  Click  Execute   Prokka outputs lots of different files including a genbank, fasta and gff version of your input fasta file.", 
             "title": "Reference genomes"
+        }, 
+        {
+            "location": "/modules/help/", 
+            "text": "Galaxy Help\n\n\n\n\n\n\nGalaxyHelp: a help page for all Galaxy servers. Search topics or post a new question: \nhttps://help.galaxyproject.org/\n\n\n\n\n\n\nRequest a new tool or reference dataset: see the link on the Galaxy Australia welcome page.\n\n\n\n\n\n\nEmail Galaxy Australia: help@genome.edu.au", 
+            "title": "Help!"
+        }, 
+        {
+            "location": "/modules/help/#galaxy-help", 
+            "text": "GalaxyHelp: a help page for all Galaxy servers. Search topics or post a new question:  https://help.galaxyproject.org/    Request a new tool or reference dataset: see the link on the Galaxy Australia welcome page.    Email Galaxy Australia: help@genome.edu.au", 
+            "title": "Galaxy Help"
         }
     ]
 }
