@@ -98,6 +98,7 @@ pages:
 - Workflow - Metagenomics: modules/workflow-metagenomics/index.md
 - Short read data: modules/shortreads/index.md
 - Reference genomes: modules/refseq/index.md
+- Help!: modules/help/index.md
 
 #- Galaxy help & resources: modules/resources/index.md
 #- Transcriptomics:
