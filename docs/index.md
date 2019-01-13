@@ -17,7 +17,6 @@ Web address: [www.usegalaxy.org.au](https://usegalaxy.org.au)
 
 ## Support
 
-
 ![logos](images/logos.png)
 
 * Australian Research Data Commons

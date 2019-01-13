@@ -71,9 +71,11 @@ Galaxy Australia has been developed for Australian researchers. It replaces the 
 * To access older histories, use the button at the top right of the History panel.
 
 
-## More information
+## More information and help
 
 More information about the Galaxy project can be found [here](https://galaxyproject.org/).
+
+[Click here for more help.](../help/index.md)
 
 ## What's next?
 
