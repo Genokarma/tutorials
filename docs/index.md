@@ -9,6 +9,8 @@ To use the tutorials:
 * &#8592; see the list in the left hand panel
 * &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
 
+[Click here to get started](modules/galaxy/index.md).
+
 Web address: [www.usegalaxy.org.au](https://usegalaxy.org.au)
 
 ![galaxy-aust](galaxy-aust.png)
