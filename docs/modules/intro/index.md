@@ -216,6 +216,13 @@ Your main Galaxy window will now show the current history as <fn>Next-analysis</
 
 You can go back into the "View all histories" page and "Switch to" a different history.
 
+## Help! Where am I?
+
+If you find yourself lost, go back to the main Galaxy page by clicking in the top left-hand corner on "Galaxy / Australia":
+
+![lost](lost.png)
+
+
 
 ## Summary
 
