@@ -22,7 +22,9 @@ How to get a reference genome into Galaxy?
 * Click <ss>Start</ss>
 * Click <ss>Close</ss>
 * You should now have the file in the top of your current history.
-* Re-name it, e.g. to *Mycoplasma_reference.fasta* 
+* Re-name it, e.g. to *Mycoplasma_reference.fasta*
+
+(Alternatively: request a reference genome be added to Galaxy Australia: click on the request link on the Galaxy Australia welcome page.)
 
 How to convert this into other formats?
 
