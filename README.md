@@ -10,7 +10,7 @@ The tutorials have been deployed here: https://galaxy-au-training.github.io/tuto
 
 ## How to work on them locally
 
-### 1. Brew install python, or skip to step 2
+### 1. Install python, or skip to step 2
 
 Make sure /usr/local/bin is the first thing in your $PATH
 
