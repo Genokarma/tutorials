@@ -1,0 +1,1556 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Tutorials for using Galaxy Australia">
+      
+      
+        <link rel="canonical" href="https://galaxy-au-training.github.io/tutorials/modules/metagenomics/metagenomics/">
+      
+      
+        <meta name="author" content="Anna Syme, Gareth Price, Torsten Seemann">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Metagenomics - Galaxy Australia Training</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../css/sepsis.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#metagenomics" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://galaxy-au-training.github.io/tutorials/" title="Galaxy Australia Training" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Galaxy Australia Training
+              </span>
+              <span class="md-header-nav__topic">
+                Metagenomics
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/Galaxy-Au-training/tutorials/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Galaxy-Australia-training/tutorials
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://galaxy-au-training.github.io/tutorials/" title="Galaxy Australia Training" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Galaxy Australia Training
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/Galaxy-Au-training/tutorials/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Galaxy-Australia-training/tutorials
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../galaxy/" title="Get started" class="md-nav__link">
+      Get started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../intro/" title="Learn key tasks" class="md-nav__link">
+      Learn key tasks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../galaxy-data/" title="Download and Delete Data in Galaxy" class="md-nav__link">
+      Download and Delete Data in Galaxy
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../fastqc/" title="Quality control" class="md-nav__link">
+      Quality control
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../spades/" title="Genome assembly" class="md-nav__link">
+      Genome assembly
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../prokka/" title="Genome annotation" class="md-nav__link">
+      Genome annotation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../snippy/" title="Variant calling - bacteria" class="md-nav__link">
+      Variant calling - bacteria
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../variants/" title="Variant calling - human" class="md-nav__link">
+      Variant calling - human
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../abricate/" title="Antibiotic-resistant genes" class="md-nav__link">
+      Antibiotic-resistant genes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../mlst/" title="Using MLST" class="md-nav__link">
+      Using MLST
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../kraken/" title="Sample identification" class="md-nav__link">
+      Sample identification
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../dge/" title="RNA-seq - bacteria" class="md-nav__link">
+      RNA-seq - bacteria
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../rna-humans/" title="RNA-seq - eukaryotes" class="md-nav__link">
+      RNA-seq - eukaryotes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Metagenomics" class="md-nav__link">
+      Metagenomics
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../workflows/" title="Galaxy workflows - introduction" class="md-nav__link">
+      Galaxy workflows - introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../workflow-assembly/" title="Workflow - genome assembly" class="md-nav__link">
+      Workflow - genome assembly
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../workflow-annotation/" title="Workflow - genome annotation" class="md-nav__link">
+      Workflow - genome annotation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../workflow-variant-calling/" title="Workflow - variant calling, bacteria" class="md-nav__link">
+      Workflow - variant calling, bacteria
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../workflow-rna-seq/" title="Workflow - Bacterial RNA-seq" class="md-nav__link">
+      Workflow - Bacterial RNA-seq
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../workflow-metagenomics/" title="Workflow - Metagenomics" class="md-nav__link">
+      Workflow - Metagenomics
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../shortreads/" title="Short read data" class="md-nav__link">
+      Short read data
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../refseq/" title="Reference genomes" class="md-nav__link">
+      Reference genomes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../help/" title="Help!" class="md-nav__link">
+      Help!
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tutorial-overview" title="Tutorial Overview" class="md-nav__link">
+    Tutorial Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" title="Background" class="md-nav__link">
+    Background
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#16s-rrna-sequencing" title="16S rRNA sequencing" class="md-nav__link">
+    16S rRNA sequencing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experimental-design-is-key" title="Experimental design is key" class="md-nav__link">
+    Experimental design is key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations-of-the-16s-rrna-profiling-strategy" title="Limitations of the 16S rRNA profiling strategy" class="md-nav__link">
+    Limitations of the 16S rRNA profiling strategy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goals" title="Goals" class="md-nav__link">
+    Goals
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-workflow-in-galaxy" title="The workflow in Galaxy" class="md-nav__link">
+    The workflow in Galaxy
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#where-is-the-data-in-this-tutorial-from" title="Where is the data in this tutorial from?" class="md-nav__link">
+    Where is the data in this tutorial from?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation" title="Preparation" class="md-nav__link">
+    Preparation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-shared-data" title="Use shared data" class="md-nav__link">
+    Use shared data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-import-from-the-web" title="Or, import from the web" class="md-nav__link">
+    Or, import from the web
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shorten-file-names" title="Shorten file names" class="md-nav__link">
+    Shorten file names
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keep-only-the-unique-reads" title="Keep only the unique reads" class="md-nav__link">
+    Keep only the unique reads
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#de-replicate" title="De-replicate" class="md-nav__link">
+    De-replicate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-sequences-into-groups" title="Cluster sequences into groups" class="md-nav__link">
+    Cluster sequences into groups
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cluter-otus" title="Cluter OTUs" class="md-nav__link">
+    Cluter OTUs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_1" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-chimeras" title="Remove chimeras" class="md-nav__link">
+    Remove chimeras
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uchime" title="Uchime" class="md-nav__link">
+    Uchime
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_2" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-many-reads-per-otu-cluster" title="How many reads per OTU cluster?" class="md-nav__link">
+    How many reads per OTU cluster?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#map-reads-to-otu-how-many-reads-per-otu" title="Map reads to OTU - how many reads per OTU?" class="md-nav__link">
+    Map reads to OTU - how many reads per OTU?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_3" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rdp-classifier-what-taxa-match-the-otus" title="RDP Classifier - what taxa match the OTUs?" class="md-nav__link">
+    RDP Classifier - what taxa match the OTUs?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_4" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-taxa-with-krona" title="View taxa with Krona" class="md-nav__link">
+    View taxa with Krona
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tidy-the-output" title="Tidy the output" class="md-nav__link">
+    Tidy the output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#krona" title="Krona" class="md-nav__link">
+    Krona
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phylogeny" title="Phylogeny" class="md-nav__link">
+    Phylogeny
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pynast" title="PyNAST" class="md-nav__link">
+    PyNAST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fasttree" title="FastTree" class="md-nav__link">
+    FastTree
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#was-sampling-sufficient-rarefaction-analysis" title="Was sampling sufficient? Rarefaction analysis" class="md-nav__link">
+    Was sampling sufficient? Rarefaction analysis
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rarefaction-tool" title="Rarefaction tool" class="md-nav__link">
+    Rarefaction tool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_5" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estimate-diversity" title="Estimate diversity" class="md-nav__link">
+    Estimate diversity
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collectors-curve" title="Collector's curve" class="md-nav__link">
+    Collector's curve
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_6" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plot-the-collectors-curves" title="Plot the collector’s curves" class="md-nav__link">
+    Plot the collector’s curves
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-workflow-canvas" title="The workflow canvas" class="md-nav__link">
+    The workflow canvas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" title="References" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Galaxy-Au-training/tutorials/edit/master/docs/modules/metagenomics/metagenomics.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="metagenomics">Metagenomics</h1>
+<p><ss>In development</ss></p>
+<p><em>Based on material by QFAB</em> http.qfab.org</p>
+<h2 id="tutorial-overview">Tutorial Overview</h2>
+<p>In this tutorial we cover the concepts of metagenomics analysis in 16S rRNA.</p>
+<p>What’s not covered:</p>
+<p>This introductory tutorial covers the steps required for the first part of a 16S rRNA metagenomics study applied to samples from a single site. As such we only show analyses that can be applied to a single environment, that is, identifying what organisms are in your sample (diversity), and how many organisms there are in the sample (richness). Similar same steps would be applied if you had samples from multiple sites, with additional analyses that can compare the diversity and richness between samples. The latter part is not covered by this tutorial.</p>
+<h2 id="background">Background</h2>
+<h3 id="16s-rrna-sequencing">16S rRNA sequencing</h3>
+<p>The application of culture-independent rRNA-based phylogenetics to the study of bacterial diversity was first explored by researchers in the 1980s e.g. [2] and was used by Carl Woese to delineate the main branches of life [1]. These rRNA based analyses remain central methods in microbiology both for the exploration of species diversity but also or the application in bacterial identification.</p>
+<p>The development of pyrosequencing technologies and the emergence of next generation DNA sequencing have changed the scales at which scientists can systematically survey the 16S rRNA content of biological samples and has been a key driver behind initiatives such as the human microbiome project [5].</p>
+<p>In the broadest sense, 16S rRNA sequencing should not be confused with metagenomics which has been defined as &ldquo;the application of shotgun sequencing to DNA obtained directly from an environmental sample or series of related samples, producing at least 50Mbp of randomly sampled sequence data&rdquo; [3] This is also in contrast to functional metagenomics whereby environmental DNA is first cloned and subsequently screened for specific functional activities e.g. [4]. Kunin et al elegantly argue that 16S rRNA profiling should in fact exist as a mandatory &ldquo;Premetagenome community composition profiling&rdquo; step in more comprehensive surveys [3]. There is discussion and debate as to how deep this sequencing could be performed but at JGI at least, a single 384 well plate is routinely surveyed.</p>
+<p>Irrespective of the nuances of terminology, metagenomics is a baseline technology for understanding the ecology and evolution of microbial ecosystems upon which hypotheses and experimental strategies are built.</p>
+<h3 id="experimental-design-is-key">Experimental design is key</h3>
+<p>Most 16S strategies are biased towards the measurement of bacterial and archaeal constituents of the environment and eukaryotes (e.g. fungi and protists) are excluded. This compromises the ability to measure the whole ecological spectrum of a microbial community; the larger and non-coding and thus uninterpretable parts of the eukaryotic genome are problematic. This is largely driving strategies that encompass additional metatranscriptomics surveys. The studies are thus oriented towards the sequence-tractable bacterial, archaeal and viral components of the research community.</p>
+<h3 id="limitations-of-the-16s-rrna-profiling-strategy">Limitations of the 16S rRNA profiling strategy</h3>
+<p>The 16S rRNA gene copy number of variable between bacterial species and this is further confounded by PCR amplification biases which skew estimates of the community composition.</p>
+<h3 id="goals">Goals</h3>
+<p>The goal of the 16S study is to understand the complexity of the community being sampled. This is assessed as a function of the number of species in the community (richness) and their relative abundances (evenness).</p>
+<h2 id="the-workflow-in-galaxy">The workflow in Galaxy</h2>
+<p>The process presented in this workshop is aimed to be an introduction for molecular biologists to 16S rRNA metagenomics analysis. The workflow is also implemented such that it can be run using a standard desktop or laptop environment without the requirements of a large cluster or cloud infrastructure.</p>
+<p>The steps are:</p>
+<p>De-replicate reads
+Cluster reads into Operational Taxonomic Units (OTU)
+Chimera detection and removal
+OTU Table
+Visualize taxa in a pie chart
+Phylogenetic Tree
+Rarefaction analysis
+Collector Curve analysis</p>
+<h3 id="where-is-the-data-in-this-tutorial-from">Where is the data in this tutorial from?</h3>
+<p>We use the same data from the <a href="https://www.mothur.org/wiki/Marine_community_analysis">Mothur Marine community analysis</a>, that is  the study from the <a href="https://www.jcvi.org/global-ocean-sampling-expedition-gos">Global Ocean Sampling (GOS) Expedition</a>. However we only concentrate on one site as opposed to the 14 sites they sampled.</p>
+<h2 id="preparation">Preparation</h2>
+<ul>
+<li>Log in to your Galaxy instance (for example, Galaxy Australia, <a href="https://usegalaxy.org.au/">usegalaxy.org.au</a>).</li>
+</ul>
+<h3 id="use-shared-data">Use shared data</h3>
+<p>If you are using Galaxy Australia, you can import the data from a shared data library.</p>
+<p>In the top menu bar, go to <ss>Shared Data</ss>.</p>
+<ul>
+<li>Click on <ss>Data Libraries</ss>.</li>
+<li>Click on <fn>Galaxy Australia Training Material: Metagenomics: 16S Metagenomics</fn>.</li>
+<li>Tick the boxes next to the three files.</li>
+<li>Click the <ss>To History</ss> button, select <em>As Datasets</em>.</li>
+<li>Name a new history and click <ss>Import</ss>.</li>
+<li>In the top menu bar, click <ss>Analyze Data</ss>.</li>
+<li>You should now have three files in your current history.</li>
+</ul>
+<h3 id="or-import-from-the-web">Or, import from the web</h3>
+<p><em>Only follow this step if unable to load the data files from shared data, as described above</em>.</p>
+<ul>
+<li>In a new browser tab, go to this webpage:</li>
+</ul>
+<p><a href="https://doi.org/10.5281/zenodo.1319864"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.1319864.svg" /></a></p>
+<ul>
+<li>Right click on file name: select &ldquo;copy link address&rdquo;</li>
+<li>In Galaxy, go to <ss>Get Data</ss> and then Upload File</li>
+<li>Click <ss>Paste/Fetch data</ss></li>
+<li>A box will appear: paste in link address</li>
+<li>Click <ss>Start</ss></li>
+<li>Click <ss>Close</ss></li>
+<li>The file will now appear in the top of your history panel.</li>
+<li>Repeat for the other two files.</li>
+</ul>
+<h3 id="shorten-file-names">Shorten file names</h3>
+<ul>
+<li>Click on the pencil icon next to the file name</li>
+<li>In the centre Galaxy panel, click in the box under <ss>Name</ss></li>
+<li>Shorten the file name</li>
+<li>Then click <ss>Save</ss></li>
+</ul>
+<h2 id="keep-only-the-unique-reads">Keep only the unique reads</h2>
+<p>The aim here is to reduce the number of reads in the input file into clusters of identical sequences.</p>
+<h3 id="de-replicate">De-replicate</h3>
+<p>In the tool panel (left hand side) search for the <ss>Dereplicate</ss> tool and click on it.</p>
+<ul>
+<li>For <ss>Input sequence file</ss> select the <fn>seqs.fasta</fn> dataset</li>
+<li>For <ss>Criteria used for duplicate detection</ss> select <em>Full length</em></li>
+</ul>
+<p>There are two possible modes in the dereplication tool:
+(1) <em>full-length</em> where the full length of the two sequences must be identical before being grouped together or
+(2) <em>prefix</em> where the first section of the two sequences are identical</p>
+<ul>
+<li>Click on <ss>Execute</ss></li>
+</ul>
+<h3 id="output">Output</h3>
+<p>Click on the name of the job <fn>Dereplicate on data XX</fn> in the History panel (right hand side) and you will see the number of sequences have been reduced from 1,472 in the input data <fn>seqs.fasta</fn> to 1,459 sequences.</p>
+<p>Examine the output by clicking on the eye icon  in the top right hand corner of this step.</p>
+<ul>
+<li>
+<p>NOTE: The size=XXXX annotation in the id line of the fasta file indicates the number of reads that were exactly the same as this representative sequence.</p>
+</li>
+<li>
+<p>(OPTIONAL) You can rename the output by clicking on the pencil icon  on the top right hand corner of the output. Click on the “Attributes tab” and then  type in a new name in the “Name” field and click on Save.</p>
+</li>
+</ul>
+<h2 id="cluster-sequences-into-groups">Cluster sequences into groups</h2>
+<p>The aim here is to cluster the output from Step 1 into groups of sequences that are 97% similar to each other.</p>
+<ul>
+<li>Similar sequences are assumed to belong to the same taxonomic groups. * These groups are known as Operational Taxonomic Units (OTUs) and the number of clusters that result are indicative of the number of species that are present in this sample.</li>
+</ul>
+<h3 id="cluter-otus">Cluter OTUs</h3>
+<p>In the tool panel on the left hand side, search for the <ss>Cluster OTU</ss> tool.</p>
+<ul>
+<li>For <ss>Input sequence file</ss>, select the output from Step 1: <fn> Dereplicate on data XX</fn></li>
+<li>For <ss>Minimum cluster radius</ss>, enter 0.97. This value corresponds to 97% sequence identity.</li>
+<li>Click on <ss>Execute</ss></li>
+</ul>
+<h3 id="output_1">Output</h3>
+<p>Click on the name of the job <fn>Cluster OTU on data 4</fn> in the History panel (right hand side) and you will find that the number of sequences has decreased to 559 sequences.</p>
+<ul>
+<li>Examine the output by clicking on the eye icon  in the top right hand corner of this step.</li>
+<li>The output file is in Fasta format where each sequence is the representative of an OTU.</li>
+<li>Figure 2 below, provides a summary of the clustering approach. Reads are represented by solid dots. Those that are 97% similar to each other are grouped together into an OTU as represented by the blue dashed circles.</li>
+<li>In this example, there are 3 OTUs. The reads that represents the centroid of each cluster are shown as red dots and these red dots form the representative of the corresponding OTU. These are the sequences that are reported in the output file. In this tutorial, the output file has 559 sequences, meaning that 559 OTUs were identified.</li>
+<li>NOTE: The number of sequences that you have may not be exactly the same as mentioned here. This is so as the clustering process starts by randomly selecting a read as the center of a cluster (see figure below). Since this is a random selection, each time you perform a clustering process, a different read can be selected and thus affect the end result.</li>
+</ul>
+<p>For more detailed description of the OTU clustering algorithm, click <a href="http://drive5.com/usearch/manual/uparseotu_algo.html">here</a>.</p>
+<p>Figure 2.</p>
+<p><img alt="clustering" src="../images/clustering.jpg" /></p>
+<p>Please Note: The “size=XX” annotation in the identifier line is NOT the number of sequences that is in the corresponding cluster (OTU). This value is the same as the input file.</p>
+<h2 id="remove-chimeras">Remove chimeras</h2>
+<p>The aim here is to: identify and filter chimeric sequences utilizing a reference dataset containing nucleotide sequences believed to be free of chimeras.</p>
+<h3 id="uchime">Uchime</h3>
+<p>In the tool panel on the left hand side, search for the <ss>Uchime</ss> tool.</p>
+<ul>
+<li>For <ss>Mode to detect chimeras</ss>, select “ref” (reference mode).</li>
+</ul>
+<p>There are two possible modes in the Uchime tool for chimera detection: (1) <em>ref</em> where a reference dataset of parent sequences believed to be chimera-free is provided by the user or (2) <em>de-novo</em> where a database is constructed from the query sequences by using the abundance data.</p>
+<ul>
+<li>For the second field <ss>Input reference file</ss> select the <fn>Cluster OTU on data XX</fn></li>
+<li>For the third  field <ss>Reference Database</ss>, select the <fn>gold.fasta</fn>. This file (downloaded from http://drive5.com/uchime/gold.fa) contains nucleotide sequences believed to be free of chimeras.</li>
+<li>Click on <ss>Execute</ss></li>
+</ul>
+<h3 id="output_2">Output</h3>
+<ul>
+<li>
+<p>Click on <fn>Uchime on data XX and data XX:chimeras</fn></p>
+<ul>
+<li>These sequences have been classified to be chimeras</li>
+</ul>
+</li>
+<li>
+<p>Click on <fn>Uchime on data XX and data XX:non chimeras</fn></p>
+<ul>
+<li>These sequences have been classified to be non-chimeras</li>
+<li>Only the “non-chimeras” output be used for the subsequent steps.</li>
+<li>All other sequences, chimeras  and nonclassified will be disregarded.</li>
+</ul>
+</li>
+</ul>
+<p>There are 2 hidden log files also generated from this tool, they contain detailed job information about  the classification into non-chimeras and chimeras.</p>
+<p>(OPTIONAL) To access the hidden outputs, click on the cog wheel  in the upper right corner of the History panel and select “Include Hidden Datasets”.</p>
+<ul>
+<li>
+<p>Click on <fn>Uchime on data XX and data XX:Human-readable output</fn></p>
+<ul>
+<li>The chimeric alignments (with respect to the putative parents) are listed following the <a href="http://drive5.com/usearch/manual/UCHIME_score.html">human-readable format</a> of the <a href="http://www.drive5.com/usearch/">USEARCH-Tool-Suite</a>.</li>
+</ul>
+</li>
+<li>
+<p>Click on <fn>Uchime on data XX and data XX:Tabbed output</fn></p>
+<ul>
+<li>For each sequence there are 18 values logged in a tabbed format, as following:</li>
+</ul>
+<p><img alt="output" src="../images/tabbedoutput.png" /></p>
+</li>
+</ul>
+<p>NOTE: The number of sequences that you have may not be exactly the same due to the results of the OTU Clustering step in Section 2.</p>
+<h2 id="how-many-reads-per-otu-cluster">How many reads per OTU cluster?</h2>
+<p>The aim here is to generate a full OTU Table which consists of the number of reads found for each group, the representative sequence and the predicted taxonomy.</p>
+<ul>
+<li>This is accomplished by running two tools and merging the resulting outputs together.</li>
+<li>
+<p>The first tool “Map Reads to OTU”, as the name indicates will map read sequences to the OTU cluster representatives from Section 2.</p>
+<ul>
+<li>In section 2, we clustered the reads into clusters that are 97% similar to all other members of that cluster. Then for each cluster, a representative sequence was selected. However, we do not know the number of reads that are in each cluster. Furthermore, in Section 3 we removed sequences that were potential chimeric sequences; this alters the number of remaining clusters.</li>
+<li>Therefore, in this step we first find out which of the remaining clusters each read belongs with 97% similarity and this will give us a count of the number of reads per cluster.</li>
+</ul>
+</li>
+<li>
+<p>The second tool “RDP Multi Classifier” will assign each the OTU representative sequence to a taxonomy level.</p>
+</li>
+<li>
+<p>The last step then merges the information to generate the OTU Table</p>
+</li>
+</ul>
+<h3 id="map-reads-to-otu-how-many-reads-per-otu">Map reads to OTU - how many reads per OTU?</h3>
+<p>In the tool panel on the left hand side, search for the <ss>Map Reads to OTU</ss> tool.</p>
+<ul>
+<li>For <ss>OTU fasta file</ss> select dataset <fn>Uchime on data XX and data XX: non_chimeras</fn></li>
+<li>For <ss>Input reads file</ss> select dataset <fn>Dereplicate on data XX</fn></li>
+<li>For <ss>Minimum identity</ss> enter 0.97. Like before, this value corresponds to 97% sequence similarity.</li>
+<li>Click on <ss>Execute</ss></li>
+</ul>
+<h3 id="output_3">Output</h3>
+<ul>
+<li>
+<p>Click on <fn>Map Reads to OTU on data XX and data XX:rabund</fn></p>
+<ul>
+<li>The output is tab delimited and follows the &lsquo;rabund&rsquo; format from <a href="https://www.mothur.org/wiki/Main_Page">mothur</a>.</li>
+<li>Note that this is just a one-line file which wraps around in the Galaxy display window to look like a multi-line file.</li>
+<li>In other words, this is a matrix of one row only, and many columns.</li>
+<li>The first column is a label (this is usually the identity)</li>
+<li>The second column is the number of OTUs found</li>
+<li>Each subsequent column is the number of reads found for the corresponding OTUs.</li>
+</ul>
+</li>
+<li>
+<p>Click on <fn>Map Reads to OTU on data XX and data XX:Pre-OTU Table</fn></p>
+<ul>
+<li>This is the pre OTU table with the following columns: OTU label, Count, Sequence</li>
+</ul>
+</li>
+<li>
+<p>Click on <fn>Map Reads to OTU on data XX and data XX:relabelled OTU</fn></p>
+<ul>
+<li>This is a FASTA file.</li>
+<li>The input reads from <fn>Uchime on data XX and data XX: non_chimeras</fn> have been re-labelled with convenient labels for parsing, e.g. OTU_1, OTU_2,&hellip;OTU_N, where N is the number of OTUs.</li>
+</ul>
+</li>
+</ul>
+<p>There is one hidden log file also generated from this tool, which reports whether a query sequence matches or not matches the database.</p>
+<p>(OPTIONAL) To access the hidden output, click on the cog wheel  in the upper right corner of the History panel and select “Include Hidden Datasets”.</p>
+<ul>
+<li>
+<p>Click on <fn>Map Reads to OTU on data XX and data XX:hit list</fn></p>
+<ul>
+<li>This file reports query sequences that match or did not match the database <fn>Cluster OTU on data XX</fn> following the <a href="http://drive5.com/usearch/manual/ucout.html">UC-format</a> of the <a href="http://www.drive5.com/usearch/">USEARCH-Tool-Suite</a>.</li>
+<li>Note that a given read may match two or more OTUs given the identity threshold. In such cases the tool will tend to assign the read to the OTU with highest identity and will break ties arbitrarily.</li>
+<li>Some reads may not match any OTU for these reasons: (1) the read is chimeric, (2) the read has more than 3% errors, (3) the read has a singleton sequence so was discarded.</li>
+</ul>
+</li>
+</ul>
+<h3 id="rdp-classifier-what-taxa-match-the-otus">RDP Classifier - what taxa match the OTUs?</h3>
+<p>A complete OTU table contains the taxonomy assignment of each sequence. To complete the Pre-OTU Table, we will use the <ss>RDP MultiClassifier</ss> tool.</p>
+<p>In the tool panel on the left hand side, search for the <ss>RDP MultiClassifier</ss> tool.</p>
+<ul>
+<li>For <ss>Select Gene Trainings Model</ss> select “16S rRNA” from the dropdown list.</li>
+<li>For <ss>Select to generate an OTU Table</ss> click <em>Yes</em>.</li>
+<li>For <ss>Relabelled OTU input reads of the ‘Map Reads to OTU’ tool in FASTA format</ss> choose <fn>Map Reads to OTU on data XX and data XX:relabelled OTU</fn></li>
+<li>For <ss>PRE OTU table of the ‘Map Reads to OTU’ tool</ss> select <fn>Map Reads to OTU on data XX and data XX:Pre-OTU Table</fn></li>
+<li>
+<p>For <ss>Assignment confidence cutoff</ss>, enter 0.8.</p>
+<ul>
+<li>This value is used to specify the assignment confidence cutoff used to determine the assignment count in the hierarchical format. The range is between 0 and 1 with 0.8 being the default value. For sequences that are shorter than 250 base pairs, the tool developers recommend using 0.5 as the confidence threshold. (http://rdp.cme.msu.edu/tutorials/classifier/RDPtutorial_MULTICLASSIFIER.html)</li>
+</ul>
+</li>
+<li>
+<p>For <ss>Tab delimited output format</ss>, select “fixrank“ from the drop-down list</p>
+</li>
+<li>Click on <ss>Execute</ss></li>
+</ul>
+<h3 id="output_4">Output</h3>
+<ul>
+<li>
+<p>Click on <fn>RDP MultiClassifier on data XX and data XX:classification_assignment_hierarchical.tab</fn></p>
+<ul>
+<li>Sequence count for each taxon in the hierarchy</li>
+</ul>
+</li>
+<li>
+<p>Click on <fn>RDP MultiClassifier on data XX and data XX:classification_assignment_details.tab</fn></p>
+<ul>
+<li>Sequence-by-sequence classification results including confidence scores at each level of the hierarchy</li>
+</ul>
+</li>
+<li>
+<p>Click on <fn>RDP MultiClassifier on data XX and data XX:OTU_Table.tab</fn></p>
+<ul>
+<li>The OTU table is composed of the following columns: OTU label, Count, Sequence, Phylogenetic lineage.</li>
+</ul>
+</li>
+</ul>
+<h2 id="view-taxa-with-krona">View taxa with Krona</h2>
+<p>Krona is a tool that shows you a pie chart of the taxa found in your sample.</p>
+<h3 id="tidy-the-output">Tidy the output</h3>
+<p><strong>Cut some columns</strong></p>
+<p>Search for <ss>Cut columns</ss></p>
+<ul>
+<li><ss>Cut columns</ss>: c2,c4,c7,c10,c13,c16,c19</li>
+<li><ss>Delimited by</ss>: Tab</li>
+<li><ss>From</ss>: the <fn>RDP MultiClassifier OTU_Table.tab</fn></li>
+<li><ss>Execute</ss></li>
+</ul>
+<p><strong>Take out the quotation marks</strong></p>
+<p>Search for <ss>Regex Find And Replace</ss></p>
+<ul>
+<li>For <ss>Select lines from</ss>: the previous file, <fn>Cut on data XX</fn></li>
+<li>Click <ss>Insert Check</ss></li>
+<li><ss>Find Regex</ss>: &ldquo;</li>
+<li><ss>Replacement</ss>: delete any text in here and leave empty</li>
+<li><ss>Execute</ss></li>
+</ul>
+<h3 id="krona">Krona</h3>
+<p>Search for <ss>Visualize with Krona</ss></p>
+<ul>
+<li>For <ss>Select input file</ss>: the previous file, <fn>Regex Find And Replace on data XX</fn></li>
+<li><ss>Is this output from MOTHUR</ss>: <em>No</em></li>
+<li><ss>Execute</ss></li>
+</ul>
+<p>Click on the eye icon next to the output file.</p>
+<ul>
+<li>This is a pie chart showing the abundance of taxa. The higher taxonomic levels are in the centre, and the lower taxonomic levels are in the outer circle.</li>
+<li>Click on a taxon to display the information in more detail.</li>
+<li>Most of our sample is classified as Bacteria.</li>
+<li>A particularly abundant genus is <em>Martelelella</em>.</li>
+</ul>
+<p><img alt="krona output" src="../images/krona.png" /></p>
+<h2 id="phylogeny">Phylogeny</h2>
+<p>How are our taxa related phylogenetically? We will run two tools to investigate.</p>
+<!--
+
+### Re-run the classifier
+
+First we need to re-run the classifier with a different setting.
+
+In the tool panel on the left hand side, search for the <ss>RDP MultiClassifier</ss> tool.
+
+* For <ss>Select Gene Trainings Model</ss> select “16S rRNA” from the dropdown list.
+* For <ss>Select to generate an OTU Table</ss> click *Yes*.
+* For <ss>Relabelled OTU input reads of the ‘Map Reads to OTU’ tool in FASTA format</ss> choose <fn>Map Reads to OTU on data XX and data XX:relabelled OTU</fn>
+* For <ss>PRE OTU table of the ‘Map Reads to OTU’ tool</ss> select <fn>Map Reads to OTU on data XX and data XX:Pre-OTU Table</fn>
+* For <ss>Assignment confidence cutoff</ss>, enter 0.8.
+* For <ss>Tab delimited output format</ss>, select “allrank“ from the drop-down list
+* Click on <ss>Execute</ss>
+
+-->
+
+<h3 id="pynast">PyNAST</h3>
+<p>The aim here is to build and visualise the phylogenetic tree.</p>
+<ul>
+<li>First, we align the sequences to a template sequence using PyNAST.</li>
+<li>PyNast is a reimplementation of the NAST algorithm to align each provided sequence (the “candidate” sequence) to the best-matching sequence in a pre-aligned database of sequences (the “template” sequence).</li>
+</ul>
+<p>In the tool panel on the left hand side, search for the <ss>PyNAST</ss> tool.</p>
+<ul>
+<li>For <ss>Candidate file (Fasta format)</ss> select <fn>Uchime on data XX and data XX:non_chimeras</fn></li>
+<li>For <ss>Template alignment file (Fasta format)</ss>, select <fn>core_set_aligned.fasta</fn></li>
+<li>
+<p>For <ss>Minimum sequence length</ss>, enter 1000.</p>
+<ul>
+<li>The minimum sequence length is the length to include in the NAST alignment and it has to be set according to your set of your sequences.</li>
+</ul>
+</li>
+<li>
+<p>Click <ss>Execute</ss></p>
+</li>
+</ul>
+<p>Outputs:</p>
+<ul>
+<li>
+<p>Click on <fn>PyNAST on data XX and data XX: pynast aligned</fn></p>
+<ul>
+<li>This file contains the alignment. You will find that the number of sequences might have decreased. This means  that the alignment for some sequences failed. More information is given in the log file and the failure file, which are hidden outputs.</li>
+</ul>
+</li>
+</ul>
+<p>(OPTIONAL) To access the hidden outputs, click on the cog wheel in the upper right corner of the History  panel and select “Include Hidden Datasets”.</p>
+<ul>
+<li>Click on <fn>PyNAST on data XX and data XX: pynast log file</fn></li>
+</ul>
+<p>This file is composed of the following columns:</p>
+<ul>
+<li>candidate sequence ID</li>
+<li>candidate nucleotide count</li>
+<li>errors</li>
+<li>template ID</li>
+<li>BLAST percent identify to template</li>
+<li>candidate nucleotide count post-NAST</li>
+</ul>
+<p>You will observe that some sequences have an entry in the error column: “No search results”. These are the sequences that failed to align.</p>
+<ul>
+<li>
+<p>Click on <fn>PyNAST on data XX and data XX: pynast failure</fn></p>
+<ul>
+<li>This file contains the sequences that failed to align. We already found out through the log file which sequences failed to align; here those sequences are given in FASTA format.</li>
+</ul>
+</li>
+</ul>
+<h3 id="fasttree">FastTree</h3>
+<p>Next we use “Fast Tree” to generate the phylogenetic tree using the aligned sequenced file.</p>
+<p>In the tool panel on the left hand side, search for the <ss>FastTree</ss> tool.</p>
+<ul>
+<li>For <ss>Aligned sequences file (FASTA format)</ss>, select <fn>PyNAST on data XX and data XX:pynast aligned</fn></li>
+<li>For <ss>Protein or nucleotide alignment</ss> select “Nucleotide”</li>
+<li>Click <ss>Execute</ss></li>
+</ul>
+<p>Output</p>
+<ul>
+<li>
+<p>Click on <fn>FastTree on data 18:tree.nhx</fn></p>
+<ul>
+<li>To visualize the phylogenetic tree, click on the “Visualize” icon <img alt="viz" src="../images/viz.png" /> under the file name.</li>
+<li>Click on <ss>Phyloviz</ss></li>
+<li>Phyloviz is the interactive Phylogenetic Tree Visualizer included from Galaxy.  Currently Phyloviz has only one entry point, which is via the “Visualize - View in Phyloviz” icon that will appear for all supported phylogenetic data sets.  </li>
+<li>Phyloviz will lay out the tree in a linear format. All phylogenetic distances are normalized to a value between 0 to 1.0 inclusive, and a default value of 250px would represent 1.0 units from a parent node to child node. The laying out of phyloviz is “in-place” meaning that the tree is presented in the same order as it is represented in the data and that no nodes are shuffled.</li>
+<li>Phyloviz supports a number of user interaction features to help you present, analyze and share the visualization. Please see the Galaxy wiki for more information on Phyloviz.</li>
+</ul>
+</li>
+</ul>
+<p>(OPTIONAL) To access the hidden log file, click on the cog wheel  in the upper right corner of the History panel and select “Include Hidden Datasets”.</p>
+<ul>
+<li>
+<p>Click on <fn>FastTree on data XX:log_FastTree_run.txt</fn></p>
+<ul>
+<li>This is the log file from Fast tree and shows job related information. It is not required for the analysis workflow.</li>
+</ul>
+</li>
+</ul>
+<h2 id="was-sampling-sufficient-rarefaction-analysis">Was sampling sufficient? Rarefaction analysis</h2>
+<p>The aim here is to generate an intra-sample rarefaction curve to determine if the sampling effort was sufficient.</p>
+<ul>
+<li>Rarefaction curves provide a way of comparing the richness observed in different samples although it is a better measure of sample diversity.</li>
+<li>Briefly, it plots the average number of OTUs that you would expect to observe against the number of sequences.</li>
+<li>If the curve plateaus off, then it is a good indication that the sample is saturated and you have captured the majority (if not all) of species/strains present in the sample.</li>
+<li>However, if the curve does not plateau off, this suggests there may still be more species/strains that have not been captured in your data and you need increase the size of your sample.</li>
+</ul>
+<h3 id="rarefaction-tool">Rarefaction tool</h3>
+<p>In the tool panel on the left hand side, search for the <ss>Rarefaction</ss> tool.</p>
+<ul>
+<li>For <ss>Input file format</ss> select <em>rabund</em> from the dropdown list</li>
+<li>For <ss>OTU list (rabund or sabund format)</ss>, select <fn>Map Reads to OTU on data XX and data XX:rabund</fn></li>
+<li>
+<p>For <ss>Minimum identity used in OTU clustering</ss>, enter the minimum identity used when you generated the OTU Table. In this tutorial we used 0.97.</p>
+<ul>
+<li>In case you can’t remember the minimum identity used, go back to the output file <fn>Cluster OTU on data XX</fn> in your History. Click on the file name to extend the dataset information. Click on the “View details” icon. In the Input Parameter section you will find the “Minimum cluster radius” you used in the OTU Clustering step.</li>
+</ul>
+</li>
+<li>
+<p>Click <ss>Execute</ss></p>
+</li>
+</ul>
+<h3 id="output_5">Output</h3>
+<ul>
+<li>
+<p>Click on <fn>Rarefaction on data XX</fn>.</p>
+<ul>
+<li>The output is a tabbed delimited file with the following columns:</li>
+<li>The first column (numsampled): the number sampled and indicates the level of sampling intensity (by default this information is provided every 100 individuals)</li>
+<li>The second column (0.03) is the average number of OTUs that were observed for that sampling intensity based on the number of iterations, which is 1000 by default. This would represents the data for the y-axis for the corresponding minimum identity (1-0.97=0.03).</li>
+<li>The third column (lci) and fourth column (hci) represent the confidence intervals.</li>
+</ul>
+</li>
+</ul>
+<p>To plot the rarefaction curve:</p>
+<ul>
+<li>Click on <fn>Rarefaction on data XX</fn> to extend the dataset information.</li>
+<li>Click on the “Visualize” icon</li>
+<li>Select “Scatterplot”</li>
+<li>Under Column 1, highlight &ldquo;X Column&rdquo; (the number sampled)</li>
+<li>Under Column 2, highlight &ldquo;Y Column&rdquo; (the average number of OTUs that were observed for that sampling intensity based on the number of iterations, which is 1,000 by default).</li>
+</ul>
+<p><img alt="scatterplot-options" src="../images/drawplot.png" /></p>
+<ul>
+<li>Click Draw</li>
+</ul>
+<p><img alt="scatterplot" src="../images/scatterplot.png" /></p>
+<h2 id="estimate-diversity">Estimate diversity</h2>
+<p>The aim here is to estimate the diversity and richness of the sample.</p>
+<ul>
+<li>Collector&rsquo;s curves describe how the richness or diversity change as you add more samples into the dataset.</li>
+<li>If a collector&rsquo;s curve plateaus, it is a good indication that enough samples were collected and you can have confidence in the last value of the curve.</li>
+</ul>
+<h3 id="collectors-curve">Collector&rsquo;s curve</h3>
+<p>In the tool panel on the left hand side, search for the <ss>Collector Curve</ss> tool.</p>
+<ul>
+<li>For <ss>OTU list (rabund, sabund, list or shared format)</ss>, select <fn>Map Reads to OTU on data XX and data XX:rabund</fn></li>
+<li>
+<p>For <ss>Labels - OTU labels</ss>, Click <ss>Select</ss> and make sure that <fn>0.03</fn> appears in the box.</p>
+<ul>
+<li>This correspondd to 97%. Note that this value is the inverse of other similarity thresholds we used thus far (1-0.97=0.03) and is the default value.</li>
+</ul>
+</li>
+<li>
+<p>For <ss>Calculators</ss>, there is no need to change anything from the default calculators:</p>
+<ul>
+<li><em>chao</em> - Community richness  - the Chao estimator</li>
+<li><em>invsimpson</em> - Community diversity - the Simpson index</li>
+<li><em>npshannon</em> - Community diversity - the non-parametric Shannon index.</li>
+</ul>
+</li>
+<li>
+<p>Click <ss>Execute</ss></p>
+</li>
+</ul>
+<h3 id="output_6">Output</h3>
+<ul>
+<li>
+<p>Click on <fn>Collector Curve on data XX:tab</fn></p>
+<ul>
+<li>This file provides a summary containing the following fields: number of sequences, the sample coverage, the number of observed OTUs, and then a summary of each of the selected calculators that were applied to the sample.         </li>
+</ul>
+</li>
+<li>
+<p>Click on <fn>Collector Curve on data XX:tab (invsimpson)</fn></p>
+<ul>
+<li>The <a href="https://www.mothur.org/wiki/Invsimpson">Simpson’s Inverse Index</a> also referred to as Simpson’s Reciprocal Index is a measure of diversity.</li>
+<li>Species diversity is a way to compare samples that incorporates both a measure of evenness (representation by each species) and richness (number of each species in the sample).</li>
+<li>This index starts with the value of 1 as the lowest possible figure. This figure would represent a community containing only one species. The higher the value, the greater the diversity. The maximum value is the number of species in the sample.</li>
+</ul>
+</li>
+<li>
+<p>Click on <fn>Collector Curve on data XX:tab (npshannon)</fn></p>
+<ul>
+<li>The <a href="https://www.mothur.org/wiki/Npshannon">non-parametric Shannon Index</a>, like the Simpson’s Inverse Index, is a diversity estimator and calculates a non-parametric estimate of the classical <a href="https://www.mothur.org/wiki/Shannon">Shannon</a> diversity Index for an OTU definition.</li>
+<li>The interpretation of the curve has to be performed in a comparison to the diversity curve of one or more communities.</li>
+</ul>
+</li>
+<li>
+<p>Click on <fn>Collector Curve on data XX:tab (chao)</fn></p>
+<ul>
+<li>
+<p>The <a href="https://www.mothur.org/wiki/Chao">Chao1 estimator</a> is a species richness estimator. The species richness estimators estimate the total number of species present in a community. The Chao1 index estimator the species richness for one community based on the observed species frequencies or presence/absence data.</p>
+</li>
+<li>
+<p>If you compare the rarefaction curve (observed richness) and Chao1 estimator curve (estimated richness), you will observe a gap. The greater estimated richness in comparison to the observed richness usually indicates that with further sampling, the richness would likely continue to increase. Please note that if a sample contains many singletons, it is likely that more undetected OTUs exist, and the Chao1 index will estimate greater species richness than it would for a sample without rare OTUs.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>These three outputs are tabbed delimited with the following columns:</p>
+<ul>
+<li>
+<p>First column (numsampled): is the number sampled and indicates the level of sampling intensity (by default this information is provided every 100 individuals)</p>
+</li>
+<li>
+<p>The second column (0.03) is the average number of OTUs that were observed for that sampling intensity based on the number of iterations, which is 1000 by default. This would represents the data for the y-axis for the corresponding minimum identity (1-0.97=0.03).</p>
+</li>
+<li>
+<p>The third column (lci) and fourth column (hci) represent the confidence intervals</p>
+</li>
+</ul>
+<p>These files can be plotted similar to the rarefaction curve in the previous step.</p>
+<h3 id="plot-the-collectors-curves">Plot the collector’s curves</h3>
+<ul>
+<li>Click on <fn>Collector Curve on data XX:tab (invsimpson)</fn> to extend the dataset information.</li>
+<li>Click on the now accessible “Visualize” icon</li>
+<li>
+<p>Select “Scatterplot”</p>
+</li>
+<li>
+<p>Under Column 1, highlight &ldquo;X Column&rdquo; (the number sampled)</p>
+</li>
+<li>Under Column 2, highlight &ldquo;Y Column&rdquo; (the average number of OTUs that were observed for that sampling intensity based on the number of iterations, which is 1,000 by default).</li>
+<li>Click <ss>Draw</ss></li>
+</ul>
+<p>Repeat to plot the curves from the other calculators.</p>
+<h2 id="the-workflow-canvas">The workflow canvas</h2>
+<p><img alt="canvas" src="../images/canvas2.png" /></p>
+<h2 id="references">References</h2>
+<ol>
+<li>
+<p>Woese CR, Kandler O, Wheelis ML (1990) Towards a natural system of organisms: proposal for the domains Archaea, Bacteria, and Eucarya. Proc Natl Acad Sci U S A 87: 4576-4579.</p>
+</li>
+<li>
+<p>Lane DJ, Pace B, Olsen GJ, Stahl DA, Sogin ML, et al. (1985) Rapid determination of 16S ribosomal RNA sequences for phylogenetic analyses. Proc Natl Acad Sci U S A 82: 6955-6959.</p>
+</li>
+<li>
+<p>Kunin V, Copeland A, Lapidus A, Mavromatis K, Hugenholtz P (2008) A bioinformatician&rsquo;s guide to metagenomics. Microbiol Mol Biol Rev 72: 557-578.</p>
+</li>
+<li>
+<p>Handelsman J, Rondon MR, Brady SF, Clardy J, Goodman RM (1998) Molecular biological access to the chemistry of unknown soil microbes: a new frontier for natural products. Chem Biol 5: R245-249.</p>
+</li>
+<li>
+<p>Turnbaugh PJ, Ley RE, Hamady M, Fraser-Liggett CM, Knight R, et al. (2007) The human microbiome project. Nature 449: 804-810.</p>
+</li>
+<li>
+<p>Holmes S, Alekseyenko A, Timme A, Nelson T, Pasricha PJ, et al. (2011) Visualization and statistical comparisons of microbial communities using R packages on phylochip data. Pac Symp Biocomput: 142-153.</p>
+</li>
+<li>
+<p>Hamady M, Lozupone C, Knight R (2010) Fast UniFrac: facilitating high-throughput phylogenetic analyses of microbial communities including analysis of pyrosequencing and PhyloChip data. ISME J 4: 17-27.</p>
+</li>
+<li>
+<p>Brodie EL, Desantis TZ, Joyner DC, Baek SM, Larsen JT, et al. (2006) Application of a high-density oligonucleotide microarray approach to study bacterial population dynamics during uranium reduction and reoxidation. Appl Environ Microbiol 72: 6288-6298.</p>
+</li>
+</ol>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; The authors; 2018-
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="" class="md-footer-social__link fa fa-coffee"></a>
+    
+      <a href="https://github.com/Galaxy-Au-training/tutorials" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://github.com/Galaxy-Au-training/tutorials/issues" class="md-footer-social__link fa fa-bug"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
