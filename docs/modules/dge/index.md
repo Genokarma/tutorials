@@ -1,5 +1,6 @@
 # RNA-Seq: Bacteria
 This tutorial is about using RNA-seq data to investigate differential gene expression in bacteria, using Galaxy tools and Degust (a tool on the web).
+- test
 
 <fn>**New to Galaxy?** First try the [introduction](../galaxy/index.md) and then learn some [key tasks](../intro/index.md)</fn>
 
